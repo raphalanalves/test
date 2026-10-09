@@ -1,0 +1,86 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="logo.js"></script><style>
+body{width:6480px;height:1350px;position:relative;overflow:hidden}
+.s{position:absolute;top:0;width:1080px;height:1350px;padding:180px 90px 0}
+.cnt{position:absolute;top:60px;right:80px;font-size:22px;color:var(--mut);letter-spacing:3px}
+.foot{position:absolute;bottom:60px;left:0;right:0;display:flex;justify-content:center}
+.chk{display:flex;gap:26px;align-items:center;font-size:38px;padding:26px 0;border-bottom:1px solid rgba(255,255,255,.08);color:#E9EAEE}
+.x{width:54px;height:54px;border-radius:12px;border:3px solid var(--red);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:30px;flex:none}
+.ok{border-color:var(--g);color:var(--g)}
+.chk b{color:#fff}
+.mod{border:2px solid rgba(0,212,170,.35);border-radius:28px;padding:34px;background:rgba(0,212,170,.05)}
+.mod .h{font-size:58px;color:var(--g)}
+.mod p{font-size:30px;line-height:1.35;color:#DDE;margin-top:10px}
+.combo{display:flex;justify-content:space-between;align-items:center;font-size:36px;padding:30px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.pill{font-size:26px;padding:10px 22px;border-radius:40px;border:2px solid var(--t2);color:#C9C2FF;margin-left:10px;white-space:nowrap}
+.pill.b{border-color:var(--g);color:var(--g2)}
+.ghost{position:absolute;opacity:.05;width:1500px;height:1500px}
+.ghost svg{width:100%;height:100%}
+</style></head><body>
+<div class="tex" style="width:1600px;left:0"></div><div class="tex" style="width:1400px;left:5080px"></div>
+<div class="glow" style="left:-300px;top:-200px"></div><div class="glow" style="left:5600px;top:500px;background:radial-gradient(circle,rgba(123,104,238,.22),transparent 65%)"></div>
+<div class="ghost" id="ghost" style="left:4560px;top:-80px"></div>
+
+<div class="s" style="left:0"><div class="cnt">1/6</div>
+ <div style="font-size:24px;color:var(--mut);margin-bottom:12px;letter-spacing:1px">ontem, 21:00</div>
+ <div class="bubble in" style="font-size:36px;width:fit-content">Oi! Ainda dá pra marcar pra amanhã?<span class="hora">21:00 ✓</span></div>
+ <div style="font-size:24px;color:var(--red);margin:14px 0 0 6px;letter-spacing:1px">sem resposta</div>
+ <div class="h" style="font-size:128px;margin-top:60px">SEU CLIENTE<br>MANDOU MENSAGEM<br>ÀS 21H.</div>
+ <div class="h grad" style="font-size:128px;margin-top:10px">QUEM RESPONDEU?</div>
+ <div style="font-size:34px;color:#E9EAEE;margin-top:40px">Às 21h05 ele já estava falando com o concorrente.</div>
+ <div class="foot" id="f1"></div></div>
+
+<div class="s" style="left:1080px"><div class="cnt">2/6</div>
+ <div class="h" style="font-size:118px">SEU WHATSAPP<br><span class="grad">PERDE VENDA</span> QUANDO:</div>
+ <div style="margin-top:60px">
+  <div class="chk"><div class="x">✕</div><div>Só tem resposta no <b>horário comercial</b></div></div>
+  <div class="chk"><div class="x">✕</div><div>A agenda mora num <b>caderno</b> (ou na cabeça de alguém)</div></div>
+  <div class="chk"><div class="x">✕</div><div>A cobrança é feita <b>na mão</b>, um cliente por vez</div></div>
+  <div class="chk" style="border:0"><div class="x">✕</div><div>O cliente some e <b>ninguém percebe</b></div></div>
+ </div>
+ <div style="font-size:30px;color:var(--mut);margin-top:50px">Marcou dois ou mais? Arrasta.</div>
+ <div class="foot" id="f2"></div></div>
+
+<div class="s" style="left:2160px"><div class="cnt">3/6</div>
+ <div style="font-family:'Bebas Neue';font-size:40px;letter-spacing:5px;color:var(--g)">A BASE DO PLANO</div>
+ <div class="h" style="font-size:120px;margin-top:10px">UMA IA COM<br><span class="grad">A CARA DA SUA EMPRESA.</span></div>
+ <div style="margin-top:50px">
+  <div class="chk"><div class="x ok">✓</div><div><b>Responde em segundos</b>, 24 horas por dia</div></div>
+  <div class="chk"><div class="x ok">✓</div><div><b>Marca direto na agenda</b> de cada profissional, sem mandar link</div></div>
+  <div class="chk"><div class="x ok">✓</div><div><b>Lembra o cliente</b> na véspera</div></div>
+  <div class="chk" style="border:0"><div class="x ok">✓</div><div><b>Chama sua equipe</b> quando o assunto pede uma pessoa</div></div>
+ </div>
+ <div class="foot" id="f3"></div></div>
+
+<div class="s" style="left:3240px"><div class="cnt">4/6</div>
+ <div class="h" style="font-size:120px">DEPOIS, VOCÊ LIGA<br><span class="grad">SÓ O QUE PRECISA.</span></div>
+ <div style="display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:60px">
+  <div class="mod"><div class="h">PAGAMENTO</div><p>Pix, boleto e cartão dentro da conversa.</p></div>
+  <div class="mod"><div class="h">FIDELIDADE</div><p>Chama de volta quem sumiu e pergunta como foi.</p></div>
+  <div class="mod"><div class="h">RELATÓRIO</div><p>Seus números chegando no WhatsApp.</p></div>
+  <div class="mod"><div class="h">INTELIGÊNCIA</div><p>Mostra quem está perto de fechar.</p></div>
+ </div>
+ <div class="foot" id="f4"></div></div>
+
+<div class="s" style="left:4320px"><div class="cnt">5/6</div>
+ <div class="h" style="font-size:120px">CADA NEGÓCIO<br><span class="grad">MONTA O SEU.</span></div>
+ <div style="font-size:30px;color:var(--mut);margin-top:24px">Exemplos de combinação:</div>
+ <div style="margin-top:30px">
+  <div class="combo"><span>Barbearia</span><span><span class="pill b">Base</span><span class="pill">Pagamento</span></span></div>
+  <div class="combo"><span>Clínica</span><span><span class="pill b">Base</span><span class="pill">Fidelidade</span></span></div>
+  <div class="combo"><span>Imobiliária</span><span><span class="pill b">Base</span><span class="pill">Inteligência</span></span></div>
+  <div class="combo" style="border:0"><span>Loja</span><span><span class="pill b">Base</span><span class="pill">Relatório</span></span></div>
+ </div>
+ <div style="font-size:36px;margin-top:50px;color:#E9EAEE">Você não paga pelo módulo que não usa.</div>
+ <div class="foot" id="f5"></div></div>
+
+<div class="s" style="left:5400px;text-align:center;padding-top:150px"><div class="cnt">6/6</div>
+ <div id="big" style="display:flex;justify-content:center"></div>
+ <div class="h" style="font-size:118px;margin-top:40px">SUA OPERAÇÃO.<br><span class="grad">SISTEMATIZADA.</span><br>INTELIGENTE.</div>
+ <div style="font-size:36px;margin-top:50px;line-height:1.4;color:#E9EAEE">Manda pra quem ainda responde<br>cliente só no dia seguinte.</div>
+ <div style="font-size:28px;margin-top:22px;color:var(--mut)">Monte o plano da sua empresa pelo link da bio.</div>
+ <div class="foot" id="f6"></div></div>
+<script>
+for(let i=1;i<=6;i++) document.getElementById('f'+i).innerHTML=logoFull();
+document.getElementById('big').innerHTML=symImg(300);
+document.getElementById('ghost').innerHTML=logoSVG(4);
+</script></body></html>

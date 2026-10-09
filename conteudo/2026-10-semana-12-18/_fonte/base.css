@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=block');
-:root{--bg:#050505;--g:#459A76;--g2:#8ED1AE;--wa:#00A884;--t1:#5DB8BB;--t2:#5764BD;--roxo:#7B6CF6;--txt:#fff;--mut:#A9ADB3;--red:#E5484D}
+:root{--bg:#0E0E16;--g:#00D4AA;--g2:#7FF0D6;--wa:#00A884;--t1:#00D4AA;--t2:#7B68EE;--roxo:#7B68EE;--txt:#fff;--mut:#A9ADB3;--red:#E5484D}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--txt);font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}
-.tex{position:absolute;inset:0;background-image:radial-gradient(rgba(69,154,118,.22) 1.4px,transparent 1.6px);background-size:26px 26px;
+.tex{position:absolute;inset:0;background-image:radial-gradient(rgba(0,212,170,.16) 1.4px,transparent 1.6px);background-size:26px 26px;
  -webkit-mask-image:radial-gradient(ellipse at 100% 0%,#000 0%,transparent 60%);mask-image:radial-gradient(ellipse at 100% 0%,#000 0%,transparent 60%)}
-.glow{position:absolute;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(69,154,118,.28),transparent 65%);filter:blur(10px)}
+.glow{position:absolute;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,170,.18),transparent 65%);filter:blur(10px)}
 .h{font-family:'Bebas Neue',sans-serif;letter-spacing:1px;line-height:.92;text-transform:uppercase}
 .grad{background:linear-gradient(90deg,var(--t1),var(--t2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .verde{color:var(--g)} .roxo{color:var(--roxo)}
 .logo{display:flex;align-items:center;gap:14px;font-weight:600;letter-spacing:9px;font-size:20px;color:#fff}
 .logo svg{width:40px;height:40px}
 .bubble{border-radius:22px;padding:22px 28px;font-size:30px;line-height:1.35;max-width:820px;position:relative}
-.in{background:#1E1F2A;color:#E9EAEE;border-top-left-radius:6px}
-.out{background:#0F3B2E;color:#E8FFF4;border-top-right-radius:6px}
+.in{background:#1C1D29;color:#E9EAEE;border-top-left-radius:6px}
+.out{background:#0B3A33;color:#E8FFF8;border-top-right-radius:6px}
 .hora{display:block;text-align:right;font-size:18px;color:rgba(255,255,255,.45);margin-top:8px}
+
+.logo-img{height:74px;display:block;mix-blend-mode:lighten}
+.sym-img{mix-blend-mode:lighten;display:block}

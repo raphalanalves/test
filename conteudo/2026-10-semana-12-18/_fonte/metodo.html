@@ -3,7 +3,7 @@ body{width:6480px;height:1350px;position:relative;overflow:hidden}
 .s{position:absolute;top:0;width:1080px;height:1350px;padding:120px 90px}
 .cnt{position:absolute;top:60px;right:80px;font-size:22px;color:var(--mut);letter-spacing:3px}
 .foot{position:absolute;bottom:56px;left:0;right:0;display:flex;justify-content:center}
-.sym{width:300px;height:300px;margin-bottom:40px;filter:drop-shadow(0 0 30px rgba(69,154,118,.45))}
+.sym{width:300px;height:300px;margin-bottom:40px;filter:drop-shadow(0 0 30px rgba(0,212,170,.35))}
 .sym svg{width:100%;height:100%}
 .num{font-family:'Bebas Neue';font-size:40px;letter-spacing:6px;color:var(--mut)}
 .lead{font-size:40px;line-height:1.3;margin:28px 0 36px;color:#E9EAEE;max-width:860px}
@@ -18,7 +18,8 @@ body{width:6480px;height:1350px;position:relative;overflow:hidden}
 <div class="s" style="left:0;padding-top:200px"><div class="cnt">1/6</div>
  <div class="num" style="color:var(--g)">A ALQUIMIA ANTES DA IA</div>
  <div class="h" style="font-size:178px;margin-top:40px">ANTES DE LIGAR<br>QUALQUER IA,<br><span class="grad">A GENTE FAZ<br>4 COISAS.</span></div>
- <div style="font-size:34px;color:var(--mut);margin-top:50px">O caso de uma clínica (ilustrativo).</div>
+ <div style="font-size:36px;color:#E9EAEE;margin-top:46px">A IA só entra na terceira.</div>
+ <div style="font-size:28px;color:var(--mut);margin-top:14px">O caso de uma clínica (ilustrativo).</div>
  <div style="position:absolute;right:90px;bottom:150px;font-size:26px;color:var(--mut);letter-spacing:2px">arrasta pro lado →</div>
  <div class="foot"></div></div>
 <div class="s" style="left:1080px"><div class="cnt">2/6</div>
@@ -50,13 +51,13 @@ body{width:6480px;height:1350px;position:relative;overflow:hidden}
  <div class="it">Horários que sobraram vazios</div><div class="it">Pacientes que sumiram</div><div class="it">Conversas que não viraram consulta</div>
  <div class="foot"></div></div>
 <div class="s" style="left:5400px;text-align:center;padding-top:140px"><div class="cnt">6/6</div>
- <div class="sym" data-stage="4" style="margin:0 auto 40px;width:320px;height:320px"></div>
+ <div id="final" style="display:flex;justify-content:center;margin-bottom:30px"></div>
  <div class="h" style="font-size:108px;line-height:1.02">ENTENDE.<br><span class="verde">ESTRUTURA.</span><br><span class="grad">AUTOMATIZA.</span><br>OTIMIZA.</div>
  <div style="font-size:34px;margin-top:40px;line-height:1.4;color:#E9EAEE">Salva e usa na sua empresa,<br>com ou sem a Malvora.</div>
  <div style="font-size:26px;margin-top:30px;color:var(--mut)">Malvora Hub: A nova alquimia digital. 💚💜</div>
  <div class="foot"></div></div>
 <script>
 document.querySelectorAll('.foot').forEach(f=>f.innerHTML=logoFull());
-document.querySelectorAll('.sym').forEach(e=>e.innerHTML=logoSVG(+e.dataset.stage,'#8ED1AE',3.2));
-document.getElementById('ghost').innerHTML=logoSVG(4,'#459A76',1.2);
+document.querySelectorAll('.sym').forEach(e=>e.innerHTML=logoSVG(+e.dataset.stage));document.getElementById('final').innerHTML=symImg(330);
+document.getElementById('ghost').innerHTML=logoSVG(4);
 </script></body></html>

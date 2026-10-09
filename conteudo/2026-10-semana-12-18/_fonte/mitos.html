@@ -31,6 +31,7 @@ svg.line{position:absolute;left:0;top:0;pointer-events:none}
  <div class="bubble in" style="font-size:34px;width:fit-content">IA no meu WhatsApp? Nem pensar. 🙅<span class="hora">23:47</span></div>
  <div class="h" style="font-size:330px;margin-top:70px">4 <span class="verde">MITOS</span></div>
  <div class="h" style="font-size:92px;margin-top:6px">sobre IA no WhatsApp<br><span class="grad">que fazem você perder cliente</span></div>
+ <div style="font-size:34px;color:#E9EAEE;margin-top:36px">O 3º é o que mais trava dono de pequena empresa.</div>
  <div style="position:absolute;right:90px;bottom:150px;font-size:26px;color:var(--mut);letter-spacing:2px">arrasta pro lado →</div>
  <div class="foot" id="l1"></div>
 </div>
@@ -55,18 +56,18 @@ svg.line{position:absolute;left:0;top:0;pointer-events:none}
  <div class="ver"><div class="vlabel">O QUE ACONTECE DE VERDADE</div><div class="bubble out">Quando o assunto pede uma pessoa, <b>a IA chama a sua equipe</b>. Ela cobre o resto.<span class="hora">Malvora ✓✓</span></div></div>
  <div class="foot"></div></div>
 <div class="s" style="left:5400px"><div class="cnt">6/6</div>
- <div class="h" style="font-size:132px;margin-top:20px">A IA NÃO SUBSTITUI<br>SUA EQUIPE.</div>
- <div class="h grad" style="font-size:132px;margin-top:24px">ELA COBRE O HORÁRIO<br>QUE NINGUÉM COBRE.</div>
+ <div class="h" style="font-size:132px;margin-top:20px">SUA EQUIPE<br>CUIDA DO DIA.</div>
+ <div class="h grad" style="font-size:132px;margin-top:24px">A IA COBRE AS 23H,<br>O DOMINGO<br>E O FERIADO.</div>
  <div style="margin-top:56px;font-size:36px;line-height:1.4;color:#E9EAEE">Manda para o sócio que ainda<br>acredita no <span class="verde" style="font-weight:700">mito 1</span>.</div>
- <div style="margin-top:28px;font-size:28px;color:var(--mut)">Monte o plano da sua empresa pelo link da bio.</div>
+ 
  <div class="foot" id="lf"></div></div>
 <script>
 document.querySelectorAll('.foot').forEach(f=>{ if(!f.id) f.innerHTML=logoFull()}); document.getElementById('l1').innerHTML=logoFull(); document.getElementById('lf').innerHTML=logoFull();
 // circuito contínuo atravessando os slides
 const y=1180, pts=[[0,y],[300,y],[360,y-60],[1500,y-60],[1560,y],[2580,y],[2640,y-60],[3660,y-60],[3720,y],[4740,y],[4800,y-60],[5520,y-60]];
 const nodes=[[1300,y-60],[2380,y],[3460,y-60],[4540,y]];
-let s=`<polyline points="${pts.map(p=>p.join(',')).join(' ')}" fill="none" stroke="#459A76" stroke-width="3" opacity=".55"/>`;
-nodes.forEach(([x,yy],i)=>{s+=`<circle cx="${x}" cy="${yy}" r="16" fill="#050505" stroke="#459A76" stroke-width="4"/><circle cx="${x}" cy="${yy}" r="7" fill="#8ED1AE"/>`});
-s+=`<circle cx="5520" cy="${y-60}" r="10" fill="#459A76"/>`;
+let s=`<polyline points="${pts.map(p=>p.join(',')).join(' ')}" fill="none" stroke="#00D4AA" stroke-width="3" opacity=".55"/>`;
+nodes.forEach(([x,yy],i)=>{s+=`<circle cx="${x}" cy="${yy}" r="16" fill="#0E0E16" stroke="#00D4AA" stroke-width="4"/><circle cx="${x}" cy="${yy}" r="7" fill="#7FF0D6"/>`});
+s+=`<circle cx="5520" cy="${y-60}" r="10" fill="#00D4AA"/>`;
 document.getElementById('line').innerHTML=s;
 </script></body></html>

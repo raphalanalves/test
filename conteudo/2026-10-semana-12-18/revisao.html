@@ -1,0 +1,139 @@
+<title>Semana Malvora 12 a 18/10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: coluna única de revisão, um post por bloco, mídia em faixa horizontal rolável. Visual escuro fixo da marca. */
+:root{--bg:#0E0E16;--panel:#151522;--line:#26263A;--fg:#ECEDF3;--mut:#9A9CB0;--teal:#00D4AA;--violet:#7B68EE;--warn:#F2B84B;
+ --display:'Bebas Neue',Impact,'Arial Narrow',sans-serif;--body:Inter,system-ui,-apple-system,Segoe UI,sans-serif;--mono:'JetBrains Mono',ui-monospace,Menlo,monospace;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.55}
+.wrap{max-width:980px;margin:0 auto;padding-inline:16px;padding-block:28px 64px}
+.top{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:20px}
+.top h1{font-family:var(--display);font-weight:400;font-size:clamp(40px,7vw,64px);line-height:.95;margin:0;letter-spacing:.5px;text-wrap:balance}
+.top h1 span{background:linear-gradient(90deg,var(--teal),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.top p{margin:6px 0 0;color:var(--mut);max-width:60ch}
+.mark{width:56px;height:56px;flex:none}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+nav a{font-family:var(--mono);font-size:12px;color:var(--fg);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+nav a:hover,nav a:focus-visible{border-color:var(--teal);outline:none}
+.how{font-size:14px;color:var(--mut);margin:14px 0 8px}
+.how b{color:var(--fg)}
+.post{border-top:1px solid var(--line);padding-block:30px;display:grid;gap:16px}
+.ph{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:flex-start}
+.dia{font-family:var(--mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal)}
+.dia span{color:var(--mut);margin-left:6px}
+.ph h2{font-family:var(--display);font-weight:400;font-size:34px;line-height:1;margin:6px 0 0;letter-spacing:.4px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-family:var(--mono);font-size:11px;padding:5px 10px;border-radius:999px;border:1px solid var(--line);color:var(--mut)}
+.chips .goal{border-color:var(--violet);color:#C9C1FF}
+.chips .st{border-color:var(--warn);color:var(--warn)}
+.strip{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
+.strip img{flex:none;width:min(300px,78vw);aspect-ratio:4/5;object-fit:cover;border-radius:10px;scroll-snap-align:start;background:var(--panel)}
+.vid video{width:min(300px,78vw);aspect-ratio:9/16;border-radius:12px;background:#000;display:block}
+.txt{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;min-width:0}
+.lbl{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--mut);margin-bottom:8px}
+.lbl+pre+.lbl{margin-top:16px}
+pre{white-space:pre-wrap;word-break:break-word;font-family:var(--body);font-size:15px;margin:0;max-width:65ch}
+pre.tags{font-family:var(--mono);font-size:13px;color:var(--teal)}
+.copy{font-family:var(--mono);font-size:11px;background:transparent;color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:4px 10px;cursor:pointer}
+.copy:hover,.copy:focus-visible{border-color:var(--teal);outline:none}
+.nota{font-size:13px;color:var(--mut);margin:12px 0 0}
+footer{color:var(--mut);font-size:13px;border-top:1px solid var(--line);padding-top:18px}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+<div class="wrap">
+ <div class="top"><div><h1>Semana <span>@malvora_hub</span><br>12 a 18 de outubro</h1><p>Seis posts para revisar antes de entrarem na fila de publicação. Nada é publicado sem a sua aprovação.</p></div>
+ <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="g" x1="18" y1="10" x2="49" y2="53" gradientUnits="userSpaceOnUse"><stop stop-color="#00D4AA"/><stop offset="1" stop-color="#7B68EE"/></linearGradient></defs><path d="M49.5 21.5A24 24 0 1 0 51 43" fill="none" stroke="#00D4AA" stroke-linecap="round" stroke-width="2" opacity=".55"/><path d="M32 11 11 50h42L32 11Z" fill="none" stroke="url(#g)" stroke-linejoin="round" stroke-width="3"/><g fill="#0E0E16" stroke-width="2.5"><circle cx="32" cy="11" r="4.5" stroke="#00D4AA"/><circle cx="11" cy="50" r="4.5" stroke="#00D4AA"/><circle cx="53" cy="50" r="4.5" stroke="#7B68EE"/></g></svg></div>
+ <nav><a href="#p1">Ter 13/10</a><a href="#p2">Qua 14/10</a><a href="#p3">Qui 15/10</a><a href="#p4">Sex 16/10</a><a href="#p5">Sáb 17/10</a><a href="#p6">Dom 18/10</a></nav>
+ <p class="how">Para aprovar, responda no chat com o dia, por exemplo <b>"aprova terça e quinta"</b>, ou peça o ajuste que quiser. Segunda (12/10) é feriado e fica só com stories.</p>
+ <article class="post" id="p1">
+ <header class="ph"><div><div class="dia">Ter 13/10 <span>11h30</span></div><h2>Carrossel 01 &quot;Quem respondeu?&quot;</h2></div><div class="chips"><span class="goal">envios + venda</span><span class="meta-chip">6 slides · arraste</span><span class="st">aguardando aprovação</span></div></header>
+ <div class="strip"><img src="jpg/carrossel-01-plataforma-01.jpg" alt="Slide 1 de 6" loading="lazy"><img src="jpg/carrossel-01-plataforma-02.jpg" alt="Slide 2 de 6" loading="lazy"><img src="jpg/carrossel-01-plataforma-03.jpg" alt="Slide 3 de 6" loading="lazy"><img src="jpg/carrossel-01-plataforma-04.jpg" alt="Slide 4 de 6" loading="lazy"><img src="jpg/carrossel-01-plataforma-05.jpg" alt="Slide 5 de 6" loading="lazy"><img src="jpg/carrossel-01-plataforma-06.jpg" alt="Slide 6 de 6" loading="lazy"></div>
+ <div class="txt"><div class="lbl">Legenda <button class="copy" data-t="c0">Copiar</button></div><pre id="c0">Seu cliente mandou mensagem às 21h. Quem respondeu?
+
+Se a resposta foi &quot;ninguém, só amanhã&quot;, ele provavelmente já fechou com outro.
+
+A plataforma da Malvora começa por uma IA no seu WhatsApp, treinada com os serviços, os preços e o jeito de falar da sua empresa. Ela responde na hora, marca direto na agenda do profissional, sem mandar link pro cliente se virar, e lembra o horário na véspera. Quando o assunto pede uma pessoa, ela chama a sua equipe.
+
+Depois você liga só os módulos que fazem sentido: cobrança por Pix na conversa, reativação de quem sumiu, relatório no WhatsApp, leitura de quem está perto de fechar.
+
+Manda pra quem ainda responde cliente só no dia seguinte.
+
+🔗 Monte o plano da sua empresa pelo link da bio.
+
+Malvora Hub: A nova alquimia digital. 💚💜</pre>
+ <div class="lbl">Primeiro comentário <button class="copy" data-t="h0">Copiar</button></div><pre id="h0" class="tags">#automacaodeatendimento #whatsappparaempresas #donodenegocio #atendimentowhatsapp</pre></div>
+</article>
+<article class="post" id="p2">
+ <header class="ph"><div><div class="dia">Qua 14/10 <span>12h</span></div><h2>Reel &quot;23h47&quot;</h2></div><div class="chips"><span class="goal">envios + alcance</span><span class="meta-chip">Reel · sem som (áudio entra no app)</span><span class="st">aguardando aprovação</span></div></header>
+ <div class="vid"><video src="reel-01-2347.mp4" poster="reel-01-2347-capa.jpg" controls playsinline muted preload="metadata"></video></div>
+ <div class="txt"><div class="lbl">Legenda <button class="copy" data-t="c1">Copiar</button></div><pre id="c1">23h47: a Paula pediu horário. 23h48: ela já estava na agenda da Ana.
+
+Quem respondeu foi a IA, com o nome do salão e os horários livres de verdade. Ela marcou direto na agenda, sem mandar link pra cliente se virar sozinha, e ninguém da equipe precisou pegar o celular.
+
+Manda pra quem cuida do WhatsApp aí.
+
+🔗 Monte o plano da sua empresa pelo link da bio.</pre>
+ <div class="lbl">Primeiro comentário <button class="copy" data-t="h1">Copiar</button></div><pre id="h1" class="tags">#whatsappparaempresas #automacaodeatendimento #inteligenciaartificialnegocios #agendamentoonline</pre></div>
+</article>
+<article class="post" id="p3">
+ <header class="ph"><div><div class="dia">Qui 15/10 <span>11h30</span></div><h2>Carrossel 02 &quot;4 mitos&quot;</h2></div><div class="chips"><span class="goal">envios</span><span class="meta-chip">6 slides · arraste</span><span class="st">aguardando aprovação</span></div></header>
+ <div class="strip"><img src="jpg/carrossel-02-mitos-01.jpg" alt="Slide 1 de 6" loading="lazy"><img src="jpg/carrossel-02-mitos-02.jpg" alt="Slide 2 de 6" loading="lazy"><img src="jpg/carrossel-02-mitos-03.jpg" alt="Slide 3 de 6" loading="lazy"><img src="jpg/carrossel-02-mitos-04.jpg" alt="Slide 4 de 6" loading="lazy"><img src="jpg/carrossel-02-mitos-05.jpg" alt="Slide 5 de 6" loading="lazy"><img src="jpg/carrossel-02-mitos-06.jpg" alt="Slide 6 de 6" loading="lazy"></div>
+ <div class="txt"><div class="lbl">Legenda <button class="copy" data-t="c2">Copiar</button></div><pre id="c2">&quot;IA no meu WhatsApp? Nem pensar.&quot; A gente ouve isso toda semana, quase sempre por causa de um destes 4 mitos.
+
+1. Cliente desiste quando fica sem resposta, e uma IA com o nome da sua empresa responde em segundos.
+2. A IA responde com a sua tabela de preços. O que não está lá, ela passa pra equipe.
+3. Empresa pequena também cabe: você contrata a base e liga só os módulos de que precisa.
+4. O atendimento humano continua. A IA chama a sua equipe quando o assunto pede uma pessoa.
+
+Manda pro sócio que ainda acredita no mito 1.
+
+Malvora Hub: A nova alquimia digital. 💚💜</pre>
+ <div class="lbl">Primeiro comentário <button class="copy" data-t="h2">Copiar</button></div><pre id="h2" class="tags">#inteligenciaartificialnegocios #automacaodeatendimento #donodenegocio #iaparaempresas</pre></div>
+</article>
+<article class="post" id="p4">
+ <header class="ph"><div><div class="dia">Sex 16/10 <span>12h30</span></div><h2>Imagem &quot;Sexta, 18h&quot;</h2></div><div class="chips"><span class="goal">comentários</span><span class="meta-chip">imagem única</span><span class="st">aguardando aprovação</span></div></header>
+ <div class="strip"><img src="jpg/imagem-sexta-fim-de-semana.jpg" alt="Slide 1 de 1" loading="lazy"></div>
+ <div class="txt"><div class="lbl">Legenda <button class="copy" data-t="c3">Copiar</button></div><pre id="c3">Sexta, 18h: &quot;depois eu respondo.&quot; Segunda, 9h: a cliente já fechou com outro.
+
+Quem pergunta &quot;vocês abrem sábado?&quot; numa sexta à noite já decidiu que quer marcar. Só falta alguém responder, e ela fica com quem responder primeiro.
+
+Quantas conversas sem resposta você encontra numa segunda de manhã? Responde aqui com o número, a gente lê todos.</pre>
+ <div class="lbl">Primeiro comentário <button class="copy" data-t="h3">Copiar</button></div><pre id="h3" class="tags">#donodenegocio #whatsappparaempresas #atendimentowhatsapp</pre><p class="nota">Depois de publicar: responder os comentários na primeira hora (é o que mais pesa para o post continuar sendo mostrado).</p></div>
+</article>
+<article class="post" id="p5">
+ <header class="ph"><div><div class="dia">Sáb 17/10 <span>10h</span></div><h2>Reel &quot;lembrete da véspera&quot;</h2></div><div class="chips"><span class="goal">salvamentos</span><span class="meta-chip">Reel · sem som (áudio entra no app)</span><span class="st">aguardando aprovação</span></div></header>
+ <div class="vid"><video src="reel-02-lembrete-vespera.mp4" poster="reel-02-lembrete-vespera-capa.jpg" controls playsinline muted preload="metadata"></video></div>
+ <div class="txt"><div class="lbl">Legenda <button class="copy" data-t="c4">Copiar</button></div><pre id="c4">Falta na agenda quase sempre começa na véspera, com um cliente que esqueceu ou não teve como avisar.
+
+A prefeitura de São Vicente (SP) registra de 30% a 35% de faltas nas consultas da rede municipal. Em barbearia quase ninguém mede, mas todo barbeiro conhece a cadeira vazia às 15h.
+
+Na véspera, às 18h, a IA manda o lembrete. Se o cliente não pode ir, ela oferece outros horários do mesmo barbeiro e remarca ali mesmo, e o horário antigo volta a ficar livre. Isso já vem na base do plano.
+
+Salva pra mostrar pra quem cuida da agenda.</pre>
+ <div class="lbl">Primeiro comentário <button class="copy" data-t="h4">Copiar</button></div><pre id="h4" class="tags">#automacaodeatendimento #donodenegocio #agendamentoonline #barbeiro</pre><p class="nota">Fonte do dado: Prefeitura de São Vicente, post oficial de 08/10/2026 (instagram.com/reel/DeP5wdmDUAz).</p></div>
+</article>
+<article class="post" id="p6">
+ <header class="ph"><div><div class="dia">Dom 18/10 <span>19h</span></div><h2>Carrossel 03 &quot;A alquimia antes da IA&quot;</h2></div><div class="chips"><span class="goal">salvamentos + seguidores</span><span class="meta-chip">6 slides · arraste</span><span class="st">aguardando aprovação</span></div></header>
+ <div class="strip"><img src="jpg/carrossel-03-metodo-01.jpg" alt="Slide 1 de 6" loading="lazy"><img src="jpg/carrossel-03-metodo-02.jpg" alt="Slide 2 de 6" loading="lazy"><img src="jpg/carrossel-03-metodo-03.jpg" alt="Slide 3 de 6" loading="lazy"><img src="jpg/carrossel-03-metodo-04.jpg" alt="Slide 4 de 6" loading="lazy"><img src="jpg/carrossel-03-metodo-05.jpg" alt="Slide 5 de 6" loading="lazy"><img src="jpg/carrossel-03-metodo-06.jpg" alt="Slide 6 de 6" loading="lazy"></div>
+ <div class="txt"><div class="lbl">Legenda <button class="copy" data-t="c5">Copiar</button></div><pre id="c5">Antes de ligar qualquer IA, a gente faz quatro coisas. A IA só entra na terceira.
+
+No exemplo de uma clínica:
+
+- Entende: por onde chegam os pacientes, quem responde e onde a agenda trava.
+- Estrutura: procedimentos, preços, convênios e regras de agenda num lugar só.
+- Automatiza: a IA atende, marca e lembra a consulta. A recepção fica com o que precisa de gente.
+- Otimiza: todo mês, olhar os horários vazios, quem sumiu e o que não virou consulta.
+
+Repara no símbolo de cada slide: ele se completa junto com o método.
+
+Salva e usa na sua empresa, com ou sem a Malvora.
+
+Malvora Hub: A nova alquimia digital. 💚💜</pre>
+ <div class="lbl">Primeiro comentário <button class="copy" data-t="h5">Copiar</button></div><pre id="h5" class="tags">#inteligenciaartificialnegocios #donodenegocio #automacaodeatendimento #gestaodeclinicas</pre></div>
+</article>
+ <footer>Artes com a marca oficial (malvora-core/docs/marca). Hashtags medidas no Apify em 09/10/2026. Os Reels saem sem som: escolha o áudio no app ou espere a locução do Sergio.</footer>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{const el=document.getElementById(b.dataset.t);const t=el.textContent;const done=()=>{b.textContent='Copiado';setTimeout(()=>b.textContent='Copiar',1600)};
+try{navigator.clipboard.writeText(t).then(done,()=>{sel(el)})}catch(e){sel(el)}}));
+function sel(el){const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r)}
+</script>

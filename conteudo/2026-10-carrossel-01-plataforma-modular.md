@@ -4,6 +4,7 @@
 - Objetivo: salvamentos e envios (dor reconhecível + checklist), depois follow
 - Fórmula: gancho com pergunta → checklist da dor → solução base → módulos → personalização → fechamento
 - Status: rascunho para aprovação
+- Canva: https://www.canva.com/d/rvTc55t7HGXDd8m (design DAHXf_fDC2o, gerado em 09/10/2026)
 
 ## Slides
 

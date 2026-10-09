@@ -1,0 +1,62 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="logo.js"></script><style>
+body{width:6480px;height:1350px;position:relative;overflow:hidden}
+.s{position:absolute;top:0;width:1080px;height:1350px;padding:120px 90px}
+.cnt{position:absolute;top:60px;right:80px;font-size:22px;color:var(--mut);letter-spacing:3px}
+.foot{position:absolute;bottom:56px;left:0;right:0;display:flex;justify-content:center}
+.sym{width:300px;height:300px;margin-bottom:40px;filter:drop-shadow(0 0 30px rgba(69,154,118,.45))}
+.sym svg{width:100%;height:100%}
+.num{font-family:'Bebas Neue';font-size:40px;letter-spacing:6px;color:var(--mut)}
+.lead{font-size:40px;line-height:1.3;margin:28px 0 36px;color:#E9EAEE;max-width:860px}
+.it{font-size:34px;color:#DDE;padding:20px 0 20px 50px;border-top:1px solid rgba(255,255,255,.1);position:relative}
+.it:before{content:"";position:absolute;left:0;top:34px;width:22px;height:4px;background:var(--g)}
+.ghost{position:absolute;opacity:.07;width:1300px;height:1300px}
+.ghost svg{width:100%;height:100%}
+</style></head><body>
+<div class="tex" style="width:1600px;left:0"></div><div class="tex" style="width:1400px;left:5080px"></div>
+<div class="glow" style="left:4900px;top:200px;width:1400px;height:1400px"></div>
+<div class="ghost" id="ghost" style="left:600px;top:120px"></div>
+<div class="s" style="left:0;padding-top:200px"><div class="cnt">1/6</div>
+ <div class="num" style="color:var(--g)">A ALQUIMIA ANTES DA IA</div>
+ <div class="h" style="font-size:178px;margin-top:40px">ANTES DE LIGAR<br>QUALQUER IA,<br><span class="grad">A GENTE FAZ<br>4 COISAS.</span></div>
+ <div style="font-size:34px;color:var(--mut);margin-top:50px">O caso de uma clínica (ilustrativo).</div>
+ <div style="position:absolute;right:90px;bottom:150px;font-size:26px;color:var(--mut);letter-spacing:2px">arrasta pro lado →</div>
+ <div class="foot"></div></div>
+<div class="s" style="left:1080px"><div class="cnt">2/6</div>
+ <div class="sym" data-stage="1"></div>
+ <div class="num">ETAPA 01 / 04</div>
+ <div class="h verde" style="font-size:190px;margin-top:6px">ENTENDE.</div>
+ <div class="lead">Antes de qualquer tela, a gente pergunta.</div>
+ <div class="it">Por onde chegam os pacientes?</div><div class="it">Quem responde, e a que horas?</div><div class="it">Onde a agenda trava?</div>
+ <div class="foot"></div></div>
+<div class="s" style="left:2160px"><div class="cnt">3/6</div>
+ <div class="sym" data-stage="2"></div>
+ <div class="num">ETAPA 02 / 04</div>
+ <div class="h grad" style="font-size:190px;margin-top:6px">ESTRUTURA.</div>
+ <div class="lead">Tudo o que a IA precisa saber, num lugar só.</div>
+ <div class="it">Procedimentos e preços</div><div class="it">Convênios aceitos</div><div class="it">Regras de agenda de cada profissional</div>
+ <div class="foot"></div></div>
+<div class="s" style="left:3240px"><div class="cnt">4/6</div>
+ <div class="sym" data-stage="3"></div>
+ <div class="num">ETAPA 03 / 04</div>
+ <div class="h verde" style="font-size:190px;margin-top:6px">AUTOMATIZA.</div>
+ <div class="lead">Só agora a IA entra.</div>
+ <div class="it">Atende no WhatsApp em segundos</div><div class="it">Marca na agenda do profissional</div><div class="it">Lembra a consulta na véspera</div>
+ <div class="foot"></div></div>
+<div class="s" style="left:4320px"><div class="cnt">5/6</div>
+ <div class="sym" data-stage="4"></div>
+ <div class="num">ETAPA 04 / 04</div>
+ <div class="h grad" style="font-size:190px;margin-top:6px">OTIMIZA.</div>
+ <div class="lead">Todo mês, a gente olha o que travou e ajusta.</div>
+ <div class="it">Horários que sobraram vazios</div><div class="it">Pacientes que sumiram</div><div class="it">Conversas que não viraram consulta</div>
+ <div class="foot"></div></div>
+<div class="s" style="left:5400px;text-align:center;padding-top:140px"><div class="cnt">6/6</div>
+ <div class="sym" data-stage="4" style="margin:0 auto 40px;width:320px;height:320px"></div>
+ <div class="h" style="font-size:108px;line-height:1.02">ENTENDE.<br><span class="verde">ESTRUTURA.</span><br><span class="grad">AUTOMATIZA.</span><br>OTIMIZA.</div>
+ <div style="font-size:34px;margin-top:40px;line-height:1.4;color:#E9EAEE">Salva e usa na sua empresa,<br>com ou sem a Malvora.</div>
+ <div style="font-size:26px;margin-top:30px;color:var(--mut)">Malvora Hub: A nova alquimia digital. 💚💜</div>
+ <div class="foot"></div></div>
+<script>
+document.querySelectorAll('.foot').forEach(f=>f.innerHTML=logoFull());
+document.querySelectorAll('.sym').forEach(e=>e.innerHTML=logoSVG(+e.dataset.stage,'#8ED1AE',3.2));
+document.getElementById('ghost').innerHTML=logoSVG(4,'#459A76',1.2);
+</script></body></html>

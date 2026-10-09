@@ -1,0 +1,45 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><link rel="stylesheet" href="reel.css"><script src="logo.js"></script><script src="engine.js"></script></head><body>
+<div class="tex"></div><div class="glow" style="right:-400px;top:-300px"></div>
+<div class="sim">SIMULAÇÃO</div>
+
+<div class="scene" data-from="0" data-to="3.4">
+ <div class="notif" data-in="0.7" data-anim="drop"><div class="ic"></div><div><div style="font-size:24px;color:#C9CCD3">Paula · agora</div><div style="font-size:34px;margin-top:4px">Oi, tem horário amanhã de manhã?</div></div></div>
+ <div class="cap h" style="top:640px;font-size:420px">23<span data-blink>:</span>47</div>
+ <div class="cap h" style="top:1180px;font-size:120px" data-in="1.4">SUA EQUIPE<br><span class="verde">JÁ FOI DORMIR.</span></div>
+</div>
+
+<div class="scene" data-from="3.4" data-to="11.6">
+ <div class="cap h" style="top:150px;font-size:96px" data-in="5.2" data-anim="pop">QUEM RESPONDEU <span class="verde">FOI A IA.</span></div>
+ <div class="chat">
+  <div class="chead"><div class="av">SA</div><div><div class="cname">Studio Aurora</div><div class="cstat">online</div></div></div>
+  <div class="msgs">
+   <div class="day">HOJE</div>
+   <div class="bubble in" data-in="3.6">Oi, tem horário amanhã de manhã?<span class="hora">23:47</span></div>
+   <div class="typing" data-in="4.1" data-out="5.2"><i></i><i></i><i></i></div>
+   <div class="bubble out" data-in="5.2">Oi, Paula! Aqui é do Studio Aurora 😊 Amanhã a Ana tem 9h ou 10h30. Qual fica melhor?<span class="hora">23:47 ✓✓</span></div>
+   <div class="bubble in" data-in="7.4">10h30!<span class="hora">23:48</span></div>
+   <div class="typing" data-in="7.9" data-out="8.8"><i></i><i></i><i></i></div>
+   <div class="bubble out" data-in="8.8">Fechado ✅ Corte com a Ana amanhã, 10h30. Te mando um lembrete de manhã.<span class="hora">23:48 ✓✓</span></div>
+  </div>
+ </div>
+</div>
+
+<div class="scene" data-from="11.6" data-to="15.4">
+ <div class="cap h" style="top:220px;font-size:130px" data-in="11.8">AGENDADO.<br><span class="grad">SEM NINGUÉM ACORDADO.</span></div>
+ <div class="agenda" style="top:760px" data-in="11.7" data-anim="zoom">
+  <div class="ag-h"><span>Amanhã · Ana</span></div>
+  <div class="slot"><div class="hr">09:00</div><div>Livre</div></div>
+  <div class="slot ok" data-pulse><div class="hr">10:30</div><div>Corte · Paula<small>marcado pela IA às 23:48</small></div></div>
+  <div class="slot"><div class="hr">11:30</div><div>Escova · Carla</div></div>
+  <div class="slot"><div class="hr">13:00</div><div>Livre</div></div>
+ </div>
+</div>
+
+<div class="scene" data-from="15.4" data-to="19">
+ <div class="cap" style="top:520px" data-in="15.5" data-anim="pop"><div id="sym" style="width:320px;height:320px;margin:0 auto"></div></div>
+ <div class="cap h" style="top:930px;font-size:110px" data-in="15.8">UMA IA COM A<br><span class="verde">CARA DA SUA EMPRESA.</span></div>
+ <div class="cap" style="top:1220px;font-size:38px;color:#E9EAEE" data-in="16.3">Monte o plano da sua empresa<br>pelo link da bio.</div>
+ <div class="foot" id="f"></div>
+</div>
+<script>document.getElementById('sym').innerHTML=logoSVG(4,'#8ED1AE',3.2);document.getElementById('f').innerHTML=logoFull();</script>
+</body></html>

@@ -1,0 +1,26 @@
+body{width:1080px;height:1920px;position:relative;overflow:hidden}
+.scene{position:absolute;inset:0;display:none}
+[data-in]{will-change:transform,opacity}
+.sim{position:absolute;top:70px;right:60px;font-size:20px;letter-spacing:4px;color:#7A7E87;border:1px solid #3A3D46;padding:6px 14px;border-radius:8px;z-index:9}
+.cap{position:absolute;left:70px;right:70px;text-align:center}
+.chat{position:absolute;left:60px;right:60px;top:300px;bottom:330px;border-radius:48px;background:#0E1016;border:2px solid #23252F;overflow:hidden;display:flex;flex-direction:column}
+.chead{display:flex;align-items:center;gap:20px;padding:30px 36px;background:#16171F;border-bottom:1px solid #23252F}
+.av{width:78px;height:78px;border-radius:50%;background:linear-gradient(135deg,var(--t1),var(--t2));display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue';font-size:40px}
+.cname{font-size:32px;font-weight:600}.cstat{font-size:22px;color:var(--g2);margin-top:4px}
+.msgs{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:22px;padding:36px}
+.msgs .bubble{font-size:34px;max-width:780px}
+.msgs .in{align-self:flex-start}.msgs .out{align-self:flex-end}
+.day{align-self:center;font-size:22px;color:#A9ADB3;background:#1E1F2A;padding:8px 20px;border-radius:12px}
+.typing{align-self:flex-end;background:#0F3B2E;border-radius:22px;padding:24px 30px;display:flex;gap:10px}
+.typing i{width:14px;height:14px;border-radius:50%;background:#8ED1AE;display:block}
+.notif{position:absolute;left:60px;right:60px;top:140px;background:rgba(40,42,54,.92);border-radius:36px;padding:28px 32px;display:flex;gap:22px;align-items:center}
+.notif .ic{width:72px;height:72px;border-radius:18px;background:var(--wa);flex:none}
+.agenda{position:absolute;left:90px;right:90px;top:520px;background:#16171F;border:2px solid #23252F;border-radius:40px;padding:40px}
+.ag-h{font-size:30px;color:var(--mut);margin-bottom:24px;display:flex;justify-content:space-between}
+.slot{display:flex;gap:28px;align-items:center;padding:26px 24px;border-radius:22px;margin-bottom:14px;background:#1E1F2A;font-size:32px;position:relative}
+.slot .hr{min-width:120px;font-family:'Bebas Neue';font-size:46px;width:120px;color:#E9EAEE}
+.slot small{display:block;font-size:22px;color:var(--mut);margin-top:4px}
+.slot.ok{background:#0F3B2E;outline:3px solid var(--g)}
+.slot.bad{outline:3px solid var(--red)}
+.foot{position:absolute;bottom:90px;left:0;right:0;display:flex;justify-content:center}
+.slot .hr{white-space:nowrap}

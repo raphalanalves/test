@@ -10,7 +10,7 @@ ignored.
 ## Status
 
 - filled: yes
-- source: repositório malvora-core (produto) + post de lançamento da @malvora_hub (11/09/2026, carrossel de 5 slides)
+- source: repositório malvora-core (produto) + 3 posts da @malvora_hub (11, 12 e 13/09/2026)
 - updated: 2026-10-09
 
 ## 0. Idioma (regra principal)
@@ -104,10 +104,40 @@ Post de lançamento (11/09/2026, carrossel 5 slides; 192 visualizações, 77 cur
   AUTOMATIZA. Transformamos o manual em automático. OTIMIZA. Ajustamos, medimos e evoluímos sempre."
 - Slide 5: "SUA OPERAÇÃO. SISTEMATIZADA. INTELIGENTE. Essa é a Malvora. E esse é o nosso propósito."
 
-Lições para os próximos: o gancho da legenda não diz o que o leitor ganha (vale abrir com a dor);
-0 salvamentos e 1 envio mostram que falta conteúdo útil o bastante para salvar; os slides têm ótima identidade.
+Post institucional (12/09/2026, imagem única; 88 visualizações):
 
-(PENDENTE: mais 2 a 3 legendas reais para calibrar.)
+- Imagem: mão humana tocando mão robótica sobre o símbolo; "A inovação está ao seu alcance / Dê o primeiro passo com a Malvora."
+- Legenda: "Dar o primeiro passo rumo à digitalização ainda é o maior gargalo para muitas empresas. / Na Malvora Hub,
+  acreditamos que a tecnologia de ponta não deve ser exclusiva dos gigantes do mercado. Por isso, desenvolvemos
+  soluções acessíveis e sob medida para pequenos, médios e grandes negócios. / Conectamos a sua operação a ferramentas
+  inovadoras, automatizando processos e facilitando a gestão da sua equipe. / Pronto para transformar a sua rotina? /
+  🔗 Clique no link da bio e descubra o serviço ideal para a sua empresa. / Malvora Hub: A nova alquimia digital. 💚💜"
+
+Post de dor (13/09/2026, carrossel com vídeo, 6 slides; 68 visualizações):
+
+- Legenda: "O que antes levava dias de trabalho manual, hoje leva apenas 10 segundos. / A gente sabe que ter total controle
+  e eficiência na sua operação pode parecer distante. Ainda! / Quer entender como otimizar a sua operação em tempo
+  recorde? A Malvora te mostra o caminho e, sim, em 10 segundos. / 🔗 Acesse o link na bio para conversar com nossos
+  especialistas. / Malvora Hub: A nova alquimia digital. 💚💜"
+- Slide 1 (ampulheta): "10 SEGUNDOS para você me responder: quantas pessoas entraram em contato com a sua empresa hoje?"
+- Slide 2: "Se você precisou abrir uma planilha, pesquisar no WhatsApp ou chutar um número, sua empresa está rodando no escuro."
+- Slide 3 (foto): "88% das empresas sobrecarregam a equipe com atendimento manual. No fim do mês, resta a dúvida:
+  por que a operação travou e não consegue escalar?"
+- Slide 4: "Seu atendimento virou um problema se: ❌ Cada colaborador responde 'no tempo que dá' ❌ Não existe um padrão
+  de conversa ou abordagem ❌ Curiosos e clientes reais estão todos misturados na mesma fila"
+- Slide 5: "Com a Malvora, a resposta leva segundos. Uma IA treinada exatamente na sua operação, que veste a camisa da
+  empresa e entrega um atendimento padronizado, rápido e sem sobrecarregar ninguém."
+- Slide 6: "Mas então... Quantos clientes entraram em contato com a sua empresa hoje? ...a Malvora te conta!"
+
+Lições para os próximos posts:
+
+- O post de 13/09 é o modelo a seguir: pergunta direta ao dono, dor reconhecível, checklist "virou um problema se",
+  solução e fechamento que volta à pergunta inicial. Esse formato gera salvamento e envio.
+- A legenda desse mesmo post não acompanha os slides: o gancho da legenda deveria repetir a pergunta do slide 1.
+- Os posts institucionais (11 e 12/09) abrem falando da Malvora; os próximos devem abrir com a dor de quem lê.
+- Estatística (ex.: "88% das empresas") só com fonte citada no slide ou na legenda.
+- CTA "conversar com nossos especialistas" é mais concreto que "saber mais": preferir.
+- Alcance caiu de 192 → 88 → 68: postar com frequência fixa e usar Reels para alcance novo.
 
 ## 6. Brand assets (for illustrations)
 
@@ -125,4 +155,8 @@ Lições para os próximos: o gancho da legenda não diz o que o leitor ganha (v
 - Elementos gráficos: triângulo grande com nós em linha fina e baixa opacidade, traço verde curto como divisor,
   ícones de linha em caixas de cantos arredondados, linhas de conexão (diagrama), contador "n/5" no canto.
 - Overlay position: logo pequeno centralizado no rodapé do slide.
-- Visual style default: escuro, minimalista, tecnológico; 1 ideia forte por slide; muito espaço vazio.
+- Variações já usadas: foto ou vídeo de fundo escurecido (ampulheta, mãos no teclado) com número gigante em sans
+  negrito (estilo Montserrat); caixa com borda verde brilhante para a pergunta; destaque em roxo (#7B6CF6 aprox.) na
+  frase de virada ("...a Malvora te conta!"); ícones ❌ vermelhos em checklist; textura de circuito.
+- Visual style default: escuro, minimalista, tecnológico; 1 ideia forte por slide; muito espaço vazio; logo MALVORA
+  sempre presente (rodapé ou topo).

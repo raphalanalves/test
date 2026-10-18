@@ -1,0 +1,27 @@
+1
+00:00:00,400 --> 00:00:07,700
+Um hospital de Londres mudou uma única frase no lembrete de consulta. E as faltas caíram quase um quarto.
+
+2
+00:00:08,050 --> 00:00:21,420
+Foi no Barts, entre 2013 e 2014. Cerca de vinte mil pacientes receberam o lembrete por mensagem, cinco dias antes da consulta. Só que cada grupo recebeu um texto diferente.
+
+3
+00:00:21,770 --> 00:00:37,030
+Um era o lembrete de sempre. Outro trazia o telefone direto. Outro dizia que nove em cada dez pacientes comparecem. E o último acrescentava uma frase: faltar custa ao sistema de saúde cerca de cento e sessenta libras.
+
+4
+00:00:37,380 --> 00:00:40,600
+Só esse último fez diferença de verdade.
+
+5
+00:00:40,950 --> 00:00:51,440
+As faltas caíram de onze vírgula um por cento para oito vírgula quatro. Mesmo canal, mesmo dia de envio, mesmo custo. Só mudou o texto.
+
+6
+00:00:51,790 --> 00:00:59,300
+A lição pra quem vive de agenda: o lembrete também convence. E dá pra testar qual texto funciona melhor.
+
+7
+00:00:59,650 --> 00:01:09,750
+Na sua empresa, esse lembrete pode chegar no WhatsApp, e o cliente confirma ou remarca ali mesmo. Malvora. A nova alquimia digital.

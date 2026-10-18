@@ -78,6 +78,11 @@ ignored.
 - Never: prometer números que não temos medidos; citar clientes reais sem autorização; expor dados de clientes
   (LGPD); falar mal de concorrente pelo nome.
 
+- Always: marcar no roteiro um dos 5 ganchos da Malvora (G1 resultado antes, G2 descarta A e B, G3 mito e
+  desmentido, G4 jeito ainda melhor, G5 nada funciona sem uma coisa), com as regras de
+  `conteudo/estrategia-ganchos.md`. A primeira frase falada, a primeira linha da legenda e o primeiro quadro dizem a
+  mesma coisa.
+
 ## 4. Links and CTA
 
 - Primary link you point people to: link da bio.

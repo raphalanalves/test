@@ -26,10 +26,11 @@ Roteiro, cena a cena (tirado dos quadros do vídeo):
 O que vale aproveitar: o simulador de custo, o "coisinha por coisinha" com as perguntas orbitando o celular,
 os exemplos por segmento e a palavra-chave no comentário (que só faz sentido com a automação de direct no ar).
 
-Cuidado: os números de custo do vídeo (R$ 0,05 por mensagem, 1.000 grátis) parecem ser **a tabela da própria
-BotConversa** ou o modelo antigo da Meta. Desde 1º/07/2025 a Meta cobra por mensagem de modelo (template) entregue;
-mensagens de atendimento dentro da janela de 24 h que o cliente abre são gratuitas. **Conferir a tabela oficial antes
-de usar qualquer valor.**
+**Correção em 19/10/2026:** a regra de cobrança mudou. Desde **1º/10/2026** a Meta cobra também as mensagens de
+serviço (as respostas dentro da janela de 24 h), com **1.000 grátis por mês para cada número** e, depois disso,
+**R$ 0,035 por mensagem** no Brasil (o mesmo valor da mensagem de utilidade). Os R$ 0,05 do vídeo da BotConversa
+parecem ser a tabela dela, com a margem embutida. Fontes secundárias concordam (Blip, Chat2Desk, E-Commerce Brasil);
+**conferir na página oficial de preços da Meta antes de usar o número num post.**
 
 ## 2. O que é um WhatsApp Flow
 
@@ -73,7 +74,7 @@ Caminhos possíveis:
 Pontos a resolver antes de decidir:
 1. O número do cliente pode continuar no WhatsApp Business do celular? A Meta tem o modo **coexistência** (app e API
    no mesmo número). Conferir os limites no Brasil.
-2. O custo por cliente: modelos (marketing e utilidade) são pagos por mensagem; atendimento na janela é grátis. Fazer
+2. O custo por cliente: modelos (marketing e utilidade) são pagos por mensagem; desde 1º/10/2026 as respostas de atendimento também, depois das 1.000 grátis do mês por número. Fazer
    uma simulação com os volumes reais de um salão e de uma clínica.
 3. A verificação do negócio no Meta Business Manager de cada cliente (o mesmo tema do App Review do módulo de
    conteúdo).

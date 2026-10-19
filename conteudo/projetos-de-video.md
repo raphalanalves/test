@@ -16,6 +16,7 @@ documento indicado.
 | V7 | **Hexágonos da Uber** | empresas com e sem WhatsApp automatizado como hexágonos que acendem ou ficam apagados + "sem reunião de vendas" | @wrknstudio | para conversarmos | `ideia-analogia-uber.md` |
 | V8 | **Como eu planejo um procedimento facial** | profissional de clínica cliente usando o mapa de procedimentos; a paciente recebe o retorno no WhatsApp | @dra.mariliaborges (Clínica Experts) | só quando a ferramenta existir | `../produto/ideia-mapa-de-procedimentos-clinicas.md` |
 | V9 | **Transferido para...** (transição cômica) | curiosidade épica que termina, no corte, com o cliente "transferido" para o atendimento do WhatsApp | @pizzariachocolatecombanana | para conversarmos | abaixo |
+| V10 | **Escaneou e caiu no WhatsApp** (transição cômica 2) | história absurda e épica em que alguém escaneia um QR code e o celular abre o WhatsApp da empresa, com a IA respondendo na hora | @panciapiena.br | para conversarmos | abaixo |
 
 ## V9 · Transferido para... (transição cômica)
 
@@ -82,3 +83,68 @@ pessoa.
 1. Teletransporte, pombo, garrafa ou 0800: qual é o primeiro?
 2. Cenas épicas com vídeo de IA ou versão 2D?
 3. Fecho com empresa fictícia ou com um cliente real?
+
+## V10 · Escaneou e caiu no WhatsApp (transição cômica 2)
+
+### Referência
+
+[@panciapiena.br](https://www.instagram.com/reel/Db9JpmhPxwE/) (12/08/2026): **725 mil reproduções, 70,5 mil
+curtidas, 1.367 comentários**, 33 s, áudio original. Também é uma pizzaria de Curitiba, com a mesma fórmula da
+referência do V9; parece ser o mesmo produtor. A fórmula se repete e funciona: 57 mil num caso, 725 mil no outro.
+
+Como funciona:
+1. **História épica em 3D, contada como fato (0-17 s).** "Em uma época recente, soldados americanos colavam
+   incontáveis QR codes nos tanques, porque drones chineses estavam destruindo os tanques com muita frequência."
+2. **A virada acontece dentro da história.** "Só que agora, quando esses drones iam escanear o tanque, acabavam
+   escaneando acidentalmente e abrindo o perfil..."
+3. **Corte para a fachada:** "...do Pancia Piena!", seguido de pizza com queijo puxando, salão cheio e um cliente
+   comendo.
+4. **Fecho direto:** "Tá esperando o quê? Abrimos de segunda a sábado no jantar."
+
+A diferença para o V9: no V9 a frase fica pendurada e o corte completa a frase. Aqui **um objeto da história** (o QR
+code) leva até a marca. A piada fica mais visual e o público entende sem som.
+
+Atenção: a "curiosidade" é inventada (não há registro de QR codes em tanques contra drones). Funciona porque é
+absurda, mas é aí que mora o risco para a Malvora (ver os cuidados).
+
+### A ideia para a Malvora: o QR code que abre o WhatsApp
+
+O gancho tem ligação com algo real: um QR code que abre o WhatsApp da empresa (o link wa.me) é simples de criar e
+pode ficar na vitrine, no balcão ou no cartão. Do outro lado, a IA da Malvora responde na hora. O vídeo diverte e,
+de quebra, ensina o dono a pôr um QR code na porta.
+
+**Roteiro principal: o dragão e o castelo** (~30 s)
+
+| Tempo | Tela | Narração |
+|---|---|---|
+| 0-5s | castelo medieval com dezenas de QR codes colados nas muralhas | "Na Idade Média, alguns castelos cobriam as muralhas com QR codes." |
+| 5-12s | dragão sobrevoando e soltando fogo nas torres | "Era a única defesa contra os dragões, que viviam incendiando tudo." |
+| 12-18s | o dragão chega perto, os olhos dele fazem a leitura (efeito de scanner) | "Só que, quando o dragão chegava perto pra atacar, ele acabava escaneando um QR code sem querer..." |
+| 18-23s | **corte:** tela de celular com garra de dragão segurando; abre o WhatsApp do pet shop; a IA responde em 2 s: "Oi! Banho e tosa pra dragão a gente ainda não faz 😅 Mas sábado às 10h tem horário pro seu cachorro. Quer que eu marque?" | "...e caía direto no WhatsApp do Pet Shop Patas!" |
+| 23-30s | o dragão, sentado, digitando "sim" com a garra; assinatura Malvora | "Respondeu na hora, marcou na agenda. Até dragão vira cliente. Malvora." |
+
+**Outras histórias no mesmo esquema:**
+- **Astronauta na Lua:** fincou a bandeira, viu um QR code na rocha, escaneou → WhatsApp da clínica: "Consulta de
+  volta à Terra? Temos terça às 14h."
+- **Pirata e o mapa do tesouro:** o X do mapa é um QR code → WhatsApp da joalheria ou da loja: "O tesouro tá em
+  promoção até sábado."
+- **Dinossauro no museu:** o T-rex escaneia a plaquinha da exposição → WhatsApp da barbearia: "Corte com os braços
+  curtos? A gente dá um jeito."
+
+### Cuidados
+
+- **Absurdo de propósito, nunca fato falso com cara de verdade.** O dragão deixa claro que é ficção. A história do
+  tanque, contada como fato real, até funciona para uma pizzaria, mas não combina com a regra da Malvora de só usar
+  número e fato com fonte.
+- **A resposta da IA na tela tem que ser realista** (nome da empresa, horário livre, oferta de marcar). É a única
+  parte "verdadeira" do vídeo e é ela que vende.
+- **Produção:** as cenas épicas pedem vídeo gerado por IA ou 3D, como no V9. A tela do WhatsApp e a assinatura saem
+  do nosso motor.
+- Pode virar **série** ("Até dragão vira cliente", "Até astronauta vira cliente") com um segmento por episódio.
+
+### Para conversarmos
+
+1. V9 e V10 viram uma série só de transições cômicas, alternando "frase pendurada" e "QR code"?
+2. Qual história e qual segmento entram primeiro?
+3. Junto do vídeo, oferecer aos clientes um QR code pronto do WhatsApp para a vitrine (um material simples que a
+   Malvora pode gerar)?

@@ -19,6 +19,7 @@ documento indicado.
 | V10 | **Escaneou e caiu no WhatsApp** (transição cômica 2) | história absurda e épica em que alguém escaneia um QR code e o celular abre o WhatsApp da empresa, com a IA respondendo na hora | @panciapiena.br | para conversarmos | abaixo |
 | V11 | **Contagem regressiva do lançamento** (banner gigante) | vista de cima: pessoas desenrolam um banner enorme numa praça; a cada dia o banner revela o número da contagem e uma parte nova do símbolo da Malvora, até o lançamento | @bgc_official_ | para conversarmos (o que e quando lançamos) | abaixo |
 | V12 | **O papel rasga e o celular aparece** (teaser de lançamento) | parede escura rasga, a luz teal e violeta vaza, mãos abrem o rasgo e um celular aparece com o WhatsApp da Malvora anunciando o lançamento | @fuego.pk99 | para conversarmos (junto com o V11) | abaixo |
+| V13 | **"Chama o gerente"** (animação sobre áudio de esquete) | o diálogo do dono e da gerente empurrando o cliente um pro outro, animado com personagens; no fim a IA atende primeiro e os dois só entram no problema de verdade | @nutrivabrasil | para conversarmos (direito de uso do áudio) | abaixo |
 
 ## V9 · Transferido para... (transição cômica)
 
@@ -271,3 +272,75 @@ Se preferir gerar: um vídeo de IA para o papel e as mãos, e a tela do celular 
 1. Gravar de verdade (eu passo a lista de material e os enquadramentos) ou gerar por IA?
 2. O que o celular mostra no teaser: a data, a pergunta "quer que eu te avise?" ou só o símbolo?
 3. Quem segura o celular: uma mão anônima, o Sergio, você?
+
+## V13 · "Chama o gerente" (animação sobre o áudio de uma esquete)
+
+### Referência
+
+[@nutrivabrasil](https://www.instagram.com/reel/DbGRCv2Rwpw/) (22/07/2026), marmitas congeladas em SP. **182 mil
+reproduções, 4.983 curtidas, 44 comentários, 9 s.** Legenda: "A gerente x chefe 🤷‍♂️😂".
+
+O diálogo (transcrito do áudio):
+
+| Tempo | Quem | Fala |
+|---|---|---|
+| 0-3s | dono, do lado de fora da loja (placa "FECHADO") | "Renata, o cliente pediu pra chamar o gerente." |
+| 3-5s | gerente, atrás do balcão | "Mas por que que você veio me chamar?" |
+| 5-6s | dono | "Porque você é a gerente." |
+| 6-7s | gerente | "Mas você é o dono!" |
+| 7-9s | dono, encostado na porta | "Mas você é a gerente, cara." |
+
+A graça: os dois têm medo de encarar o cliente e jogam a bola um pro outro. Todo dono e todo gerente se reconhece,
+e a pessoa marca o colega nos comentários ou manda no direct.
+
+### A ideia para a Malvora
+
+O pedido: usar só o áudio, trocar as pessoas por animação e mostrar o **receio de ter que falar sempre com o cliente
+logo de primeira**. A solução: a **IA atende primeiro**, e o dono ou a gerente só aparecem para resolver o problema de
+verdade.
+
+**Parte 1: o áudio, com animação (0-9 s)**
+
+| Tempo | Fala | Animação |
+|---|---|---|
+| 0-3s | "Renata, o cliente pediu pra chamar o gerente." | o dono (personagem 2D) na porta da loja, segurando um celular que vibra sem parar: **47 mensagens** no WhatsApp ("quanto custa?", "tem horário hoje?", "vocês entregam?") |
+| 3-5s | "Mas por que que você veio me chamar?" | a gerente atrás do balcão, já com 3 celulares na mão, olhando feio |
+| 5-6s | "Porque você é a gerente." | o dono empurra o celular pelo balcão |
+| 6-7s | "Mas você é o dono!" | ela empurra de volta; o celular vibra e cai mais uma mensagem: "oi??" |
+| 7-9s | "Mas você é a gerente, cara." | os dois congelam se encarando; o celular no meio; aparece no topo: **"Ninguém quer responder o 'quanto custa?' pela 40ª vez."** |
+
+**Parte 2: a virada (9-18 s, só música e efeitos sonoros)**
+
+| Tempo | Animação |
+|---|---|
+| 9-12s | o símbolo da Malvora (como um personagenzinho) pega o celular; as mensagens vão sendo respondidas em sequência: preço, horário marcado na agenda, Pix enviado |
+| 12-15s | o dono e a gerente se sentam, aliviados; o contador de mensagens cai de 47 para 0 |
+| 15-17s | chega uma mensagem diferente, em vermelho: "o pedido veio errado" → a IA: "Vou chamar a Renata agora." → a gerente aparece e resolve |
+| 17-18s | texto: **"A IA atende primeiro. Você entra no que precisa de você."** + assinatura Malvora |
+
+Legenda (G3/IG3): "A gerente x o dono: quem responde o 'quanto custa?' hoje?" e, no corpo, uma linha explicando que
+a IA responde, marca e cobra, e chama a equipe quando o assunto pede uma pessoa. Pedido: "Manda pro seu gerente."
+
+### Cuidado: o áudio não é nosso
+
+O áudio é uma gravação original da Nutriva, com as vozes das pessoas deles. Caminhos:
+1. **Publicar pelo app do Instagram usando o áudio original deles** ("Usar áudio"): o Instagram credita a Nutriva
+   automaticamente e é o uso que a plataforma permite. Nesse caso, a nossa animação vai sem som, o áudio é escolhido
+   no app e **o post não pode sair pela nossa automação do n8n** (a API não anexa áudio da biblioteca do
+   Instagram).
+2. **Regravar o diálogo** com o Sergio e outra voz (a fala é curta e é o formato que importa). Aí o áudio é nosso, o
+   vídeo pode sair pela fila do n8n e dá para ajustar o texto (ex.: "o cliente perguntou o preço de novo").
+3. Pedir autorização à Nutriva. Pode virar até uma parceria (eles são uma empresa de SP que atende por WhatsApp).
+
+Recomendo o caminho 2: a gente fica livre para editar, publicar automático e reaproveitar.
+
+### Produção
+
+Tudo no nosso motor de animação. Precisa de dois personagens 2D simples (dono e gerente) com poucas poses e boca
+sincronizada às sílabas (abre e fecha seguindo o volume do áudio). O símbolo da Malvora vira o terceiro personagem.
+
+### Para conversarmos
+
+1. Áudio original pelo app, regravado com o Sergio ou pedir autorização?
+2. Segmento da loja da animação: genérico ou um específico (salão, pet shop, marmitaria como a referência)?
+3. Estilo dos personagens: traço simples nas cores da marca ou mais cartoon?

@@ -8,7 +8,10 @@ Lista viva. Cada item aponta para o documento com os detalhes.
 
 - [x] Ordem da semana aprovada em 19/10, **começando na sexta 23/10** (a ordem do item 5 de `estrategia-ganchos.md`
   desliza para sexta em diante; o Fim da 6x1 sai quando o Sergio gravar).
-- [ ] **V14 · Cliente ligando**: revisar as versões clínica e barbearia → `v14-cliente-ligando/`.
+- [x] **V14 · Cliente ligando**: aprovado em 19/10. Na fila do n8n: clínica **ter 27/10, 12h** e barbearia **ter 03/11,
+  12h**, com status `aguardando_legenda` (não publica até virar `aprovado`).
+- [ ] **Legendas do V14**: revisar o texto em `v14-cliente-ligando/legendas.md` e liberar (aí eu preencho na fila e
+  marco como `aprovado`).
 - [x] Reel **Fim da 6x1**: decidido esperar a voz do Sergio → `alquimias-02-fim-6x1/`.
 - [ ] Medir o tamanho da #escala6x1 antes de publicar o Fim da 6x1.
 

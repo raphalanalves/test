@@ -1,6 +1,6 @@
 # Pendências de conteúdo da Malvora
 
-**Projetos de vídeo:** a lista completa, com tema e proposta, fica em `projetos-de-video.md` (V1 a V13).
+**Projetos de vídeo:** a lista completa, com tema e proposta, fica em `projetos-de-video.md` (V1 a V14).
 
 Lista viva. Cada item aponta para o documento com os detalhes.
 
@@ -31,6 +31,8 @@ Lista viva. Cada item aponta para o documento com os detalhes.
   sem IA) → `projetos-de-video.md`.
 - [ ] **V13 · "Chama o gerente"** (animação sobre o áudio da esquete; a IA atende primeiro, dono e gerente só no
   problema real). Decidir o uso do áudio → `projetos-de-video.md`.
+- [ ] **V14 · "Cliente ligando..."** (tela de chamada + palavras no ritmo: o cliente liga porque o WhatsApp
+  demorou; a IA responde e ele cancela a ligação). Pode ser produzido já → `projetos-de-video.md`.
 
 ## Quando o Sergio entregar o áudio
 

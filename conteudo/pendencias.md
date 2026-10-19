@@ -1,6 +1,6 @@
 # Pendências de conteúdo da Malvora
 
-**Projetos de vídeo:** a lista completa, com tema e proposta, fica em `projetos-de-video.md` (V1 a V10).
+**Projetos de vídeo:** a lista completa, com tema e proposta, fica em `projetos-de-video.md` (V1 a V11).
 
 Lista viva. Cada item aponta para o documento com os detalhes.
 
@@ -25,6 +25,8 @@ Lista viva. Cada item aponta para o documento com os detalhes.
   `projetos-de-video.md`.
 - [ ] **V10 · Escaneou e caiu no WhatsApp** (transição cômica com QR code; pode virar série com o V9) →
   `projetos-de-video.md`.
+- [ ] **V11 · Contagem regressiva do lançamento** (banner gigante desenrolado, visto de cima; o símbolo se completa
+  a cada dia). Definir o que lançamos e a data → `projetos-de-video.md`.
 
 ## Quando o Sergio entregar o áudio
 

@@ -17,6 +17,7 @@ documento indicado.
 | V8 | **Como eu planejo um procedimento facial** | profissional de clínica cliente usando o mapa de procedimentos; a paciente recebe o retorno no WhatsApp | @dra.mariliaborges (Clínica Experts) | só quando a ferramenta existir | `../produto/ideia-mapa-de-procedimentos-clinicas.md` |
 | V9 | **Transferido para...** (transição cômica) | curiosidade épica que termina, no corte, com o cliente "transferido" para o atendimento do WhatsApp | @pizzariachocolatecombanana | para conversarmos | abaixo |
 | V10 | **Escaneou e caiu no WhatsApp** (transição cômica 2) | história absurda e épica em que alguém escaneia um QR code e o celular abre o WhatsApp da empresa, com a IA respondendo na hora | @panciapiena.br | para conversarmos | abaixo |
+| V11 | **Contagem regressiva do lançamento** (banner gigante) | vista de cima: pessoas desenrolam um banner enorme numa praça; a cada dia o banner revela o número da contagem e uma parte nova do símbolo da Malvora, até o lançamento | @bgc_official_ | para conversarmos (o que e quando lançamos) | abaixo |
 
 ## V9 · Transferido para... (transição cômica)
 
@@ -148,3 +149,69 @@ de quebra, ensina o dono a pôr um QR code na porta.
 2. Qual história e qual segmento entram primeiro?
 3. Junto do vídeo, oferecer aos clientes um QR code pronto do WhatsApp para a vitrine (um material simples que a
    Malvora pode gerar)?
+
+## V11 · Contagem regressiva do lançamento (banner gigante)
+
+### Referência
+
+[@bgc_official_](https://www.instagram.com/reel/DeIrLBZpLpz/) (06/10/2026): divulgação de um fórum de games em
+Busan (Coreia). **327,8 mil reproduções, 3.110 curtidas, 453 comentários, só 15 s.** É um evento pequeno (60
+vagas), e mesmo assim o vídeo foi longe.
+
+Como funciona:
+1. **Vista de drone, de cima**, numa praça ao pôr do sol, com carros passando e pessoas andando.
+2. Um rolo comprido e preto no chão. Um grupo de pessoas pega as pontas e **vai abrindo o banner** para os lados
+   (0-6 s).
+3. O banner aberto revela o cartaz do evento: nome, uma imagem forte no centro (uma joia vermelha), data, local e QR
+   code (6-8 s).
+4. **O cartaz fica parado até o fim** (8-15 s). Dá tempo de ler e, como o vídeo é curto, ele recomeça sozinho: a
+   pessoa assiste duas ou três vezes.
+
+Por que funciona:
+- É **satisfatório**: a expectativa de ver o que está escrito segura os primeiros segundos.
+- Parece real (escala, sombras, gente de verdade), mas é quase certamente gerado por IA ou 3D. Não importa: o efeito
+  é de "uau, que tamanho".
+- Não tem narração nem texto na tela antes da revelação. Funciona no mudo e em qualquer língua.
+
+### A ideia para a Malvora: contagem regressiva em banners
+
+Uma série de 4 ou 5 Reels curtos (12 a 15 s), um por dia, sempre com a mesma câmera de cima e o mesmo gesto de
+desenrolar. Muda o lugar e o que o banner revela.
+
+**O fio da série: o símbolo da Malvora se completando.** O motor de animação já desenha o símbolo oficial em 4
+etapas (pontos, triângulo, V interno, arco). Cada dia o banner mostra o número da contagem e uma etapa a mais do
+símbolo. No dia do lançamento, o banner revela o símbolo completo com o logo.
+
+| Dia | Lugar visto de cima | O banner revela | Legenda (uma linha) |
+|---|---|---|---|
+| −4 | estacionamento de um shopping | **4** + os pontos do símbolo | "Faltam 4 dias. Repara no desenho." |
+| −3 | rua de comércio com barbearia, salão e pet shop | **3** + o triângulo | "Faltam 3. Ele está se completando." |
+| −2 | pátio de uma clínica | **2** + o V interno | "Faltam 2." |
+| −1 | praça à noite, com as luzes acesas | **1** + o arco | "Amanhã." |
+| Dia | a mesma praça do primeiro dia, de manhã | símbolo completo + "Malvora" + o que foi lançado + "link da bio" | o anúncio, com o único pedido da série |
+
+Variação, se o lançamento for de um recurso: em vez do número, o banner revela **uma tela do produto** a cada dia
+(a conversa da IA, a agenda, o Pix, o relatório) e só no último dia aparece o nome.
+
+Detalhes:
+- **Sem narração.** Só o som ambiente da praça (carros, passos) e o som do pano abrindo. Fica bom no mudo.
+- **O banner fica parado pelo menos 6 s** no fim, para o vídeo recomeçar com o banner lido.
+- Grade do perfil: as 5 capas lado a lado formam a sequência 4-3-2-1-logo.
+- Nos Stories de cada dia: a figurinha de contagem regressiva do Instagram apontando para a data do lançamento (quem
+  ativa recebe o aviso).
+
+### Produção
+
+- **Vídeo gerado por IA** para a cena da praça e do pano abrindo (é assim que a referência parece ter sido feita). O
+  conteúdo do banner (número, símbolo, texto) entra **depois**, por cima, com o nosso motor. Assim a marca fica com o
+  logo oficial e sem letras deformadas, que é o defeito mais comum desse tipo de vídeo.
+- Alternativa mais barata: versão 2D estilizada (praça desenhada de cima, figuras simples), feita inteira no nosso
+  motor. É menos impressionante, mas mais rápida.
+
+### Para conversarmos
+
+1. **O que estamos lançando e em que data?** A página de assinatura com teste de 24 h, um módulo novo, a própria
+   marca? Isso define o que o último banner mostra.
+2. Contagem de 4 dias ou de 7?
+3. Vídeo de IA (preciso de uma ferramenta de geração de vídeo; posso indicar opções) ou versão 2D?
+4. A praça e os lugares: genéricos ou de uma cidade específica onde a Malvora atua?

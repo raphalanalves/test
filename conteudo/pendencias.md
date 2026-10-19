@@ -1,5 +1,7 @@
 # Pendências de conteúdo da Malvora
 
+**Projetos de vídeo:** a lista completa, com tema e proposta, fica em `projetos-de-video.md` (V1 a V9).
+
 Lista viva. Cada item aponta para o documento com os detalhes.
 
 ## Aguardando aprovação
@@ -17,8 +19,10 @@ Lista viva. Cada item aponta para o documento com os detalhes.
 
 ## Para conversarmos
 
-- [ ] **Analogia da Uber** (empresas com e sem WhatsApp automatizado) + recado **"sem reunião de vendas, sem
+- [ ] **V7 · Analogia da Uber** (empresas com e sem WhatsApp automatizado) + recado **"sem reunião de vendas, sem
   apresentação"** → `ideia-analogia-uber.md`.
+- [ ] **V9 · Transferido para...** (transição cômica: curiosidade épica que cai no WhatsApp da empresa) →
+  `projetos-de-video.md`.
 
 ## Quando o Sergio entregar o áudio
 

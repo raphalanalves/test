@@ -6,8 +6,10 @@ Lista viva. Cada item aponta para o documento com os detalhes.
 
 ## Aguardando aprovação
 
-- [ ] Ordem da semana de 19 a 25/10 e as primeiras linhas novas dos posts → `estrategia-ganchos.md` (itens 4 e 5).
-- [ ] Reel **Fim da 6x1**: publicar com a voz-guia ou esperar o Sergio → `alquimias-02-fim-6x1/`.
+- [x] Ordem da semana aprovada em 19/10, **começando na sexta 23/10** (a ordem do item 5 de `estrategia-ganchos.md`
+  desliza para sexta em diante; o Fim da 6x1 sai quando o Sergio gravar).
+- [ ] **V14 · Cliente ligando**: revisar as versões clínica e barbearia → `v14-cliente-ligando/`.
+- [x] Reel **Fim da 6x1**: decidido esperar a voz do Sergio → `alquimias-02-fim-6x1/`.
 - [ ] Medir o tamanho da #escala6x1 antes de publicar o Fim da 6x1.
 
 ## Formatos novos para criar
@@ -31,8 +33,6 @@ Lista viva. Cada item aponta para o documento com os detalhes.
   sem IA) → `projetos-de-video.md`.
 - [ ] **V13 · "Chama o gerente"** (animação sobre o áudio da esquete; a IA atende primeiro, dono e gerente só no
   problema real). Decidir o uso do áudio → `projetos-de-video.md`.
-- [ ] **V14 · "Cliente ligando..."** (tela de chamada + palavras no ritmo: o cliente liga porque o WhatsApp
-  demorou; a IA responde e ele cancela a ligação). Pode ser produzido já → `projetos-de-video.md`.
 
 ## Quando o Sergio entregar o áudio
 

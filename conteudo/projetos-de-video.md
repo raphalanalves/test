@@ -7,7 +7,7 @@ documento indicado.
 
 | # | Tema | Proposta | Referência | Situação | Detalhes |
 |---|---|---|---|---|---|
-| V1 | **Fim da 6x1** | notícia da emenda + segmentos + 3 saídas riscadas + o "quarto caminho" (IA atende no sábado), final otimista | Reel DekMevmsrBK | pronto com voz-guia; aguarda aprovação ou voz do Sergio | `alquimias-02-fim-6x1/` |
+| V1 | **Fim da 6x1** | notícia da emenda + segmentos + 3 saídas riscadas + o "quarto caminho" (IA atende no sábado), final otimista | Reel DekMevmsrBK | pronto com voz-guia; **espera a voz do Sergio** (decidido em 19/10) | `alquimias-02-fim-6x1/` |
 | V2 | **Alquimias #1 · a frase que fez paciente faltar menos** | case Barts Health (faltas 11,1% → 8,4%) e a ponte para o lembrete no WhatsApp | @walksbr (Coca-Cola emoji) | pronto com voz-guia; aguarda o Sergio | `alquimias-01/`, `serie-alquimias.md` |
 | V3 | **Alquimias #3 a #6** | KLM no WhatsApp, pizza por emoji da Domino's, Starbucks Rewards, recorde do Pix | @walksbr | pauta pronta | `serie-alquimias.md` |
 | V4 | **"Em 30 segundos"** com o Sergio | rosto embaixo e cartões animados em cima: 3 sinais de que o WhatsApp perde cliente, 3 mitos, sábado depois da 6x1 | @carlosphyll (5 ganchos) | aguarda o Sergio | `estrategia-ganchos.md` (item 6) |
@@ -20,7 +20,7 @@ documento indicado.
 | V11 | **Contagem regressiva do lançamento** (banner gigante) | vista de cima: pessoas desenrolam um banner enorme numa praça; a cada dia o banner revela o número da contagem e uma parte nova do símbolo da Malvora, até o lançamento | @bgc_official_ | para conversarmos (o que e quando lançamos) | abaixo |
 | V12 | **O papel rasga e o celular aparece** (teaser de lançamento) | parede escura rasga, a luz teal e violeta vaza, mãos abrem o rasgo e um celular aparece com o WhatsApp da Malvora anunciando o lançamento | @fuego.pk99 | para conversarmos (junto com o V11) | abaixo |
 | V13 | **"Chama o gerente"** (animação sobre áudio de esquete) | o diálogo do dono e da gerente empurrando o cliente um pro outro, animado com personagens; no fim a IA atende primeiro e os dois só entram no problema de verdade | @nutrivabrasil | para conversarmos (direito de uso do áudio) | abaixo |
-| V14 | **"Cliente ligando..."** (tela de chamada + palavras no ritmo) | o celular toca sem parar porque o WhatsApp não respondeu; palavras grandes no ritmo da batida contam o problema; a IA responde no WhatsApp e o cliente desliga a ligação | @borade.ai | pode começar (só depende de aprovação) | abaixo |
+| V14 | **"Cliente ligando..."** (tela de chamada + palavras no ritmo) | o celular toca sem parar porque o WhatsApp não respondeu; palavras grandes no ritmo da batida contam o problema; a IA responde no WhatsApp e o cliente desliga a ligação | @borade.ai | **pronto para revisão** (clínica e barbearia) | `v14-cliente-ligando/` |
 
 ## V9 · Transferido para... (transição cômica)
 

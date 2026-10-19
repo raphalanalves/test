@@ -9,7 +9,7 @@ documento indicado.
 |---|---|---|---|---|---|
 | V1 | **Fim da 6x1** | notícia da emenda + segmentos + 3 saídas riscadas + o "quarto caminho" (IA atende no sábado), final otimista | Reel DekMevmsrBK | pronto com voz-guia; **espera a voz do Sergio** (decidido em 19/10) | `alquimias-02-fim-6x1/` |
 | V2 | **Alquimias #1 · a frase que fez paciente faltar menos** | case Barts Health (faltas 11,1% → 8,4%) e a ponte para o lembrete no WhatsApp | @walksbr (Coca-Cola emoji) | pronto com voz-guia; aguarda o Sergio | `alquimias-01/`, `serie-alquimias.md` |
-| V3 | **Alquimias #3 a #6** | KLM no WhatsApp, pizza por emoji da Domino's, Starbucks Rewards, recorde do Pix | @walksbr | pauta pronta | `serie-alquimias.md` |
+| V3 | **Alquimias #3 a #6** | KLM no WhatsApp, pizza por emoji da Domino's, Starbucks Rewards, recorde do Pix | @walksbr | #3 (KLM) pronto com voz-guia; #4 a #6 com pauta | `serie-alquimias.md` |
 | V4 | **"Em 30 segundos"** com o Sergio | rosto embaixo e cartões animados em cima: 3 sinais de que o WhatsApp perde cliente, 3 mitos, sábado depois da 6x1 | @carlosphyll (5 ganchos) | aguarda o Sergio | `estrategia-ganchos.md` (item 6) |
 | V5 | **Quantas mensagens até marcar um horário?** | contador fixo na tela: atendimento comum × IA que já oferece os horários livres | @wizebot.com.br | **pronto para revisão** (salão) | `formato-contador-motion.md` |
 | V6 | **15 perguntas ou 1 tela?** | WhatsApp Flows: o vaivém da conversa × um formulário dentro do WhatsApp | @botconversa, @wizebot.com.br | só quando Flows existir | `estudo-whatsapp-flows.md` |

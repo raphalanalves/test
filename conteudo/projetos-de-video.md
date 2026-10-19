@@ -18,6 +18,7 @@ documento indicado.
 | V9 | **Transferido para...** (transição cômica) | curiosidade épica que termina, no corte, com o cliente "transferido" para o atendimento do WhatsApp | @pizzariachocolatecombanana | para conversarmos | abaixo |
 | V10 | **Escaneou e caiu no WhatsApp** (transição cômica 2) | história absurda e épica em que alguém escaneia um QR code e o celular abre o WhatsApp da empresa, com a IA respondendo na hora | @panciapiena.br | para conversarmos | abaixo |
 | V11 | **Contagem regressiva do lançamento** (banner gigante) | vista de cima: pessoas desenrolam um banner enorme numa praça; a cada dia o banner revela o número da contagem e uma parte nova do símbolo da Malvora, até o lançamento | @bgc_official_ | para conversarmos (o que e quando lançamos) | abaixo |
+| V12 | **O papel rasga e o celular aparece** (teaser de lançamento) | parede escura rasga, a luz teal e violeta vaza, mãos abrem o rasgo e um celular aparece com o WhatsApp da Malvora anunciando o lançamento | @fuego.pk99 | para conversarmos (junto com o V11) | abaixo |
 
 ## V9 · Transferido para... (transição cômica)
 
@@ -215,3 +216,58 @@ Detalhes:
 2. Contagem de 4 dias ou de 7?
 3. Vídeo de IA (preciso de uma ferramenta de geração de vídeo; posso indicar opções) ou versão 2D?
 4. A praça e os lugares: genéricos ou de uma cidade específica onde a Malvora atua?
+
+## V12 · O papel rasga e o celular aparece (teaser de lançamento)
+
+### Referência
+
+[@fuego.pk99](https://www.instagram.com/reel/DbfyamGIsR5/) (01/08/2026), uma marca do Paquistão: **468 mil
+reproduções, 3.400 curtidas, 193 comentários, só 10 s.** Legenda: "SOON✓".
+
+Como funciona:
+1. Tela toda de **papel preto**. Um rasgo começa no topo e desce (0-5 s), com uma **luz vermelha** vazando por trás.
+2. Duas **mãos atravessam** o rasgo e abrem o papel para os lados (5-7 s).
+3. As mãos somem e uma delas volta segurando um **celular**: "We are Launching SOON" (7-10 s).
+4. Acaba de repente, e o vídeo recomeça sozinho.
+
+Por que funciona: 10 segundos, nada para ler até o fim e a curiosidade do "o que tem atrás do papel". É o vídeo de
+"vem aí" mais simples que existe, e o celular como revelação combina com um produto que vive no WhatsApp.
+
+### A ideia para a Malvora
+
+| Tempo | Tela |
+|---|---|
+| 0-5s | papel no tom #0E0E16 rasgando de cima para baixo; por trás, a luz no gradiente teal → violeta da marca |
+| 5-7s | mãos abrem o rasgo; o recorte final lembra o **triângulo do símbolo** da Malvora |
+| 7-10s | a mão mostra um celular com o WhatsApp aberto: chega uma mensagem da Malvora, "Oi! A gente chega em [data]. Quer que eu te avise?" |
+| 10-12s | o celular fica parado (para o vídeo recomeçar com a mensagem lida) |
+
+**Versão do dia do lançamento:** o mesmo vídeo, mas no celular a IA responde **ao vivo** um cliente de verdade (ou
+uma conversa de demonstração): "Marcado! Sábado às 10h com a Ana." O teaser promete, o vídeo do lançamento mostra.
+
+### Como entra na campanha de lançamento (com o V11)
+
+| Quando | Peça |
+|---|---|
+| 7 dias antes | **V12 teaser**: o papel rasga e o celular diz "vem aí" |
+| 4 a 1 dia antes | **V11**: banners com a contagem e o símbolo se completando |
+| Dia do lançamento | **V12 revelação**: o papel rasga e o celular mostra a IA atendendo + V11 final com o símbolo completo |
+
+### Produção
+
+**Este dá para gravar de verdade, num fim de tarde, sem IA:**
+- papel kraft ou cartolina preta presa num quadro;
+- uma fita de LED atrás, no teal e no violeta;
+- o celular com uma conversa real no WhatsApp;
+- câmera no tripé, com uma pessoa atrás do papel.
+
+O resultado real parece mais caro que o gerado por IA, e não deforma o texto nem as mãos (as mãos são o ponto fraco
+de vídeo de IA).
+
+Se preferir gerar: um vídeo de IA para o papel e as mãos, e a tela do celular trocada por cima com o nosso motor.
+
+### Para conversarmos
+
+1. Gravar de verdade (eu passo a lista de material e os enquadramentos) ou gerar por IA?
+2. O que o celular mostra no teaser: a data, a pergunta "quer que eu te avise?" ou só o símbolo?
+3. Quem segura o celular: uma mão anônima, o Sergio, você?

@@ -15,6 +15,11 @@ Lista viva. Cada item aponta para o documento com os detalhes.
 - [ ] **"Em 30 segundos"** com o Sergio (rosto embaixo, cartões animados em cima) → `estrategia-ganchos.md` (item 6).
 - [ ] **Série Alquimias**: episódios 3 a 6 → `serie-alquimias.md`.
 
+## Para conversarmos
+
+- [ ] **Analogia da Uber** (empresas com e sem WhatsApp automatizado) + recado **"sem reunião de vendas, sem
+  apresentação"** → `ideia-analogia-uber.md`.
+
 ## Quando o Sergio entregar o áudio
 
 - [ ] Ressincronizar o Alquimias #1 e o Fim da 6x1 (animação e legenda palavra por palavra).

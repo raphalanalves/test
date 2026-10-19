@@ -1,0 +1,58 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="logo.js"></script>
+<style>
+body{width:1080px;height:1920px;position:relative;overflow:hidden;background:#06060B}
+#stage{position:absolute;inset:0}
+#map{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.tt{position:absolute;left:60px;right:60px;text-align:center;font-family:'Bebas Neue';line-height:.95;z-index:5;text-shadow:0 8px 30px #000}
+.src{position:absolute;left:60px;bottom:70px;font-size:22px;color:#6E727C;letter-spacing:2px;z-index:5}
+#brand{position:absolute;left:0;right:0;top:1250px;text-align:center;z-index:6}
+#sym{width:200px;height:200px;margin:0 auto 26px}
+#brand .nm{font-size:40px;font-weight:600;letter-spacing:16px}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:9}
+</style></head><body><div id="stage">
+<canvas id="map" width="1080" height="1920"></canvas>
+<div class="tt" id="t1" style="top:200px;font-size:120px">DUAS BARBEARIAS.<br><span class="grad">MESMA RUA.</span></div>
+<div class="tt" id="t2" style="top:200px;font-size:96px">SÁBADO, 21H.<br>CHEGAM MENSAGENS.</div>
+<div class="tt" id="t3" style="top:200px;font-size:96px">UMA <span class="grad">RESPONDE NA HORA.</span><br>A OUTRA, SÓ SEGUNDA.</div>
+<div class="tt" id="t4" style="top:200px;font-size:110px">O CLIENTE NÃO ESPERA.<br><span class="grad">ELE ATRAVESSA A RUA.</span></div>
+<div class="tt" id="t5" style="top:200px;font-size:110px">CADA EMPRESA É<br><span class="grad">UM HEXÁGONO.</span></div>
+<div class="tt" id="t6" style="top:1500px;font-size:120px">ACENDA O <span class="grad">SEU.</span></div>
+<div class="tt" id="t7" style="top:330px;font-size:100px">SEM REUNIÃO DE VENDAS.<br><span class="grad">MONTE O PLANO NO SITE<br>E TESTE.</span></div>
+<div id="brand"><div id="sym"></div><div class="nm">MALVORA</div></div>
+<div class="src" id="src">EXEMPLO ILUSTRATIVO</div><div id="flash"></div>
+</div><script>
+const clamp=x=>Math.min(Math.max(x,0),1),ease=x=>1-Math.pow(1-clamp(x),3),rnd=n=>{const s=Math.sin(n*127.1+311.7)*43758.5453;return s-Math.floor(s)};
+const $=id=>document.getElementById(id); $('sym').innerHTML=logoSVG(4);
+const c=$('map').getContext('2d'), R=70, W=R*Math.sqrt(3);
+const hexes=[];for(let r=-12;r<32;r++)for(let q=-10;q<20;q++){const x=q*W+(r%2?W/2:0),y=r*R*1.5;hexes.push({x,y,k:rnd(q*31+r*7)});}
+// duas barbearias: A (acende) e B (apagada)
+const A={x:3*W+W/2,y:13*R*1.5}, B={x:6*W+W/2,y:13*R*1.5};
+const S=[[0,3.2,'t1'],[3.2,6.6,'t2'],[6.6,11,'t3'],[11,14.6,'t4'],[14.6,18.6,'t5'],[17.4,20.6,'t6'],[20.6,26,'t7']];
+function hex(x,y,r,fill,stroke,lw){c.beginPath();for(let i=0;i<6;i++){const a=Math.PI/180*(60*i-30);c.lineTo(x+r*Math.cos(a),y+r*Math.sin(a));}c.closePath();if(fill){c.fillStyle=fill;c.fill();}if(stroke){c.strokeStyle=stroke;c.lineWidth=lw||2;c.stroke();}}
+window.render=function(t){
+ S.forEach(([a,b,id])=>{const e=$(id);const on=t>=a&&t<b;e.style.display=on?'':'none';if(on){const p=ease((t-a)/.35),q=1-ease((t-b+.3)/.3);e.style.opacity=Math.min(p,q);e.style.transform=`scale(${.85+.15*p})`;}});
+ // câmera: começa perto da rua, abre no fim
+ const zoom=t<14.6?1.25:1.25-0.6*ease((t-14.6)/3); const cx=(A.x+B.x)/2, cy=A.y;
+ c.setTransform(1,0,0,1,0,0);c.fillStyle='#06060B';c.fillRect(0,0,1080,1920);
+ c.setTransform(zoom,0,0,zoom,540-cx*zoom,1050-cy*zoom);
+ const spread=t<14.6?0:clamp((t-14.6)/5);
+ hexes.forEach(h=>{const d=Math.hypot(h.x-cx,h.y-cy);let lit=spread>0&&h.k<.55&&d/1400<spread;
+  hex(h.x,h.y,R-4,lit?`rgba(0,212,170,${.18+.25*h.k})`:'#12131D',lit?'rgba(0,212,170,.6)':'#1E2030',2);});
+ // rua
+ c.fillStyle='rgba(255,255,255,.04)';c.fillRect(A.x-W*2,A.y+R+6,W*7,30);
+ const aOn=t>=6.6, glow=aOn?.5+.25*Math.sin(t*5):0;
+ c.shadowBlur=aOn?60:0;c.shadowColor='#00D4AA';
+ hex(A.x,A.y,R-4,aOn?`rgba(0,212,170,${.35+glow*.3})`:'#24263A',aOn?'#00D4AA':'#3A3D52',5);c.shadowBlur=0;
+ hex(B.x,B.y,R-4,t>=6.6?'#0C0C14':'#24263A',t>=6.6?'#3A1E28':'#3A3D52',5);
+ c.font='600 26px Inter';c.textAlign='center';c.fillStyle='#fff';c.fillText('A',A.x,A.y+9);c.fillText('B',B.x,B.y+9);
+ // mensagens: pontos chegando
+ for(let i=0;i<16;i++){const a0=3.4+i*.18;if(t<a0)continue;const tgt=i%2?B:A;const sx=tgt.x+(rnd(i)-.5)*900,sy=tgt.y-700-rnd(i+3)*400;
+  let p=ease((t-a0)/1.2),x=sx+(tgt.x-sx)*p,y=sy+(tgt.y-sy)*p;let col='#fff',al=1;
+  if(tgt===B&&t>11){const q=ease((t-11-i*.05)/1.4);x=x+(A.x-x)*q;y=y+(A.y-y)*q-Math.sin(q*Math.PI)*160;col=q>.95?'#00D4AA':'#E5484D';al=q>.98?0:1;}
+  else if(tgt===A&&t>6.8+i*.05){col='#00D4AA';al=1-clamp((t-7.2-i*.05)/.4);}
+  c.globalAlpha=al;c.fillStyle=col;c.beginPath();c.arc(x,y,12,0,7);c.fill();c.globalAlpha=1;}
+ if(t>20.4){c.setTransform(1,0,0,1,0,0);c.fillStyle='rgba(6,6,11,'+(.65*ease((t-20.4)/.5))+')';c.fillRect(0,0,1080,1920);}
+ $('brand').style.display=t>=21.6?'':'none';$('brand').style.opacity=ease((t-21.6)/.5);
+ $('flash').style.opacity=Math.max(0,.4-Math.abs(t-6.6)*3,.4-Math.abs(t-14.6)*3);
+};
+</script></body></html>

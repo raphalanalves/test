@@ -26,4 +26,6 @@ Lista viva. Cada item aponta para o documento com os detalhes.
 - [ ] Posição da Malvora sobre a **nova cobrança da Meta** (desde 1º/10/2026) antes de falar do tema.
 - [ ] Automação de direct por palavra-chave no n8n (libera os CTAs "Comenta ...").
 - [ ] Módulo Conteúdo no portal → `contexto-modulo-conteudo.md`.
+- [ ] **Mapa de procedimentos para clínicas** (planejador de injetáveis ligado ao retorno pelo WhatsApp) →
+  `../produto/ideia-mapa-de-procedimentos-clinicas.md`.
 - [ ] Renovar o token do Instagram antes de expirar (60 dias).

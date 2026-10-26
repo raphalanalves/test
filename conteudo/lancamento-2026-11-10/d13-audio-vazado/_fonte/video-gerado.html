@@ -1,0 +1,111 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="logo.js"></script>
+<style>
+body{width:1080px;height:1920px;margin:0;overflow:hidden;background:#0B141A;font-family:Inter,system-ui,sans-serif;color:#E9EDEF}
+#bg{position:absolute;inset:0;background:#0B141A;background-image:radial-gradient(rgba(255,255,255,.035) 2px,transparent 2px);background-size:36px 36px}
+#head{position:absolute;left:0;right:0;top:0;height:200px;background:#1F2C34;display:flex;align-items:flex-end;padding:0 36px 26px;gap:22px;z-index:5}
+#head .av{width:96px;height:96px;border-radius:50%;background:#0E0E16;border:3px solid #00D4AA;display:flex;align-items:center;justify-content:center}#head .av svg{width:70px;height:70px}
+#head .n{font-size:38px;font-weight:600}#head .s{font-size:26px;color:#8696A0;margin-top:4px}
+#vn{position:absolute;left:40px;top:250px;width:760px;background:#1F2C34;border-radius:28px;border-top-left-radius:6px;padding:24px 28px;display:flex;align-items:center;gap:22px;z-index:4}
+#vn .pp{width:70px;height:70px;border-radius:50%;background:#00A884;display:flex;align-items:center;justify-content:center;flex:none}
+#vn .pp i{display:block;width:10px;height:30px;background:#fff;margin:0 4px;border-radius:2px}
+#wave{flex:1;height:70px;display:flex;align-items:center;gap:5px}
+#wave b{flex:1;background:#8696A0;border-radius:3px}
+#wave b.on{background:#00D4AA}
+#vn .tm{font-size:24px;color:#8696A0;width:70px;text-align:right}
+#vn .ph{width:70px;height:70px;border-radius:50%;background:linear-gradient(135deg,#00D4AA,#7B68EE);flex:none;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:30px;color:#0E0E16}
+#stage{position:absolute;left:0;right:0;top:420px;height:880px;z-index:3}
+.sc{position:absolute;inset:0;display:none}
+.bub{position:absolute;max-width:720px;border-radius:26px;padding:20px 26px;font-size:36px;line-height:1.3;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.bin{background:#1F2C34;border-top-left-radius:6px;left:60px}.bout{background:#005C4B;border-top-right-radius:6px;right:60px}
+.bub small{display:block;text-align:right;font-size:22px;color:#8696A0;margin-top:6px}
+.big{position:absolute;left:0;right:0;text-align:center;font-family:'Bebas Neue';letter-spacing:3px}
+#clk{position:absolute;left:0;right:0;top:40px;text-align:center;font-weight:700;font-size:150px;letter-spacing:-4px}
+#clk small{display:block;font-size:34px;font-weight:500;color:#8696A0;letter-spacing:0}
+#stampx{position:absolute;left:50%;top:560px;transform:translateX(-50%) rotate(-8deg);border:8px solid #E5484D;color:#E5484D;font-family:'Bebas Neue';font-size:110px;padding:0 30px;border-radius:18px;background:rgba(11,20,26,.85);white-space:nowrap}
+#blue{position:absolute;left:50%;top:60px;width:560px;height:560px;margin-left:-280px}
+#blue svg{width:100%;height:100%}
+#cens{position:absolute;left:180px;right:180px;top:250px;height:150px;background:#000;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue';font-size:60px;letter-spacing:6px;color:#E5484D}
+#lock{position:absolute;left:0;right:0;top:660px;text-align:center;font-size:36px;color:#8696A0}
+.door{position:absolute;top:60px;width:300px;height:620px;background:#1F2C34;border:4px solid #2A3942}
+#dl{left:240px;transform-origin:left center}#dr{right:240px;transform-origin:right center}
+#glow{position:absolute;left:240px;right:240px;top:60px;height:620px;background:linear-gradient(180deg,#00D4AA,#7B68EE);box-shadow:0 0 160px rgba(0,212,170,.7)}
+#date{position:absolute;left:0;right:0;top:250px;text-align:center;font-family:'Bebas Neue';font-size:230px;color:#0E0E16;letter-spacing:6px}
+#gift{position:absolute;left:50%;top:120px;font-size:330px;transform:translateX(-50%)}
+#slots{position:absolute;left:0;right:0;top:620px;display:flex;justify-content:center;gap:20px}
+#slots span{width:110px;height:110px;border-radius:24px;border:3px dashed #2A3942;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue';font-size:56px;color:#8696A0}
+#slots span.on{border:3px solid #00D4AA;color:#00D4AA;background:rgba(0,212,170,.1)}
+#prof{position:absolute;left:50%;top:220px;transform:translateX(-50%);width:820px;background:#111B21;border:2px solid #2A3942;border-radius:36px;padding:40px;text-align:center}
+#prof .av{width:170px;height:170px;margin:0 auto;border-radius:50%;background:#0E0E16;border:4px solid #00D4AA;display:flex;align-items:center;justify-content:center}#prof .av svg{width:124px;height:124px}
+#prof .u{font-size:44px;font-weight:700;margin-top:20px}#prof .d{font-size:30px;color:#8696A0;margin-top:6px}
+#seg{margin:28px auto 0;width:360px;padding:22px;border-radius:18px;background:#0095F6;font-size:36px;font-weight:700}
+#seg.ok{background:#2A3942}
+#dedo{position:absolute;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,.35);border:3px solid #fff;display:none}
+#cap{position:absolute;left:60px;right:60px;top:1360px;text-align:center;font-weight:800;font-size:78px;line-height:1.12;z-index:6;text-shadow:0 6px 24px rgba(0,0,0,.6)}
+#cap span{color:rgba(255,255,255,.35)}#cap span.on{color:#fff}#cap span.k{color:#00D4AA}
+#emo{position:absolute;font-size:150px;z-index:7;display:none}
+#tag{position:absolute;left:0;right:0;bottom:120px;text-align:center;font-size:28px;color:#8696A0;letter-spacing:4px;z-index:6}
+</style></head><body>
+<div id="bg"></div>
+<div id="head"><div class="av" id="hav"></div><div><div class="n">Amanda · Malvora</div><div class="s" id="hs">gravando áudio...</div></div></div>
+<div id="vn"><div class="pp"><i></i><i></i></div><div id="wave"></div><div class="tm" id="tm">0:00</div><div class="ph">A</div></div>
+<div id="stage">
+ <div class="sc" id="s1"><div style="position:absolute;left:0;right:0;top:220px;text-align:center;font-size:260px">🤫</div><div class="big" style="top:620px;font-size:90px;color:#8696A0">NÃO CONTA PRA NINGUÉM</div></div>
+ <div class="sc" id="s2"><div id="clk">23:00<small id="clks">ontem à noite</small></div>
+  <div class="bub bin" id="b1" style="top:330px">Oi! Vocês têm horário amanhã? 🙏<small>23:00</small></div>
+  <div class="bub bout" id="b2" style="top:500px">Oi! Tem sim, que horas fica bom?<small>08:41 ✓✓</small></div>
+  <div class="bub bin" id="b3" style="top:670px">Ah, já marquei em outro lugar 😕<small>08:42</small></div>
+  <div id="stampx">CLIENTE PERDIDO</div></div>
+ <div class="sc" id="s3"><div id="blue"></div><div id="cens">██ CONFIDENCIAL ██</div><div id="lock">🔒 em construção</div></div>
+ <div class="sc" id="s4"><div id="glow"><div id="date">10.11</div></div><div class="door" id="dl"></div><div class="door" id="dr"></div></div>
+ <div class="sc" id="s5"><div id="gift">🎁</div><div id="slots"><span>1º</span><span>2º</span><span>3º</span><span>…</span></div></div>
+ <div class="sc" id="s6"><div id="prof"><div class="av" id="pav"></div><div class="u">@malvora_hub</div><div class="d">A nova alquimia digital</div><div id="seg">Seguir</div></div></div>
+</div>
+<div id="emo"></div><div id="dedo"></div>
+<div id="cap"></div><div id="tag">MALVORA · 10.11</div>
+<script>
+const W=[{"w": "Oi,", "t": 0, "d": 0.279}, {"w": "gente!", "t": 0.302, "d": 0.325}, {"w": "Tô", "t": 0.65, "d": 0.093}, {"w": "gravando", "t": 0.789, "d": 0.349}, {"w": "rapidinho,", "t": 1.173, "d": 0.545}, {"w": "porque", "t": 1.741, "d": 0.326}, {"w": "eu", "t": 2.09, "d": 0.046}, {"w": "ainda", "t": 2.159, "d": 0.14}, {"w": "não", "t": 2.357, "d": 0.104}, {"w": "podia", "t": 2.508, "d": 0.29}, {"w": "contar", "t": 2.844, "d": 0.372}, {"w": "isso...", "t": 3.262, "d": 0.593}, {"w": "Sabe", "t": 4.133, "d": 0.221}, {"w": "aquela", "t": 4.377, "d": 0.371}, {"w": "mensagem", "t": 4.795, "d": 0.418}, {"w": "que", "t": 5.259, "d": 0.198}, {"w": "chega", "t": 5.573, "d": 0.267}, {"w": "no", "t": 5.875, "d": 0.058}, {"w": "WhatsApp", "t": 5.956, "d": 0.395}, {"w": "da", "t": 6.409, "d": 0.069}, {"w": "sua", "t": 6.525, "d": 0.081}, {"w": "empresa", "t": 6.629, "d": 0.476}, {"w": "às", "t": 7.129, "d": 0.116}, {"w": "onze", "t": 7.303, "d": 0.197}, {"w": "da", "t": 7.523, "d": 0.082}, {"w": "noite?", "t": 7.663, "d": 0.336}, {"w": "Você", "t": 8.034, "d": 0.163}, {"w": "só", "t": 8.266, "d": 0.14}, {"w": "vê", "t": 8.475, "d": 0.105}, {"w": "no", "t": 8.638, "d": 0.058}, {"w": "outro", "t": 8.719, "d": 0.267}, {"w": "dia...", "t": 9.044, "d": 0.581}, {"w": "e", "t": 10.066, "d": 0.151}, {"w": "o", "t": 10.263, "d": 0.07}, {"w": "cliente", "t": 10.368, "d": 0.29}, {"w": "já", "t": 10.693, "d": 0.081}, {"w": "fechou", "t": 10.832, "d": 0.232}, {"w": "com", "t": 11.111, "d": 0.151}, {"w": "outro.", "t": 11.331, "d": 0.372}, {"w": "Pois", "t": 12.028, "d": 0.302}, {"w": "é.", "t": 12.376, "d": 0.186}, {"w": "A", "t": 12.62, "d": 0.035}, {"w": "gente", "t": 12.736, "d": 0.151}, {"w": "tá", "t": 12.91, "d": 0.058}, {"w": "construindo", "t": 13.027, "d": 0.429}, {"w": "uma", "t": 13.479, "d": 0.116}, {"w": "coisa", "t": 13.63, "d": 0.232}, {"w": "pra", "t": 13.909, "d": 0.104}, {"w": "isso", "t": 14.048, "d": 0.14}, {"w": "nunca", "t": 14.222, "d": 0.233}, {"w": "mais", "t": 14.501, "d": 0.116}, {"w": "acontecer.", "t": 14.664, "d": 0.592}, {"w": "Eu", "t": 15.302, "d": 0.058}, {"w": "não", "t": 15.395, "d": 0.093}, {"w": "posso", "t": 15.534, "d": 0.232}, {"w": "mostrar", "t": 15.813, "d": 0.418}, {"w": "ainda.", "t": 16.266, "d": 0.441}, {"w": "Mas", "t": 17.218, "d": 0.267}, {"w": "no", "t": 17.531, "d": 0.07}, {"w": "dia", "t": 17.647, "d": 0.105}, {"w": "dez", "t": 17.833, "d": 0.186}, {"w": "de", "t": 18.054, "d": 0.046}, {"w": "novembro,", "t": 18.158, "d": 0.453}, {"w": "a", "t": 18.692, "d": 0.023}, {"w": "gente", "t": 18.773, "d": 0.233}, {"w": "abre", "t": 19.064, "d": 0.174}, {"w": "as", "t": 19.273, "d": 0.093}, {"w": "portas.", "t": 19.482, "d": 0.836}, {"w": "E", "t": 20.643, "d": 0.093}, {"w": "quem", "t": 20.805, "d": 0.116}, {"w": "chegar", "t": 20.945, "d": 0.209}, {"w": "primeiro...", "t": 21.2, "d": 0.859}, {"w": "vai", "t": 22.872, "d": 0.116}, {"w": "ter", "t": 23.034, "d": 0.093}, {"w": "uma", "t": 23.162, "d": 0.093}, {"w": "surpresa.", "t": 23.301, "d": 0.662}, {"w": "Segue", "t": 24.567, "d": 0.255}, {"w": "a", "t": 24.845, "d": 0.024}, {"w": "gente", "t": 24.915, "d": 0.209}, {"w": "aqui", "t": 25.147, "d": 0.174}, {"w": "pra", "t": 25.368, "d": 0.116}, {"w": "não", "t": 25.53, "d": 0.082}, {"w": "perder,", "t": 25.67, "d": 0.348}, {"w": "tá?", "t": 26.053, "d": 0.371}, {"w": "Beijo!", "t": 26.75, "d": 1.021}], DUR=29.02;
+const clamp=x=>Math.min(Math.max(x,0),1),ease=x=>1-Math.pow(1-clamp(x),3),back=x=>{x=clamp(x);const k=1.7;return 1+(k+1)*Math.pow(x-1,3)+k*Math.pow(x-1,2)},rnd=n=>{const s=Math.sin(n*127.1+311.7)*43758.5453;return s-Math.floor(s)};
+const $=i=>document.getElementById(i);$('hav').innerHTML=logoSVG(4);$('pav').innerHTML=logoSVG(4);
+$('wave').innerHTML=Array.from({length:42},(_,i)=>`<b style="height:${18+rnd(i)*52}px"></b>`).join('');
+// blueprint do símbolo
+$('blue').innerHTML='<svg viewBox="0 0 64 64"><g fill="none" stroke="#5B8DEF" stroke-width=".4" opacity=".5">'+Array.from({length:9},(_,i)=>`<path d="M${i*8} 0V64M0 ${i*8}H64"/>`).join('')+'</g><path id="tri" d="M32 11 11 50h42L32 11Z" fill="none" stroke="#7FB2FF" stroke-width="1.4" stroke-dasharray="130" stroke-dashoffset="130"/><path id="arc" d="M49.5 21.5A24 24 0 1 0 51 43" fill="none" stroke="#7FB2FF" stroke-width="1" stroke-dasharray="140" stroke-dashoffset="140"/></svg>';
+const KEY=['WhatsApp','onze','noite?','fechou','outro.','nunca','dez','novembro,','portas.','primeiro...','surpresa.','Segue'];
+const T=w=>{const x=W.find(p=>p.w.startsWith(w));return x?x.t:0;};
+// trechos de legenda (3-4 palavras, quebra em pontuação)
+const CH=[];let cur=[];W.forEach((p,i)=>{cur.push(p);if(cur.length>=4||/[.,!?…]$/.test(p.w)){CH.push(cur);cur=[];}});if(cur.length)CH.push(cur);
+const SC=[['s1',0,4.0],['s2',4.0,12.0],['s3',12.0,17.0],['s4',17.0,20.5],['s5',20.5,24.4],['s6',24.4,DUR]];
+window.render=function(t){
+ // nota de voz tocando
+ const p=clamp(t/(W[W.length-1].t+1));$('wave').querySelectorAll('b').forEach((b,i)=>{b.className=i/42<p?'on':'';const s=t<DUR-1?1+0.25*Math.sin(t*18+i):1;b.style.transform=i/42<p&&i/42>p-0.05?`scaleY(${s})`:'none';});
+ const sec=Math.floor(t);$('tm').textContent=`0:${String(sec).padStart(2,'0')}`;$('hs').textContent=t<DUR-1.5?'gravando áudio...':'online';
+ // cenas
+ SC.forEach(([id,a,b])=>{const e=$(id),on=t>=a&&t<b;e.style.display=on?'block':'none';if(on)e.style.opacity=Math.min(ease((t-a)/0.3),ease((b-t)/0.3));});
+ const sh=(id,a)=>{const e=$(id);e.style.display=t>=a?'':'none';if(t>=a){e.style.transform=(e.dataset.base||'')+` scale(${back((t-a)/0.35)})`;}};
+ // s2: relógio pula da noite para a manhã
+ const c0=T('noite?'),c1=T('dia...');let hh=23,mm=0,lbl='ontem à noite';
+ if(t>c1){const k=ease((t-c1)/0.9);const m=23*60+k*(9*60+40);hh=Math.floor(m/60)%24;mm=Math.floor(m%60);lbl=k>0.5?'hoje de manhã':'...';}
+ $('clk').firstChild.textContent=`${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;$('clks').textContent=lbl;
+ sh('b1',T('chega'));sh('b2',T('dia...')+0.5);sh('b3',T('fechou'));
+ const st=$('stampx');st.style.display=t>=T('outro.')?'':'none';if(t>=T('outro.')){const k=ease((t-T('outro.'))/0.2);st.style.transform=`translateX(-50%) rotate(-8deg) scale(${2.2-1.2*k})`;}
+ // s3: planta sendo desenhada e censurada
+ const bp=clamp((t-12.6)/2.2);document.getElementById('tri')?.setAttribute('stroke-dashoffset',130*(1-bp));document.getElementById('arc')?.setAttribute('stroke-dashoffset',140*(1-clamp((t-13.6)/1.6)));
+ $('cens').style.display=t>=T('mostrar')?'flex':'none';if(t>=T('mostrar'))$('cens').style.transform=`scaleX(${ease((t-T('mostrar'))/0.25)})`;
+ // s4: portas abrindo
+ const o=ease((t-T('abre'))/0.9);$('dl').style.transform=`perspective(1400px) rotateY(${-100*o}deg)`;$('dr').style.transform=`perspective(1400px) rotateY(${100*o}deg)`;
+ $('date').style.transform=`scale(${0.8+0.2*back((t-T('dez'))/0.5)})`;
+ // s5: presente e vagas
+ const gw=t>=T('surpresa.')?Math.sin(t*30)*8*(1-clamp((t-T('surpresa.'))/0.8)):Math.sin(t*6)*3;$('gift').style.transform=`translateX(-50%) rotate(${gw}deg) scale(${0.9+0.1*back((t-20.6)/0.4)})`;
+ $('slots').querySelectorAll('span').forEach((s,i)=>s.className=t>=T('chegar')+i*0.35?'on':'');
+ // s6: seguir
+ const tap=T('perder,');const d=$('dedo');d.style.display=t>=tap-0.8&&t<tap+0.6?'block':'none';d.style.left=(600+80*(1-ease((t-tap+0.8)/0.7)))+'px';d.style.top=(420+620+160*(1-ease((t-tap+0.8)/0.7)))+'px';d.style.transform=`scale(${t>=tap&&t<tap+0.15?0.8:1})`;
+ $('seg').textContent=t>=tap?'Seguindo':'Seguir';$('seg').className=t>=tap?'ok':'';
+ // emojis que pulam
+ const E=[[T('isso...'),'🤐',780,260],[T('noite?'),'🌙',820,140],[T('outro.'),'💸',120,1250],[T('surpresa.'),'✨',800,500],[T('Beijo!'),'💋',780,700]];
+ let em=null;for(const x of E) if(t>=x[0]&&t<x[0]+1.1) em=x;const eo=$('emo');eo.style.display=em?'block':'none';
+ if(em){eo.textContent=em[1];eo.style.left=em[2]+'px';eo.style.top=(420+em[3])+'px';eo.style.transform=`scale(${back((t-em[0])/0.3)}) rotate(${Math.sin(t*8)*8}deg)`;eo.style.opacity=1-clamp((t-em[0]-0.8)/0.3);}
+ // legenda palavra por palavra
+ let c=null;for(const ch of CH){const a=ch[0].t,b=ch[ch.length-1].t+ch[ch.length-1].d+0.25;if(t>=a-0.05&&t<b){c=ch;}}
+ $('cap').innerHTML=c?c.map(w=>`<span class="${t>=w.t?'on':''}${KEY.includes(w.w)&&t>=w.t?' k':''}">${w.w}</span>`).join(' '):'';
+ if(c)$('cap').style.transform=`scale(${0.94+0.06*ease((t-c[0].t)/0.15)})`;
+};
+</script></body></html>

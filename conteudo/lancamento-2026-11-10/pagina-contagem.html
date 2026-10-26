@@ -1,0 +1,121 @@
+<title>Malvora 10/11</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: uma coluna estreita como página de bio; o relógio é o herói, o resto é lista de entrega. Marca escura por escolha. */
+:root{
+ --bg:#0E0E16; --panel:#161724; --line:#2A2C3E; --fg:#F2F3F7; --mut:#A3A7B4;
+ --teal:#00D4AA; --violet:#7B68EE; --red:#E5484D;
+ --display:'Bebas Neue',Impact,'Arial Narrow',sans-serif;
+ --body:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+ color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;
+ padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+ background-image:radial-gradient(circle at 85% -10%,rgba(0,212,170,.18),transparent 45%),radial-gradient(circle at -10% 40%,rgba(123,104,238,.16),transparent 40%)}
+main{max-width:560px;margin:0 auto;padding-block:40px 64px;display:flex;flex-direction:column;gap:44px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.32em;font-size:14px}
+.brand svg{width:38px;height:38px}
+h1,h2{font-family:var(--display);font-weight:400;letter-spacing:.02em;line-height:.95;margin:0;text-wrap:balance}
+h1{font-size:clamp(44px,12vw,72px)}
+h2{font-size:34px}
+.grad{background:linear-gradient(90deg,var(--teal),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{color:var(--mut);margin:14px 0 0;max-width:60ch}
+.clock{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:26px}
+.u{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 6px 10px;text-align:center}
+.u b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(40px,11vw,62px);line-height:1;font-variant-numeric:tabular-nums}
+.u span{font-size:11px;letter-spacing:.18em;color:var(--mut);text-transform:uppercase}
+.date{margin-top:12px;font-size:13px;color:var(--mut);letter-spacing:.08em}
+.offer{border:1px solid var(--teal);border-radius:18px;padding:22px;background:linear-gradient(135deg,rgba(0,212,170,.10),rgba(123,104,238,.10))}
+.offer .big{font-family:var(--display);font-size:64px;line-height:.9}
+.offer p{margin:8px 0 0;color:var(--fg)}
+.offer small{display:block;margin-top:10px;color:var(--mut);font-size:13px}
+form{display:flex;flex-direction:column;gap:10px;margin-top:18px}
+label{font-size:13px;color:var(--mut);letter-spacing:.04em}
+input,select{width:100%;font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+input:focus,select:focus,button:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+button{font:inherit;font-weight:800;letter-spacing:.06em;border:0;border-radius:10px;padding:14px;background:linear-gradient(90deg,var(--teal),var(--violet));color:#0E0E16;cursor:pointer}
+.ok{color:var(--teal);font-weight:700}
+.list{display:flex;flex-direction:column;gap:0;margin-top:14px;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:1fr auto;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.row b{font-weight:700} .row p{margin:2px 0 0;color:var(--mut);font-size:14px}
+.row em{font-style:normal;font-size:12px;color:var(--teal);white-space:nowrap;align-self:start;padding-top:3px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chips span{border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px;color:var(--fg)}
+.note{font-size:12px;color:var(--mut)}
+.team{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.team div{min-width:0} .team b{display:block} .team span{font-size:13px;color:var(--mut)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<main>
+ <div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="g" x1="18" y1="10" x2="49" y2="53" gradientUnits="userSpaceOnUse"><stop stop-color="#00D4AA"/><stop offset="1" stop-color="#7B68EE"/></linearGradient></defs><path d="M49.5 21.5A24 24 0 1 0 51 43" fill="none" stroke="#00D4AA" stroke-linecap="round" stroke-width="1.6" opacity=".6"/><path d="M32 11 11 50h42L32 11Z" fill="none" stroke="url(#g)" stroke-linejoin="round" stroke-width="2.4"/><path d="M24.5 30.5 32 38.5 39.5 30.5" fill="none" stroke="#7B68EE" stroke-width="1.1"/><circle cx="32" cy="38.5" r="1.6" fill="#7B68EE"/><g fill="#0E0E16" stroke="#00D4AA" stroke-width="2.2"><circle cx="32" cy="11" r="4.2"/><circle cx="11" cy="50" r="4.2"/><circle cx="53" cy="50" r="4.2"/></g></svg>MALVORA</div>
+
+ <section>
+  <h1>Sua empresa vai atender, agendar e cobrar <span class="grad">sozinha.</span></h1>
+  <p class="lede">A IA da Malvora responde no WhatsApp com o nome da sua empresa, marca na agenda e manda o Pix. Abrimos as portas em 10 de novembro.</p>
+  <div class="clock" role="timer" aria-live="off" aria-label="Contagem regressiva para 10 de novembro de 2026">
+   <div class="u"><b id="d">00</b><span>dias</span></div><div class="u"><b id="h">00</b><span>horas</span></div>
+   <div class="u"><b id="m">00</b><span>min</span></div><div class="u"><b id="s">00</b><span>seg</span></div>
+  </div>
+  <div class="date">10.11.2026 · 00h (horário de Brasília)</div>
+ </section>
+
+ <section class="offer" id="vip">
+  <div class="big"><span class="grad">50% OFF</span></div>
+  <p>Para quem assinar em novembro. Quem entra na lista agora recebe o aviso e o acesso antes de todo mundo.</p>
+  <form id="f" novalidate>
+   <label for="nome">Seu nome</label><input id="nome" autocomplete="name" required placeholder="Ex.: Ana Souza">
+   <label for="zap">WhatsApp</label><input id="zap" inputmode="tel" autocomplete="tel" required placeholder="(11) 90000-0000">
+   <label for="seg">Tipo de negócio</label>
+   <select id="seg"><option>Barbearia ou salão</option><option>Clínica, estética ou odontologia</option><option>Pet shop</option><option>Loja ou venda direta</option><option>Imobiliária ou veículos</option><option>Advocacia ou contabilidade</option><option>Outro</option></select>
+   <button type="submit">ENTRAR NA LISTA VIP</button>
+   <p id="msg" class="note" aria-live="polite">Sem spam. Só o aviso do lançamento e a condição de novembro.</p>
+  </form>
+  <small>Condição válida para assinaturas feitas de 10 a 30/11/2026. Detalhes no dia do lançamento.</small>
+ </section>
+
+ <section>
+  <h2>O que chega em <span class="grad">10/11</span></h2>
+  <div class="list">
+   <div class="row"><div><b>IA no WhatsApp</b><p>Responde em segundos com os seus serviços, preços e o jeito da sua empresa. Chama a equipe quando o assunto pede uma pessoa.</p></div><em>base</em></div>
+   <div class="row"><div><b>Agenda no automático</b><p>Marca direto na agenda de cada profissional, com Google Agenda e Outlook.</p></div><em>base</em></div>
+   <div class="row"><div><b>Lembrete da véspera</b><p>O cliente confirma ou remarca ali mesmo, e o horário volta a ficar livre.</p></div><em>base</em></div>
+   <div class="row"><div><b>Portal da empresa</b><p>Conversas, clientes, agenda e o que a IA fez, num lugar só.</p></div><em>base</em></div>
+   <div class="row"><div><b>Cobrança no Pix</b><p>Pix, boleto e cartão pelo Asaas, confirmados sozinhos.</p></div><em>módulo</em></div>
+   <div class="row"><div><b>Fidelização</b><p>Quem sumiu volta a ser chamado. Pesquisa de satisfação e aniversário.</p></div><em>módulo</em></div>
+   <div class="row"><div><b>Relatórios</b><p>Resumo no WhatsApp e no e-mail, na frequência que você escolher.</p></div><em>módulo</em></div>
+   <div class="row"><div><b>Inteligência</b><p>Funil, horários com oportunidade e o motivo de quem não fechou.</p></div><em>módulo</em></div>
+  </div>
+ </section>
+
+ <section>
+  <h2>Pronta para 30 tipos de negócio</h2>
+  <div class="chips"><span>Barbearia</span><span>Salão</span><span>Clínica</span><span>Estética</span><span>Odontologia</span><span>Pet shop</span><span>Ótica</span><span>Moda</span><span>Imobiliária</span><span>Veículos</span><span>Advocacia</span><span>Contabilidade</span><span>Academia</span><span>Restaurante</span><span>Oficina</span><span>e mais</span></div>
+ </section>
+
+ <section>
+  <h2>Integrações</h2>
+  <div class="chips"><span>WhatsApp</span><span>Pix · boleto · cartão (Asaas)</span><span>Google Agenda</span><span>Outlook</span><span>E-mail</span><span>Planilhas</span><span>Reunião online</span></div>
+ </section>
+
+ <section>
+  <h2>Quem está por trás</h2>
+  <div class="team">
+   <div><b>Pietro Costa</b><span>CEO · IA e segurança</span></div><div><b>Raphael Alves</b><span>COO · projetos</span></div>
+   <div><b>João Luz</b><span>CTO · automações</span></div><div><b>Nycole Novais</b><span>CAIO · inteligência artificial</span></div>
+  </div>
+ </section>
+ <p class="note">Malvora Hub · A nova alquimia digital · @malvora_hub</p>
+</main>
+<script>
+const alvo=new Date('2026-11-10T00:00:00-03:00').getTime(),p=n=>String(n).padStart(2,'0');
+function tick(){let r=Math.max(0,alvo-Date.now());const d=Math.floor(r/864e5);r-=d*864e5;const h=Math.floor(r/36e5);r-=h*36e5;const m=Math.floor(r/6e4);const s=Math.floor((r-m*6e4)/1e3);
+ document.getElementById('d').textContent=p(d);document.getElementById('h').textContent=p(h);document.getElementById('m').textContent=p(m);document.getElementById('s').textContent=p(s);}
+tick();setInterval(tick,1000);
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();const n=document.getElementById('nome').value.trim(),z=document.getElementById('zap').value.replace(/\D/g,'');
+ const msg=document.getElementById('msg');
+ if(!n||z.length<10){msg.textContent='Preencha o nome e o WhatsApp com DDD.';msg.className='note';return;}
+ msg.textContent='Prévia: na página real, o cadastro vai para a lista VIP da Malvora.';msg.className='ok';});
+</script>

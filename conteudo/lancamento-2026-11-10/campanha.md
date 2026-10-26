@@ -121,3 +121,14 @@ Com a sua aprovação de cada peça, eu preencho a legenda na `instagram_fila`, 
 4. Acesso antecipado para a lista VIP em 09/11: sim ou não?
 5. Qual é a "voz do gato" e a ferramenta de voz.
 6. Aprovar o calendário para eu produzir as peças 🆕 a partir de quarta.
+
+## 8. Crescimento do perfil (atualização de 26/10)
+
+O objetivo da campanha é trazer seguidores novos, não só anunciar. Técnicas aplicadas em todas as peças:
+- **Laço aberto:** cada post termina numa pergunta sem resposta ("Quem respondeu tudo isso?") que só se fecha em 10/11, e o pedido é **seguir** para descobrir.
+- **POV e cenas reais do dia a dia** do dono (tela do celular, notificações) em vez de animação abstrata: parece conteúdo de criador, não anúncio.
+- **Série numerada** ("faltam 13", "faltam 10"...): quem vê um quer ver o próximo; o perfil vira a série.
+- **Reels de teste** (Trial Reels do Instagram): mostram o Reel só para quem não segue, ideal para conta pequena; usar nas peças de gancho forte.
+- **Collab posts** com 1 ou 2 clientes/parceiros em 10/11: o post aparece nos dois perfis.
+- **Stories diários** com figurinha de contagem regressiva (quem ativa recebe o aviso) e enquetes/quiz.
+- **Ritmo legível:** cada informação fica na tela tempo suficiente para ler (mínimo de 3 a 4 s por frase), vídeos de 15 a 25 s.

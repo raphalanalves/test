@@ -42,6 +42,21 @@ Lições para a Malvora:
 - **Serviços (bio):** consultoria, automações e diagnóstico ("Receba seu diagnóstico").
 - **Equipe:** Pietro Costa (CEO), Raphael Alves (COO), João Luz (CTO), Nycole Novais (CAIO).
 
+## 2b. Atualização de 26/10 (decisões do Raphael)
+
+- **Lista VIP só com 10 empresas** e link divulgado **a partir de 01/11**. De 28 a 31/10 os posts criam expectativa
+  sem link.
+- **50% off só para quem entrar na lista VIP** (e assinar até o lançamento). Sugestão: 50% nos 3 primeiros meses,
+  em qualquer plano, para dar peso à vaga sem comprometer a margem do ano todo. A decidir.
+- **Lançamento 10/11 às 00h.** Acesso antecipado da lista em 09/11 à noite: aprovado.
+- **Portal controlado só pelos links** (nenhum post cita o portal até 10/11).
+- **Bio:** página nova no visual do portal, links antigos redirecionados para a home até o lançamento
+  (repositório `bio-links`, branch `pre-lancamento`, aguardando aprovação para ir ao ar).
+- **Voz:** a referência é a voz do ChatGPT. Proposta: OpenAI TTS (`gpt-4o-mini-tts`), mesma família de vozes, com
+  instruções de tom. Precisa da chave da OpenAI como credencial no n8n ou segredo do ambiente.
+- **Confiança na comunicação:** LGPD, login com Google e Microsoft, dados separados por empresa, e integrações
+  (WhatsApp, Asaas, Mercado Pago, ZapSign, Autentique, Google Agenda, Outlook, Google Drive, AppBarber).
+
 ## 3. O problema do link do portal (e a proposta)
 
 Hoje **malvora.com.br redireciona para portal.malvora.com.br**, que já tem "Começar teste grátis" e "Assinar".
@@ -68,8 +83,8 @@ Legenda: ✅ peça já pronta · 🎙 precisa de narração · 🆕 a produzir.
 | Qua 28/10 · D-13 | 🆕 Reel teaser "o papel rasga" (V12) + troca do link da bio | contagem regressiva oficial (figurinha) apontando para 10/11 |
 | Qui 29/10 · D-12 | 🆕 Carrossel manifesto "Em 10/11 sua empresa passa a atender sozinha" | enquete: "Quantas mensagens você deixa sem resposta no fim de semana?" |
 | Sex 30/10 · D-11 | ✅ Reel V14 "Cliente ligando" (clínica) com legenda de lançamento | bastidores do portal (tela desfocada) |
-| Sáb 31/10 · D-10 | 🆕 Reel curto contagem "10" (banner, V11) | quiz: "Qual destes a IA faz?" |
-| Dom 01/11 · D-9 | 🆕 Carrossel "Adivinha o que vem" (telas desfocadas) | caixa de perguntas |
+| Sáb 31/10 · D-10 | 🆕 Reel curto contagem "10" (banner, V11): "amanhã abre a lista. Só 10 vagas." | quiz: "Qual destes a IA faz?" |
+| Dom 01/11 · D-9 | 🆕 **Abertura da lista VIP**: Reel + post fixado "10 vagas, 50% off" com o link da bio | contador de vagas ao vivo |
 | Seg 02/11 · D-8 | ✅🎙 Reel V7 "Hexágonos" | repost dos palpites |
 | Ter 03/11 · D-7 | ✅ Reel V14 (barbearia) + contagem "7" | figurinha de contagem |
 | Qua 04/11 · D-6 | 🆕 Carrossel "Pronta para 30 tipos de negócio" (identificação por segmento) | enquete por segmento |

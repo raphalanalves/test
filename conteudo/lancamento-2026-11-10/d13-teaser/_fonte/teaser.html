@@ -1,0 +1,46 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="logo.js"></script>
+<style>body{width:1080px;height:1920px;margin:0;overflow:hidden;background:#000}
+#c{position:absolute;inset:0}
+#phone{position:absolute;left:50%;top:560px;width:560px;height:1000px;margin-left:-280px;border-radius:70px;background:#0B0D12;border:8px solid #2E3044;box-shadow:0 60px 140px rgba(0,0,0,.7);overflow:hidden;z-index:3}
+#phone .h{display:flex;align-items:center;gap:16px;padding:60px 28px 22px;background:#151720}
+#phone .a{width:72px;height:72px;border-radius:50%;background:#0E0E16;display:flex;align-items:center;justify-content:center}#phone .a svg{width:58px;height:58px}
+#phone .n{font:700 30px Inter}#phone .s{font:22px Inter;color:#7FF0D6}
+.bb{margin:22px 24px 0;max-width:440px;background:#1F2130;border-radius:26px;border-top-left-radius:8px;padding:20px 24px;font:500 32px/1.3 Inter;color:#fff}
+.bb small{display:block;text-align:right;font-size:18px;color:#8A8AA6;margin-top:6px}
+#typing{margin:22px 24px 0;width:110px;background:#1F2130;border-radius:26px;padding:22px;display:flex;gap:10px}#typing i{width:14px;height:14px;border-radius:50%;background:#9FE6CC}
+#txt{position:absolute;left:0;right:0;top:170px;text-align:center;font-family:'Bebas Neue';font-size:150px;line-height:.9;z-index:4;color:#fff;letter-spacing:4px}
+#txt small{display:block;font:500 34px Inter;letter-spacing:10px;color:#A9ADB3;margin-top:22px}
+</style></head><body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<div id="phone"><div class="h"><div class="a" id="av"></div><div><div class="n">Malvora</div><div class="s">online</div></div></div>
+ <div class="bb" id="m1">Oi! 👀<small>23:59</small></div><div id="typing"><i></i><i></i><i></i></div><div class="bb" id="m2">A gente chega em <b style="color:#00D4AA">10/11</b>.<br>Sua empresa vai atender sozinha.<small>23:59</small></div></div>
+<div id="txt"><span class="grad">10.11</span><small>MALVORA · EM BREVE</small></div>
+<script>
+const c=document.getElementById('c').getContext('2d'),clamp=x=>Math.min(Math.max(x,0),1),ease=x=>1-Math.pow(1-clamp(x),3),back=x=>{x=clamp(x);const k=1.7;return 1+(k+1)*Math.pow(x-1,3)+k*Math.pow(x-1,2)},rnd=n=>{const s=Math.sin(n*127.1+311.7)*43758.5453;return s-Math.floor(s)};
+document.getElementById('av').innerHTML=logoSVG(4);
+// linha do rasgo: x central por y, serrilhada
+const N=120,line=[];for(let i=0;i<=N;i++){line.push(540+(rnd(i)-.5)*70+Math.sin(i*.35)*40);}
+const papel=document.createElement('canvas');papel.width=1080;papel.height=1920;const p=papel.getContext('2d');
+p.fillStyle='#16161F';p.fillRect(0,0,1080,1920);for(let i=0;i<60000;i++){p.fillStyle=`rgba(255,255,255,${rnd(i)*0.035})`;p.fillRect(rnd(i*3)*1080,rnd(i*7)*1920,2,2);}
+const g=p.createRadialGradient(540,700,100,540,900,1300);g.addColorStop(0,'rgba(255,255,255,.05)');g.addColorStop(1,'rgba(0,0,0,.45)');p.fillStyle=g;p.fillRect(0,0,1080,1920);
+function edge(side,open,prog){c.beginPath();const lim=prog*N;
+ if(side<0){c.moveTo(-10,-10);for(let i=0;i<=N;i++){const y=i/N*1920,o=i<=lim?open*(1-Math.pow(i/Math.max(lim,1),3)*.15):0;c.lineTo(line[i]-o+(rnd(i*9)-.5)*6,y);}c.lineTo(-10,1930);}
+ else{c.moveTo(1090,-10);for(let i=0;i<=N;i++){const y=i/N*1920,o=i<=lim?open*(1-Math.pow(i/Math.max(lim,1),3)*.15):0;c.lineTo(line[i]+o+(rnd(i*11)-.5)*6,y);}c.lineTo(1090,1930);}
+ c.closePath();}
+window.render=function(t){
+ const prog=ease(t/2.4),open=t<2.4?18*prog:18+300*Math.pow(clamp((t-2.6)/1.6),2.2);
+ const sh=(t<2.4?Math.sin(t*80)*3*(1-prog):0)+(t>2.6&&t<3.0?Math.sin(t*90)*8:0);
+ c.setTransform(1,0,0,1,sh,0);c.fillStyle='#05050A';c.fillRect(-20,0,1120,1920);
+ // luz por trás
+ const pulse=.75+.25*Math.sin(t*4);const lg=c.createLinearGradient(0,0,1080,1920);lg.addColorStop(0,`rgba(0,212,170,${.9*pulse})`);lg.addColorStop(1,`rgba(123,104,238,${.9*pulse})`);
+ c.fillStyle=lg;c.globalAlpha=clamp(t/1.2);c.fillRect(0,0,1080,1920);c.globalAlpha=1;
+ const rg=c.createRadialGradient(540,1000,50,540,1000,900);rg.addColorStop(0,'rgba(255,255,255,.35)');rg.addColorStop(1,'rgba(255,255,255,0)');c.fillStyle=rg;c.fillRect(0,0,1080,1920);
+ // papel dos dois lados
+ for(const s of [-1,1]){c.save();edge(s,open,prog);c.clip();c.drawImage(papel,0,0);c.restore();
+  c.save();c.beginPath();c.rect(-20,0,1120,prog*1920+20);c.clip();edge(s,open,prog);c.strokeStyle='rgba(230,232,240,.55)';c.lineWidth=5;c.shadowColor='rgba(0,212,170,.9)';c.shadowBlur=30;c.stroke();c.restore();}
+ const ph=document.getElementById('phone'),pin=back((t-4.0)/0.7);ph.style.transform=`translateY(${(1-pin)*1300}px) rotate(${(1-clamp((t-4)/0.7))*-6}deg)`;ph.style.display=t>=3.9?'block':'none';
+ const show=(id,a)=>{const e=document.getElementById(id);e.style.display=t>=a?'':'none';if(t>=a)e.style.transform=`scale(${back((t-a)/0.3)})`;e.style.transformOrigin='left top';};
+ show('m1',5.0);document.getElementById('typing').style.display=t>=5.6&&t<6.6?'flex':'none';document.querySelectorAll('#typing i').forEach((e,j)=>e.style.transform=`translateY(${Math.sin(t*14-j)*6}px)`);show('m2',6.6);
+ const tx=document.getElementById('txt'),k=back((t-7.8)/0.5);tx.style.opacity=clamp((t-7.8)*4);tx.style.transform=`scale(${0.7+0.3*k})`;
+};
+</script></body></html>

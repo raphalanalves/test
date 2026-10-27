@@ -2,7 +2,7 @@
 """Trilha e efeitos do V14, sintetizados aqui (sem direitos autorais). Tempos iguais aos de v14.js."""
 import sys, wave, numpy as np
 SR = 44100
-TOTAL = 17.5
+TOTAL = 20.0
 rng = np.random.default_rng(7)
 L = np.zeros(int(TOTAL * SR)); R = np.zeros_like(L)
 
@@ -63,15 +63,15 @@ def chord(t, fs, d, g=0.07):
 
 B=0.5
 # ruído de projetor/película
-x=tt(17.5); add(lp(rng.standard_normal(len(x)),0.05)*(0.6+0.4*np.sin(2*np.pi*24*x)),0,0.05)
+x=tt(20.0); add(lp(rng.standard_normal(len(x)),0.05)*(0.6+0.4*np.sin(2*np.pi*24*x)),0,0.05)
 # pad escuro no começo
 chord(0.0,(110,164.8,220),4.2,0.06)
 # batida 120 bpm a partir de 1s
 bass=[55,55,65.4,49]
-for i in range(int((17.0-1.0)/B)):
+for i in range(int((19.5-1.0)/B)):
     t=1.0+i*B
     if 9.5<=t<10.0: continue
-    kick(t,0.75 if t<14 else 0.5)
+    kick(t,0.75 if t<14 or 15.5<=t<18.5 else 0.5)
     hat(t+B/2,0.1); 
     if i%2==1: clap(t)
     if t>=4: x=tt(B); add(np.sin(2*np.pi*bass[(i//2)%4]*x)*np.exp(-x*4),t,0.22)
@@ -81,8 +81,13 @@ for i in range(12): add(tone([440,554,659,880][i%4],0.2,0.06),4.0+i*0.25,0.05)
 riser(8.0,1.6); boom(10.0,1.0); stamp(10.0)
 for k,t in enumerate([10.0,10.5,11.0]): whoosh(t-0.15,.25,.3)
 glitch(12.5,0.25); riser(13.0,1.0); boom(14.0,0.9)
-chord(14.0,(261.6,329.6,392,523.3),3.5,0.1)
-x=tt(2.0); add(sum(np.sin(2*np.pi*f*x) for f in (2093,2637,3136))*np.exp(-x*1.6)/3,14.05,0.12)
+chord(14.0,(261.6,329.6,392,523.3),1.5,0.08)
+acc=15.5
+for d in [0.6,0.5,0.42,0.36,0.32,0.28,0.26,0.26]:
+    whoosh(acc-0.08,0.18,0.25); add(tone(1568,0.12,0.05),acc+0.05,0.06); acc+=d
+riser(17.3,1.2); boom(18.5,0.9)
+chord(18.5,(261.6,329.6,392,523.3),1.5,0.1)
+x=tt(1.5); add(sum(np.sin(2*np.pi*f*x) for f in (2093,2637,3136))*np.exp(-x*1.6)/3,18.55,0.12)
 m = max(abs(L).max(), abs(R).max()); L, R = L / m * 0.89, R / m * 0.89
 st = np.empty(len(L) * 2); st[0::2] = L; st[1::2] = R
 out = sys.argv[1] if len(sys.argv) > 1 else '../audio.wav'

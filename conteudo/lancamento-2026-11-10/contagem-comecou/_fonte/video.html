@@ -1,0 +1,80 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="logo.js"></script>
+<style>
+body{width:1080px;height:1920px;margin:0;overflow:hidden;background:#000}
+canvas{position:absolute;left:0;top:0;width:1080px;height:1920px}
+#cam{position:absolute;inset:0}
+.t{position:absolute;left:0;right:0;text-align:center;font-family:'Bebas Neue';color:#fff;letter-spacing:4px;line-height:.9;display:none;white-space:nowrap}
+#t1{top:780px;font-size:150px}
+#t2{top:820px;font-size:110px;mix-blend-mode:screen}
+#t3{top:900px;font-size:84px;letter-spacing:6px}
+#t4{top:330px;font-size:470px;line-height:.86}
+#t4 div{display:block}
+#t5{top:560px;font-size:330px;line-height:.9}
+#logo{position:absolute;left:0;right:0;top:560px;text-align:center;display:none}
+#logo .s{width:420px;height:420px;margin:0 auto}
+#logo .n{font-family:'Bebas Neue';font-size:230px;letter-spacing:22px;color:#fff;margin-top:10px}
+#logo .d{font-family:'Bebas Neue';font-size:110px;letter-spacing:12px;margin-top:6px}
+#handle{position:absolute;left:0;right:0;bottom:120px;text-align:center;font:600 28px Inter;color:rgba(255,255,255,.7);letter-spacing:3px;z-index:9}
+#film{position:absolute;inset:0;display:none}
+.sp{position:absolute;top:-200px;bottom:-200px;width:110px;background:#0a0a0a}
+.sp i{display:block;width:56px;height:90px;margin:0 auto 70px;border-radius:12px;background:#f2f2f2;opacity:.85}
+#sl{left:0}#sr{right:0}
+.kd{position:absolute;top:0;bottom:0;width:110px;font:700 30px Inter;color:#f5b547;writing-mode:vertical-rl;letter-spacing:10px;opacity:.75;display:flex;align-items:center}
+</style></head><body>
+<canvas id="bg" width="540" height="960"></canvas>
+<div id="cam">
+ <div id="film"><div class="sp" id="sl"></div><div class="sp" id="sr"></div><div class="kd" style="left:118px">MALVORA 400 · 10.11</div></div>
+ <div class="t" id="t1">A CONTAGEM<br>REGRESSIVA COMEÇOU.</div>
+ <div class="t" id="t2">A ESPERA ESTÁ<br>CHEGANDO AO FIM</div>
+ <div class="t" id="t3">VOCÊ ESTÁ PREPARADO?</div>
+ <div class="t" id="t4"><div>NO</div><div>VEM</div><div>BRO</div></div>
+ <div class="t" id="t5">É HORA<br>DE...</div>
+ <div id="logo"><div class="s" id="sym"></div><div class="n">MALVORA</div><div class="d"><span class="grad">10.11</span></div></div>
+</div>
+<canvas id="fx" width="540" height="960"></canvas>
+<div id="handle">@malvora_hub</div>
+<script>
+const clamp=x=>Math.min(Math.max(x,0),1),ease=x=>1-Math.pow(1-clamp(x),3),back=x=>{x=clamp(x);const k=1.7;return 1+(k+1)*Math.pow(x-1,3)+k*Math.pow(x-1,2)},rnd=n=>{const s=Math.sin(n*127.1+311.7)*43758.5453;return s-Math.floor(s)};
+const $=i=>document.getElementById(i);$('sym').innerHTML=logoSVG(4);
+$('sl').innerHTML=$('sr').innerHTML=Array.from({length:16},()=>'<i></i>').join('');
+const bg=$('bg').getContext('2d'),fx=$('fx').getContext('2d'),img=fx.createImageData(540,960);
+const B=0.5; // 120 bpm
+const S=[['t1',1.0,4.0],['t2',4.0,7.0],['t3',7.0,9.5],['t4',10.0,12.5],['t5',12.5,14.0],['logo',14.0,17.5]];
+function leak(x,y,r,c,a){const g=bg.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,c.replace('A',a));g.addColorStop(1,c.replace('A',0));bg.fillStyle=g;bg.fillRect(0,0,540,960);}
+window.render=function(t){
+ // fundo e vazamentos de luz por cena
+ bg.globalCompositeOperation='source-over';bg.fillStyle='#000';bg.fillRect(0,0,540,960);bg.globalCompositeOperation='lighter';
+ const fl=0.7+0.3*Math.sin(t*23)*Math.sin(t*7);
+ if(t>=1&&t<4){leak(270+Math.sin(t*1.3)*160,300+Math.cos(t)*120,420,'rgba(0,212,170,A)',.55*fl);leak(120,800,300,'rgba(123,104,238,A)',.35*fl);
+  if(t>2.2&&t<3.2){leak(300,480,260*(1+ (t-2.2)),'rgba(255,255,255,A)',.6*(1-(t-2.2)));}}
+ if(t>=4&&t<7){bg.globalCompositeOperation='source-over';const g=bg.createLinearGradient(0,0,540,960);g.addColorStop(0,'#3a0d6b');g.addColorStop(.5,'#0b6b5a');g.addColorStop(1,'#05141a');bg.fillStyle=g;bg.fillRect(0,0,540,960);bg.globalCompositeOperation='lighter';
+  leak(330,300+Math.sin(t*2)*80,260,'rgba(255,190,90,A)',.45*fl);leak(200,650,280,'rgba(0,212,170,A)',.5);}
+ if(t>=7&&t<10){leak(-40,480+Math.sin(t)*60,520,'rgba(123,104,238,A)',.75*fl);leak(560,900,300,'rgba(0,212,170,A)',.25);}
+ if(t>=9.5&&t<10.1){const k=1-Math.abs(t-9.8)/0.3;bg.fillStyle=`rgba(255,255,255,${clamp(k)})`;bg.fillRect(0,0,540,960);}
+ if(t>=10&&t<14){bg.globalCompositeOperation='source-over';const g=bg.createLinearGradient(0,0,540,960);g.addColorStop(0,'#00D4AA');g.addColorStop(1,'#7B68EE');bg.fillStyle=g;bg.fillRect(0,0,540,960);bg.globalCompositeOperation='lighter';leak(270+Math.sin(t*3)*200,480,350,'rgba(255,255,255,A)',.18);}
+ if(t>=14){leak(270,420,380,'rgba(0,212,170,A)',.35+.1*Math.sin(t*4));leak(270,700,300,'rgba(123,104,238,A)',.3);}
+ // película
+ $('film').style.display=t>=4&&t<7?'block':'none';
+ const off=((t*900)%160);['sl','sr'].forEach(id=>$(id).style.transform=`translateY(${off}px)`);
+ // textos
+ let shake=0,blur=0,sc=1;
+ S.forEach(([id,a,b])=>{const e=$(id),on=t>=a&&t<b;e.style.display=on?(id==='logo'?'block':'block'):'none';if(!on)return;
+  const k=(t-a);let o=Math.min(1,k*5)*(1-clamp((t-b+0.15)/0.15));e.style.opacity=o;
+  if(id==='t1'){const p=ease(k/0.6);e.style.transform=`translateX(${(1-p)*600}px) scale(${1.25-0.25*p})`;e.style.filter=`blur(${(1-p)*14}px)`;}
+  if(id==='t2'){e.style.transform=`scale(${1.06-0.06*ease(k/0.5)})`;e.style.filter=`blur(${Math.max(0,(0.3-k))*30}px)`;}
+  if(id==='t3'){e.style.transform=`scale(${1+0.08*k})`;e.style.letterSpacing=(6+k*4)+'px';}
+  if(id==='t4'){[...e.children].forEach((c,i)=>{const s=a+i*B,p=ease((t-s)/0.25);c.style.opacity=t>=s?1:0;c.style.transform=`translateX(${(1-p)*(i%2?-900:900)}px) skewX(${(1-p)*-20}deg)`;c.style.filter=`blur(${(1-p)*20}px)`;});e.style.color='#fff';}
+  if(id==='t5'){const p=back(k/0.4);e.style.transform=`scale(${0.6+0.4*p})`;}
+  if(id==='logo'){const p=back(k/0.6);e.style.transform=`scale(${0.7+0.3*p})`;$('sym').style.filter=`drop-shadow(0 0 ${40+20*Math.sin(t*5)}px rgba(0,212,170,.7))`;}
+ });
+ // batida: tremida e zoom a cada tempo
+ const bp=((t%B)/B);if(t>=1){shake=(1-bp)*(t>=10&&t<14?14:6);sc=1+0.02*(1-bp);}
+ $('cam').style.transform=`translate(${Math.sin(t*97)*shake}px,${Math.cos(t*83)*shake}px) scale(${sc})`;
+ // grão, arranhões e cintilação de filme
+ const fr=Math.floor(t*30);for(let i=0;i<img.data.length;i+=4){const v=rnd(i*.13+fr*7.7)*255;img.data[i]=img.data[i+1]=img.data[i+2]=v;img.data[i+3]=22;}
+ fx.putImageData(img,0,0);
+ if(rnd(fr)>.6){fx.fillStyle='rgba(255,255,255,.35)';fx.fillRect(rnd(fr*3)*540,0,1,960);}
+ fx.fillStyle=`rgba(0,0,0,${0.08+0.08*rnd(fr*5)})`;fx.fillRect(0,0,540,960);
+ const vg=fx.createRadialGradient(270,480,250,270,480,620);vg.addColorStop(0,'rgba(0,0,0,0)');vg.addColorStop(1,'rgba(0,0,0,.6)');fx.fillStyle=vg;fx.fillRect(0,0,540,960);
+};
+</script></body></html>

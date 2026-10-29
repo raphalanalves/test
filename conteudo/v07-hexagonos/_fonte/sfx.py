@@ -2,13 +2,18 @@
 """Trilha e efeitos do V14, sintetizados aqui (sem direitos autorais). Tempos iguais aos de v14.js."""
 import sys, wave, numpy as np
 SR = 44100
-TOTAL = 49.94
+TOTAL = 43.61
 rng = np.random.default_rng(7)
 L = np.zeros(int(TOTAL * SR)); R = np.zeros_like(L)
 
 KO=[0, 3.2, 6.6, 11, 14.6, 17.4, 20.6, 26]; KN=[0, 6.48, 13.07, 20.4, 25.64, 33.46, 37.81, 49.94]
 def M(t):
     for i in range(len(KN)-1):
+        if t<KO[i+1]: return KN[i]+(KN[i+1]-KN[i])*(t-KO[i])/(KO[i+1]-KO[i])
+    return KN[-1]
+KO=[0,3.2,6.6,11,14.6,17.4,20.6,26]; KN=[0.0, 4.92, 10.26, 17.19, 21.85, 28.97, 33.0, 43.61]
+def warp(t):
+    for i in range(7):
         if t<KO[i+1]: return KN[i]+(KN[i+1]-KN[i])*(t-KO[i])/(KO[i+1]-KO[i])
     return KN[-1]
 def add(sig, t, g=1.0, pan=0.0):

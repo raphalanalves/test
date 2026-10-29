@@ -1,6 +1,6 @@
 # V7 · Hexágonos · roteiro de locução (Sergio)
 
-Voz oficial: Amandoca (ElevenLabs). Final em `v07-hexagonos-amandoca.mp4`.
+Voz oficial: Amandoca (ElevenLabs), modelo Eleven v4 (eleven_v4, estabilidade 0.5, similaridade 0.8, sem marcações de tom). Final em `v07-hexagonos-amandoca.mp4`.
 
 Tom: conversa de dono pra dono, calmo no começo e mais firme a partir de "Só que o cliente não espera".
 Um arquivo por trecho (s1 a s7) ou tudo junto com 1 s de silêncio; eu ressincronizo a animação.

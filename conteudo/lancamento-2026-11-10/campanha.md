@@ -136,4 +136,4 @@ O objetivo da campanha é trazer seguidores novos, não só anunciar. Técnicas 
 ## 9. Marca (decisão de 29/10)
 
 Logo principal em todas as peças: **simbolo-triangulo-fundo** (versão sem fundo em
-`contagem-comecou/_fonte/marca/simbolo-principal.png`). Outras versões só quando o Raphael pedir.
+`lancamento-2026-11-10/marca/simbolo-principal.png`). Outras versões só quando o Raphael pedir.

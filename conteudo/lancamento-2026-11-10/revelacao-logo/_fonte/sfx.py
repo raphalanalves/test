@@ -75,6 +75,7 @@ for i in range(int(20.5/B)):
     elif 12.5<t<16: hat(t,0.06)
     elif t>=16.2: kick(t,0.5) if i%2==0 else None
 for t in (1.15,2.6,3.5,4.9,5.4): glitch(t,0.18)
+riser(4.6,1.3); whoosh(5.8,0.9,0.4); boom(5.95,0.5)
 riser(10.4,1.6); boom(12.0,0.8)
 for k in range(8): add(tone(880*(1.06**k),0.15,0.06),12.6+k*0.42,0.05)
 riser(14.6,1.4); boom(16.0,1.0); stamp(16.0)

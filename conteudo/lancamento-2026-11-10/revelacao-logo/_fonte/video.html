@@ -1,0 +1,65 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="env.js"></script><script src="logo-pts.js"></script>
+<style>
+body{width:1080px;height:1920px;margin:0;overflow:hidden;background:#000}
+canvas{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.t{position:absolute;left:0;right:0;text-align:center;color:#fff;opacity:0}
+#frase{top:1380px;font:500 40px Inter;letter-spacing:14px;color:rgba(255,255,255,.85)}
+#data{top:1290px;font-family:'Bebas Neue';font-size:160px;letter-spacing:14px}
+#data span{display:inline-block}
+#hora{top:1500px;font:600 34px Inter;letter-spacing:12px;color:rgba(255,255,255,.75)}
+#nome{top:1180px;font-family:'Bebas Neue';font-size:96px;letter-spacing:40px;padding-left:40px}
+#handle{position:absolute;left:0;right:0;bottom:110px;text-align:center;font:600 26px Inter;color:rgba(255,255,255,.55);letter-spacing:3px}
+.grad{background:linear-gradient(90deg,#00D4AA,#7B68EE);-webkit-background-clip:text;background-clip:text;color:transparent}
+</style></head><body>
+<canvas id="c" width="540" height="960"></canvas>
+<canvas id="fx" width="540" height="960"></canvas>
+<div class="t" id="frase">ALGO ESTÁ CHEGANDO</div>
+<div class="t" id="nome">MALVORA</div>
+<div class="t" id="data"></div>
+<div class="t" id="hora">10 DE NOVEMBRO · 00H</div>
+<div id="handle">@malvora_hub</div>
+<script>
+const $=i=>document.getElementById(i),clamp=x=>Math.min(Math.max(x,0),1),ease=x=>{x=clamp(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2},
+rnd=n=>{const s=Math.sin(n*127.1+311.7)*43758.5453;return s-Math.floor(s)};
+const c=$('c').getContext('2d'),fx=$('fx').getContext('2d'),noise=fx.createImageData(540,960);
+$('data').innerHTML='10.11.2026'.split('').map(ch=>`<span class="grad">${ch}</span>`).join('');
+const env=t=>ENV[Math.min(ENV.length-1,Math.max(0,Math.round(t*30)))]||0;
+// esfera de partículas (Fibonacci) e o destino de cada uma no símbolo
+const N=LP.length,SP=[],GA=Math.PI*(3-Math.sqrt(5));
+for(let i=0;i<N;i++){const y=1-2*(i+.5)/N,r=Math.sqrt(1-y*y),a=i*GA;SP.push([Math.cos(a)*r,y,Math.sin(a)*r]);}
+const rmax=Math.max(...LP.map(p=>Math.hypot(p[0],p[1])));
+const DL=LP.map((p,i)=>12.2+2.6*Math.pow(Math.hypot(p[0],p[1])/rmax,1.3)+rnd(i)*0.6); // revela do centro para fora
+function sphere(i,t,R,e){const [x0,y0,z0]=SP[i];const d=1+0.22*Math.sin(3*x0+t*1.7)*Math.sin(2.5*y0+t*1.3)+0.12*e*Math.sin(5*z0+t*4);
+ let x=x0*d,y=y0*d,z=z0*d;const a=t*0.5,b=0.3*Math.sin(t*0.3);let X=x*Math.cos(a)+z*Math.sin(a),Z=-x*Math.sin(a)+z*Math.cos(a);
+ const Y=y*Math.cos(b)-Z*Math.sin(b);Z=y*Math.sin(b)+Z*Math.cos(b);const k=2.6/(2.6+Z);return [270+X*R*k,470+Y*R*k,Z];}
+function streaks(t,e){ // faixas de luz horizontais que pulsam com o som
+ const beat=Math.floor((t-0.2)/0.48),seed=beat*13.7;
+ const n=1+(beat%3===0?1:0);
+ for(let j=0;j<n;j++){const y=120+rnd(seed+j)*720,h=(14+e*200)*(0.6+rnd(seed+j*3)*.8),w=330+rnd(seed+j*5)*160,x0=270-w/2;
+  for(let s=0;s<34;s++){const yy=y+(rnd(seed+s*1.31+j)-.5)*h*2,al=(0.05+0.25*rnd(seed*2+s+t*0))*(1-Math.abs(yy-y)/(h*1.1+1));if(al<=0)continue;
+   c.fillStyle=`rgba(${s%3?'170,200,255':'0,212,170'},${Math.min(1,al*(0.4+e)*2.6)})`;c.fillRect(x0,yy,w,1);}
+  const g=c.createLinearGradient(x0,0,x0+w,0);g.addColorStop(0,'rgba(123,104,238,0)');g.addColorStop(.5,`rgba(235,245,255,${.7+e*.3})`);g.addColorStop(1,'rgba(0,212,170,0)');
+  c.fillStyle=g;c.fillRect(x0,y-1-e*3,w,2+e*6);c.fillStyle=`rgba(255,255,255,${.3*e})`;c.fillRect(269,y-h,1.2,h*2);}
+}
+window.render=function(t){
+ const e=env(t);c.globalCompositeOperation='source-over';c.fillStyle='#000';c.fillRect(0,0,540,960);c.globalCompositeOperation='lighter';
+ if(t<6.2) streaks(t,e);
+ if(t>=5.6&&t<12.3){const R=150*ease((t-5.6)/1.2)*(1+.12*e);
+  for(let i=0;i<N;i++){const [x,y,z]=sphere(i,t,R,e),b=(0.25+0.6*(1-z)/2)*(0.7+e*.6);c.fillStyle=`rgba(${200+55*rnd(i)|0},${215+40*(1-z)|0},255,${b})`;c.fillRect(x,y,1.2,1.2);}}
+ if(t>=12.0){const W=270,cx=250,cy=420;
+  for(let i=0;i<N;i++){const p=ease((t-DL[i])/0.9),[sx,sy]=sphere(i,t,150*(1-clamp((t-12)/4))*.9+20,e);
+   const tx=cx+LP[i][0]*W,ty=cy+LP[i][1]*W,x=sx+(tx-sx)*p,y=sy+(ty-sy)*p,ty01=clamp((LP[i][1]+.5));
+   const r=0|(0+123*ty01),g=0|(212-108*ty01),b=0|(170+68*ty01),a=p<1?0.35+0.5*p:0.85+0.15*e;
+   c.fillStyle=p>=1?`rgba(${r},${g},${b},${a})`:`rgba(220,235,255,${(t<DL[i]?0.5*(1-clamp((t-12)/4)):a)})`;c.fillRect(x,y,p>=1?1.5:1.1,p>=1?1.5:1.1);}
+  if(t>=15.6){const k=clamp((t-15.6)/2);const g=c.createRadialGradient(cx,cy,10,cx,cy,260);g.addColorStop(0,`rgba(0,212,170,${.12*k*(0.7+e)})`);g.addColorStop(1,'rgba(0,0,0,0)');c.fillStyle=g;c.fillRect(0,0,540,960);}}
+ if(t>=15.9&&t<16.5){const k=1-(t-15.9)/0.6;c.fillStyle=`rgba(240,250,255,${k*.9})`;c.fillRect(0,700-2-k*8,540,4+k*16);} // linha de luz na entrada da data
+ // textos
+ $('frase').style.opacity=clamp((t-1.2)/0.6)*(1-clamp((t-5.2)/0.5));$('frase').style.letterSpacing=(14+t*1.5)+'px';
+ $('nome').style.opacity=clamp((t-15.2)/0.8);$('nome').style.letterSpacing=(40-12*ease((t-15.2)/1.5))+'px';
+ [...$('data').children].forEach((s,i)=>{const p=ease((t-16.0-i*0.07)/0.35);s.style.opacity=p;s.style.transform=`translateY(${(1-p)*40}px)`;s.style.filter=`blur(${(1-p)*10}px)`;});
+ $('data').style.opacity=t>=16?1:0;$('hora').style.opacity=clamp((t-17.2)/0.6);
+ // grão e vinheta
+ const fr=Math.floor(t*30);for(let i=0;i<noise.data.length;i+=4){noise.data[i]=noise.data[i+1]=noise.data[i+2]=rnd(i*.13+fr*7.7)*255;noise.data[i+3]=14;}
+ fx.putImageData(noise,0,0);const vg=fx.createRadialGradient(270,480,250,270,480,640);vg.addColorStop(0,'rgba(0,0,0,0)');vg.addColorStop(1,'rgba(0,0,0,.55)');fx.fillStyle=vg;fx.fillRect(0,0,540,960);
+};
+</script></body></html>

@@ -12,6 +12,7 @@ canvas{position:absolute;left:0;top:0;width:1080px;height:1920px}
 .grad{background:linear-gradient(90deg,#00D4AA,#7B68EE);-webkit-background-clip:text;background-clip:text;color:transparent}
 </style></head><body>
 <canvas id="c" width="540" height="960"></canvas>
+<img id="logo" src="marca/simbolo-transp.png" style="position:absolute;width:540px;left:230px;top:547.3399715504979px;opacity:0">
 <canvas id="fx" width="540" height="960"></canvas>
 <div class="t" id="frase">ALGO ESTÁ CHEGANDO</div>
 <div class="t" id="nome">MALVORA</div>
@@ -53,6 +54,8 @@ window.render=function(t){
    c.fillStyle=p>=1?`rgba(${r},${g},${b},${a})`:`rgba(220,235,255,${(t<DL[i]?0.5*(1-clamp((t-12)/4)):a)})`;c.fillRect(x,y,p>=1?1.5:1.1,p>=1?1.5:1.1);}
   if(t>=15.6){const k=clamp((t-15.6)/2);const g=c.createRadialGradient(cx,cy,10,cx,cy,260);g.addColorStop(0,`rgba(0,212,170,${.12*k*(0.7+e)})`);g.addColorStop(1,'rgba(0,0,0,0)');c.fillStyle=g;c.fillRect(0,0,540,960);}}
  if(t>=15.9&&t<16.5){const k=1-(t-15.9)/0.6;c.fillStyle=`rgba(240,250,255,${k*.9})`;c.fillRect(0,700-2-k*8,540,4+k*16);} // linha de luz na entrada da data
+ // no fim a logo oficial completa substitui as partículas
+ const lk=clamp((t-15.3)/0.8);$('logo').style.opacity=lk;$('logo').style.filter=`drop-shadow(0 0 ${14+10*e}px rgba(0,212,170,.55))`;$('c').style.opacity=1-0.85*lk;
  // textos
  $('frase').style.opacity=clamp((t-1.2)/0.6)*(1-clamp((t-5.2)/0.5));$('frase').style.letterSpacing=(14+t*1.5)+'px';
  $('nome').style.opacity=clamp((t-15.2)/0.8);$('nome').style.letterSpacing=(40-12*ease((t-15.2)/1.5))+'px';

@@ -137,3 +137,8 @@ O objetivo da campanha é trazer seguidores novos, não só anunciar. Técnicas 
 
 Logo principal em todas as peças: **simbolo-triangulo-fundo** (versão sem fundo em
 `lancamento-2026-11-10/marca/simbolo-principal.png`). Outras versões só quando o Raphael pedir.
+
+## 10. Peças finais
+
+- **01/11 · Revelação da logo** (`revelacao-logo/revelacao-logo.mp4`, 21 s): versão final aprovada em 29/10.
+  Falta a legenda (aguardando aprovação) antes de entrar na fila de publicação.

@@ -132,3 +132,8 @@ O objetivo da campanha é trazer seguidores novos, não só anunciar. Técnicas 
 - **Collab posts** com 1 ou 2 clientes/parceiros em 10/11: o post aparece nos dois perfis.
 - **Stories diários** com figurinha de contagem regressiva (quem ativa recebe o aviso) e enquetes/quiz.
 - **Ritmo legível:** cada informação fica na tela tempo suficiente para ler (mínimo de 3 a 4 s por frase), vídeos de 15 a 25 s.
+
+## 9. Marca (decisão de 29/10)
+
+Logo principal em todas as peças: **simbolo-triangulo-fundo** (versão sem fundo em
+`contagem-comecou/_fonte/marca/simbolo-principal.png`). Outras versões só quando o Raphael pedir.

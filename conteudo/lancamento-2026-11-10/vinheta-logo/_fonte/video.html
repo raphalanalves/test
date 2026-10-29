@@ -1,0 +1,51 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+body{width:1080px;height:1920px;margin:0;overflow:hidden;background:#000}
+canvas{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.t{position:absolute;left:0;right:0;text-align:center;color:#fff;opacity:0}
+#nome{top:1380px;font-family:'Bebas Neue';font-size:120px;letter-spacing:44px;padding-left:44px}
+#data{top:1530px;font-family:'Bebas Neue';font-size:96px;letter-spacing:14px}
+#handle{position:absolute;left:0;right:0;bottom:110px;text-align:center;font:600 26px Inter;color:rgba(255,255,255,.5);letter-spacing:3px}
+.grad{background:linear-gradient(90deg,#00D4AA,#7B68EE);-webkit-background-clip:text;background-clip:text;color:transparent}
+</style></head><body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<div class="t" id="nome">MALVORA</div><div class="t" id="data"><span class="grad">10.11.2026</span></div>
+<div id="handle">@malvora_hub</div>
+<script>
+const $=i=>document.getElementById(i),clamp=x=>Math.min(Math.max(x,0),1),ease=x=>1-Math.pow(1-clamp(x),3),
+rnd=n=>{const s=Math.sin(n*127.1+311.7)*43758.5453;return s-Math.floor(s)};
+const c=$('c').getContext('2d'),logo=new Image(),sil=document.createElement('canvas');logo.src='marca/simbolo-principal.png';
+logo.onload=()=>{sil.width=logo.width;sil.height=logo.height;const s=sil.getContext('2d');s.drawImage(logo,0,0);s.globalCompositeOperation='source-in';s.fillStyle='#070912';s.fillRect(0,0,sil.width,sil.height);};
+const LW=640,LH=LW*665/625,LX=540-LW/2,LY=880-LH/2,TOP=LY-30,BOT=LY+LH+30,FLOOR=BOT+40;
+// raios: em quais quadros acende uma barra, onde e com que largura (fica mais frequente até o flash)
+const T1=2.4,T2=5.6;
+function bars(f){const t=f/30;if(t<T1||t>=T2)return [];const p=(t-T1)/(T2-T1),out=[];
+ if(rnd(f*1.7)<0.35+0.6*p){out.push([250+rnd(f*3.3)*580,22+Math.pow(rnd(f*5.1),3)*170+p*60]);}
+ if(p>.55&&rnd(f*9.2)<p-.4)out.push([250+rnd(f*7.7)*580,20+rnd(f*2.9)*90]);return out;}
+window.BARS=[];for(let f=0;f<300;f++)BARS.push(bars(f).length);
+function drawBar(x,w,a){
+ c.save();c.beginPath();c.rect(x-w/2,TOP,w,BOT-TOP);c.clip();
+ c.fillStyle=`rgba(235,245,255,${a})`;c.fillRect(x-w/2,TOP,w,BOT-TOP);
+ c.globalCompositeOperation='multiply';c.fillStyle='#000';c.globalAlpha=0;c.restore();
+ // logo vista através da luz: recorte escuro do símbolo dentro da barra
+ c.save();c.beginPath();c.rect(x-w/2,TOP,w,BOT-TOP);c.clip();c.globalAlpha=a;for(let k=0;k<3;k++)c.drawImage(sil,LX,LY,LW,LH);c.restore();
+ // brilho lateral e reflexo no chão
+ const g=c.createLinearGradient(x-w/2-40,0,x+w/2+40,0);g.addColorStop(0,'rgba(255,255,255,0)');g.addColorStop(.5,`rgba(200,230,255,${.18*a})`);g.addColorStop(1,'rgba(255,255,255,0)');
+ c.fillStyle=g;c.fillRect(x-w/2-40,TOP,w+80,BOT-TOP);
+ const r=c.createRadialGradient(x,FLOOR,2,x,FLOOR,w*1.6+60);r.addColorStop(0,`rgba(220,240,255,${.45*a})`);r.addColorStop(1,'rgba(0,0,0,0)');
+ c.save();c.translate(x,FLOOR);c.scale(1,.12);c.translate(-x,-FLOOR);c.fillStyle=r;c.fillRect(x-w*2-80,FLOOR-w*2-80,w*4+160,w*4+160);c.restore();}
+window.render=function(t){
+ const f=Math.round(t*30);c.globalCompositeOperation='source-over';c.globalAlpha=1;c.fillStyle='#000';c.fillRect(0,0,1080,1920);
+ // chão: linha de brilho que respira antes dos raios
+ const fl=clamp(t/2)*(0.25+0.1*Math.sin(t*3));const fg=c.createRadialGradient(540,FLOOR,5,540,FLOOR,520);fg.addColorStop(0,`rgba(170,200,255,${fl*.5})`);fg.addColorStop(1,'rgba(0,0,0,0)');
+ c.save();c.translate(540,FLOOR);c.scale(1,.06);c.translate(-540,-FLOOR);c.fillStyle=fg;c.fillRect(0,FLOOR-520,1080,1040);c.restore();
+ bars(f).forEach(([x,w])=>drawBar(x,w,1));
+ if(f>0)bars(f-1).forEach(([x,w])=>drawBar(x,w,.25)); // rastro de um quadro
+ // flash e logo completa
+ if(t>=T2){const k=t-T2;if(k<0.35){c.fillStyle=`rgba(240,250,255,${1-k/0.35})`;c.fillRect(0,TOP,1080,BOT-TOP);c.globalAlpha=1-k/0.35;c.drawImage(sil,LX,LY,LW,LH);c.drawImage(sil,LX,LY,LW,LH);c.globalAlpha=1;}
+  const a=ease((k-0.05)/0.6);c.globalAlpha=a;c.shadowColor='rgba(0,212,170,.8)';c.shadowBlur=40+20*Math.sin(t*4);c.drawImage(logo,LX,LY,LW,LH);c.shadowBlur=0;c.globalAlpha=1;
+  const r=c.createRadialGradient(540,FLOOR,5,540,FLOOR,500);r.addColorStop(0,`rgba(0,212,170,${.35*a})`);r.addColorStop(1,'rgba(0,0,0,0)');c.save();c.translate(540,FLOOR);c.scale(1,.08);c.translate(-540,-FLOOR);c.fillStyle=r;c.fillRect(0,FLOOR-500,1080,1000);c.restore();}
+ $('nome').style.opacity=ease((t-6.3)/0.7);$('nome').style.letterSpacing=(44-10*ease((t-6.3)/1.5))+'px';
+ $('data').style.opacity=ease((t-7.1)/0.6);$('data').style.transform=`translateY(${(1-ease((t-7.1)/0.6))*30}px)`;
+};
+</script></body></html>

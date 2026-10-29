@@ -1,0 +1,92 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=block">
+<style>
+body{width:1080px;height:1920px;margin:0;overflow:hidden;background:#0B0B13;font-family:Manrope,Inter,sans-serif;color:#F2F3F7}
+canvas{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.sc{position:absolute;inset:0;opacity:0;display:none}
+.hd{position:absolute;left:70px;right:70px;top:250px;text-align:center}
+.kick{display:inline-block;border:2px solid #7B68EE;color:#B9AEFF;border-radius:99px;padding:6px 22px;font:700 24px Inter;letter-spacing:6px;margin-bottom:26px}
+h1{margin:0;font-weight:800;font-size:78px;line-height:1.04;letter-spacing:-1px}
+h1 em{font-style:normal;background:linear-gradient(90deg,#00D4AA,#7B68EE);-webkit-background-clip:text;background-clip:text;color:transparent}
+.card{position:absolute;left:170px;width:740px;top:640px;background:#161724;border:1px solid #2A2C3E;border-radius:28px;padding:30px 34px;box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.ch{display:flex;align-items:center;gap:16px;font:700 28px Inter}.av{width:58px;height:58px;border-radius:50%;background:#2A2C3E;display:grid;place-items:center;font:700 26px Inter;color:#B9AEFF}
+.ch small{display:block;font:500 21px Inter;color:#8B8FA0}
+.bub{margin:26px 0 8px;background:#22243A;border-radius:22px 22px 22px 6px;padding:20px 24px;font:500 32px Inter;display:inline-block}
+.st{font:600 22px Inter;color:#8B8FA0;margin-top:10px}.st b{color:#E5484D}
+.clock{position:absolute;left:0;right:0;top:600px;text-align:center;font:700 150px 'DM Mono',Inter;letter-spacing:6px}.clock small{display:block;font:700 24px Inter;letter-spacing:8px;color:#E5484D}
+.row{display:flex;align-items:center;gap:22px;padding:20px 22px;border-radius:16px;font:600 30px Inter;margin-top:12px;background:#1C1D2C}
+.row i{font-style:normal;font:500 26px 'DM Mono',Inter;color:#8B8FA0;width:90px}.row span{flex:1}.row b{font:700 24px Inter;color:#00D4AA}
+.row.x{background:rgba(229,72,77,.12);border:2px solid #E5484D}.row.x b{color:#E5484D}
+.step{display:flex;gap:22px;align-items:center;padding:22px;border-radius:18px;margin-top:14px;border:2px solid #2A2C3E;background:#161724;transition:none}
+.step .n{width:58px;height:58px;border-radius:50%;border:2px solid #3A3D52;display:grid;place-items:center;font:800 26px Manrope;color:#8B8FA0}
+.step b{font:800 34px Manrope;display:block}.step small{font:500 23px Inter;color:#8B8FA0}
+.step.on{border-color:#00D4AA;background:linear-gradient(90deg,rgba(0,212,170,.14),rgba(123,104,238,.10))}.step.on .n{background:#00D4AA;border-color:#00D4AA;color:#0B0B13}
+.chips{position:absolute;left:90px;right:90px;top:640px;display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
+.chip{border:2px solid #2A2C3E;border-radius:99px;padding:18px 34px;font:700 36px Manrope;color:#5E6275;background:#12131D}
+.chip.on{color:#fff;border-color:#00D4AA;background:rgba(0,212,170,.12);box-shadow:0 0 30px rgba(0,212,170,.25)}
+#fim .logo{position:absolute;left:390px;top:610px;width:300px}
+#fim .big{position:absolute;left:0;right:0;top:960px;text-align:center;font-family:'Bebas Neue';font-size:190px;letter-spacing:10px}
+#fim .sub{position:absolute;left:0;right:0;top:1150px;text-align:center;font:700 34px Inter;letter-spacing:8px;color:#C9CCD6}
+#cap{position:absolute;left:0;right:0;top:1585px;text-align:center;z-index:9}
+#cap div{display:inline-block;background:#05050A;border:1px solid #2A2C3E;border-radius:14px;padding:12px 26px;font:800 44px Manrope;max-width:900px}
+#cap span{color:#6E7285}#cap span.on{color:#fff}#cap span.now{color:#00D4AA}
+#handle{position:absolute;left:0;right:0;bottom:90px;text-align:center;font:600 24px Inter;color:rgba(255,255,255,.45);letter-spacing:3px;z-index:9}
+</style></head><body>
+<canvas id="fl" width="1080" height="1920"></canvas>
+<div class="sc" id="s0"><div class="hd"><h1>Toda empresa que vive de agenda tem <em>três buracos no caixa.</em></h1></div></div>
+<div class="sc" id="s1"><div class="hd"><div class="kick">BURACO 1</div><h1>O cliente pergunta o preço <em>e some.</em></h1></div>
+ <div class="card" style="top:700px"><div class="ch"><div class="av">M</div><div>Marina<small>novo contato · via anúncio</small></div></div><div class="bub">Oi! Quanto custa a limpeza de pele? 😊</div><div class="st" id="st1">✓✓ visualizada</div></div></div>
+<div class="sc" id="s2"><div class="hd"><div class="kick">BURACO 2</div><h1>A mensagem <em>das 23h.</em></h1></div>
+ <div class="clock">23:47<small>FORA DO HORÁRIO</small></div>
+ <div class="card" style="top:900px"><div class="ch"><div class="av">R</div><div>Rafael<small>cliente</small></div></div><div class="bub">Vocês atendem no sábado? Queria cortar cedo</div><div class="st" id="st2">✓ entregue</div></div></div>
+<div class="sc" id="s3"><div class="hd"><div class="kick">BURACO 3</div><h1>O horário marcado <em>que fica vazio.</em></h1></div>
+ <div class="card"><div class="ch">Agenda · quinta</div>
+  <div class="row"><i>13:00</i><span>Corte + barba</span><b>✓</b></div><div class="row" id="faltou"><i>14:00</i><span>Avaliação facial</span><b id="fb">confirmado</b></div><div class="row"><i>15:00</i><span>Coloração</span><b>✓</b></div></div></div>
+<div class="sc" id="s4"><div class="hd"><h1>Os três são <em>o mesmo problema.</em></h1></div>
+ <div class="card" style="top:720px;text-align:center;font:700 38px Manrope">Atendimento humano<br><span style="color:#E5484D">não trabalha de madrugada.</span></div></div>
+<div class="sc" id="s5"><div class="hd"><h1>Uma IA no seu WhatsApp, <em>24 horas por dia.</em></h1></div>
+ <div class="card" style="top:620px;background:none;border:0;box-shadow:none;padding:0">
+  <div class="step" id="p1"><div class="n">1</div><div><b>Responde</b><small>na hora, com o nome da sua empresa</small></div></div>
+  <div class="step" id="p2"><div class="n">2</div><div><b>Agenda</b><small>direto na agenda de cada profissional</small></div></div>
+  <div class="step" id="p3"><div class="n">3</div><div><b>Confirma</b><small>lembrete na véspera, no WhatsApp</small></div></div></div></div>
+<div class="sc" id="s6"><div class="hd"><h1>Pra tudo que funciona <em>com horário marcado.</em></h1></div>
+ <div class="chips"><div class="chip" data-k="0">Clínica</div><div class="chip" data-k="1">Estética</div><div class="chip" data-k="2">Barbearia</div><div class="chip" data-k="3">Salão</div>
+ <div class="chip" data-k="4">Odontologia</div><div class="chip" data-k="4">Pet shop</div><div class="chip" data-k="4">Tatuagem</div><div class="chip" data-k="4">Fisioterapia</div><div class="chip" data-k="4">Academia</div><div class="chip" data-k="4">e mais</div></div></div>
+<div class="sc" id="s7"><div class="hd"><h1>Sem demonstração. <em>Sem reunião.</em></h1></div>
+ <div id="fim"><img class="logo" src="marca/simbolo-principal.png"><div class="big"><span style="background:linear-gradient(90deg,#00D4AA,#7B68EE);-webkit-background-clip:text;background-clip:text;color:transparent">10.11</span></div><div class="sub">É SÓ ACESSAR O PORTAL</div></div></div>
+<div id="cap"></div><div id="handle">@malvora_hub</div>
+<script>
+const K={"st": [0.6, 5.77, 10.72, 16.53, 22.18, 29.2, 38.31, 45.64], "total": 56.14, "resp": 32.48, "marca": 33.68, "conf": 35.28, "chips": [38.87, 39.67, 40.47, 41.51, 42.71], "some": 9.21, "ning": 14.12, "nao": 19.943, "dez": 49.16, "portal": 51.48},CAP=[{"a": 0.6, "b": 1.92, "w": [["Toda", 0.6, 0.16], ["empresa", 0.84, 0.48], ["que", 1.4, 0.08], ["vive", 1.64, 0.24]]}, {"a": 1.92, "b": 3.24, "w": [["de", 1.92, 0.04], ["agenda", 2.24, 0.28], ["tem", 2.6, 0.24], ["três", 2.92, 0.24]]}, {"a": 3.24, "b": 4.78, "w": [["buracos", 3.24, 0.4], ["no", 3.72, 0.08], ["caixa", 3.88, 0.4]]}, {"a": 5.77, "b": 6.837, "w": [["O", 5.77, 0.04], ["primeiro", 5.85, 0.56]]}, {"a": 6.837, "b": 7.93, "w": [["o", 6.837, 0.026], ["cliente", 6.89, 0.4], ["pergunta", 7.41, 0.36], ["o", 7.823, 0.054]]}, {"a": 7.93, "b": 10.11, "w": [["preço", 7.93, 0.56], ["e", 9.01, 0.04], ["some", 9.21, 0.4]]}, {"a": 10.72, "b": 11.867, "w": [["O", 10.72, 0.08], ["segundo", 10.88, 0.48]]}, {"a": 11.867, "b": 13.12, "w": [["a", 11.867, 0.026], ["mensagem", 11.92, 0.56], ["das", 12.56, 0.24], ["onze", 12.88, 0.16]]}, {"a": 13.12, "b": 15.62, "w": [["da", 13.12, 0.08], ["noite", 13.28, 0.4], ["que", 13.92, 0.08], ["ninguém", 14.12, 0.28], ["responde", 14.48, 0.64]]}, {"a": 16.53, "b": 17.77, "w": [["O", 16.53, 0.08], ["terceiro", 16.69, 0.64]]}, {"a": 17.77, "b": 19.117, "w": [["o", 17.77, 0.04], ["horário", 17.89, 0.24], ["marcado", 18.25, 0.6]]}, {"a": 19.117, "b": 19.943, "w": [["e", 19.117, 0.026], ["o", 19.17, 0.08], ["cliente", 19.45, 0.2], ["que", 19.73, 0.16]]}, {"a": 19.943, "b": 21.19, "w": [["não", 19.943, 0.107], ["aparece", 20.13, 0.56]]}, {"a": 22.18, "b": 23.5, "w": [["Os", 22.18, 0.24], ["três", 22.5, 0.4], ["são", 23.06, 0.16], ["o", 23.3, 0.08]]}, {"a": 23.5, "b": 24.74, "w": [["mesmo", 23.5, 0.2], ["problema", 23.78, 0.88]]}, {"a": 24.74, "b": 26.7, "w": [["atendimento", 24.74, 0.56], ["humano", 25.42, 0.44], ["não", 25.94, 0.16], ["trabalha", 26.18, 0.48]]}, {"a": 26.7, "b": 28.36, "w": [["de", 26.7, 0.04], ["madrugada", 26.82, 1.04]]}, {"a": 29.2, "b": 30.56, "w": [["A", 29.2, 0.08], ["Malvora", 29.4, 0.44], ["coloca", 29.92, 0.24], ["uma", 30.24, 0.24]]}, {"a": 30.56, "b": 32.293, "w": [["IA", 30.56, 0.32], ["no", 30.96, 0.08], ["seu", 31.12, 0.427], ["WhatsApp", 31.893, 0.347]]}, {"a": 32.293, "b": 33.68, "w": [["Ela", 32.293, 0.107], ["responde", 32.48, 0.32], ["na", 32.88, 0.16], ["hora", 33.12, 0.48]]}, {"a": 33.68, "b": 35.2, "w": [["marca", 33.68, 0.32], ["direto", 34.08, 0.4], ["na", 34.56, 0.08], ["agenda", 34.72, 0.4]]}, {"a": 35.2, "b": 37.46, "w": [["e", 35.2, 0.04], ["confirma", 35.28, 0.4], ["na", 35.8, 0.12], ["véspera", 35.96, 1.0]]}, {"a": 38.31, "b": 40.47, "w": [["Serve", 38.31, 0.32], ["pra", 38.71, 0.08], ["clínica", 38.87, 0.56], ["estética", 39.67, 0.64]]}, {"a": 40.47, "b": 43.03, "w": [["barbearia", 40.47, 0.72], ["salão", 41.51, 0.48], ["pra", 42.47, 0.08], ["tudo", 42.71, 0.24]]}, {"a": 43.03, "b": 44.07, "w": [["que", 43.03, 0.08], ["funciona", 43.23, 0.28], ["com", 43.59, 0.08], ["horário", 43.75, 0.24]]}, {"a": 44.07, "b": 45.05, "w": [["marcado", 44.07, 0.48]]}, {"a": 45.64, "b": 46.76, "w": [["E", 45.64, 0.04], ["você", 45.72, 0.24], ["não", 46.04, 0.16], ["precisa", 46.28, 0.4]]}, {"a": 46.76, "b": 48.96, "w": [["agendar", 46.76, 0.4], ["nenhuma", 47.28, 0.36], ["demonstração", 47.72, 0.72]]}, {"a": 48.96, "b": 50.24, "w": [["Dia", 48.96, 0.12], ["dez", 49.16, 0.16], ["de", 49.4, 0.04], ["novembro", 49.48, 0.48]]}, {"a": 50.24, "b": 51.08, "w": [["é", 50.24, 0.12], ["só", 50.4, 0.12], ["acessar", 50.6, 0.32], ["o", 50.96, 0.04]]}, {"a": 51.08, "b": 52.94, "w": [["nosso", 51.08, 0.16], ["portal", 51.48, 0.24], ["e", 51.8, 0.08], ["começar", 51.96, 0.48]]}];
+const $=i=>document.getElementById(i),clamp=x=>Math.min(Math.max(x,0),1),ease=x=>1-Math.pow(1-clamp(x),3);
+const f=$('fl').getContext('2d');
+function floor(t){f.clearRect(0,0,1080,1920);
+ const vy=1000,H=1920;f.strokeStyle='rgba(0,212,170,.13)';f.lineWidth=2;
+ for(let k=0;k<14;k++){const y=1180+Math.pow(k/13,1.8)*(H-1180);f.globalAlpha=0.3+0.7*k/13;f.beginPath();f.moveTo(0,y);f.lineTo(1080,y);f.stroke();}
+ f.globalAlpha=1;for(let k=-12;k<=12;k++){f.beginPath();f.moveTo(540+k*40,1180);f.lineTo(540+k*260,H);f.stroke();}
+ const g=f.createLinearGradient(0,1150,0,1300);g.addColorStop(0,'#0B0B13');g.addColorStop(1,'rgba(11,11,19,0)');f.fillStyle=g;f.fillRect(0,1150,1080,150);
+ // buracos
+ const S=K.st;const P=[[290,1360],[540,1360],[790,1360]];
+ const merge=ease((t-S[4])/1.2),close=ease((t-S[5]-0.3)/1.4);if(t>=S[6]-0.2)return;
+ P.forEach(([x,y],i)=>{const app=ease((t-S[0]-0.9-i*0.35)/0.6);let r=115*app;if(r<=0)return;
+  const hot=(t>=S[i+1]-0.25&&t<S[i+2]-0.25)?1:0;
+  const X=x+(540-x)*merge,Y=y,R=r*(1+merge*0.6)*(1-close);if(R<=1)return;
+  const pg=f.createRadialGradient(X,Y,0,X,Y,R);pg.addColorStop(0,'#000');pg.addColorStop(.75,'#020205');pg.addColorStop(1,'rgba(0,0,0,0)');
+  f.save();f.translate(X,Y);f.scale(1,.3);f.translate(-X,-Y);f.fillStyle=pg;f.beginPath();f.arc(X,Y,R,0,7);f.fill();
+  f.strokeStyle=hot?'rgba(229,72,77,.9)':`rgba(123,104,238,${.35+merge*.3})`;f.lineWidth=hot?10:5;f.beginPath();f.arc(X,Y,R*.92,0,7);f.stroke();f.restore();});
+ if(t>=S[5]){const k=clamp((t-S[5]-0.6)/1.2)*(1-clamp((t-S[6]+0.8)/0.6));const gg=f.createRadialGradient(540,1360,0,540,1360,380);gg.addColorStop(0,`rgba(0,212,170,${.5*k})`);gg.addColorStop(1,'rgba(0,0,0,0)');
+  f.save();f.translate(540,1360);f.scale(1,.3);f.translate(-540,-1360);f.fillStyle=gg;f.fillRect(0,0,1080,1920*3);f.restore();}}
+window.render=function(t){floor(t);const S=K.st;
+ for(let i=0;i<8;i++){const a=S[i]-0.3,b=i<7?S[i+1]-0.3:K.total+1,e=$('s'+i),on=t>=a&&t<b;e.style.display=on?'block':'none';if(!on)continue;
+  const p=ease((t-a)/0.45),q=1-ease((t-b+0.3)/0.3);e.style.opacity=Math.min(p,q);
+  [...e.querySelectorAll('.card,.clock,.chips,#fim')].forEach(c=>c.style.transform=`translateY(${(1-p)*50}px)`);
+  e.querySelector('.hd').style.transform=`translateY(${(1-p)*-24}px)`;}
+ $('st1').innerHTML=t>=K.some?'✓✓ visualizada · <b>sem resposta</b>':'✓✓ visualizada';
+ $('st2').innerHTML=t>=K.ning?'✓ entregue · <b>sem resposta há 9 h</b>':'✓ entregue';
+ $('faltou').className='row'+(t>=K.nao?' x':'');$('fb').textContent=t>=K.nao?'não veio':'confirmado';
+ [K.resp,K.marca,K.conf].forEach((w,i)=>$('p'+(i+1)).className='step'+(t>=w-0.1?' on':''));
+ document.querySelectorAll('.chip').forEach((c,i)=>{const k=+c.dataset.k,w=K.chips[k]+(k===4?(i-4)*0.1:0);c.className='chip'+(t>=w-0.05?' on':'');});
+ const lg=document.querySelector('#fim .logo');lg.style.opacity=ease((t-S[7]-0.2)/0.8);lg.style.filter=`drop-shadow(0 0 ${20+10*Math.sin(t*4)}px rgba(0,212,170,.5))`;
+ document.querySelector('#fim .big').style.opacity=ease((t-K.dez+0.1)/0.4);document.querySelector('#fim .sub').style.opacity=ease((t-K.portal+0.1)/0.4);
+ let cur=null;for(const x of CAP)if(t>=x.a&&t<x.b){cur=x;break;}const c=$('cap');
+ c.innerHTML=cur?'<div>'+cur.w.map(([w,a,d])=>`<span class="${t>=a?'on':''}${t>=a&&t<a+d+.05?' now':''}">${w}</span>`).join(' ')+'</div>':'';};
+</script></body></html>

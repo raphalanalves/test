@@ -1,0 +1,5 @@
+{"composition_plan":{"positive_global_styles":["modern minimal electronic","light corporate tech","warm","instrumental","background music for voice-over","96 bpm"],"negative_global_styles":["vocals","lyrics","heavy drums","aggressive","cheesy"],"sections":[
+{"section_name":"Curious intro","positive_local_styles":["calm","curious","soft plucks","light pulse","sparse"],"negative_local_styles":["loud","drums"],"duration_ms":11500,"lines":[]},
+{"section_name":"Contrast","positive_local_styles":["gentle tension","soft beat enters","muted bass","focused"],"negative_local_styles":["loud","busy"],"duration_ms":12100,"lines":[]},
+{"section_name":"Map lights up","positive_local_styles":["uplifting","building","bright arpeggio","steady beat"],"negative_local_styles":["drop","aggressive"],"duration_ms":10600,"lines":[]},
+{"section_name":"Warm resolution","positive_local_styles":["warm confident","open pads","resolving","gentle ending"],"negative_local_styles":["abrupt ending","drums"],"duration_ms":11100,"lines":[]}]}}

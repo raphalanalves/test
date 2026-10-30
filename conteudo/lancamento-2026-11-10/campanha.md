@@ -142,3 +142,21 @@ Logo principal em todas as peças: **simbolo-triangulo-fundo** (versão sem fund
 
 - **01/11 · Revelação da logo** (`revelacao-logo/revelacao-logo.mp4`, 21 s): versão final aprovada em 29/10.
   Falta a legenda (aguardando aprovação) antes de entrar na fila de publicação.
+
+## 11. Calendário em execução (30/10)
+
+Feed às 19h (Brasília); D0 às 00h05. Linhas na `instagram_fila` com status `aguardando_aprovacao` (o publicador só pega `aprovado`).
+
+| Dia | Peça | Status |
+|---|---|---|
+| Sáb 31/10 | Vinheta da logo (raios) | na fila, aguardando aprovação |
+| Dom 01/11 | Revelação da logo + abertura da lista VIP | na fila, aguardando aprovação |
+| Seg 02/11 | V7 Hexágonos (Amandoca) | na fila, aguardando aprovação |
+| Ter 03/11 | V14 Cliente ligando (barbearia) | pronto, falta legenda |
+| Qua 04/11 | V14 Cliente ligando (clínica) | pronto, falta legenda |
+| Qui 05/11 | V16 Qual IA escolher | na fila, aguardando aprovação |
+| Sex 06/11 | Revelação dos 50% (VIP) | a produzir |
+| Sáb 07/11 | V13 Chama o gerente | refazer com a Amandoca |
+| Dom 08/11 | V5 Quantas mensagens | pronto, falta legenda |
+| Seg 09/11 | Fundadores: "Amanhã." | a produzir (precisa de gravação) |
+| Ter 10/11 00h05 | V15 Três buracos + link do portal | na fila, aguardando aprovação |

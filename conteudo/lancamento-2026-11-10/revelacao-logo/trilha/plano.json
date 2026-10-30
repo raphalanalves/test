@@ -1,0 +1,5 @@
+{"composition_plan":{"positive_global_styles":["cinematic electronic","modern tech brand","premium","instrumental","125 bpm"],"negative_global_styles":["vocals","lyrics","acoustic guitar","cheesy"],"sections":[
+{"section_name":"Glitch pulse","positive_local_styles":["dark minimal","crisp digital clicks","glitchy electronic pulse","tension","sub bass"],"negative_local_styles":["melody","drums fill"],"duration_ms":6000,"lines":[]},
+{"section_name":"Organic bloom","positive_local_styles":["smooth swell","warm evolving organic texture","soft pulsing bass","airy"],"negative_local_styles":["harsh","glitch"],"duration_ms":6000,"lines":[]},
+{"section_name":"Build","positive_local_styles":["rising tension","shimmering arpeggio climbing","riser","building energy"],"negative_local_styles":["drop","silence"],"duration_ms":4000,"lines":[]},
+{"section_name":"Reveal","positive_local_styles":["big cinematic impact on the first beat","wide bright confident synth chord","ringing out","slow fade"],"negative_local_styles":["drums","busy"],"duration_ms":5500,"lines":[]}]}}

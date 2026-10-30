@@ -4,6 +4,7 @@ body{width:6480px;height:1350px;position:relative;overflow:hidden}
 .s{position:absolute;top:0;width:1080px;height:1350px;padding:110px 90px}
 .cnt{position:absolute;top:60px;right:80px;font-size:22px;color:var(--mut);letter-spacing:3px}
 .foot{position:absolute;bottom:56px;left:0;right:0;display:flex;justify-content:center}
+.wm{position:absolute;right:56px;bottom:56px;width:72px;opacity:.5}
 .tag{display:inline-block;font-family:'Bebas Neue';font-size:44px;letter-spacing:4px;color:var(--mut);margin-bottom:34px}
 .mito{position:relative;display:inline-block}
 .stamp{position:absolute;right:-30px;top:-40px;transform:rotate(-12deg);border:6px solid var(--red);color:var(--red);font-family:'Bebas Neue';
@@ -62,7 +63,7 @@ svg.line{position:absolute;left:0;top:0;pointer-events:none}
  
  <div class="foot" id="lf"></div></div>
 <script>
-document.querySelectorAll('.foot').forEach(f=>{ if(!f.id) f.innerHTML=logoFull()}); document.getElementById('l1').innerHTML=logoFull(); document.getElementById('lf').innerHTML=logoFull();
+document.querySelectorAll('.foot').forEach(f=>{ if(f.id!=='l1') f.innerHTML='<img class="wm" src="marca/simbolo-principal.png">'});
 // circuito contínuo atravessando os slides
 const y=1180, pts=[[0,y],[300,y],[360,y-60],[1500,y-60],[1560,y],[2580,y],[2640,y-60],[3660,y-60],[3720,y],[4740,y],[4800,y-60],[5520,y-60]];
 const nodes=[[1300,y-60],[2380,y],[3460,y-60],[4540,y]];

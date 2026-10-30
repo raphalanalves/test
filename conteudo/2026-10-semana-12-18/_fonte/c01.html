@@ -3,6 +3,7 @@ body{width:6480px;height:1350px;position:relative;overflow:hidden}
 .s{position:absolute;top:0;width:1080px;height:1350px;padding:180px 90px 0}
 .cnt{position:absolute;top:60px;right:80px;font-size:22px;color:var(--mut);letter-spacing:3px}
 .foot{position:absolute;bottom:60px;left:0;right:0;display:flex;justify-content:center}
+.wm{position:absolute;right:56px;bottom:56px;width:72px;opacity:.5}
 .chk{display:flex;gap:26px;align-items:center;font-size:38px;padding:26px 0;border-bottom:1px solid rgba(255,255,255,.08);color:#E9EAEE}
 .x{width:54px;height:54px;border-radius:12px;border:3px solid var(--red);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:30px;flex:none}
 .ok{border-color:var(--g);color:var(--g)}
@@ -75,12 +76,12 @@ body{width:6480px;height:1350px;position:relative;overflow:hidden}
 
 <div class="s" style="left:5400px;text-align:center;padding-top:150px"><div class="cnt">6/6</div>
  <div id="big" style="display:flex;justify-content:center"></div>
- <div class="h" style="font-size:118px;margin-top:40px">SUA OPERAÇÃO.<br><span class="grad">SISTEMATIZADA.</span><br>INTELIGENTE.</div>
+ <div class="h" style="font-size:118px;margin-top:40px">QUEM RESPONDE<br><span class="grad">ÀS 21H</span><br>FICA COM O CLIENTE.</div>
  <div style="font-size:36px;margin-top:50px;line-height:1.4;color:#E9EAEE">Manda pra quem ainda responde<br>cliente só no dia seguinte.</div>
- <div style="font-size:28px;margin-top:22px;color:var(--mut)">Monte o plano da sua empresa pelo link da bio.</div>
+ <div style="font-size:28px;margin-top:22px;color:var(--mut)">A Malvora abre dia 10/11. Lista VIP com 10 vagas no link da bio.</div>
  <div class="foot" id="f6"></div></div>
 <script>
-for(let i=1;i<=6;i++) document.getElementById('f'+i).innerHTML=logoFull();
-document.getElementById('big').innerHTML=symImg(300);
-document.getElementById('ghost').innerHTML=logoSVG(4);
+for(let i=2;i<=5;i++) document.getElementById('f'+i).innerHTML='<img class="wm" src="marca/simbolo-principal.png">';
+document.getElementById('big').innerHTML='<img src="marca/simbolo-principal.png" style="width:300px">';
+document.getElementById('ghost').innerHTML='<img src="marca/simbolo-principal.png" style="width:100%">';
 </script></body></html>

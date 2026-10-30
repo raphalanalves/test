@@ -3,7 +3,7 @@ import json
 """Trilha e efeitos do V14, sintetizados aqui (sem direitos autorais). Tempos iguais aos de v14.js."""
 import sys, wave, numpy as np
 SR = 44100
-TOTAL = 73.98
+TOTAL = 66.53
 rng = np.random.default_rng(7)
 L = np.zeros(int(TOTAL * SR)); R = np.zeros_like(L)
 
@@ -62,7 +62,7 @@ def chord(t, fs, d, g=0.07):
     x = tt(d); s = sum(np.sin(2 * np.pi * f * x) + .3 * np.sin(2 * np.pi * 2 * f * x) for f in fs)
     add(s * np.minimum(1, x / .4) * np.minimum(1, (d - x) / .6), t, g)
 
-S=[0.6, 6.12, 16.09, 26.26, 34.09, 45.12, 55.98, 64.99]; T=73.98
+S=[0.6, 5.37, 14.29, 23.71, 30.49, 40.77, 50.58, 58.54]; T=66.53
 B=60/92; prog=[(220,277.2,329.6),(174.6,220,261.6),(196,246.9,293.7),(164.8,207.7,246.9)]
 for k in range(int(T/(4*B))+1): chord(k*4*B,prog[k%4],4*B+0.3,0.04)
 for i in range(int(T/B)):
@@ -71,7 +71,7 @@ for i in range(int(T/B)):
     if t>S[6]-0.3: kick(t,0.18 if i%2==0 else 0.1)
 for t in S: whoosh(t-0.35,.35,.16)
 for t in (S[2],S[4],S[5]): boom(t,0.3)
-boom(31.14,0.5); stamp(31.16)
+boom(S[3]+4.88,0.5); stamp(S[3]+4.9)
 plim(S[6]+0.4); boom(S[7],0.5); chord(S[7],(261.6,329.6,392,523.3),T-S[7],0.07)
 m = max(abs(L).max(), abs(R).max()); L, R = L / m * 0.89, R / m * 0.89
 st = np.empty(len(L) * 2); st[0::2] = L; st[1::2] = R

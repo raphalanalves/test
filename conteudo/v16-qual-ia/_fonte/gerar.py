@@ -2,8 +2,8 @@
 import json,subprocess
 D=[float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',f'../audio/s{i}.mp3'])) for i in range(1,9)]
 ST=[0.6]
-for i,d in enumerate(D[:-1]): ST.append(round(ST[-1]+d+(1.3 if i in (1,3,5,6) else 1.0),2))
-TOTAL=round(ST[-1]+D[-1]+3.5,2)
+for i,d in enumerate(D[:-1]): ST.append(round(ST[-1]+d+0.25,2))
+TOTAL=round(ST[-1]+D[-1]+2.5,2)
 WS=[[dict(w,t=round(w['t']+ST[i],3)) for w in json.load(open(f'../audio/s{i+1}.json'))] for i in range(8)]
 CAP=[]
 for W in WS:

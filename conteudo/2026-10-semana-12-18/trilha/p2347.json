@@ -1,0 +1,5 @@
+{"composition_plan":{"positive_global_styles":["minimal modern electronic","tech brand","instrumental","100 bpm"],"negative_global_styles":["vocals","lyrics","aggressive","cheesy"],"sections":[
+{"section_name":"Late night","positive_local_styles":["quiet night","soft ticking pulse","dark pad","suspense"],"negative_local_styles":["drums","loud"],"duration_ms":5200,"lines":[]},
+{"section_name":"Chat","positive_local_styles":["light rhythmic pluck","soft beat","curious"],"negative_local_styles":["loud"],"duration_ms":6500,"lines":[]},
+{"section_name":"Booked","positive_local_styles":["bright uplifting","positive lift","confident"],"negative_local_styles":["aggressive"],"duration_ms":3800,"lines":[]},
+{"section_name":"Brand","positive_local_styles":["warm open pad","resolving","gentle ending"],"negative_local_styles":["drums","abrupt"],"duration_ms":4500,"lines":[]}]}}

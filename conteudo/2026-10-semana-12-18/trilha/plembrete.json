@@ -1,0 +1,5 @@
+{"composition_plan":{"positive_global_styles":["minimal modern electronic","tech brand","instrumental","100 bpm"],"negative_global_styles":["vocals","lyrics","aggressive","cheesy"],"sections":[
+{"section_name":"No-show","positive_local_styles":["tense","muted","low pulse","slight dissonance"],"negative_local_styles":["drums","loud"],"duration_ms":4000,"lines":[]},
+{"section_name":"Reminder chat","positive_local_styles":["calm rhythmic pluck","soft beat","friendly"],"negative_local_styles":["loud"],"duration_ms":11500,"lines":[]},
+{"section_name":"Solved","positive_local_styles":["uplifting","bright","positive lift"],"negative_local_styles":["aggressive"],"duration_ms":5500,"lines":[]},
+{"section_name":"Brand","positive_local_styles":["warm open pad","resolving","gentle ending"],"negative_local_styles":["drums","abrupt"],"duration_ms":4000,"lines":[]}]}}

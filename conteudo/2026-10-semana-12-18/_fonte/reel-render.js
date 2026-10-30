@@ -1,7 +1,7 @@
 // uso: node reel-render.js arquivo.html segundos saida.mp4
 const {chromium}=require('playwright'),fs=require('fs'),path=require('path'),{execSync}=require('child_process');
 (async()=>{
- const [f,dur,out,capa]=process.argv.slice(2), fps=30, dir=fs.mkdtempSync('/tmp/claude-0/-home-user-test/83659f5d-752c-53ab-985c-20c71f1c8e89/scratchpad/frames-');
+ const [f,dur,out,capa]=process.argv.slice(2), fps=30, dir=fs.mkdtempSync('/tmp/claude-0/-home-user/83659f5d-752c-53ab-985c-20c71f1c8e89/scratchpad/frames-');
  const b=await chromium.launch(); const p=await b.newPage({viewport:{width:1080,height:1920}});
  await p.goto('file://'+path.resolve(f)); await p.evaluate(()=>document.fonts.ready); await p.waitForTimeout(300);
  const n=Math.round(+dur*fps);

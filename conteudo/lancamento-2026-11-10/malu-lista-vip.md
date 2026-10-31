@@ -71,7 +71,7 @@ Quando a pessoa pedir para entrar na lista VIP (ex.: "Quero entrar na lista VIP 
 
 | Campo | Valor |
 |---|---|
-| Código | `ESPERAVIP20` |
+| Código | `ESPERAVIP` |
 | Desconto | 20% |
 | Mensalidades | 1 (só a primeira) |
 | Validade | até 30/11/2026 |
@@ -98,7 +98,7 @@ Equipe Malvora
 ```
 
 (Lista de espera: trocar o segundo parágrafo por "Você está na lista de espera, nº {número}. No dia 09/11 sorteamos até
-2 vagas extras; se não for desta vez, você ganha 20% no primeiro mês com o cupom ESPERAVIP20.")
+2 vagas extras; se não for desta vez, você ganha 20% no primeiro mês com o cupom ESPERAVIP.")
 
 ### 2.6 Retomada do cadastro parado (até a melhoria de 01/11: manual)
 
@@ -140,6 +140,6 @@ Claude Code numa pasta qualquer e cole:
 Abra o navegador (Playwright, modo visível) em https://portal.malvora.com.br e espere eu fazer o login na empresa
 interna contato@malvora.com.br. Depois siga o arquivo malu-lista-vip.md (seções 2 e 4): ligue o módulo Acompanhamento,
 crie as categorias "Lista VIP" e "Lista de espera", cole as instruções extras da IA, cadastre as perguntas frequentes e o
-cupom ESPERAVIP20. Antes de salvar cada tela, me mostre o que vai mudar e espere meu ok. No fim, rode o roteiro de QA e
+cupom ESPERAVIP. Antes de salvar cada tela, me mostre o que vai mudar e espere meu ok. No fim, rode o roteiro de QA e
 me entregue um relatório com o que passou e o que falhou.
 ```

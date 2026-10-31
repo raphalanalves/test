@@ -5,7 +5,7 @@
 - Perguntas frequentes (caminho A): respostas das nº 3, 18, 19, 21, 22 e 24 editadas; nº 20 e 23 sem mudança; nº 25 nova.
 - Categorias "Lista VIP" e "Lista de espera": a IA cria no primeiro acompanhamento (não há tela de cadastro).
 - Próximo acompanhamento esperado: nº 2.
-- Cupom ESPERAVIP20: pendente (precisa da conta de equipe da plataforma).
+- Cupom ESPERAVIP: pendente (precisa da conta de equipe da plataforma).
 - QA de conversa: 01/11, pelo celular.
 
 ## Problemas de tela para o time do portal (backlog)

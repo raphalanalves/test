@@ -5,7 +5,7 @@
 - Perguntas frequentes (caminho A): respostas das nº 3, 18, 19, 21, 22 e 24 editadas; nº 20 e 23 sem mudança; nº 25 nova.
 - Categorias "Lista VIP" e "Lista de espera": a IA cria no primeiro acompanhamento (não há tela de cadastro).
 - Próximo acompanhamento esperado: nº 2.
-- Cupom ESPERAVIP: pendente (precisa da conta de equipe da plataforma).
+- Cupons (conta de equipe): ESPERAVIP criado (20%, 1ª mensalidade, até 30/11, limite 50); ESPERAVIP20 desativado (limite era 2). CLIENTEVIPMALVORA (50%, 3 meses, limite 10) e SORTEIOVIP20 (50%, 3 meses, limite 3) sem mudança. Campanha VIPMALVORA segue encerrada.
 - QA de conversa: 01/11, pelo celular.
 
 ## Problemas de tela para o time do portal (backlog)

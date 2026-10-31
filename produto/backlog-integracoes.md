@@ -19,6 +19,13 @@ confirmadas na documentação oficial e com o time comercial de cada uma antes d
 | Login | Google, Microsoft |
 | IA | OpenAI, Claude (internas; não aparecem na comunicação, que fala em tecnologia própria) |
 
+**Google que já fazemos:** login com Google, Google Agenda (com criação do link do Google Meet no evento), Google Drive,
+Google Maps (rota para o endereço), link de avaliação no Google enviado pela IA depois do atendimento, planilhas (importar
+e exportar em CSV/XLSX, que abrem no Google Planilhas).
+
+**Microsoft que já fazemos:** login com Microsoft, Outlook (agenda, com criação do link do Teams no evento), envio de
+e-mail pelo Microsoft Graph, planilhas Excel (importar e exportar).
+
 ## 2. Sinais de demanda já vistos
 
 - Simulação do direct (30/10): pergunta "Tem integração com o Trinks?". Hoje a IA encaminha para a equipe.
@@ -71,11 +78,41 @@ Critérios (1 a 3): **Demanda** (quantos clientes do nosso público usam), **Enc
 | Google Sheets / Excel (importar e exportar) | 2 | 2 | 3 | 7 | Já existe o módulo de importar planilhas |
 | iFood | 1 | 1 | 1 | 3 | Fora do nosso foco agora |
 
+### InfinitePay (pedido em 31/10)
+
+Viável. A InfinitePay tem o **Checkout Integrado**: uma chamada POST com os itens devolve um link de pagamento pronto
+(Pix sem taxa e cartão em até 12x, segundo a própria InfinitePay), com consulta de status e webhook. Encaixe alto: é muito
+usada por barbearias e salões, e a IA já manda link de cobrança (Asaas/Mercado Pago) do mesmo jeito.
+Falta: documentação técnica completa (endpoints e autenticação) e confirmar se o Pix vale no link gerado pela API.
+Contato de parcerias citado pela empresa: parcerias@cloudwalk.io.
+Fontes: [InfinitePay para desenvolvedores](https://www.infinitepay.io/desenvolvedores),
+[blog da InfinitePay sobre a integração](https://www.infinitepay.io/blog/integracao-infinitepay).
+
+### Lojas de carros (revendas e concessionárias) · pedido em 31/10
+
+Onde a Malvora ajuda: o lead chega pelos portais (Webmotors, OLX, iCarros, Mercado Livre) e quase sempre vai para o
+WhatsApp. A IA responde na hora com os dados do carro, agenda a visita ou o test drive, pede os dados do usado para
+avaliação e passa para o vendedor quando o assunto é negociação ou financiamento.
+
+| Caminho | Viabilidade | Observação |
+|---|---|---|
+| Webmotors (API Marketplace) | Média | API oficial com acesso restrito: o lojista gera o token no Cockpit e cria um usuário "Integrador de API". Lê o estoque e encaminha leads para o Cockpit CRM |
+| Integradores de anúncios (Revenda Mais, AutoCerto, Spice) | Média | Já publicam o estoque em vários portais; integrar com um deles traz o estoque de todos. Depende de parceria |
+| OLX Autos e iCarros | Baixa por enquanto | Não achei API pública; parece depender de acordo comercial ou de integrador |
+| Tabela FIPE | Alta | Consulta de preço de referência para a IA responder "quanto vale meu carro" sem prometer valor |
+| Estoque em planilha (importar) | Alta, já existe | Primeira versão sem integração: a revenda sobe o estoque pelo importador que o portal já tem |
+
+Sugestão: começar pelo estoque em planilha + Tabela FIPE (dá para vender já) e abrir conversa com um integrador
+(Revenda Mais ou AutoCerto) para trazer o estoque e os leads dos portais de uma vez.
+Fontes: [Webmotors API Marketplace](https://portal-webmotors.sensedia.com/api-portal/content/api-marketplace),
+[Revenda Mais · Integrador Web](https://revendamais.com.br/integrador-web/),
+[AutoCerto · Integrador de Anúncios](https://autocerto.com/IntegradorWeb).
+
 ## 4. Proposta de ordem (para validar)
 
 1. **1º tri/2027 (o que destrava venda já):** Google Perfil da Empresa (avaliações), Instagram Direct como produto,
    e uma agenda de segmento: **Trinks** se a API for acessível, senão Booksy.
-2. **2º tri:** InfinitePay ou PagBank (cobrança), nota fiscal, Meta Lead Ads.
+2. **2º tri:** InfinitePay (cobrança), nota fiscal, Meta Lead Ads, e o pacote para lojas de carros (estoque + FIPE).
 3. **2º semestre:** um sistema de clínica (o mais usado pelos clientes que entrarem), um ERP, CRM.
 
 ## 5. Próximos passos da análise

@@ -1,0 +1,4 @@
+{"composition_plan":{"positive_global_styles":["playful comedic","instrumental","light","quirky"],"negative_global_styles":["vocals","lyrics","aggressive","dark"],"sections":[
+{"section_name":"Chaos","positive_local_styles":["quirky pizzicato","ticking","building comedic tension","faster and faster"],"negative_local_styles":["slow"],"duration_ms":5000,"lines":[]},
+{"section_name":"Stare","positive_local_styles":["sudden stop","single comedic sting","awkward pause"],"negative_local_styles":["busy"],"duration_ms":4000,"lines":[]},
+{"section_name":"Relief","positive_local_styles":["chill lo-fi groove","warm","relaxed happy"],"negative_local_styles":["tense"],"duration_ms":6500,"lines":[]}]}}

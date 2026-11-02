@@ -10,6 +10,8 @@
 ## 2. Marca
 - Logo principal: símbolo do triângulo com fundo (`simbolo-principal.png`), salvo pedido contrário.
 - Voz oficial (desde 02/11): Carla (ElevenLabs, voz 7eUAxNOneHxqfyRS77mW), Eleven v4, estabilidade 0.35, similaridade 0.8, estilo 0.4, sem tags. A Amandoca saiu.
+- Pronúncia: "Malvôra". No texto enviado à voz, escrever "Malvôra"; na legenda e na tela, "Malvora".
+- Abertura de Reel: o gancho em texto já aparece no primeiro quadro (sem fade), um som curto de entrada e a primeira fala em ~1 s.
 - Nome do perfil: "Malvora • IA para empresas". Não nichar em "WhatsApp": a Malvora atende, agenda e cobra pela empresa.
 - Toda legenda termina com: "Malvora Hub: A nova alquimia digital. 💚💜"
 - O portal só aparece na comunicação a partir de 10/11/2026, 00h.

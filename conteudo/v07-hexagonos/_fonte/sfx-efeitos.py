@@ -2,7 +2,7 @@
 """Trilha e efeitos do V14, sintetizados aqui (sem direitos autorais). Tempos iguais aos de v14.js."""
 import sys, wave, numpy as np
 SR = 44100
-TOTAL = 46.94
+TOTAL = 47.72
 rng = np.random.default_rng(7)
 L = np.zeros(int(TOTAL * SR)); R = np.zeros_like(L)
 
@@ -11,7 +11,7 @@ def M(t):
     for i in range(len(KN)-1):
         if t<KO[i+1]: return KN[i]+(KN[i+1]-KN[i])*(t-KO[i])/(KO[i+1]-KO[i])
     return KN[-1]
-KO=[0,3.2,6.6,11,14.6,17.4,20.6,26]; KN=[0.0, 5.94, 11.8, 19.65, 24.7, 32.08, 35.7, 46.94]
+KO=[0,3.2,6.6,11,14.6,17.4,20.6,26]; KN=[0.0, 6.64, 12.5, 20.35, 25.4, 32.78, 36.4, 47.72]
 def warp(t):
     for i in range(7):
         if t<KO[i+1]: return KN[i]+(KN[i+1]-KN[i])*(t-KO[i])/(KO[i+1]-KO[i])
@@ -72,6 +72,7 @@ def chord(t, fs, d, g=0.07):
     add(s * np.minimum(1, x / .4) * np.minimum(1, (d - x) / .6), t, g)
 
 # só o essencial: chegada das mensagens, a empresa A acende, o mapa abre, a marca
+whoosh(0.02,.3,.3)  # abertura: chama a atenção antes da primeira fala
 whoosh(3.0,.4,.3)
 boom(6.6,.5); plim(6.8)
 whoosh(14.4,.6,.35)

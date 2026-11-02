@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@500;700&display=block">
+<style>
+html,body{margin:0;width:1080px;height:1920px;background:#0B0B12;color:#fff;font-family:Inter,sans-serif;overflow:hidden;position:relative}
+.tex{position:absolute;inset:0;background-image:radial-gradient(rgba(0,212,170,.14) 1.4px,transparent 1.6px);background-size:26px 26px;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 45%,#000,transparent 80%)}
+.glow{position:absolute;width:1100px;height:1100px;left:-10px;top:300px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,170,.20),transparent 62%)}
+.glow2{position:absolute;width:900px;height:900px;right:-300px;top:1100px;border-radius:50%;background:radial-gradient(circle,rgba(123,104,238,.22),transparent 62%)}
+.c{position:absolute;left:0;right:0;text-align:center}
+.lab{font-family:'Bebas Neue';letter-spacing:10px;color:#A9ADB3;font-size:46px}
+.big{font-family:'Bebas Neue';line-height:.85}
+.grad{background:linear-gradient(90deg,#00D4AA,#7B68EE);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{font-size:44px;color:#E9EAEE;line-height:1.35}
+.pill{display:inline-block;border:2px solid rgba(0,212,170,.5);border-radius:60px;padding:18px 40px;font-size:38px;color:#7FF0D6;background:rgba(0,212,170,.07)}
+</style></head><body>
+<div class="tex"></div><div class="glow"></div><div class="glow2"></div>
+<div class="c" style="top:200px"><img src="simbolo-principal.png" style="width:150px"></div>
+<div class="c lab" style="top:400px">MALVORA · 10.11 · 00H</div>
+<div class="c big grad" id="num" style="top:520px;font-size:620px"></div>
+<div class="c big" id="unid" style="top:1080px;font-size:170px"></div>
+<div class="c sub" id="frase" style="top:1310px;padding:0 110px"></div>
+<div class="c" style="top:1620px"><span class="pill">Lista VIP · link da bio</span></div>
+<script>
+const q=new URLSearchParams(location.search);
+document.getElementById('num').textContent=q.get('n');
+document.getElementById('unid').textContent=q.get('u');
+document.getElementById('frase').textContent=q.get('f');
+if(q.get('n').length>2){document.getElementById('num').style.fontSize='330px';document.getElementById('num').style.lineHeight='1.15';document.getElementById('num').style.top='650px';}
+</script></body></html>

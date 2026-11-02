@@ -4,7 +4,7 @@ body{width:6480px;height:1350px;position:relative;overflow:hidden}
 .s{position:absolute;top:0;width:1080px;height:1350px;padding:110px 90px}
 .cnt{position:absolute;top:60px;right:80px;font-size:22px;color:var(--mut);letter-spacing:3px}
 .foot{position:absolute;bottom:56px;left:0;right:0;display:flex;justify-content:center}
-.wm{position:absolute;right:56px;bottom:56px;width:72px;opacity:.5}
+.wm{position:absolute;right:56px;bottom:56px;width:64px;opacity:.45}
 .tag{display:inline-block;font-family:'Bebas Neue';font-size:44px;letter-spacing:4px;color:var(--mut);margin-bottom:34px}
 .mito{position:relative;display:inline-block}
 .stamp{position:absolute;right:-30px;top:-40px;transform:rotate(-12deg);border:6px solid var(--red);color:var(--red);font-family:'Bebas Neue';
@@ -29,11 +29,11 @@ svg.line{position:absolute;left:0;top:0;pointer-events:none}
 <div class="s" style="left:0;padding-top:110px">
  <div class="cnt">1/6</div>
  <div class="who">você, toda vez que alguém fala de IA:</div>
- <div class="bubble in" style="font-size:34px;width:fit-content">IA no meu WhatsApp? Nem pensar. 🙅<span class="hora">23:47</span></div>
+ <div class="bubble in" style="font-size:34px;width:fit-content">IA atendendo o meu cliente? Nem pensar. 🙅<span class="hora">22:16</span></div>
  <div class="h" style="font-size:330px;margin-top:70px">4 <span class="verde">MITOS</span></div>
- <div class="h" style="font-size:92px;margin-top:6px">sobre IA no WhatsApp<br><span class="grad">que fazem você perder cliente</span></div>
- <div style="font-size:34px;color:#E9EAEE;margin-top:36px">O 3º é o que mais trava dono de pequena empresa.</div>
- <div style="position:absolute;right:90px;bottom:150px;font-size:26px;color:var(--mut);letter-spacing:2px">arrasta pro lado →</div>
+ <div class="h" style="font-size:92px;margin-top:6px">sobre IA no atendimento<br><span class="grad">que fazem você perder cliente</span></div>
+ <div style="font-size:34px;color:#E9EAEE;margin-top:36px">O 3º você provavelmente já disse.</div>
+ <div style="position:absolute;right:150px;bottom:150px;font-size:26px;color:var(--mut);letter-spacing:2px">arrasta pro lado →</div>
  <div class="foot" id="l1"></div>
 </div>
 <div class="s" style="left:1080px"><div class="cnt">2/6</div>
@@ -59,11 +59,11 @@ svg.line{position:absolute;left:0;top:0;pointer-events:none}
 <div class="s" style="left:5400px"><div class="cnt">6/6</div>
  <div class="h" style="font-size:132px;margin-top:20px">SUA EQUIPE<br>CUIDA DO DIA.</div>
  <div class="h grad" style="font-size:132px;margin-top:24px">A IA COBRE AS 23H,<br>O DOMINGO<br>E O FERIADO.</div>
- <div style="margin-top:56px;font-size:36px;line-height:1.4;color:#E9EAEE">Manda para o sócio que ainda<br>acredita no <span class="verde" style="font-weight:700">mito 1</span>.</div>
+ <div style="margin-top:56px;font-size:36px;line-height:1.4;color:#E9EAEE">Manda para o sócio que ainda<br>acredita no <span class="verde" style="font-weight:700">mito 3</span>.</div>
  
  <div class="foot" id="lf"></div></div>
 <script>
-document.querySelectorAll('.foot').forEach(f=>{ if(f.id!=='l1') f.innerHTML='<img class="wm" src="marca/simbolo-principal.png">'});
+document.querySelectorAll('.foot').forEach(f=>{ f.innerHTML='<img class="wm" src="marca/simbolo-principal.png">'});
 // circuito contínuo atravessando os slides
 const y=1180, pts=[[0,y],[300,y],[360,y-60],[1500,y-60],[1560,y],[2580,y],[2640,y-60],[3660,y-60],[3720,y],[4740,y],[4800,y-60],[5520,y-60]];
 const nodes=[[1300,y-60],[2380,y],[3460,y-60],[4540,y]];

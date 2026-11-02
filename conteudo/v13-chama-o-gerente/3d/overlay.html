@@ -23,9 +23,10 @@ html,body{margin:0;width:1080px;height:1920px;background:transparent;overflow:hi
  <div class="lab">MALVORA · ABRE 10.11 · 00H</div>
 </div>
 <img class="el" id="wm" src="simbolo-principal.png" style="right:56px;top:84px;width:84px">
-<div id="bals"></div>
+<div id="bals"></div><div id="pts"></div>
 <script>
 const B=[[0.4,40,760],[0.9,760,700],[1.3,40,900],[1.7,760,860],[2.0,40,1040],[2.3,760,1020],[2.6,40,620],[2.85,760,560],[3.1,40,1180],[3.35,760,1160],[3.6,40,480]];
+document.getElementById('pts').innerHTML=Array.from({length:12},()=>'<div class="pt" style="position:absolute;left:670px;top:1375px;width:22px;height:22px;border-radius:50%;background:#E5484D;opacity:0"></div>').join('');
 document.getElementById('bals').innerHTML=B.map((b,i)=>`<div class="el bal" id="b${i}" style="left:${b[1]}px;top:${b[2]}px">quanto custa?</div>`).join('');
 const ease=x=>1-Math.pow(1-Math.min(Math.max(x,0),1),3);
 function vis(id,a,b,anim){const e=document.getElementById(id);if(t<a||t>=b){e.style.opacity=0;return;}
@@ -35,11 +36,20 @@ let t=0;
 window.render=function(tt){t=tt;
  vis('h1',-1,5,'none');
  B.forEach((b,i)=>vis('b'+i,b[0],4.6,'pop'));
- vis('cont',0.6,9,'pop'); const c=document.getElementById('cont'); c.textContent=t<1.6?'12':t<2.8?'27':'40';
- c.style.transform=`scale(${1+.08*Math.max(0,Math.sin(t*14))})`;
+ const c=document.getElementById('cont');
+ if(t<0.6||t>=9.55){c.style.opacity=0;} else {
+  const n=Math.max(1,Math.min(40,Math.floor(1+39*Math.min(1,(t-0.6)/3.2))));
+  c.textContent=n;
+  const fr=((t-0.6)/3.2*39)%1, kick=t<3.8?(1-fr)*0.12:0;
+  if(t<9.3){c.style.opacity=Math.min(1,(t-0.6)/.15); c.style.transform=`scale(${1+kick})`;}
+  else {const k=(t-9.3)/0.25; c.style.opacity=Math.max(0,1-k); c.style.transform=`scale(${1+0.8*k})`;}
+ }
+ document.querySelectorAll('.pt').forEach((e,i)=>{ if(t<9.3||t>9.8){e.style.opacity=0;return;}
+  const k=(t-9.3)/0.5, a=i/12*Math.PI*2, r=40+220*k;
+  e.style.opacity=1-k; e.style.transform=`translate(${Math.cos(a)*r}px,${Math.sin(a)*r}px) scale(${1-0.6*k})`; });
  vis('h2',5,9,'pop');
- vis('h3',9.1,14,'up'); vis('h4',9.8,14,'up'); vis('ia',10.6,14,'pop');
- vis('fim',14,99,'none');
- const w=document.getElementById('wm'); w.style.opacity=(t<14)?.45:0;
+ vis('h3',9.1,14.2,'up'); vis('h4',9.8,14.2,'up'); vis('ia',10.6,14.2,'pop');
+ vis('fim',14.2,99,'none');
+ const w=document.getElementById('wm'); w.style.opacity=(t<14.2)?.45:0;
 };
 </script></body></html>

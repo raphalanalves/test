@@ -3,7 +3,7 @@
 Editar o texto das nº 3, 18, 19, 21, 22 e 24. Manter a nº 20 e a nº 23 como estão. Acrescentar a nº 25.
 
 ## nº 3 · Quanto custa? (editar)
-A partir de R$ 250 por mês (cerca de R$ 8 por dia), conforme o plano e os módulos. Quem entra na lista VIP até 10/11 paga metade do preço nos 3 primeiros meses. A partir de 10/11, o valor exato de cada plano aparece em portal.malvora.com.br/assinar.
+A partir de R$ 250 por mês (cerca de R$ 8 por dia), conforme o plano e os módulos. Quem entra na lista VIP até 10/11 paga metade do preço nos 3 primeiros meses.
 
 ## nº 18 · O que é a lista VIP? (editar)
 São 10 vagas para empresas que querem entrar antes do lançamento, que é em 10/11. Quem entra recebe o acesso na noite de 09/11 e paga metade do preço nos 3 primeiros meses. O cadastro é feito aqui mesmo, comigo, em uns 2 minutos.

@@ -43,3 +43,19 @@ rotina de quem trabalha com agenda, nunca rindo do cliente do cliente.
 
 Formato principal e reaproveitamentos (Reels / Feed / Stories), objetivo (alcance, engajamento, captação),
 CTA único e quem responde comentários e direct nas 2 h seguintes.
+
+## Mosaico (posts que formam uma imagem só na grade)
+
+A grade do perfil mostra cada post em 3:4. Um post 4:5 (1080x1350) perde cerca de 34 px de cada lado na grade, e entre
+as colunas há um espaço de alguns pixels. Se a arte for cortada em três partes iguais, as linhas que passam de um post
+para o outro (círculos, anéis, textos) aparecem quebradas na emenda. Foi o que aconteceu no mosaico de 31/10.
+
+Regra:
+1. Montar o painel com a largura que a grade mostra: 3 x 1012 px, mais 10 px por emenda (o espaço entre as colunas).
+2. Cada post é recortado com 34 px de sobra de cada lado (1080 px no total), tirados do próprio painel.
+3. Antes de agendar, gerar a prévia da grade (corte 3:4 + espaço entre colunas) e conferir as emendas ampliadas.
+4. Evitar linha fina cruzando a emenda quase na horizontal; se cruzar, que seja perto do meio da altura.
+5. Publicar da direita para a esquerda, um minuto entre cada um, e fixar os três na mesma ordem.
+
+Ferramenta: `lancamento-2026-11-10/mosaico/_fonte/mosaico-v2.html` + `render-mosaico.js` (o recorte e a prévia
+estão no script do commit de 02/11).

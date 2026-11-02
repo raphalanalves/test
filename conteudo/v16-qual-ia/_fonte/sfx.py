@@ -3,7 +3,7 @@ import json
 """Trilha e efeitos do V14, sintetizados aqui (sem direitos autorais). Tempos iguais aos de v14.js."""
 import sys, wave, numpy as np
 SR = 44100
-TOTAL = 66.53
+TOTAL = 70.93
 rng = np.random.default_rng(7)
 L = np.zeros(int(TOTAL * SR)); R = np.zeros_like(L)
 
@@ -62,7 +62,7 @@ def chord(t, fs, d, g=0.07):
     x = tt(d); s = sum(np.sin(2 * np.pi * f * x) + .3 * np.sin(2 * np.pi * 2 * f * x) for f in fs)
     add(s * np.minimum(1, x / .4) * np.minimum(1, (d - x) / .6), t, g)
 
-S=[0.6, 5.37, 14.29, 23.71, 30.49, 40.77, 50.58, 58.54]; T=66.53
+S=[0.6, 5.6, 15.02, 24.83, 31.77, 42.7, 53.63, 62.4]; T=70.93
 B=60/92; prog=[(220,277.2,329.6),(174.6,220,261.6),(196,246.9,293.7),(164.8,207.7,246.9)]
 for k in range(int(T/(4*B))+1): chord(k*4*B,prog[k%4],4*B+0.3,0.04)
 for i in range(int(T/B)):

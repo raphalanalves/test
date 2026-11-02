@@ -3,7 +3,11 @@ body{width:6480px;height:1350px;position:relative;overflow:hidden}
 .s{position:absolute;top:0;width:1080px;height:1350px;padding:180px 90px 0}
 .cnt{position:absolute;top:60px;right:80px;font-size:22px;color:var(--mut);letter-spacing:3px}
 .foot{position:absolute;bottom:60px;left:0;right:0;display:flex;justify-content:center}
-.wm{position:absolute;right:56px;bottom:56px;width:72px;opacity:.5}
+.wm{position:absolute;right:56px;bottom:56px;width:64px;opacity:.45}
+.chat{display:flex;flex-direction:column;gap:18px;margin-top:50px}
+.chat .out{align-self:flex-end}
+.chat .bubble{font-size:34px}
+.sim{position:absolute;top:60px;left:90px;font-size:22px;letter-spacing:4px;color:var(--mut);border:1px solid rgba(255,255,255,.2);border-radius:30px;padding:6px 18px}
 .chk{display:flex;gap:26px;align-items:center;font-size:38px;padding:26px 0;border-bottom:1px solid rgba(255,255,255,.08);color:#E9EAEE}
 .x{width:54px;height:54px;border-radius:12px;border:3px solid var(--red);color:var(--red);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:30px;flex:none}
 .ok{border-color:var(--g);color:var(--g)}
@@ -31,8 +35,8 @@ body{width:6480px;height:1350px;position:relative;overflow:hidden}
  <div class="foot" id="f1"></div></div>
 
 <div class="s" style="left:1080px"><div class="cnt">2/6</div>
- <div class="h" style="font-size:118px">SEU WHATSAPP<br><span class="grad">PERDE VENDA</span> QUANDO:</div>
- <div style="margin-top:60px">
+ <div class="h" style="font-size:112px">SUA EMPRESA<br>PERDE <span class="grad">CLIENTE</span><br>QUANDO:</div>
+ <div style="margin-top:46px">
   <div class="chk"><div class="x">✕</div><div>Só tem resposta no <b>horário comercial</b></div></div>
   <div class="chk"><div class="x">✕</div><div>A agenda mora num <b>caderno</b> (ou na cabeça de alguém)</div></div>
   <div class="chk"><div class="x">✕</div><div>A cobrança é feita <b>na mão</b>, um cliente por vez</div></div>
@@ -41,7 +45,18 @@ body{width:6480px;height:1350px;position:relative;overflow:hidden}
  <div style="font-size:30px;color:var(--mut);margin-top:50px">Marcou dois ou mais? Arrasta.</div>
  <div class="foot" id="f2"></div></div>
 
-<div class="s" style="left:2160px"><div class="cnt">3/6</div>
+<div class="s" style="left:2160px"><div class="cnt">3/6</div><div class="sim">SIMULAÇÃO</div>
+ <div class="h" style="font-size:112px">A MESMA MENSAGEM.<br><span class="grad">COM A MALVORA.</span></div>
+ <div class="chat">
+  <div class="bubble in">Oi! Ainda dá pra marcar pra amanhã?<span class="hora">21:00</span></div>
+  <div class="bubble out">Oi! Dá sim 😊 Amanhã tenho 10h ou 14h30 com a Ana. Qual fica melhor pra você?<span class="hora">21:00 ✓✓</span></div>
+  <div class="bubble in">14h30!<span class="hora">21:01</span></div>
+  <div class="bubble out">Marcado: amanhã, 14h30, com a Ana ✓ Amanhã cedo te mando um lembrete.<span class="hora">21:01 ✓✓</span></div>
+ </div>
+ <div style="font-size:34px;color:#E9EAEE;margin-top:44px">Ninguém da equipe precisou pegar o celular.</div>
+ <div class="foot" id="f3"></div></div>
+
+<div class="s" style="left:3240px"><div class="cnt">4/6</div>
  <div style="font-family:'Bebas Neue';font-size:40px;letter-spacing:5px;color:var(--g)">A BASE DO PLANO</div>
  <div class="h" style="font-size:120px;margin-top:10px">UMA IA COM<br><span class="grad">A CARA DA SUA EMPRESA.</span></div>
  <div style="margin-top:50px">
@@ -50,28 +65,17 @@ body{width:6480px;height:1350px;position:relative;overflow:hidden}
   <div class="chk"><div class="x ok">✓</div><div><b>Lembra o cliente</b> na véspera</div></div>
   <div class="chk" style="border:0"><div class="x ok">✓</div><div><b>Chama sua equipe</b> quando o assunto pede uma pessoa</div></div>
  </div>
- <div class="foot" id="f3"></div></div>
+ <div class="foot" id="f4"></div></div>
 
-<div class="s" style="left:3240px"><div class="cnt">4/6</div>
+<div class="s" style="left:4320px"><div class="cnt">5/6</div>
  <div class="h" style="font-size:120px">DEPOIS, VOCÊ LIGA<br><span class="grad">SÓ O QUE PRECISA.</span></div>
  <div style="display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:60px">
   <div class="mod"><div class="h">PAGAMENTO</div><p>Pix, boleto e cartão dentro da conversa.</p></div>
   <div class="mod"><div class="h">FIDELIDADE</div><p>Chama de volta quem sumiu e pergunta como foi.</p></div>
-  <div class="mod"><div class="h">RELATÓRIO</div><p>Seus números chegando no WhatsApp.</p></div>
+  <div class="mod"><div class="h">RELATÓRIO</div><p>Seus números no WhatsApp e no e&#8209;mail.</p></div>
   <div class="mod"><div class="h">INTELIGÊNCIA</div><p>Mostra quem está perto de fechar.</p></div>
  </div>
- <div class="foot" id="f4"></div></div>
-
-<div class="s" style="left:4320px"><div class="cnt">5/6</div>
- <div class="h" style="font-size:120px">CADA NEGÓCIO<br><span class="grad">MONTA O SEU.</span></div>
- <div style="font-size:30px;color:var(--mut);margin-top:24px">Exemplos de combinação:</div>
- <div style="margin-top:30px">
-  <div class="combo"><span>Barbearia</span><span><span class="pill b">Base</span><span class="pill">Pagamento</span></span></div>
-  <div class="combo"><span>Clínica</span><span><span class="pill b">Base</span><span class="pill">Fidelidade</span></span></div>
-  <div class="combo"><span>Imobiliária</span><span><span class="pill b">Base</span><span class="pill">Inteligência</span></span></div>
-  <div class="combo" style="border:0"><span>Loja</span><span><span class="pill b">Base</span><span class="pill">Relatório</span></span></div>
- </div>
- <div style="font-size:36px;margin-top:50px;color:#E9EAEE">Você não paga pelo módulo que não usa.</div>
+ <div style="font-size:36px;margin-top:56px;color:#E9EAEE">Você não paga pelo módulo que não usa.</div>
  <div class="foot" id="f5"></div></div>
 
 <div class="s" style="left:5400px;text-align:center;padding-top:150px"><div class="cnt">6/6</div>
@@ -81,7 +85,7 @@ body{width:6480px;height:1350px;position:relative;overflow:hidden}
  <div style="font-size:28px;margin-top:22px;color:var(--mut)">A Malvora abre dia 10/11. Lista VIP com 10 vagas no link da bio.</div>
  <div class="foot" id="f6"></div></div>
 <script>
-for(let i=2;i<=5;i++) document.getElementById('f'+i).innerHTML='<img class="wm" src="marca/simbolo-principal.png">';
+for(let i=1;i<=5;i++) document.getElementById('f'+i).innerHTML='<img class="wm" src="marca/simbolo-principal.png">';
 document.getElementById('big').innerHTML='<img src="marca/simbolo-principal.png" style="width:300px">';
 document.getElementById('ghost').innerHTML='<img src="marca/simbolo-principal.png" style="width:100%">';
 </script></body></html>

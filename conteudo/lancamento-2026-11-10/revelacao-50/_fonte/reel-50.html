@@ -1,0 +1,61 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><link rel="stylesheet" href="reel.css"><script src="engine.js"></script>
+<style>
+.big{font-family:'Bebas Neue';line-height:.85;text-align:center}
+.lab{font-family:'Bebas Neue';letter-spacing:8px;color:var(--mut);font-size:44px;text-align:center}
+.mes{display:flex;gap:28px;justify-content:center}
+.mes div{border:3px solid var(--g);border-radius:28px;padding:30px 34px;text-align:center;background:rgba(0,212,170,.06)}
+.mes b{display:block;font-family:'Bebas Neue';font-size:64px;color:#fff;font-weight:400}
+.mes span{font-family:'Bebas Neue';font-size:90px;color:var(--g)}
+.vagas{display:grid;grid-template-columns:repeat(5,110px);gap:26px;justify-content:center}
+.vagas i{width:110px;height:110px;border-radius:26px;border:3px solid rgba(255,255,255,.25);display:block}
+.ring{position:absolute;left:50%;top:50%;width:1300px;height:1300px;margin:-650px 0 0 -650px;border-radius:50%;border:2px solid rgba(0,212,170,.18)}
+</style></head><body>
+<div class="tex"></div><div class="glow" style="left:-300px;top:-200px"></div>
+<div class="ring" id="ring"></div>
+
+<!-- A · 50% (visível desde o primeiro quadro) -->
+<div class="scene" data-from="-1" data-to="3.0">
+ <div class="cap lab" style="top:420px">LISTA VIP · MALVORA</div>
+ <div class="cap big grad" id="cinquenta" style="top:520px;font-size:560px">50%</div>
+ <div class="cap big" style="top:1060px;font-size:150px">DE DESCONTO</div>
+</div>
+
+<!-- B · 3 primeiros meses -->
+<div class="scene" data-from="3.0" data-to="5.5">
+ <div class="cap big" style="top:430px;font-size:150px" data-in="3.05" data-anim="pop">NOS 3 PRIMEIROS<br><span class="grad">MESES</span></div>
+ <div class="cap" style="top:860px">
+  <div class="mes">
+   <div data-in="3.4" data-anim="pop"><b>MÊS 1</b><span>-50%</span></div>
+   <div data-in="3.7" data-anim="pop"><b>MÊS 2</b><span>-50%</span></div>
+   <div data-in="4.0" data-anim="pop"><b>MÊS 3</b><span>-50%</span></div>
+  </div>
+ </div>
+</div>
+
+<!-- C · só 10 vagas + acesso em 09/11 -->
+<div class="scene" data-from="5.5" data-to="12.2">
+ <div class="cap big" style="top:300px;font-size:170px" data-in="5.55" data-anim="pop">SÓ <span class="grad">10 VAGAS</span></div>
+ <div class="cap" style="top:560px"><div class="vagas" id="vagas"></div></div>
+ <div class="cap lab" style="top:960px" data-in="8.4">E ENTRA ANTES DE TODO MUNDO</div>
+ <div class="cap big" style="top:1040px;font-size:150px" data-in="8.7" data-anim="pop">ACESSO NA NOITE<br><span class="grad">DE 09/11</span></div>
+</div>
+
+<!-- D · chamada -->
+<div class="scene" data-from="12.2" data-to="18">
+ <div class="cap" style="top:330px" data-in="12.25" data-anim="pop"><img src="marca/simbolo-principal.png" style="width:360px"></div>
+ <div class="cap big" style="top:780px;font-size:140px" data-in="12.5">QUER UMA VAGA?</div>
+ <div class="cap big grad" style="top:930px;font-size:120px" data-in="13.4">LINK DA BIO</div>
+ <div class="cap" style="top:1080px;font-size:46px;color:#E9EAEE" data-in="14.4">ou manda <b class="verde">VIP</b> no direct</div>
+ <div class="cap lab" style="top:1300px" data-in="15.2">MALVORA · ABRE 10.11 · 00H</div>
+</div>
+
+<div data-in="-1" data-out="12.2" data-anim="fade" style="position:absolute;right:56px;top:84px;z-index:50"><img src="marca/simbolo-principal.png" style="width:84px;opacity:.45"></div>
+<script>
+document.getElementById('vagas').innerHTML=Array.from({length:10},(_,i)=>`<i data-in="${(5.9+i*0.12).toFixed(2)}" data-anim="pop"></i>`).join('');
+window.extra=function(t){
+ const c=document.getElementById('cinquenta'); const s=1+0.04*Math.max(0,Math.sin(t*4)); c.style.transform=`scale(${s})`;
+ document.getElementById('ring').style.transform=`scale(${1+0.05*Math.sin(t*0.8)}) rotate(${t*6}deg)`;
+ document.querySelectorAll('#vagas i').forEach((e,i)=>{ if(t>=5.9+i*0.12){ e.style.borderColor='var(--g)'; e.style.background='rgba(0,212,170,.10)'; } });
+};
+</script>
+</body></html>

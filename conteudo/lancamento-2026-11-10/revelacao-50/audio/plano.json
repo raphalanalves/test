@@ -1,0 +1,4 @@
+{"composition_plan":{"positive_global_styles":["modern electronic","tech brand","instrumental","confident","118 bpm"],"negative_global_styles":["vocals","lyrics","cheesy","aggressive"],"sections":[
+{"section_name":"Hit","positive_local_styles":["punchy opening hit","bright synth stab","energetic"],"negative_local_styles":["slow intro"],"duration_ms":3000,"lines":[]},
+{"section_name":"Offer","positive_local_styles":["driving beat","light percussion","positive"],"negative_local_styles":["loud"],"duration_ms":9200,"lines":[]},
+{"section_name":"Call","positive_local_styles":["uplifting","warm pad","resolving ending"],"negative_local_styles":["abrupt"],"duration_ms":5800,"lines":[]}]}}

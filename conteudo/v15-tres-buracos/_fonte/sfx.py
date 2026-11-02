@@ -74,7 +74,10 @@ for i in range(3): add(tone(330,0.3,0.15),S[0]+0.9+i*0.35,0.12)   # buracos apar
 for t in S[1:4]: boom(t,0.35)
 boom(S[4],0.5)
 riser(S[5]-1.2,1.2); plim(S[5]+0.3)
-for i in range(10): plim(S[6]+0.6+i*0.25)
+import re as _re, json as _json
+_K=_json.loads(_re.search(r'const K=(\{.*?\}),CAP=',open('video.html').read()).group(1))
+for _t in _K['chips'][:4]: add(tone(1319,0.22,0.07),_t,0.09,pan=.15)   # um plim suave por segmento, no instante em que acende
+add(tone(988,0.5,0.18),_K['chips'][4],0.07); add(tone(1319,0.5,0.18),_K['chips'][4]+0.06,0.06)   # 'e mais': um só brilho
 boom(S[7],0.6); chord(S[7],(261.6,329.6,392,523.3),T-S[7],0.08)
 m = max(abs(L).max(), abs(R).max()); L, R = L / m * 0.89, R / m * 0.89
 st = np.empty(len(L) * 2); st[0::2] = L; st[1::2] = R

@@ -14,6 +14,7 @@ html,body{margin:0;width:1080px;height:1920px;background:transparent;overflow:hi
 <div class="el topo" id="h1" style="font-size:96px">O DONO NO<br><span class="grad">40º "QUANTO CUSTA?"</span><br>DO DIA:</div>
 <div class="el cont" id="cont">12</div>
 <div class="el topo" id="h2" style="font-size:110px;top:170px">"QUANTO CUSTA?"<br><span class="grad">Nº 40</span></div>
+<div class="el topo" id="h2b" style="font-size:96px;top:170px;text-shadow:0 0 40px rgba(0,212,170,.85),0 0 90px rgba(0,212,170,.45)">…ATÉ ELE LEMBRAR<br><span class="grad">DA MALVORA</span> 💡</div>
 <div class="el topo" id="h3" style="font-size:100px;top:150px">COM A <span class="grad">MALVORA:</span></div>
 <div class="el topo" id="h4" style="font-size:84px;top:280px">A IA RESPONDE.<br>VOCÊ DESCANSA.</div>
 <div class="el ia" id="ia" style="right:60px;top:1210px">Oi! Já te passo os valores e os horários livres de amanhã 😊</div>
@@ -37,6 +38,8 @@ window.render=function(tt){t=tt;
  vis('h1',-1,5,'none');
  B.forEach((b,i)=>vis('b'+i,b[0],4.6,'pop'));
  const c=document.getElementById('cont');
+ const P=t<4.85?[600,1330]:t<5.15?[600+(t-4.85)/.3*160,1330+(t-4.85)/.3*270]:t<8.85?[760,1600]:t<9.1?[760+(t-8.85)/.25*60,1600-(t-8.85)/.25*250]:[820,1350];
+ c.style.left=P[0]+'px'; c.style.top=P[1]+'px';
  if(t<0.6||t>=9.55){c.style.opacity=0;} else {
   const n=Math.max(1,Math.min(40,Math.floor(1+39*Math.min(1,(t-0.6)/3.2))));
   c.textContent=n;
@@ -45,9 +48,9 @@ window.render=function(tt){t=tt;
   else {const k=(t-9.3)/0.25; c.style.opacity=Math.max(0,1-k); c.style.transform=`scale(${1+0.8*k})`;}
  }
  document.querySelectorAll('.pt').forEach((e,i)=>{ if(t<9.3||t>9.8){e.style.opacity=0;return;}
-  const k=(t-9.3)/0.5, a=i/12*Math.PI*2, r=40+220*k;
+  const k=(t-9.3)/0.5, a=i/12*Math.PI*2, r=40+220*k; e.style.left='890px'; e.style.top='1395px';
   e.style.opacity=1-k; e.style.transform=`translate(${Math.cos(a)*r}px,${Math.sin(a)*r}px) scale(${1-0.6*k})`; });
- vis('h2',5,9,'pop');
+ vis('h2',5,7.9,'pop'); vis('h2b',7.9,9.1,'pop');
  vis('h3',9.1,14.2,'up'); vis('h4',9.8,14.2,'up'); vis('ia',10.6,14.2,'pop');
  vis('fim',14.2,99,'none');
  const w=document.getElementById('wm'); w.style.opacity=(t<14.2)?.45:0;

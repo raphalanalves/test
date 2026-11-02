@@ -16,7 +16,7 @@ Legenda de prioridade: **P1** hoje ou amanhã · **P2** esta semana · **P3** an
 | P2 | Atualizar o contador da lista VIP a cada confirmação da Malu | Raphael avisa → Claude | contínuo |
 | P3 | Carrossel "30 tipos de negócio" + convite de collab a 1 ou 2 parceiros | Claude + Raphael (convite) | 09/11 |
 | P3 | Revisar legendas da V15 (10/11 00h05) e da V16 (11/11) na fila | Claude → Raphael aprova | 08/11 |
-| P3 | 09/11: trocar instruções e perguntas frequentes da Malu para pós-lançamento (lembrete agendado) | Raphael + sessão local | 09/11 |
+| P3 | 09/11: trocar instruções e perguntas frequentes da Malu para pós-lançamento (base: `malu/instrucoes-extras-pos-lancamento-base.txt`; devolver o link do portal na nº 3) | Raphael + sessão local | 09/11 |
 | P3 | Portal: e-mail automático, retomada de cadastro, contador automático, botão "Excluir" das perguntas frequentes | Equipe (código) | após 10/11 |
 | P3 | IA do direct: explicar que o cliente não precisa trocar de número (QR code) | Claude | esta semana |
 | P3 | Decidir: API oficial do WhatsApp para o número da Malu (risco de bloqueio com anúncio) | Raphael | antes de 10/11 |

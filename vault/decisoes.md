@@ -13,3 +13,4 @@
 | 02/11 | Publicador social vira módulo do portal, separado por cliente, via API interna |
 | 02/11 | Mini relatório de pendências sempre que algo ficar pendente; tudo registrado neste vault |
 | 02/11 | Voz oficial passa a ser a Carla (versão mais animada); V7 refeita com ela, para 03/11 às 18h |
+| 02/11 | Recarga pré-paga de R$ 81 na conta de anúncios (saldo ≈ R$ 94,07); conta do teto de R$ 400 até 25/11: R$ 81 usados, faltam R$ 319 |

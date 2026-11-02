@@ -23,6 +23,7 @@ Legenda de prioridade: **P1** hoje ou amanhã · **P2** esta semana · **P3** an
 | P3 | Pixel instalado no portal para medir cadastros | Equipe (código) | antes de 10/11 |
 | P3 | 10/11: trocar o link "Política de privacidade" da bio (index e lancamento) para https://portal.malvora.com.br/privacidade | Claude | 10/11 |
 | P3 | Antes de instalar o pixel no portal: atualizar a seção 9 (Cookies) da política, que hoje diz que não há cookies de publicidade | Raphael + jurídico (Bettioli) | antes do pixel |
+| P2 | Fundadores (09/11, 19h): gravação real dos 4 fundadores; material até 08/11 às 18h para editar | Raphael grava → Claude edita | 08/11 |
 
 Concluído hoje: mosaico v2 e regra da grade · bio sem rolagem lateral e título novo · perfil atualizado ·
 visão do publicador por cliente · este vault.

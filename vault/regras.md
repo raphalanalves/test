@@ -53,3 +53,4 @@
 - Sempre que houver algo pendente, mandar um **mini relatório de pendências** (prioridade, o quê, quem, prazo) e
   atualizar `vault/pendencias.md`.
 - Avisar no chat quando cada post for publicado, com o link.
+- Quando o Claude do terminal (máquina do Raphael) pedir decisão, responder sempre com o texto pronto para colar, num bloco de código.

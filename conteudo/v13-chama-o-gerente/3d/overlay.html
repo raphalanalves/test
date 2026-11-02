@@ -34,7 +34,7 @@ function vis(id,a,b,anim){const e=document.getElementById(id);if(t<a||t>=b){e.st
  const p=ease((t-a)/.25),q=ease((b-t)/.25);e.style.opacity=Math.min(p,q);
  e.style.transform=anim==='pop'?`scale(${.7+.3*p})`:anim==='up'?`translateY(${(1-p)*40}px)`:'none';}
 let t=0;
-window.render=function(tt){t=tt;
+window.render=function(T){t=T<5?T:(T<11?5+(T-5)/1.5:T-2);
  vis('h1',-1,5,'none');
  B.forEach((b,i)=>vis('b'+i,b[0],4.6,'pop'));
  const c=document.getElementById('cont');

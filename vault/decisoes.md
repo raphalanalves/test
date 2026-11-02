@@ -15,3 +15,4 @@
 | 02/11 | Voz oficial passa a ser a Carla (versão mais animada); V7 refeita com ela, para 03/11 às 18h |
 | 02/11 | Recarga pré-paga de R$ 81 na conta de anúncios (saldo ≈ R$ 94,07); conta do teto de R$ 400 até 25/11: R$ 81 usados, faltam R$ 319 |
 | 02/11 | V7: pronúncia "Malvôra" corrigida e abertura com gancho visível no 1º quadro ("Qual das duas fica com o cliente?") e fala em 1 s |
+| 02/11 | Erro no cadastro VIP: a IA gerou byte nulo (\u0000) no título e a API do portal deu 500. Corrigido no n8n (Mod_Demandas_Acoes limpa caracteres de controle); correção central no portal sugerida como tarefa |

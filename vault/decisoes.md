@@ -12,3 +12,4 @@
 | 02/11 | Sem técnicas ocultas de engajamento; alcance por recursos oficiais (Reel de teste, collab, anúncios) |
 | 02/11 | Publicador social vira módulo do portal, separado por cliente, via API interna |
 | 02/11 | Mini relatório de pendências sempre que algo ficar pendente; tudo registrado neste vault |
+| 02/11 | Voz oficial passa a ser a Carla (versão mais animada); V7 refeita com ela, para 03/11 às 18h |

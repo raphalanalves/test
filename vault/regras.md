@@ -26,6 +26,11 @@
 - Mosaico: montar para a grade 3:4 (1012 px visíveis por post, 34 px de sobra de cada lado, 10 px por emenda) e
   conferir a prévia da grade antes de agendar. Post publicado não troca de imagem.
 
+## 3b. Vídeo com IA (personagem 3D)
+- Personagem fixo da Malvora: dono de negócio em 3D, polo verde-água e pin roxo do triângulo (referência em `conteudo/v13-chama-o-gerente/3d/personagem-3.png`).
+- Gerar pela ElevenLabs (Kling 2.5 Turbo para vídeo; Nano Banana 2 para quadros 9:16). Sempre passar o custo antes; parar se o saldo ficar abaixo de 8.000 créditos antes da renovação (~26/11).
+- Celular sempre parado na cena (a IA deforma objetos na mão). Textos, contador e marca entram na montagem.
+
 ## 4. Publicação automática
 - Só pela API oficial da Meta, via n8n. Nada pelo app, navegador ou senha.
 - Fila `instagram_fila`: só sai o que estiver `aprovado`; trava `publicando` evita post duplicado; primeiro comentário com as hashtags.

@@ -1,0 +1,91 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><link rel="stylesheet" href="reel.css"><script src="logo.js"></script><script src="engine.js"></script>
+<style>
+.serie{position:absolute;top:70px;left:60px;font-family:'Bebas Neue';font-size:34px;letter-spacing:5px;color:var(--g);z-index:9}
+.serie span{color:var(--mut)}
+.card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:26px;padding:26px 30px;font-size:34px;color:#E9EAEE}
+.card b{display:block;font-family:'Bebas Neue';font-size:64px;letter-spacing:1px;color:#fff;font-weight:400}
+.msg{position:absolute;left:70px;right:70px;border-radius:28px;padding:26px 30px;font-size:31px;line-height:1.35;background:#1C1D29;color:#E9EAEE;transition:none}
+.msg small{display:block;font-family:'Bebas Neue';letter-spacing:3px;font-size:26px;color:var(--mut);margin-bottom:8px}
+.msg.cost{background:#0B3A33;border:2px solid var(--g)}
+.fonte{position:absolute;left:70px;right:70px;bottom:120px;font-size:22px;color:var(--mut);text-align:center}
+.bar{position:absolute;bottom:560px;width:260px;border-radius:18px 18px 0 0}
+.mapa{position:absolute;inset:0;opacity:.5}
+</style></head><body>
+<div class="tex"></div><div class="glow" style="right:-400px;top:-300px"></div>
+<div class="serie">ALQUIMIAS <span>#1</span></div>
+
+<div class="scene" data-from="0" data-to="8.05">
+ <div class="notif" data-in="0.3" data-anim="drop"><div class="ic"></div><div><div style="font-size:24px;color:#C9CCD3">Barts Hospital · SMS</div><div style="font-size:32px;margin-top:4px">Consulta dia 26/09, às 14h30.</div></div></div>
+ <div class="cap h" style="top:640px;font-size:250px" data-in="0.77" data-anim="pop">UMA FRASE.</div>
+ <div class="cap h grad" style="top:900px;font-size:170px;line-height:.95" data-in="4.93" data-anim="pop">23% MENOS<br>FALTAS.</div>
+</div>
+
+<div class="scene" data-from="8.05" data-to="21.77">
+ <svg class="mapa" viewBox="0 0 1080 1920"><g fill="none" stroke="#00D4AA" stroke-opacity=".18" stroke-width="2">
+  <line x1="0" y1="200" x2="1080" y2="200"/><line x1="0" y1="320" x2="1080" y2="320"/><line x1="0" y1="440" x2="1080" y2="440"/><line x1="0" y1="560" x2="1080" y2="560"/><line x1="0" y1="680" x2="1080" y2="680"/><line x1="0" y1="800" x2="1080" y2="800"/><line x1="0" y1="920" x2="1080" y2="920"/><line x1="0" y1="1040" x2="1080" y2="1040"/><line x1="0" y1="1160" x2="1080" y2="1160"/><line x1="0" y1="1280" x2="1080" y2="1280"/><line x1="0" y1="1400" x2="1080" y2="1400"/><line x1="0" y1="1520" x2="1080" y2="1520"/><line x1="0" y1="1640" x2="1080" y2="1640"/><line x1="0" y1="1760" x2="1080" y2="1760"/><line x1="0" y1="1880" x2="1080" y2="1880"/><line x1="60" y1="0" x2="60" y2="1920"/><line x1="180" y1="0" x2="180" y2="1920"/><line x1="300" y1="0" x2="300" y2="1920"/><line x1="420" y1="0" x2="420" y2="1920"/><line x1="540" y1="0" x2="540" y2="1920"/><line x1="660" y1="0" x2="660" y2="1920"/><line x1="780" y1="0" x2="780" y2="1920"/><line x1="900" y1="0" x2="900" y2="1920"/><line x1="1020" y1="0" x2="1020" y2="1920"/></g>
+  <path d="M-20 1100 C 220 980, 360 1260, 560 1120 S 900 980, 1120 1150" stroke="#7B68EE" stroke-width="16" stroke-opacity=".55" fill="none"/>
+  <circle cx="610" cy="980" r="18" fill="#00D4AA"/><circle cx="610" cy="980" r="46" fill="none" stroke="#00D4AA" stroke-width="3" data-pulse/></svg>
+ <div class="cap h" style="top:250px;font-size:120px" data-in="8.05">BARTS HEALTH<br><span class="grad">LONDRES</span></div>
+ <div style="position:absolute;left:70px;right:70px;top:1180px;display:grid;grid-template-columns:1fr 1fr;gap:20px">
+  <div class="card" data-in="9.12"><b>2013–2014</b>dois testes</div>
+  <div class="card" data-in="11.39"><b>~20 MIL</b>pacientes</div>
+  <div class="card" data-in="14.73"><b>5 DIAS</b>antes da consulta</div>
+  <div class="card" data-in="18.48"><b>4 TEXTOS</b>um por grupo</div>
+ </div>
+</div>
+
+<div class="scene" data-from="21.77" data-to="37.38">
+ <div class="cap h" style="top:190px;font-size:96px" data-in="21.77">4 LEMBRETES.<br><span class="grad">QUAL FUNCIONOU?</span></div>
+ <div class="msg" style="top:520px" data-in="22.08"><small>1 · O DE SEMPRE</small>Consulta dia 26/09, às 14h30. Para remarcar, ligue para o número da carta.</div>
+ <div class="msg" style="top:760px" data-in="24.21"><small>2 · TELEFONE DIRETO</small>Consulta dia 26/09, às 14h30. Para remarcar: 020 7767 3200.</div>
+ <div class="msg" style="top:1000px" data-in="26.81"><small>3 · OS OUTROS VÊM</small>Esperamos você dia 26/09, às 14h30. 9 em cada 10 pessoas comparecem.</div>
+ <div class="msg cost" style="top:1240px" data-in="30.93"><small style="color:var(--g)">4 · O CUSTO</small>Esperamos você dia 26/09, às 14h30. Faltar custa ao NHS cerca de £160.</div>
+ <div class="fonte" data-in="22.53">Textos originais em inglês, traduzidos.</div>
+</div>
+
+<div class="scene" data-from="37.38" data-to="40.95">
+ <div class="msg" style="top:520px;opacity:.25"><small>1 · O DE SEMPRE</small>Consulta dia 26/09, às 14h30. Para remarcar, ligue para o número da carta.</div>
+ <div class="msg" style="top:760px;opacity:.25"><small>2 · TELEFONE DIRETO</small>Consulta dia 26/09, às 14h30. Para remarcar: 020 7767 3200.</div>
+ <div class="msg" style="top:1000px;opacity:.25"><small>3 · OS OUTROS VÊM</small>Esperamos você dia 26/09, às 14h30. 9 em cada 10 pessoas comparecem.</div>
+ <div class="msg cost" style="top:1240px;font-size:38px" data-pulse><small style="color:var(--g)">4 · O CUSTO</small>Esperamos você dia 26/09, às 14h30. <b style="color:#7FF0D6">Faltar custa ao NHS cerca de £160.</b></div>
+ <div class="cap h" style="top:220px;font-size:130px" data-in="37.38" data-anim="pop">SÓ ESTE<br><span class="grad">FEZ DIFERENÇA.</span></div>
+</div>
+
+<div class="scene" data-from="40.95" data-to="51.79">
+ <div class="cap h" style="top:220px;font-size:96px" data-in="40.95">FALTAS NAS CONSULTAS</div>
+ <div class="bar" style="left:200px;height:620px;background:#3A3B4E" data-in="41.47" data-anim="up"></div>
+ <div class="bar" style="left:620px;height:470px;background:linear-gradient(#00D4AA,#7B68EE)" data-in="44.1" data-anim="up"></div>
+ <div class="h" style="position:absolute;left:200px;width:260px;bottom:1200px;text-align:center;font-size:120px" data-in="41.47">11,1%</div>
+ <div class="h grad" style="position:absolute;left:620px;width:260px;bottom:1050px;text-align:center;font-size:120px" data-in="44.1">8,4%</div>
+ <div style="position:absolute;left:200px;width:260px;bottom:500px;text-align:center;font-size:28px;color:var(--mut)">lembrete de sempre</div>
+ <div style="position:absolute;left:620px;width:260px;bottom:500px;text-align:center;font-size:28px;color:var(--g2)">com o custo</div>
+ <div class="cap h" style="top:1480px;font-size:84px" data-in="46.72">MESMO CANAL. MESMO DIA.<br><span class="grad">SÓ MUDOU O TEXTO.</span></div>
+ <div class="fonte" style="bottom:150px">Fonte: gov.uk · "A zero cost way to reduce missed hospital appointments" (Barts, 2013)</div>
+</div>
+
+<div class="scene" data-from="51.79" data-to="59.65">
+ <div class="cap" style="top:420px" data-in="51.79" data-anim="pop"><div id="sym6" style="width:300px;height:300px;margin:0 auto"></div></div>
+ <div class="cap h" style="top:820px;font-size:90px;color:var(--g)" data-in="51.94">A ALQUIMIA:</div>
+ <div class="cap h" style="top:930px;font-size:150px;line-height:.95" data-in="52.69">O LEMBRETE<br><span class="grad">TAMBÉM CONVENCE.</span></div>
+ <div class="cap" style="top:1300px;font-size:38px;color:#E9EAEE" data-in="56.45">E dá para testar qual texto funciona melhor.</div>
+</div>
+
+<div class="scene" data-from="59.65" data-to="71.7">
+ <div class="chat" style="top:260px;bottom:640px" data-in="59.65">
+  <div class="chead"><div class="av">CL</div><div><div class="cname">Clínica Exemplo</div><div class="cstat">online</div></div></div>
+  <div class="msgs">
+   <div class="day">VÉSPERA · 18:00</div>
+   <div class="bubble out" data-in="60.15">Oi, Ana! Lembrete: amanhã, 14h30, consulta com a Dra. Paula. Confirma?<span class="hora">18:00 ✓✓</span></div>
+   <div class="bubble in" data-in="62.68">Preciso remarcar 😕<span class="hora">18:03</span></div>
+   <div class="bubble out" data-in="64.19">Sem problema! Quinta às 10h ou 15h?<span class="hora">18:03 ✓✓</span></div>
+  </div>
+ </div>
+ <div class="cap" style="top:1330px" data-in="65.91" data-anim="pop"><div id="sym7" style="width:190px;height:190px;margin:0 auto"></div></div>
+ <div class="cap h" style="top:1540px;font-size:72px" data-in="66.32">MALVORA · <span class="grad">A NOVA ALQUIMIA DIGITAL</span></div>
+ <div class="foot" id="f" data-in="66.72"></div>
+</div>
+<script>
+document.getElementById('sym6').innerHTML=logoSVG(4);
+document.getElementById('sym7').innerHTML=symImg(190);
+document.getElementById('f').innerHTML=logoFull();
+</script></body></html>

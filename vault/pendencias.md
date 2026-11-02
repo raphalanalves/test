@@ -21,6 +21,8 @@ Legenda de prioridade: **P1** hoje ou amanhã · **P2** esta semana · **P3** an
 | P3 | IA do direct: explicar que o cliente não precisa trocar de número (QR code) | Claude | esta semana |
 | P3 | Decidir: API oficial do WhatsApp para o número da Malu (risco de bloqueio com anúncio) | Raphael | antes de 10/11 |
 | P3 | Pixel instalado no portal para medir cadastros | Equipe (código) | antes de 10/11 |
+| P3 | 10/11: trocar o link "Política de privacidade" da bio (index e lancamento) para https://portal.malvora.com.br/privacidade | Claude | 10/11 |
+| P3 | Antes de instalar o pixel no portal: atualizar a seção 9 (Cookies) da política, que hoje diz que não há cookies de publicidade | Raphael + jurídico (Bettioli) | antes do pixel |
 
 Concluído hoje: mosaico v2 e regra da grade · bio sem rolagem lateral e título novo · perfil atualizado ·
 visão do publicador por cliente · este vault.

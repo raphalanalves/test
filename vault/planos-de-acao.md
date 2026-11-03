@@ -44,3 +44,12 @@ Ver `produto/backlog-integracoes.md` (InfinitePay, lojas de carros, Google, Micr
 - O carrossel da semana toca nesse ponto, mas não é o tema dele.
 - Quando: depois do lançamento (semana de 16/11), para não competir com a reta final. Formato sugerido: carrossel de 5 a 6 telas + versão em story para o destaque.
 - Status: ideia aprovada pelo Rapha, ainda sem produção.
+- Ampliado (03/11): o destaque "Valores" tem mais de um valor, um story por valor. Proposta (o Rapha valida cada um antes de produzir; nada aqui é promessa comercial ainda):
+  1. Gente no centro: a IA tira o repetitivo, não as pessoas.
+  2. Transparência: preço claro, a IA diz que é assistente virtual e chama a equipe quando precisa.
+  3. O dado é do cliente: privacidade e LGPD, a empresa decide o que a IA sabe.
+  4. Simples de verdade: o dono configura sem técnico.
+  5. Respeito ao tempo do cliente final: resposta na hora, a qualquer hora.
+  6. Feito para o pequeno e médio negócio brasileiro.
+  7. A gente evolui junto: as sugestões dos clientes viram função no portal.
+- Formato: carrossel-manifesto (capa + 1 tela por valor + fecho) e 7 stories que ficam no destaque.

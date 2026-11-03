@@ -32,3 +32,9 @@ visão do publicador por cliente · este vault.
 - Visual: logo `marca-email/logo-malvora-hub-email-claro.png`, cores #00D4AA / #EEF0F6 / #14141F, assinatura "Equipe Malvora Hub / A nova alquimia digital 💚💜", site bio.malvora.com.br/lancamento/, Instagram. Antes: amarelos #CAB31C / #D9D43F.
 - "Respostas dos clientes vão para" esvaziado: o pé diz "chame no WhatsApp. Este e-mail não recebe respostas." (antes: contato@malvora.com.br).
 - Com o Jão (pedido da lista VIP, itens 10 a 13.1): botões com ícone, frase nova para todos, rodapé "em parceria" na empresa interna, cartão configurável, chave da Evolution no histórico do n8n.
+
+## Meta Verified da Malvora (quarta, 04/11)
+- O Rapha assina o Meta Verified na quarta (R$ 59,90/mês, 7 dias grátis). Estudo e plano do módulo em `produto/publicador-social-modular.md` §6.
+- Antes de assinar: o nome, o @ e a foto do perfil precisam estar definitivos. Trocar depois pode tirar o selo até uma nova revisão.
+- Depois de assinar: conferir no app quais recursos o plano mostra (selo, suporte, proteção contra perfis falsos, destaque na busca, links em Reels) e registrar aqui. Os preços e recursos variam por país e por plano.
+- Lembrete: cancelar ou manter antes de acabar o teste grátis (11/11).

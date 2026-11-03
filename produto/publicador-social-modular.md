@@ -66,3 +66,29 @@ n8n: Publicador / Respostas / Anúncios  ──►  Graph API (Instagram, Facebo
 2. **Depois do lançamento:** API interna do portal (tenant, identidade, fila) e o publicador lendo dela.
 3. **Primeiro cliente piloto:** conexão pelo login oficial, fila e respostas separadas, relatório.
 4. **Escala:** revisão do app na Meta, módulo de anúncios para clientes, cobrança do módulo no portal.
+
+## 6. Perfil verificado (Meta Verified) como recurso do módulo · estudo de 03/11/2026
+
+A Malvora assina em 04/11 (R$ 59,90/mês no Brasil, 7 dias grátis) e é o piloto. O que chegar de fato no app é registrado
+aqui antes de virar função para os clientes.
+
+**O que a assinatura costuma trazer (varia por país e por plano; confirmar no app da Malvora):**
+- Selo de verificado no Instagram e no Facebook.
+- Proteção ativa contra perfis que imitam a marca.
+- Suporte com pessoa (chat/e-mail; nos planos maiores, mais rápido e por ligação).
+- Nos planos de empresa acima do básico: mais destaque na busca e nas recomendações, links clicáveis em Reels (2 a 4 por
+  mês), mais endereços e perfis em destaque.
+
+**O que é só pelo app (não tem API):** assinar, o selo, os links em Reels e o suporte. O produto não automatiza nada disso:
+orienta e acompanha.
+
+**Como vira módulo para os clientes (proposta, depois do piloto):**
+1. Checklist de elegibilidade no portal: conta comercial, autenticação em duas etapas, nome e foto definitivos,
+   histórico de posts, documento do responsável, dados da empresa iguais aos do CNPJ.
+2. Status do selo por cliente (sem selo, em análise, verificado, perdido) e aviso antes de uma mudança de nome ou foto,
+   que pode tirar o selo.
+3. Respostas: a IA avisa a equipe quando um perfil parecido com o do cliente aparece nos comentários ou nas menções
+   (suspeita de golpe), para o cliente denunciar pela proteção da assinatura.
+4. Calendário: se o plano tiver links em Reels, o calendário reserva os do mês para os posts de captação e lembra o
+   cliente de pôr o link pelo app.
+5. Relatório: alcance e seguidores antes e depois do selo (o piloto da Malvora vira o caso de referência).

@@ -47,3 +47,7 @@ visão do publicador por cliente · este vault.
 - Fora da identidade atual (ampulheta, selo "Conteúdo de IA"). Alcance 17, 5 curtidas, 0 salvamentos: arquivar não perde nada.
 - Arquivado pelo celular em 02/11 22h50 (no app a opção se chama "Itens Arquivados"; o instagram.com não tem). Conteúdo salvo pelo terminal em malu-config/prints/post-10-segundos/.
 - Refazer em 03/11 no padrão atual; publicar 04/11 19h depois da aprovação. Tirar o "88%" (sem fonte).
+
+## Google Search Console · concluído (03/11)
+- malvora.com.br verificado nas contas malvorahub@gmail.com e pessoal. Sitemap da bio "Processado", 3 páginas. Falta só o Jão testar o login social e fechar o pedido.
+- Story automático 03/11 9h publicado (primeiro story pelo publicador).

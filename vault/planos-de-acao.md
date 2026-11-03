@@ -38,3 +38,9 @@ anúncios com teto. Depois do lançamento: API interna do portal, primeiro clien
 
 ## 6. Integrações 2027
 Ver `produto/backlog-integracoes.md` (InfinitePay, lojas de carros, Google, Microsoft, agendas de segmento).
+
+## Ideia do time (03/11): "Nossos valores"
+- Ideia: post "Nossos valores", com a Malvora deixando claro que não é sobre tirar pessoas do trabalho; a IA cuida do repetitivo e a equipe cuida do que precisa de gente. Depois vira um destaque "Valores" no perfil.
+- O carrossel da semana toca nesse ponto, mas não é o tema dele.
+- Quando: depois do lançamento (semana de 16/11), para não competir com a reta final. Formato sugerido: carrossel de 5 a 6 telas + versão em story para o destaque.
+- Status: ideia aprovada pelo Rapha, ainda sem produção.

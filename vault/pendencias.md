@@ -38,3 +38,7 @@ visão do publicador por cliente · este vault.
 - Antes de assinar: o nome, o @ e a foto do perfil precisam estar definitivos. Trocar depois pode tirar o selo até uma nova revisão.
 - Depois de assinar: conferir no app quais recursos o plano mostra (selo, suporte, proteção contra perfis falsos, destaque na busca, links em Reels) e registrar aqui. Os preços e recursos variam por país e por plano.
 - Lembrete: cancelar ou manter antes de acabar o teste grátis (11/11).
+
+## Tutoriais do portal no YouTube (fim de semana 07-08/11)
+- Backlog: malvora-vault `backlog/2026-11-03-videos-tutoriais-do-portal-no-youtube.md`.
+- Voz nova (não a Carla), escolhida antes de gravar. Vídeo dentro do portal depende de pedido ao Jão.

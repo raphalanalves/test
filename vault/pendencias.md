@@ -45,5 +45,5 @@ visão do publicador por cliente · este vault.
 
 ## Post "10 segundos" (DdQCQLjDLyA, 13/09) · arquivar e refazer
 - Fora da identidade atual (ampulheta, selo "Conteúdo de IA"). Alcance 17, 5 curtidas, 0 salvamentos: arquivar não perde nada.
-- Arquivar só pelo celular (o instagram.com não tem a opção). Conteúdo salvo pelo terminal em malu-config/prints/post-10-segundos/.
+- Arquivado pelo celular em 02/11 22h50 (no app a opção se chama "Itens Arquivados"; o instagram.com não tem). Conteúdo salvo pelo terminal em malu-config/prints/post-10-segundos/.
 - Refazer em 03/11 no padrão atual; publicar 04/11 19h depois da aprovação. Tirar o "88%" (sem fonte).

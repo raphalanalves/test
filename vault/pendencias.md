@@ -27,3 +27,8 @@ Legenda de prioridade: **P1** hoje ou amanhã · **P2** esta semana · **P3** an
 
 Concluído hoje: mosaico v2 e regra da grade · bio sem rolagem lateral e título novo · perfil atualizado ·
 visão do publicador por cliente · este vault.
+
+## 03/11 · E-mail ao cliente da empresa interna (feito pela tela, sem código)
+- Visual: logo `marca-email/logo-malvora-hub-email-claro.png`, cores #00D4AA / #EEF0F6 / #14141F, assinatura "Equipe Malvora Hub / A nova alquimia digital 💚💜", site bio.malvora.com.br/lancamento/, Instagram. Antes: amarelos #CAB31C / #D9D43F.
+- "Respostas dos clientes vão para" esvaziado: o pé diz "chame no WhatsApp. Este e-mail não recebe respostas." (antes: contato@malvora.com.br).
+- Com o Jão (pedido da lista VIP, itens 10 a 13.1): botões com ícone, frase nova para todos, rodapé "em parceria" na empresa interna, cartão configurável, chave da Evolution no histórico do n8n.

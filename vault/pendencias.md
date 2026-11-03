@@ -42,3 +42,8 @@ visão do publicador por cliente · este vault.
 ## Tutoriais do portal no YouTube (fim de semana 07-08/11)
 - Backlog: malvora-vault `backlog/2026-11-03-videos-tutoriais-do-portal-no-youtube.md`.
 - Voz nova (não a Carla), escolhida antes de gravar. Vídeo dentro do portal depende de pedido ao Jão.
+
+## Post "10 segundos" (DdQCQLjDLyA, 13/09) · arquivar e refazer
+- Fora da identidade atual (ampulheta, selo "Conteúdo de IA"). Alcance 17, 5 curtidas, 0 salvamentos: arquivar não perde nada.
+- Arquivar só pelo celular (o instagram.com não tem a opção). Conteúdo salvo pelo terminal em malu-config/prints/post-10-segundos/.
+- Refazer em 03/11 no padrão atual; publicar 04/11 19h depois da aprovação. Tirar o "88%" (sem fonte).

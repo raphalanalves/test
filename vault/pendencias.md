@@ -51,3 +51,15 @@ visão do publicador por cliente · este vault.
 ## Google Search Console · concluído (03/11)
 - malvora.com.br verificado nas contas malvorahub@gmail.com e pessoal. Sitemap da bio "Processado", 3 páginas. Falta só o Jão testar o login social e fechar o pedido.
 - Story automático 03/11 9h publicado (primeiro story pelo publicador).
+
+## 04/11 · lista do dia (montada em 03/11 à noite)
+- 9h story contagem (automático) → adicionar ao destaque "Lançamento" pelo app (story de API pode não ir para destaque: testar).
+- 12h Reel 00h38 (automático). 19h carrossel "10 segundos": falta Rapha mandar ajustes e aprovar.
+- Anúncios VIP começam (Revelação da logo, R$ 15/dia): relatório no fim do dia.
+- Perfil verificado ✅. Bio nova ✅. Destaque "Lançamento" com capa ✅. Pelo app: categoria "Empresa de software". Link: manter bio.malvora.com.br (já troca sozinho em 10/11).
+- Produzir 3 stories "Comece aqui" para aprovação. "Segmentos" e "Dúvidas" nesta semana.
+- Instabilidade do servidor: cobrar retorno do Pietro (DNS/rede).
+- Teste de conversa da Malu de outro número, depois que a entrega estabilizar.
+- Jão: IA dizendo "marquei" sem marcar (P0), 3 alterações por dia, erro de caractere no cadastro VIP, chave da Evolution.
+- Validar os 7 valores; voz e roteiro dos tutoriais (fim de semana).
+- Acompanhar as respostas v4 do Instagram (primeiro dia real).

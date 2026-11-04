@@ -53,3 +53,10 @@ Ver `produto/backlog-integracoes.md` (InfinitePay, lojas de carros, Google, Micr
   6. Feito para o pequeno e médio negócio brasileiro.
   7. A gente evolui junto: as sugestões dos clientes viram função no portal.
 - Formato: carrossel-manifesto (capa + 1 tela por valor + fecho) e 7 stories que ficam no destaque.
+
+## Ideia do time (04/11): posts com dados do mercado
+- Ideia: posts com números do mercado. Exemplo do time: "apenas 1% das barbearias tem os processos automatizados; quem contratar sai na frente".
+- **Regra:** só publicar número com fonte verificável (pesquisa, Sebrae, IBGE, relatório de mercado), com a fonte citada no post. Se não houver fonte para o número, usar a pergunta em vez do dado ("quantas barbearias você conhece que respondem o WhatsApp às 23h?").
+- Formato sugerido: carrossel "dado + o que isso significa + como sair na frente", uma série por segmento (barbearia, clínica, estética).
+- Quando: criação na sexta, 06/11; a data de divulgação fica para depois. Nada é feito antes.
+- Status: ideia aprovada pelo Rapha, aguardando a sexta.

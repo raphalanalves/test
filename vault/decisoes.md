@@ -21,3 +21,16 @@
 - Até o lançamento (10/11): nenhum serviço ativo para agendar. A Malu tira dúvidas e faz o cadastro na lista VIP.
 - Depois do lançamento: suporte só pelo portal, abrindo chamado. A Malvora **não** oferece suporte por reunião. Por enquanto quem responde é uma pessoa da equipe.
 - Texto pós-lançamento da Malu atualizado (`instrucoes-extras-pos-lancamento-base.txt`).
+
+## 04/11 · Respostas do Instagram v4 publicadas (23h43)
+- Fluxo `Instagram - Respostas automáticas` (n7Co0LSMRhW1eZfo) lê `ig_respostas_v4` (RCKz1ou9W0VykX74); a v3 fica de cópia. Antes e depois mostrados e aprovados pelo Rapha.
+- Novo:
+  - críticas, negação e 😢 vão para a equipe;
+  - agradecimento, gostou e elogio separados;
+  - IA só com até 3 palavras;
+  - emoji com emoji;
+  - mídia no direct: 1ª e 2ª respondidas, depois só aviso;
+  - não repete a frase para a mesma pessoa em 7 dias;
+  - VIP tem versão para depois de 10/11.
+- Teste: 24 casos simulados (código e casos em `vault/instagram-respostas-v4/`), todos ok. Primeira execução real às 02:45 UTC, com sucesso.
+- Para voltar atrás: restaurar a versão anterior no histórico do n8n.

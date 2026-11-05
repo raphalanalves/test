@@ -60,6 +60,14 @@ cuidam do orgânico. Toda campanha passa pelos 6 passos abaixo, e nada vai ao ar
 | Frequência (7 dias) | < 2,5 | > 3: público cansado, trocar criativo |
 Sempre fechar com: o que manter, o que trocar e o que pausar.
 
+## Skills e referências de apoio (terceiros, revisadas; ver `.claude/skills/TERCEIROS.md`)
+- `ad-creative`: gerar ângulos e variações de texto e gancho (passo 3). Os textos passam depois por `ig-humanizer`.
+- `paid-ads`: checklist de estrutura, públicos, remarketing e exclusões.
+- `.claude/references/claude-ads/`: auditoria Meta (`meta-audit.md`), verba (`budget-allocation.md`), conversões e
+  pixel (`conversion-tracking.md`), compliance e benchmarks. Contrato de "conta nova": pixel e conversões sem histórico
+  → planejar como teste, sem aplicar benchmark de conta madura (é o nosso caso até ~20 cadastros).
+- As regras desta skill prevalecem sobre as de terceiros.
+
 ## Ideias aproveitadas de referências externas (HeyOz, 03/2026, adaptadas)
 - **Rascunho por padrão:** toda campanha nova nasce pausada; só sobe com o "aprovado".
 - **Excluir quem já converteu:** cadastrados da lista VIP (e, depois, assinantes) saem do público frio.

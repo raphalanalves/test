@@ -92,3 +92,10 @@ orienta e acompanha.
 4. Calendário: se o plano tiver links em Reels, o calendário reserva os do mês para os posts de captação e lembra o
    cliente de pôr o link pelo app.
 5. Relatório: alcance e seguidores antes e depois do selo (o piloto da Malvora vira o caso de referência).
+
+## 7. Base de conhecimento do módulo Anúncios (05/11/2026)
+O módulo "Anúncios" para clientes nasce das regras de `.claude/skills/meta-ads-malvora` (objetivo por fase, nicho,
+filtro de lead, criativo, verba, leitura até o cadastro), apoiadas por `ad-creative`, `paid-ads` e pelas referências do
+`claude-ads` (auditoria Meta, verba, conversões, compliance). Tudo é de licença MIT, revisado e listado em
+`.claude/skills/TERCEIROS.md`. Para o produto: rascunho por padrão, teto de gasto aprovado pelo cliente, pausa só com
+regra aprovada, Conversions API para o evento de conversão do portal e relatório de custo por cadastro.

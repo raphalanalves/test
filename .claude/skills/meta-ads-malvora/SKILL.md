@@ -60,6 +60,15 @@ cuidam do orgânico. Toda campanha passa pelos 6 passos abaixo, e nada vai ao ar
 | Frequência (7 dias) | < 2,5 | > 3: público cansado, trocar criativo |
 Sempre fechar com: o que manter, o que trocar e o que pausar.
 
+## Ideias aproveitadas de referências externas (HeyOz, 03/2026, adaptadas)
+- **Rascunho por padrão:** toda campanha nova nasce pausada; só sobe com o "aprovado".
+- **Excluir quem já converteu:** cadastrados da lista VIP (e, depois, assinantes) saem do público frio.
+- **Teste de ganchos:** 3 a 5 versões do início do vídeo, ~R$ 10 por dia cada, por 3 a 4 dias, antes de escalar a vencedora.
+- **Cansaço do criativo:** alerta com frequência acima de 3 (7 dias) ou CTR caindo mais de 30% em relação à 1ª semana.
+- **Corte de sangria:** gasto acima de R$ 50 no conjunto sem nenhum cadastro → pausar e revisar (só com o ok do Rapha).
+- **Relatório semanal:** mesma tabela da leitura de resultados, comparando com a semana anterior, enviado toda segunda.
+- **Quando houver API (módulo de clientes):** usar a Marketing API com permissões `ads_read` e `ads_management`, token só em credencial (nunca no chat ou no git), dry-run antes de qualquer pausa ou realocação automática e Conversions API para o evento "iniciou teste".
+
 ## Para clientes (futuro módulo "Anúncios")
 As mesmas regras viram o padrão do módulo de anúncios do portal (`produto/publicador-social-modular.md`): teto de gasto
 aprovado pelo cliente, pausa automática por custo alto e relatório de custo por cadastro.

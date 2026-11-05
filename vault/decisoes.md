@@ -34,3 +34,9 @@
   - VIP tem versão para depois de 10/11.
 - Teste: 24 casos simulados (código e casos em `vault/instagram-respostas-v4/`), todos ok. Primeira execução real às 02:45 UTC, com sucesso.
 - Para voltar atrás: restaurar a versão anterior no histórico do n8n.
+
+## 05/11 · Malu: cadastro VIP curto (instruções extras v4) aplicado
+- Motivo: 8 leads da campanha (04–05/11), só 1 cadastro. Os leads paravam no cadastro de 8 perguntas e no "Confirma?" a mais.
+- Agora o cadastro tem 3 perguntas (nome e sobrenome, e-mail, empresa e ramo). Abre o cadastro na hora, sem confirmação, e as perguntas de qualificação ficam opcionais, depois do cadastro. "ok" não conta como resposta, o e-mail da pessoa não é repetido e ela nunca diz "avisei a equipe".
+- Aplicado pelo acesso da equipe (2.913 caracteres; os outros campos não mudaram). Arquivo: `conteudo/lancamento-2026-11-10/malu/instrucoes-extras-v4.txt`.
+- Medir: taxa de cadastro dos próximos leads (antes: 1 de 8).

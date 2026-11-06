@@ -63,3 +63,10 @@ visão do publicador por cliente · este vault.
 - Jão: IA dizendo "marquei" sem marcar (P0), 3 alterações por dia, erro de caractere no cadastro VIP, chave da Evolution.
 - Validar os 7 valores; voz e roteiro dos tutoriais (fim de semana).
 - Acompanhar as respostas v4 do Instagram (primeiro dia real).
+
+## "Por dentro da Malvora" (revisão em 07/11)
+- Texto da Carla mais criativo (reescrever o roteiro; voz só depois de aprovado).
+- Aparelhos mais realistas (notebook, iPhone, iPad): o Rapha vai mandar exemplos de referência.
+- iPhone: barra de status de verdade (hora, Wi-Fi, dados móveis, bateria) acima da tela do portal; a câmera frontal (Dynamic Island) não pode cobrir a busca nem o sino. Capturar o portal com margem segura no topo.
+- Cuidado para não parecer artificial: sombra e reflexo discretos, proporção real, nada de três aparelhos apertados.
+- Portal local de demonstração (Studio Bella) continua ligado para novas capturas; desligar e apagar no fim.

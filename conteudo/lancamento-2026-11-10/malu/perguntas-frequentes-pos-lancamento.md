@@ -1,6 +1,6 @@
 # Perguntas frequentes da Malu · pós-lançamento (aplicar à 00h de 10/11)
 
-Fontes: portal na main (planos, adicionais, teste grátis, termos item 14). Editar nº 3, 18, 19, 21, 22, 24 e 25; manter nº 20 e 23; acrescentar nº 26 a 32.
+Fontes: portal na main (planos, adicionais, teste grátis, termos item 14). Editar nº 3, 18 a 25; acrescentar nº 26 a 32.
 
 ## nº 3 · Quanto custa? (editar)
 A partir de R$ 250 por mês (cerca de R$ 8 por dia). O valor exato depende do tipo de negócio, do tamanho da equipe e do plano, e aparece na hora em portal.malvora.com.br/assinar. Dá para começar com o teste grátis, sem cartão.
@@ -11,11 +11,17 @@ Foi uma condição de pré-lançamento para poucas empresas. A lista VIP está e
 ## nº 19 · Ainda tem vaga na lista VIP? (editar)
 Não, a lista VIP fechou. Você pode começar agora mesmo pelo teste grátis em portal.malvora.com.br/assinar.
 
+## nº 20 · Qual é o desconto? (editar)
+No momento a condição é o teste grátis, sem cartão. A condição de 50% era só da lista VIP, que já fechou.
+
 ## nº 21 · Como funciona o acesso antecipado? (editar)
 O acesso antecipado era da lista VIP, que já fechou. Desde 10/11 a Malvora está aberta para todos: é só criar a conta em portal.malvora.com.br/assinar.
 
 ## nº 22 · Tem desconto ou cupom? (editar)
 No momento a condição é o teste grátis, sem cartão. Quem estava na lista VIP ou na lista de espera recebe a condição direto da nossa equipe.
+
+## nº 23 · Posso usar para mais de uma empresa? (editar título e resposta)
+Pode. Cada conta é de uma empresa: crie uma conta para cada uma ou me conte quantas são que a equipe ajuda.
 
 ## nº 24 · Fiquei na lista de espera. E agora? (editar só a resposta)
 A Malvora abriu para todo mundo em 10/11. A nossa equipe fala com você para confirmar os 20% no primeiro mês, e você já pode criar a conta em portal.malvora.com.br/assinar.

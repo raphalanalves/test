@@ -4,6 +4,8 @@ $ErrorActionPreference = "Stop"
 $raiz = Get-ChildItem $env:USERPROFILE -Directory -Recurse -Depth 2 -ErrorAction SilentlyContinue |
   Where-Object { $_.Name -like "Malvora Marketing*Documentos*" } | Select-Object -First 1
 if (-not $raiz) { throw "Pasta sincronizada do Malvora Marketing não encontrada." }
+# a partir daqui, o ffmpeg escreve informações na saída de erro; no PowerShell 5.1 isso não pode parar o script
+$ErrorActionPreference = "Continue"
 $src = Join-Path $raiz.FullName "Brutos\Gravações"
 $out = Join-Path $src "_analise"
 New-Item -ItemType Directory -Force -Path $out | Out-Null
@@ -16,8 +18,10 @@ Get-ChildItem $src -File | Where-Object { $_.Extension -match '^\.(mov|mp4)$' } 
   $wh = (& ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 "$f") -split ','
   $fps = [math]::Round(12 / [math]::Max($dur, 1), 4)
   & ffmpeg -nostdin -y -loglevel error -i "$f" -vf "fps=$fps,scale=360:-2,tile=4x3:padding=6:color=black" -frames:v 1 -q:v 4 (Join-Path $out "$base.jpg")
-  $vol = (& ffmpeg -nostdin -i "$f" -vn -af volumedetect -f null - 2>&1 | Select-String "mean_volume").ToString() -replace '.*mean_volume: ([-\d\.]+) dB.*','$1'
-  $sil = (& ffmpeg -nostdin -i "$f" -vn -af silencedetect=n=-40dB:d=1 -f null - 2>&1 | Select-String "silence_duration") |
+  $vd = & cmd /c "ffmpeg -nostdin -i ""$f"" -vn -af volumedetect -f null - 2>&1"
+  $m = $vd | Select-String "mean_volume" | Select-Object -First 1
+  $vol = if ($m) { $m.ToString() -replace '.*mean_volume: ([-\d\.]+) dB.*','$1' } else { "sem_audio" }
+  $sil = (& cmd /c "ffmpeg -nostdin -i ""$f"" -vn -af silencedetect=n=-40dB:d=1 -f null - 2>&1" | Select-String "silence_duration") |
     ForEach-Object { [double]($_.ToString() -replace '.*silence_duration: ([\d\.]+).*','$1') } | Measure-Object -Sum
   $som = [math]::Round($dur - $sil.Sum, 1)
   $linhas += "{0};{1};{2};{3};{4};{5}" -f $_.Name, [math]::Round($dur,1), $wh[0], $wh[1], $vol, $som

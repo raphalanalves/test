@@ -118,3 +118,7 @@ rules:
 - `ig-hashtag-strategist` - build the sized hashtag set
 - `ig-humanizer` - AI-tell scrubber, plus `--mode audit` for review
 - `ig-hook-extractor` - reverse-engineer a hook from a post you admire
+
+
+## Malvora: retenção
+Antes de roteirizar ou aprovar Reels, aplicar `../../references/estruturas-de-retencao.md` (5 estruturas de retenção + checklist). Todo Reel da Malvora usa uma delas.

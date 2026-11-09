@@ -83,3 +83,7 @@ with full skeletons and goal tags.
 - `ig-caption-writer` - use the extracted caption template to draft your own
 - `ig-carousel-planner` - use the extracted carousel template
 - `ig-humanizer --mode audit` - audit your draft before shipping
+
+
+## Malvora: retenção
+Antes de roteirizar ou aprovar Reels, aplicar `../../references/estruturas-de-retencao.md` (5 estruturas de retenção + checklist). Todo Reel da Malvora usa uma delas.

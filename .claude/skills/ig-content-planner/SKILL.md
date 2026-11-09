@@ -128,3 +128,7 @@ See `references/example-week.md` for a filled-in 7-day plan.
 - `ig-carousel-planner` - draft each carousel from the plan
 - `ig-hashtag-strategist` - rotate sized hashtag sets across the week
 - `ig-hook-extractor` - study competitors' posts while planning
+
+
+## Malvora: retenção
+Antes de roteirizar ou aprovar Reels, aplicar `../../references/estruturas-de-retencao.md` (5 estruturas de retenção + checklist). Todo Reel da Malvora usa uma delas.

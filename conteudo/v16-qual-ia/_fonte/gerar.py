@@ -10,7 +10,7 @@ for W in WS:
     ch=[];cur=[]
     for w in W:
         cur.append(w)
-        if len(cur)>=4 or w['w'] in ('Primeiro','Segundo','Terceiro','qualquer','irritado','cliente','opções','IA','empresa','pessoa','LGPD','assim','nome','embaixo'): ch.append(cur);cur=[]
+        if len(cur)>=4 or w['w'] in ('Primeiro','Segundo','Terceiro','qualquer','irritado','cliente','opções','IA','empresa','pessoa','LGPD','assim','nome','você','embaixo'): ch.append(cur);cur=[]
     if cur:
         if len(cur)==1 and ch: ch[-1]+=cur
         else: ch.append(cur)

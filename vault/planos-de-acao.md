@@ -63,6 +63,6 @@ Ver `produto/backlog-integracoes.md` (InfinitePay, lojas de carros, Google, Micr
 
 ## 09/11 · Série "Clientes Malvora" (entrevistas em collab)
 - Ideia do Rapha: divulgar as empresas que aderiram por meio de entrevistas gravadas (modelo da Barbearia Numero 1).
-- 1 post por semana, em collab com o perfil da empresa. Claude edita os vídeos.
+- 1 post por semana, em collab com o perfil da empresa. Claude edita os vídeos de divulgação. Começa depois de criarmos o SharePoint de mídias (semana de 16/11).
 - Só com autorização escrita da empresa para nome e imagem (resposta "SIM, pode divulgar").
 - Primeira: Barbearia Numero 1 (gravação feita; falta receber os vídeos como documento ou Drive).

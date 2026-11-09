@@ -1,4 +1,4 @@
-# Copia os posts do GitHub para a pasta do SharePoint "Malvora Marketing" sincronizada pelo OneDrive.
+﻿# Copia os posts do GitHub para a pasta do SharePoint "Malvora Marketing" sincronizada pelo OneDrive.
 # Uso: powershell -ExecutionPolicy Bypass -File copiar-para-sharepoint.ps1
 $ErrorActionPreference = "Stop"
 $base = "https://raw.githubusercontent.com/raphalanalves/test/master/conteudo"
@@ -11,7 +11,7 @@ $itens = @(
   @{ pasta = "02 Aprovados e agendados\2026-11-10 00h05 Reel V15 Tres buracos"; arquivos = @("v15-tres-buracos/v15-tres-buracos.mp4") },
   @{ pasta = "02 Aprovados e agendados\2026-11-10 12h Carrossel 30 negocios"; arquivos = (1..7 | ForEach-Object { "lancamento-2026-11-10/carrossel-30-negocios/c30-0$_.jpg" }) },
   @{ pasta = "02 Aprovados e agendados\2026-11-11 19h Reel V16 Qual IA"; arquivos = @("v16-qual-ia/v16-qual-ia.mp4") },
-  @{ pasta = "01 Aguardando aprovação\Reel O que a Malvora faz"; arquivos = @("lancamento-2026-11-10/reel-o-que-faz/reel-o-que-a-malvora-faz.mp4") },
+  @{ pasta = "02 Aprovados e agendados\2026-11-10 18h Reel O que a Malvora faz"; arquivos = @("lancamento-2026-11-10/reel-o-que-faz/reel-o-que-a-malvora-faz.mp4") },
   @{ pasta = "01 Aguardando aprovação\Carrossel 10 segundos"; arquivos = (1..7 | ForEach-Object { "lancamento-2026-11-10/carrossel-10-segundos/c10-0$_.jpg" }) + @("lancamento-2026-11-10/carrossel-10-segundos/legenda.txt") },
   @{ pasta = "01 Aguardando aprovação\Anuncio salao 00h38"; arquivos = @("anuncios/salao-00h38/anuncio-0038-salao.mp4") },
   @{ pasta = "01 Aguardando aprovação\Por dentro da Malvora (previa)"; arquivos = @("portal-por-dentro/reels/previa-sem-voz.mp4") }

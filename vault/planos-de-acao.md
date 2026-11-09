@@ -79,3 +79,8 @@ Ver `produto/backlog-integracoes.md` (InfinitePay, lojas de carros, Google, Micr
 - Publicador: o Instagram só aceita mídia por URL pública e o link do SharePoint não serve (abre página, não o arquivo). Desenho: n8n lê o arquivo no SharePoint (app no Entra só com acesso a este site) → copia para o Azure Blob privado com link temporário (SAS de 1 h) → publica → move para 03-Publicados.
 - Ordem: 1) site e pastas agora; 2) cópia dos posts; 3) depois de 10/11: app no Entra, Blob, de→para do publicador e teste; 4) só então deixar o repositório privado (as URLs raw param de funcionar).
 - Publicador não muda na noite do lançamento.
+
+## 09/11 · Gravações da Barbearia Numero 1 (bastidores) · PAUSADO
+- 32 vídeos de 07/11 em SharePoint › Brutos/Gravações (~1,7 GB). Uso duplo: corte rápido de bastidores ("um dia de gravação com cliente VIP") e material de apoio da entrevista completa.
+- Análise pausada a pedido do Rapha: ele vai selecionar cada vídeo e dizer o que fazer. Script pronto: ops/analisar-gravacoes.ps1 (folhas de contato + resumo, sem alterar originais; requer ffmpeg no PC).
+- Para editar: os vídeos precisam chegar ao Claude por link temporário (Azure Blob), junto da migração do publicador.

@@ -70,3 +70,7 @@ visão do publicador por cliente · este vault.
 - iPhone: barra de status de verdade (hora, Wi-Fi, dados móveis, bateria) acima da tela do portal; a câmera frontal (Dynamic Island) não pode cobrir a busca nem o sino. Capturar o portal com margem segura no topo.
 - Cuidado para não parecer artificial: sombra e reflexo discretos, proporção real, nada de três aparelhos apertados.
 - Portal local de demonstração (Studio Bella) continua ligado para novas capturas; desligar e apagar no fim.
+
+## 09/11 (madrugada) · fila do lançamento aprovada
+- Aprovados pelo Rapha: story 09/11 9h, V15 10/11 00h05, carrossel 30 negócios 10/11 12h (aberto a outros segmentos), Reel "o que a Malvora faz" 10/11 18h, V16 11/11 19h (sem nomes da equipe).
+- Falta: QA da Malu com número sem cadastro; 00h Prompt 2 (Malu v7 2.938 caracteres + perguntas frequentes pós-lançamento) e linha da bio do Instagram; fixar V15 e carrossel; migração etapa 1 rodando no T1; plano do anúncio do salão (saldo R$ 62,60).

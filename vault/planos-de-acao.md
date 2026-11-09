@@ -72,3 +72,10 @@ Ver `produto/backlog-integracoes.md` (InfinitePay, lojas de carros, Google, Micr
 - Roteiro base (Carla): "Afinal, o que a Malvora faz e quem ela atende?". Ela lista 3 ou 4 segmentos com calma (ex.: clínica, salão, barbearia, loja de carros), depois o áudio acelera passando por vários outros, termina com uma respiração ou risada da Carla e fecha com "…e até o seu negócio". Final: "São mais de 30 segmentos prontos. O seu não está na lista? Entra no portal e ajusta do seu jeito."
 - Antes de gravar: conferir no portal a quantidade real de segmentos prontos e se a empresa de segmento fora da lista consegue se configurar sozinha (sem número inventado).
 - Visual: nomes dos segmentos em corte rápido, sincronizados com a fala; gancho escrito no quadro 0; voz a partir de ~1 s.
+
+## 09/11 · SharePoint de mídias e publicador (validado)
+- Site privado "Malvora Marketing" (/sites/malvora-marketing), criado pelo terminal no SharePoint admin center. Pastas e envio dos arquivos: Claude, via Microsoft 365 (conta raphael.alves).
+- Pastas da biblioteca: Instagram/01-Aguardando-aprovacao, 02-Aprovados-agendados, 03-Publicados/AAAA-MM, 04-Arquivados; Brutos/Entrevistas/<empresa>, Brutos/Gravacoes; Marca.
+- Publicador: o Instagram só aceita mídia por URL pública e o link do SharePoint não serve (abre página, não o arquivo). Desenho: n8n lê o arquivo no SharePoint (app no Entra só com acesso a este site) → copia para o Azure Blob privado com link temporário (SAS de 1 h) → publica → move para 03-Publicados.
+- Ordem: 1) site e pastas agora; 2) cópia dos posts; 3) depois de 10/11: app no Entra, Blob, de→para do publicador e teste; 4) só então deixar o repositório privado (as URLs raw param de funcionar).
+- Publicador não muda na noite do lançamento.

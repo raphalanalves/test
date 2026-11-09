@@ -380,3 +380,7 @@ Discover configured ads tools and their actual schemas before use. The command n
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## Malvora: curiosidade → ponte → oferta
+Para anúncios, Reels de venda e e-mails, aplicar `../../references/gancho-curiosidade-ponte.md` (curiosidade real com fonte → princípio → ponte 'inspirado nisso, a Malvora…' → teste grátis sem cartão → um CTA).

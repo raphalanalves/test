@@ -10,3 +10,4 @@ Não foi copiada a pasta `lib/` (publicação via Publora, imagens via Pixfaro, 
 Sem ela as skills funcionam no modo rascunho: entregam o texto pronto e a arte é feita no Canva.
 
 - `../references/estruturas-de-retencao.md`: regra da Malvora para Reels (5 estruturas de retenção e checklist), estudada em 09/11/2026.
+- `../references/gancho-curiosidade-ponte.md`: estrutura de anúncio/e-mail curiosidade → princípio → ponte → oferta, estudada em 09/11/2026.

@@ -132,3 +132,7 @@ See `references/example-week.md` for a filled-in 7-day plan.
 
 ## Malvora: retenção
 Antes de roteirizar ou aprovar Reels, aplicar `../../references/estruturas-de-retencao.md` (5 estruturas de retenção + checklist). Todo Reel da Malvora usa uma delas.
+
+
+## Malvora: curiosidade → ponte → oferta
+Para anúncios, Reels de venda e e-mails, aplicar `../../references/gancho-curiosidade-ponte.md` (curiosidade real com fonte → princípio → ponte 'inspirado nisso, a Malvora…' → teste grátis sem cartão → um CTA).

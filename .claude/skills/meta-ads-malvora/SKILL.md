@@ -80,3 +80,7 @@ Sempre fechar com: o que manter, o que trocar e o que pausar.
 ## Para clientes (futuro módulo "Anúncios")
 As mesmas regras viram o padrão do módulo de anúncios do portal (`produto/publicador-social-modular.md`): teto de gasto
 aprovado pelo cliente, pausa automática por custo alto e relatório de custo por cadastro.
+
+
+## Malvora: curiosidade → ponte → oferta
+Para anúncios, Reels de venda e e-mails, aplicar `../../references/gancho-curiosidade-ponte.md` (curiosidade real com fonte → princípio → ponte 'inspirado nisso, a Malvora…' → teste grátis sem cartão → um CTA).

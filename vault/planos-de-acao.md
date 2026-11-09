@@ -60,3 +60,9 @@ Ver `produto/backlog-integracoes.md` (InfinitePay, lojas de carros, Google, Micr
 - Formato sugerido: carrossel "dado + o que isso significa + como sair na frente", uma série por segmento (barbearia, clínica, estética).
 - Quando: criação na sexta, 06/11; a data de divulgação fica para depois. Nada é feito antes.
 - Status: ideia aprovada pelo Rapha, aguardando a sexta.
+
+## 09/11 · Série "Clientes Malvora" (entrevistas em collab)
+- Ideia do Rapha: divulgar as empresas que aderiram por meio de entrevistas gravadas (modelo da Barbearia Numero 1).
+- 1 post por semana, em collab com o perfil da empresa. Claude edita os vídeos.
+- Só com autorização escrita da empresa para nome e imagem (resposta "SIM, pode divulgar").
+- Primeira: Barbearia Numero 1 (gravação feita; falta receber os vídeos como documento ou Drive).

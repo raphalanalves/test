@@ -66,3 +66,9 @@ Ver `produto/backlog-integracoes.md` (InfinitePay, lojas de carros, Google, Micr
 - 1 post por semana, em collab com o perfil da empresa. Claude edita os vídeos de divulgação. Começa depois de criarmos o SharePoint de mídias (semana de 16/11).
 - Só com autorização escrita da empresa para nome e imagem (resposta "SIM, pode divulgar").
 - Primeira: Barbearia Numero 1 (gravação feita; falta receber os vídeos como documento ou Drive).
+
+## 10/11 · Reel "Afinal, o que a Malvora faz?" (par do carrossel 30 negócios)
+- Ideia do Rapha (09/11). Produzir em 10/11; publicar junto ou logo depois do carrossel das 12h.
+- Roteiro base (Carla): "Afinal, o que a Malvora faz e quem ela atende?". Ela lista 3 ou 4 segmentos com calma (ex.: clínica, salão, barbearia, loja de carros), depois o áudio acelera passando por vários outros, termina com uma respiração ou risada da Carla e fecha com "…e até o seu negócio". Final: "São mais de 30 segmentos prontos. O seu não está na lista? Entra no portal e ajusta do seu jeito."
+- Antes de gravar: conferir no portal a quantidade real de segmentos prontos e se a empresa de segmento fora da lista consegue se configurar sozinha (sem número inventado).
+- Visual: nomes dos segmentos em corte rápido, sincronizados com a fala; gancho escrito no quadro 0; voz a partir de ~1 s.

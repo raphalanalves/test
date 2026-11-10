@@ -74,3 +74,9 @@ visão do publicador por cliente · este vault.
 ## 09/11 (madrugada) · fila do lançamento aprovada
 - Aprovados pelo Rapha: story 09/11 9h, V15 10/11 00h05, carrossel 30 negócios 10/11 12h (aberto a outros segmentos), Reel "o que a Malvora faz" 10/11 18h, V16 11/11 19h (sem nomes da equipe).
 - Falta: QA da Malu com número sem cadastro; 00h Prompt 2 (Malu v7 2.938 caracteres + perguntas frequentes pós-lançamento) e linha da bio do Instagram; fixar V15 e carrossel; migração etapa 1 rodando no T1; plano do anúncio do salão (saldo R$ 62,60).
+
+## 10/11 · Anúncio barbearia QUERO CUPOM (plano aprovado pelo Rapha)
+- Cupom QUEROCUPOM ativo (50%, 1ª mensalidade, até 31/12/2026, 30 usos). Resposta automática "quero cupom" ativa no Instagram (ig_respostas_v4, ordem 5).
+- Reel de 38 s agendado para 10/11 20h30 no perfil; impulsionar a partir dele: R$ 8/dia, barbearias SP + 50 km, 25–55, destino /assinar.
+- Antes de impulsionar: QA da Malu (João fazendo) e prompt do T1 para montar como rascunho.
+- Cupons VIPMALVORA (50% x10) e SORTEIOVIP20 (50% x3) seguem ativos sem uso previsto: sugerido desativar.

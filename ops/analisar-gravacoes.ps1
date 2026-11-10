@@ -6,7 +6,7 @@ $raiz = Get-ChildItem $env:USERPROFILE -Directory -Recurse -Depth 2 -ErrorAction
 if (-not $raiz) { throw "Pasta sincronizada do Malvora Marketing não encontrada." }
 # a partir daqui, o ffmpeg escreve informações na saída de erro; no PowerShell 5.1 isso não pode parar o script
 $ErrorActionPreference = "Continue"
-$src = Join-Path $raiz.FullName "Brutos\Gravações"
+$src = Join-Path $raiz.FullName "03 Brutos e gravações\Gravações"
 $out = Join-Path $src "_analise"
 New-Item -ItemType Directory -Force -Path $out | Out-Null
 $linhas = @("arquivo;duracao_s;largura;altura;volume_medio_db;trechos_com_som_s")

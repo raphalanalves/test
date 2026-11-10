@@ -47,19 +47,19 @@ $publicados = @(
   @{ pasta = "2026-11\2026-11-08 19h00 Reel Alquimias 1"; link = "https://www.instagram.com/reel/Dffx-E0ETqn/"; arquivos = @("alquimias-01/alquimias-01-carla.mp4") }
 )
 foreach ($p in $publicados) {
-  $dest = Join-Path $R ("Instagram\03 Publicados\" + $p.pasta)
+  $dest = Join-Path $R ("01 Conteúdo orgânico\Instagram\03 Publicados\" + $p.pasta)
   foreach ($a in $p.arquivos) { Copiar (Join-Path $C ($a -replace '/','\')) $dest }
   $l = Join-Path $dest "link.txt"; if (-not (Test-Path $l)) { $p.link | Set-Content -Path $l -Encoding UTF8 }
 }
 "Publicados: ok"
 # 2) Marca, anúncios e vozes
-foreach ($m in @("marca","perfil","destaques")) { if (Test-Path (Join-Path $C $m)) { CopiarPasta (Join-Path $C $m) (Join-Path $R "Marca\$m") } }
-$me = Join-Path (Split-Path $C) "marca-email"; if (Test-Path $me) { CopiarPasta $me (Join-Path $R "Marca\e-mail") }
-if (Test-Path (Join-Path $C "anuncios")) { CopiarPasta (Join-Path $C "anuncios") (Join-Path $R "Anúncios") }
-foreach ($v in @("vozes-teste","vozes-teste-v4","vozes-amostras")) { if (Test-Path (Join-Path $C $v)) { CopiarPasta (Join-Path $C $v) (Join-Path $R "Brutos\Vozes\$v") } }
+foreach ($m in @("marca","perfil","destaques")) { if (Test-Path (Join-Path $C $m)) { CopiarPasta (Join-Path $C $m) (Join-Path $R "04 Marca\$m") } }
+$me = Join-Path (Split-Path $C) "marca-email"; if (Test-Path $me) { CopiarPasta $me (Join-Path $R "04 Marca\e-mail") }
+if (Test-Path (Join-Path $C "anuncios")) { CopiarPasta (Join-Path $C "anuncios") (Join-Path $R "02 Campanhas pagas\Institucional (todos os segmentos)\Acervo") }
+foreach ($v in @("vozes-teste","vozes-teste-v4","vozes-amostras")) { if (Test-Path (Join-Path $C $v)) { CopiarPasta (Join-Path $C $v) (Join-Path $R "03 Brutos e gravações\Vozes\$v") } }
 "Marca, anúncios e vozes: ok"
 # 3) Acervo completo do git (cópia de segurança de tudo, sem os arquivos-fonte)
-CopiarPasta $C (Join-Path $R "Brutos\Acervo do git (09-11-2026)")
+CopiarPasta $C (Join-Path $R "03 Brutos e gravações\Acervo do git (09-11-2026)")
 "Acervo: ok"
 Remove-Item $zip -Force; Remove-Item $tmp -Recurse -Force
 "Pronto. Copiados: $copiados · já existiam (mantidos): $mantidos. O OneDrive envia ao SharePoint em segundo plano."

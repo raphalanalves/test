@@ -1,4 +1,4 @@
-# Anúncio · Barbearia · "O app marca, mas não responde" (Reel 9:16, ~32 s, voz Carla)
+# Anúncio · Barbearia · "O app marca, mas não responde" (Reel 9:16, ~37 s, voz Carla)
 
 Estruturas: problema → consequência → solução (retenção #2) + curiosidade → princípio → ponte → oferta.
 Destino: portal.malvora.com.br/assinar (conta grátis, sem cartão). Alternativa: comentar "QUERO CUPOM".
@@ -10,9 +10,10 @@ Destino: portal.malvora.com.br/assinar (conta grátis, sem cartão). Alternativa
 | 8–12 s | Tela: mensagem lida tarde; "Já marquei em outro lugar 😕" | "E quando você responde, o cliente já fechou com a barbearia da esquina." | **CLIENTE QUE ESPERA, VAI EMBORA** |
 | 12–15 s | Cadeira vazia no horário marcado | "Sem falar no cliente que esquece o horário e deixa a cadeira vazia." | "SEM LEMBRETE = CADEIRA VAZIA" |
 | 15–22 s | Corte real da Barbearia Numero 1 (bastidores, sem fala) + tela: IA respondendo, marcando e mandando lembrete | "A Malvôra coloca uma IA no WhatsApp da sua barbearia: responde na hora, com os seus preços, marca na agenda e lembra o cliente na véspera. Funciona junto com o AppBarber." | ✓ Responde na hora ✓ Marca ✓ Lembra |
-| 22–25 s | Risada real dos bastidores + selo "CLIENTE MALVORA" | "Barbearias como a Barbearia Numero 1 já estão usando." | **BARBEARIAS DE VERDADE JÁ ESTÃO USANDO** |
-| 25–29 s | Tela cheia, número grande | "E se eu te falar que dá pra resolver isso por menos de R$ X por dia?" | **MENOS DE R$ X POR DIA** |
-| 29–32 s | Cartão final com a marca | "Cria sua conta grátis, sem cartão, no link. E comenta 'QUERO CUPOM' que a gente te manda 50% no primeiro mês." | **TESTE GRÁTIS · SEM CARTÃO** / "Comente QUERO CUPOM: 50% no 1º mês" / botão **CRIAR CONTA GRÁTIS** |
+| 22–27 s | Telas rápidas, uma por frase: cliente pergunta "quando cortei no mês passado?" → IA responde a data; disparo "Promo de terça: corte + barba"; enquete "Como foi seu corte? ⭐⭐⭐⭐⭐" | "E vai além: o cliente quer saber quando cortou no mês passado? Pergunta pra IA. Quer lançar uma promoção, uma campanha ou uma pesquisa de satisfação pros seus clientes? Sai pelo próprio WhatsApp." | ✓ Histórico do cliente ✓ Promoções ✓ Pesquisa de satisfação |
+| 27–30 s | Risada real dos bastidores + selo "CLIENTE MALVORA" | "Barbearias como a Barbearia Numero 1 já estão usando." | **BARBEARIAS DE VERDADE JÁ ESTÃO USANDO** |
+| 30–33 s | Tela cheia, número grande | "E se eu te falar que dá pra ter tudo isso por menos de R$ X por dia?" | **MENOS DE R$ X POR DIA** |
+| 33–37 s | Cartão final com a marca | "Cria sua conta grátis, sem cartão, no link. E comenta 'QUERO CUPOM' que a gente te manda 50% no primeiro mês." | **TESTE GRÁTIS · SEM CARTÃO** / "Comente QUERO CUPOM: 50% no 1º mês" / botão **CRIAR CONTA GRÁTIS** |
 
 ## Legenda do anúncio
 O app de agenda marca horário. Mas quem responde o "quanto tá o corte?" no meio do expediente? 💈
@@ -33,4 +34,5 @@ Malvora Hub: A nova alquimia digital. 💚💜
 - Confirmar no /assinar o preço real da barbearia para preencher "menos de R$ X por dia" (não usar número sem conferir).
 - Criar no portal o cupom do comentário (ex.: QUEROCUPOM: 50%, 1 mês, validade e limite definidos) e a resposta automática no Instagram para "quero cupom" (manda o link portal.malvora.com.br/assinar?cupom=QUEROCUPOM na DM).
 - Rodar o anúncio a partir da publicação orgânica (impulsionar o Reel) para os comentários caírem na resposta automática.
+- Confirmar com o Jão antes de gravar: (a) a IA consulta o histórico de atendimentos do cliente ("quando cortei?"); (b) o envio de promoção/campanha para a base pelo WhatsApp está liberado no plano da barbearia (as instruções da Malu ainda tratam Campanhas como "confirmar com a equipe"); (c) pesquisa de satisfação = adicional Fidelidade (no Essencial da barbearia já vem incluído).
 - Autorização escrita da Barbearia Numero 1 para nome e imagem no anúncio.

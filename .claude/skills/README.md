@@ -11,3 +11,4 @@ Sem ela as skills funcionam no modo rascunho: entregam o texto pronto e a arte �
 
 - `../references/estruturas-de-retencao.md`: regra da Malvora para Reels (5 estruturas de retenção e checklist), estudada em 09/11/2026.
 - `../references/gancho-curiosidade-ponte.md`: estrutura de anúncio/e-mail curiosidade → princípio → ponte → oferta, estudada em 09/11/2026.
+- `../references/anuncio-motion-oferta.md`: anúncio curto em motion (chamada → oferta → escassez → curiosidade → clique), estudado em 10/11/2026.

@@ -84,3 +84,10 @@ Ver `produto/backlog-integracoes.md` (InfinitePay, lojas de carros, Google, Micr
 - 32 vídeos de 07/11 em SharePoint › Brutos/Gravações (~1,7 GB). Uso duplo: corte rápido de bastidores ("um dia de gravação com cliente VIP") e material de apoio da entrevista completa.
 - Análise pausada a pedido do Rapha: ele vai selecionar cada vídeo e dizer o que fazer. Script pronto: ops/analisar-gravacoes.ps1 (folhas de contato + resumo, sem alterar originais; requer ffmpeg no PC).
 - Para editar: os vídeos precisam chegar ao Claude por link temporário (Azure Blob), junto da migração do publicador.
+
+## 10/11 · Estrutura do SharePoint (Malvora Marketing › Documentos)
+- 01 Conteúdo orgânico: Instagram (01 Aguardando aprovação · 02 Aprovados e agendados · 03 Publicados · 04 Arquivados) e Séries (Alquimias · Entrevistas VIP · Bastidores · Tutoriais do portal · Por dentro da Malvora).
+- 02 Campanhas pagas: Barbearias · Salões e estética · Clínicas e odontologia · Institucional (todos os segmentos). Novo segmento = nova pasta.
+- 03 Brutos e gravações: Gravações · Entrevistas · Vozes · Acervo do git (09-11-2026).
+- 04 Marca. 05 Referências e estudos (Concorrentes · Formatos e técnicas). 06 Planejamento e relatórios (Calendário editorial · Relatórios de desempenho · Roteiros).
+- Script ops/copiar-para-sharepoint.ps1 já usa os caminhos novos.

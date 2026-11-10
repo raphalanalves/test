@@ -80,3 +80,8 @@ visão do publicador por cliente · este vault.
 - Reel de 38 s agendado para 10/11 20h30 no perfil; impulsionar a partir dele: R$ 8/dia, barbearias SP + 50 km, 25–55, destino /assinar.
 - Antes de impulsionar: QA da Malu (João fazendo) e prompt do T1 para montar como rascunho.
 - Cupons VIPMALVORA (50% x10) e SORTEIOVIP20 (50% x3) seguem ativos sem uso previsto: sugerido desativar.
+
+## Depois do lançamento · "Nossos valores" (vídeos e materiais)
+- Norte de referência (só estudo, sem reutilizar imagem/áudio): https://www.instagram.com/reel/DfhBCcjhFVR/
+- Mensagem central: as pessoas não serão substituídas, e sim complementadas pela IA (a equipe fica com o que é humano; a IA cuida do repetitivo).
+- Junta com a ideia dos 7 valores já registrada. Aplicar as regras de retenção e curiosidade → ponte das skills. Nada será feito agora.

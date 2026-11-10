@@ -85,3 +85,9 @@ visão do publicador por cliente · este vault.
 - Norte de referência (só estudo, sem reutilizar imagem/áudio): https://www.instagram.com/reel/DfhBCcjhFVR/
 - Mensagem central: as pessoas não serão substituídas, e sim complementadas pela IA (a equipe fica com o que é humano; a IA cuida do repetitivo).
 - Junta com a ideia dos 7 valores já registrada. Aplicar as regras de retenção e curiosidade → ponte das skills. Nada será feito agora.
+
+## 10/11 noite · Reel da barbearia (QUERO CUPOM) excluído pelo Rapha
+- Publicado às 20h32 (DflF6nOiiVV) e excluído: "ainda não era o momento". Não republicar sem novo "aprovado".
+- Impulsionamento suspenso. Quando for a hora: republicar o Reel de 38 s e impulsionar a partir dele.
+- Cupom QUEROCUPOM e resposta automática "quero cupom" continuam ativos (sem efeito enquanto o Reel não estiver no ar).
+- Regra: post de campanha/anúncio só entra na fila com data confirmada pelo Rapha, mesmo com o plano aprovado.

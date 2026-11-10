@@ -88,6 +88,6 @@ visão do publicador por cliente · este vault.
 
 ## 10/11 noite · Reel da barbearia (QUERO CUPOM) excluído pelo Rapha
 - Publicado às 20h32 (DflF6nOiiVV) e excluído: "ainda não era o momento". Não republicar sem novo "aprovado".
-- Impulsionamento suspenso. Quando for a hora: republicar o Reel de 38 s e impulsionar a partir dele.
+- Impulsionamento suspenso, data em aberto (definida pelo Rapha). Quando for a hora: republicar o Reel de 38 s e impulsionar a partir dele. Se passar de 31/12, o QUEROCUPOM vence e precisa de cupom novo.
 - Cupom QUEROCUPOM e resposta automática "quero cupom" continuam ativos (sem efeito enquanto o Reel não estiver no ar).
 - Regra: post de campanha/anúncio só entra na fila com data confirmada pelo Rapha, mesmo com o plano aprovado.

@@ -87,3 +87,5 @@ with full skeletons and goal tags.
 
 ## Malvora: retenção
 Antes de roteirizar ou aprovar Reels, aplicar `../../references/estruturas-de-retencao.md` (5 estruturas de retenção + checklist). Todo Reel da Malvora usa uma delas.
+
+Pilares de conteúdo: todo post cumpre um dos 3 pilares de `../../references/pilares-de-conteudo-que-vendem.md` (transformação, prova, análise). Novidade quente com palavra-chave: `../../references/novidade-quente-palavra-chave.md`. Série "Nossos valores": `../../references/valores-autenticidade.md`.

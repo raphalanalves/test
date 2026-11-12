@@ -126,3 +126,5 @@ Antes de roteirizar ou aprovar Reels, aplicar `../../references/estruturas-de-re
 
 ## Malvora: curiosidade → ponte → oferta
 Para anúncios, Reels de venda e e-mails, aplicar `../../references/gancho-curiosidade-ponte.md` (curiosidade real com fonte → princípio → ponte 'inspirado nisso, a Malvora…' → teste grátis sem cartão → um CTA).
+
+Pilares de conteúdo: todo post cumpre um dos 3 pilares de `../../references/pilares-de-conteudo-que-vendem.md` (transformação, prova, análise). Novidade quente com palavra-chave: `../../references/novidade-quente-palavra-chave.md`. Série "Nossos valores": `../../references/valores-autenticidade.md`.

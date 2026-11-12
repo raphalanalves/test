@@ -1,6 +1,6 @@
-# Plano · 1ª campanha de Mensagens · Negócios com agenda (QUERO CUPOM)
+# Plano · 1ª campanha de Mensagens · Salões/estética e barbearias (QUERO CUPOM)
 
-Status: **aguardando aprovação do Rapha** (nada criado no Gerenciador). Início pedido: sexta 13/11, 7h (mudado pelo Rapha em 12/11; público ampliado para vários segmentos).
+Status: **aguardando aprovação do Rapha** (nada criado no Gerenciador). Início pedido: quinta 12/11, 7h (data corrigida pelo Rapha; dois segmentos para ser conservador).
 Skill: meta-ads-malvora. Data do plano: 12/11/2026.
 
 | Item | Definição |
@@ -9,9 +9,9 @@ Skill: meta-ads-malvora. Data do plano: 12/11/2026.
 | Por que não Vendas | O portal ainda não manda o evento "iniciou teste" ao pixel (pedido ao Jão). Sem ele a Meta otimiza às cegas |
 | Peça | **Reel "Afinal, o que a Malvora faz?"** (instagram.com/reel/Dfk0sViiURg, 10/11, 39s), promovido como publicação existente: os comentários ficam no post e a automação lê. Escolha do Rapha em 12/11 |
 | Mensagem pronta | `Quero cupom · meu negócio é:` (contém "quero cupom" → resposta automática; a pessoa completa o segmento) |
-| Público | São Paulo + 50 km · 25 a 60 anos · interesses: salão de beleza, barbearia, estética, clínica odontológica, pet shop, academia, empreendedorismo · comportamento: administradores de página comercial |
+| Público | São Paulo + 50 km · 25 a 60 anos · interesses: salão de beleza, estética, barbearia, barbeiro · refinado (se a Meta permitir) por comportamento "administradores de página comercial" ou interesse em empreendedorismo, para pegar donos e não clientes |
 | Posicionamentos | Só Instagram: Reels, Stories e Feed |
-| Verba | **R$ 20/dia, de 13/11 7h a 19/11 23h59** (até R$ 140 na semana; Rapha recarrega o pré-pago, saldo atual R$ 62,60 ≈ 3 dias). Sem mexer nos 3 primeiros dias |
+| Verba | **R$ 20/dia, de 12/11 7h a 18/11 23h59** (até R$ 140 na semana; Rapha recarrega o pré-pago, saldo atual R$ 62,60 ≈ 3 dias). Sem mexer nos 3 primeiros dias |
 | Corte de sangria | R$ 50 gastos sem nenhuma conta criada → pausar e revisar (só com o ok do Rapha) |
 | Cupom | QUEROCUPOM: 50% no 1º mês, até 31/12, 30 usos |
 

@@ -15,3 +15,4 @@ Sem ela as skills funcionam no modo rascunho: entregam o texto pronto e a arte �
 - `../references/pilares-de-conteudo-que-vendem.md`: 3 pilares (transformação, prova, análise) e regra semanal, estudado em 12/11/2026.
 - `../references/novidade-quente-palavra-chave.md`: Reel de novidade de até 48 h + palavra no comentário com passo a passo no direct, estudado em 12/11/2026.
 - `../references/valores-autenticidade.md`: série "Nossos valores" (o perfeito ficou barato; a IA libera as pessoas), estudado em 12/11/2026.
+- `video-entrevista-malvora/`: planejar, gravar e editar entrevistas com clientes (duas câmeras, sem a voz de quem pergunta, pergunta na tela, erros em P&B, logos no começo e no fim, derivados).

@@ -1,6 +1,6 @@
 # Plano · 1ª campanha de Mensagens · Salões/estética e barbearias (QUERO CUPOM)
 
-Status: **aguardando aprovação do Rapha** (nada criado no Gerenciador). Início pedido: quinta 12/11, 7h (data corrigida pelo Rapha; dois segmentos para ser conservador).
+Status: **aprovado pelo Rapha em 11/11 (noite)**; rascunho sendo montado pelo T1. Publicar só com o "pode publicar". Início pedido: quinta 12/11, 7h (data corrigida pelo Rapha; dois segmentos para ser conservador).
 Skill: meta-ads-malvora. Data do plano: 12/11/2026.
 
 | Item | Definição |

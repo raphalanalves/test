@@ -9,7 +9,9 @@ if (-not $raiz) { throw "Pasta sincronizada do Malvora Marketing não encontrada
 $src = Join-Path $raiz.FullName "03 Brutos e gravações\Gravações"
 $repo = Join-Path $env:USERPROFILE "malvora-entrevista-tmp"
 if (-not (Test-Path (Join-Path $repo ".git"))) {
+  if (Test-Path $repo) { throw "A pasta $repo existe mas não é um clone do repositório. Apague-a (com o ok do Raphael) e rode de novo." }
   git clone https://github.com/raphalanalves/malvora-entrevista-tmp.git $repo
+  if (-not (Test-Path (Join-Path $repo ".git"))) { throw "Não consegui clonar o repositório (login do git?). Nada foi enviado." }
 }
 $px = Join-Path $repo "proxies"; New-Item -ItemType Directory -Force -Path $px | Out-Null
 $ErrorActionPreference = "Continue"
@@ -26,6 +28,7 @@ Get-ChildItem $src -File | Where-Object { $_.Extension -match '^\.(mov|mp4|m4v)$
   $rot = if ($v.side_data_list) { ($v.side_data_list | Where-Object { $_.rotation -ne $null } | Select-Object -First 1).rotation } else { $v.tags.rotate }
   $nome = "{0:D2}_{1}.mp4" -f $n, $_.BaseName
   $out = Join-Path $px $nome
+  if ((Test-Path $out) -and ((Get-Item $out).Length -lt 1MB)) { Remove-Item $out }   # cópia incompleta de uma tentativa anterior
   if (-not (Test-Path $out)) {
     # lado maior 960 px, H.264 leve, áudio mono 96 kbps (mantém o áudio para sincronizar as câmeras)
     & cmd /c "ffmpeg -nostdin -y -loglevel error -i ""$f"" -vf ""scale='if(gt(iw,ih),960,-2)':'if(gt(iw,ih),-2,960)'"" -c:v libx264 -preset veryfast -crf 30 -c:a aac -b:a 96k -ac 1 -ar 48000 -movflags +faststart ""$out"""

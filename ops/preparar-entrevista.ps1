@@ -28,7 +28,7 @@ Get-ChildItem $src -File | Where-Object { $_.Extension -match '^\.(mov|mp4|m4v)$
   $rot = if ($v.side_data_list) { ($v.side_data_list | Where-Object { $_.rotation -ne $null } | Select-Object -First 1).rotation } else { $v.tags.rotate }
   $nome = "{0:D2}_{1}.mp4" -f $n, $_.BaseName
   $out = Join-Path $px $nome
-  if ((Test-Path $out) -and ((Get-Item $out).Length -lt 1MB)) { Remove-Item $out }   # cópia incompleta de uma tentativa anterior
+  if ((Test-Path $out) -and ((Get-Item $out).Length -lt 20KB)) { Remove-Item $out }   # cópia incompleta de uma tentativa anterior
   if (-not (Test-Path $out)) {
     # lado maior 960 px, H.264 leve, áudio mono 96 kbps (mantém o áudio para sincronizar as câmeras)
     & cmd /c "ffmpeg -nostdin -y -loglevel error -i ""$f"" -vf ""scale='if(gt(iw,ih),960,-2)':'if(gt(iw,ih),-2,960)'"" -c:v libx264 -preset veryfast -crf 30 -c:a aac -b:a 96k -ac 1 -ar 48000 -movflags +faststart ""$out"""

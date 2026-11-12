@@ -1,13 +1,13 @@
 # Plano · 1ª campanha de Mensagens · Barbearias (QUERO CUPOM)
 
-Status: **aguardando aprovação e data do Rapha** (nada criado no Gerenciador).
+Status: **aguardando aprovação do Rapha** (nada criado no Gerenciador). Início pedido: sábado 14/11.
 Skill: meta-ads-malvora. Data do plano: 12/11/2026.
 
 | Item | Definição |
 |---|---|
 | Objetivo | Engajamento → **Mensagens**, destino **Direct do Instagram** (não WhatsApp: a Malu não entrega cupom; no Direct a regra `quero_cupom` responde na hora com o link) |
 | Por que não Vendas | O portal ainda não manda o evento "iniciou teste" ao pixel (pedido ao Jão). Sem ele a Meta otimiza às cegas |
-| Peça | Reel 38s da barbearia **republicado no feed** e promovido como "publicação existente": os comentários ficam no post e a automação lê |
+| Peça | **Reel "Afinal, o que a Malvora faz?"** (instagram.com/reel/Dfk0sViiURg, 10/11, 39s), promovido como publicação existente: os comentários ficam no post e a automação lê. Escolha do Rapha em 12/11 |
 | Mensagem pronta | `Quero cupom · tenho barbearia` (contém "quero cupom" → resposta automática; filtra o nicho) |
 | Público | Brasil · São Paulo + 50 km · 25 a 60 anos · interesses: barbearia, barbeiro, empreendedorismo, administradores de página comercial |
 | Posicionamentos | Só Instagram: Reels, Stories e Feed |
@@ -26,7 +26,7 @@ Skill: meta-ads-malvora. Data do plano: 12/11/2026.
 - Portal: usos do QUEROCUPOM e contas criadas (o número que vale: custo por conta criada).
 
 ## Riscos
-- Vídeo de 38s é mais longo que o ideal (15–20s); opção de corte de 20s.
+- Reel de 39s é mais longo que o ideal (15–20s) e fala de vários nichos; o público e a mensagem pronta é que focam em barbearia.
 - Mensagens atrai curioso: o filtro é o texto pronto + o anúncio falar só com barbearia.
 - 30 usos do cupom podem acabar antes do fim; acompanhar.
 - Data: a do Reel orgânico e a do início do anúncio dependem do Rapha (regra de 10/11).

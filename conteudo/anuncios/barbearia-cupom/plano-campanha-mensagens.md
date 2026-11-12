@@ -11,7 +11,7 @@ Skill: meta-ads-malvora. Data do plano: 12/11/2026.
 | Mensagem pronta | `Quero cupom · meu negócio é:` (contém "quero cupom" → resposta automática; a pessoa completa o segmento) |
 | Público | São Paulo + 50 km · 25 a 60 anos · interesses: salão de beleza, barbearia, estética, clínica odontológica, pet shop, academia, empreendedorismo · comportamento: administradores de página comercial |
 | Posicionamentos | Só Instagram: Reels, Stories e Feed |
-| Verba | **Orçamento total R$ 56, de 13/11 7h a 19/11 23h59** (≈ R$ 8/dia; total evita gastar além do saldo de R$ 62,60). Sem mexer nos 3 primeiros dias |
+| Verba | **R$ 20/dia, de 13/11 7h a 19/11 23h59** (até R$ 140 na semana; Rapha recarrega o pré-pago, saldo atual R$ 62,60 ≈ 3 dias). Sem mexer nos 3 primeiros dias |
 | Corte de sangria | R$ 50 gastos sem nenhuma conta criada → pausar e revisar (só com o ok do Rapha) |
 | Cupom | QUEROCUPOM: 50% no 1º mês, até 31/12, 30 usos |
 

@@ -63,3 +63,25 @@ o antes e o depois. Nada é publicado sem a autorização por escrito do cliente
 - [ ] Áudio limpo e no mesmo volume do começo ao fim?
 - [ ] Legenda revisada (nomes, termos)?
 - [ ] Autorização do cliente e aprovação do corte final?
+
+## 6. Padrão da série "Entrevistas VIP" (aprovado pelo Rapha em 13/11/2026, Ep. 01 Barbearia Nº1)
+Formato: **um vídeo só, vertical, 1min30 a 1min40**, animado (não documentário), em collab com o cliente.
+
+**Estrutura fixa**
+1. **Gancho (0–2 s):** a frase mais forte do cliente, com cara de prévia (cor reduzida + vinheta + etiqueta "JÁ JÁ NO VÍDEO"). Não usar preto e branco aqui (é o efeito dos bastidores).
+2. **Vinheta padrão (3,2 s):** `vinheta.py <ep> "<cliente>" <logo.png> <saida> [largura]` (símbolo Malvora, "CLIENTES MALVORA", "ENTREVISTAS VIP", "Ep. NN · Cliente", logo do cliente; swell + chime baixo, sem "pop").
+3. **Carla (intro, ~13 s)** sobre cenas estáveis do cliente: lançamento, o que o cliente usa da Malvora (só o que contratou de verdade), que foi um convite. Etiquetas: "LANÇAMENTO · ENTREVISTA" e "@cliente × @malvora_hub".
+4. **Entrevista (~55–60 s):** apresentação de cada um (nome · função, ex.: "barbeiro e dono"), dor → perda real → com a Malvora → frase de fechamento. Frases completas. Pergunta na tela (cartão roxo no topo) quando a resposta não se explica sozinha.
+5. **Bastidores (~4 s):** 1–2 falhas engraçadas em P&B com etiqueta "BASTIDORES".
+6. **Carla (fechamento, ~18 s)** sobre cenas do cliente: suporte do time, "agora é acompanhar junto cada resultado" (nunca prometer resultado não medido), teaser da **parte 2**, "teste grátis, sem cartão, link na bio" → cartão final com as duas logos e os dois @.
+
+**Regras técnicas aprendidas**
+- **Enquadramento pelo rosto** (detecção automática): olhos ~1/3 da altura, plano médio (zoom ~1,35) e close (~1,75) alternando; câmera lateral recortada (1,55–1,9). Nada de zoom central (sobra teto).
+- **Legenda abaixo do queixo** (faixa 68–74% da altura), 2–3 palavras, palavra falada em verde-água #00D4AA e palavras-chave em violeta #7B68EE; nunca sobrepor o nome na tela. Revisar "barbeira/barbaria → barbearia", "Nº1".
+- **Cortes:** troca a cada ~2,5 s entre câmeras/zoom, só em pausa entre palavras. **Conferir a folga depois da última palavra** de cada fala: se a próxima palavra vem colada (< 0,1 s), escolher outra frase ou terminar no vale de energia com fade de 0,1 s.
+- **Voz:** limpeza + EQ (corte 85 Hz, -2 dB em 220 Hz, +2,5 dB em 3,2 kHz), compressor 3:1, de-esser; acelerar no máximo 5%. Volume final -14 LUFS.
+- **Efeitos:** nada de whoosh/pop (soam como "tapa"). Usar `conteudo/marca/sfx-swell-transicao.wav` entrando 0,7 s antes da troca de bloco, pico ~25 dB abaixo da voz.
+- **Trilha** com ducking automático (sidechain) sob a voz. Atenção: o `loudnorm` sai em 192 kHz; sempre `aresample=48000` depois (senão o áudio encurta e dessincroniza).
+- **Montagem sincronizada:** vídeo e áudio em peças separadas, contadas em quadros (sem acumular atraso).
+- **Cenas de apoio:** medir o tremor e usar as mais estáveis; estabilizar (prévia: deshake; final: vidstab em 2 passadas, aproveitando a folga do 4K).
+- **Final em 4K:** a prévia é feita nos proxies; depois `ops/recortar-4k.ps1` recorta só os trechos usados dos originais (com 1 s de folga) e o render final sai em 1080×1920 com os mesmos cortes, enquadramentos e cor.

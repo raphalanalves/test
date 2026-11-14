@@ -40,3 +40,9 @@
 - Agora o cadastro tem 3 perguntas (nome e sobrenome, e-mail, empresa e ramo). Abre o cadastro na hora, sem confirmação, e as perguntas de qualificação ficam opcionais, depois do cadastro. "ok" não conta como resposta, o e-mail da pessoa não é repetido e ela nunca diz "avisei a equipe".
 - Aplicado pelo acesso da equipe (2.913 caracteres; os outros campos não mudaram). Arquivo: `conteudo/lancamento-2026-11-10/malu/instrucoes-extras-v4.txt`.
 - Medir: taxa de cadastro dos próximos leads (antes: 1 de 8).
+
+## 14/11 · Direct do Instagram: lê todas as mensagens novas e respeita o cupom já enviado
+- Motivo: @nanniunhasofc (anúncio QUERO CUPOM) mandou "Quero cupom · meu negócio é:" e, 9 s depois, "Manicure". O fluxo só lia a última mensagem, não mandou o cupom e a IA disse que ia "confirmar com a equipe". O Raphael mandou o cupom à mão.
+- Agora (fluxo `n7Co0LSMRhW1eZfo`, aprovado pelo Raphael): a palavra-chave vale em qualquer mensagem nova desde a nossa última resposta; texto sem letras do nosso alfabeto (spam, outro idioma) só é registrado, sem resposta (status `ignorado`); prompt: cupom já enviado vale (não encaminha), exemplo do ramo depois do cupom, sem "quantos horários por dia".
+- Testes: 11 casos da lógica rodados localmente e 8 conversas no simulador (`dvsTG8XjoEzd9k6L`, prompt atualizado igual ao da produção).
+- Contatos manuais: só a manicure (feito pelo Raphael); os demais ficam sem resposta, a pedido dele.

@@ -11,6 +11,11 @@ Lista viva. Cada item aponta para o documento com os detalhes.
 - [ ] Subir vídeo + capa no SharePoint, aprovação do Pablo, data de publicação e convite de collab.
 - [ ] Depois de publicar: apagar o repositório privado `malvora-entrevista-tmp` e as cópias locais.
 
+## Ideias para retomar (14/11)
+
+- [ ] **Nichos advocacia, psicologia e coworking** (pausado a pedido): 6 carrosséis, 3 Reels com a Carla e Stories diários (enquete/quiz/caixinha pelo app; dica do dia e bastidores pela API). Antes: confirmar reserva de sala e Pix avulso (coworking), repasse para humano em mensagem de sofrimento (psicologia) e fontes atuais da OAB e do CFP sobre publicidade e IA. Começar pelo carrossel 1 (advocacia: o que a IA pode e não pode) e pelo 5 (coworking A/B).
+- [ ] **Lembrete da véspera v2** (dom 15/11, 19h): refazer no padrão do V5 (Carla, legenda, marca d'água, logo oficial, CTA de salvamento). Confirmar antes: a IA remarca sozinha pelo lembrete? isso vem no plano padrão?
+
 ## Aguardando aprovação
 
 - [x] Ordem da semana aprovada em 19/10, **começando na sexta 23/10** (a ordem do item 5 de `estrategia-ganchos.md`

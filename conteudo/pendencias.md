@@ -6,7 +6,7 @@ Lista viva. Cada item aponta para o documento com os detalhes.
 
 ## Entrevistas VIP · Ep. 01 (Barbearia Nº1)
 
-- [ ] **Capa final** (pausado a pedido em 14/11): os dois sorrindo e olhando para a câmera. Rod: frame em 4K pronto (N10, 4,0 s). Pablo: momento em IMG_3036 (~3 s) só existe no proxy; falta o T1 rodar `ops/recortar-capa-4k.ps1` e eu montar a capa em alta. Prévia aprovada no formato.
+- [ ] **Capa final** (pausado a pedido em 14/11): os dois sorrindo e olhando para a câmera. Rod: frame em 4K pronto (N10, 4,0 s). Pablo: momento em IMG_3036 (~3 s) só existe no proxy; falta o T1 rodar `ops/recortar-capa-4k.ps1` e eu montar a capa em alta. Prévia enviada em 14/11, ainda sem aprovação.
 - [ ] Legenda do collab: aprovar.
 - [ ] Subir vídeo + capa no SharePoint, aprovação do Pablo, data de publicação e convite de collab.
 - [ ] Depois de publicar: apagar o repositório privado `malvora-entrevista-tmp` e as cópias locais.

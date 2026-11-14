@@ -1,0 +1,167 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+body{width:1080px;height:1920px;position:relative;overflow:hidden;background:#05050A}
+#stage{position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,#171829,#0E0E16 70%)}
+.sc{position:absolute;inset:0;display:none}
+.bebas{font-family:'Bebas Neue';letter-spacing:1px}
+.note{position:absolute;left:60px;top:96px;font-size:22px;color:#6E727C;z-index:40}
+/* gancho e fatos */
+#hk{position:absolute;left:60px;right:60px;top:230px;text-align:center}
+#hk .a{font-size:160px;line-height:.9}
+#hk .b{font-size:92px;line-height:.95;margin-top:18px}
+#win{position:absolute;left:40px;top:700px;width:1000px;height:562px;border-radius:22px;overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.6);background:url(img/outlook-janela.png) 0 0/1000px 562px no-repeat}
+#err{position:absolute;left:220px;top:100px;right:0;bottom:0;background:rgba(245,246,248,.94);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;opacity:0}
+#err .sp{width:64px;height:64px;border-radius:50%;border:7px solid #C8D3E6;border-top-color:#0F6CBD}
+#err .t{font-family:'Segoe UI',Inter,sans-serif;font-size:30px;color:#242424;font-weight:600;text-align:center}
+#err .s{font-size:22px;color:#616161}
+#chips{position:absolute;left:60px;right:60px;top:1320px;display:flex;flex-wrap:wrap;gap:18px;justify-content:center}
+.chip{font-size:36px;font-weight:800;padding:14px 26px;border-radius:999px;background:#171826;border:3px solid #2E3044;opacity:0}
+.chip.r{border-color:#E5484D;color:#FFB4B6}
+#stamp{position:absolute;left:0;right:0;top:860px;text-align:center;opacity:0}
+#stamp span{display:inline-block;font-size:150px;color:#E5484D;border:10px solid #E5484D;padding:8px 40px 0;border-radius:24px;background:rgba(14,14,22,.85);transform:rotate(-6deg)}
+#card{position:absolute;left:90px;right:90px;top:1320px;border-radius:30px;background:#171826;border:3px solid #2E3044;padding:30px 36px;opacity:0}
+#card .k{font-size:24px;font-weight:800;letter-spacing:3px;color:#A9ADB3}
+#card .t{font-size:44px;font-weight:700;margin-top:10px;line-height:1.2}
+#card .f{font-size:22px;color:#6E727C;margin-top:14px}
+/* chamados */
+#s3 .tit{position:absolute;left:60px;right:60px;top:200px;text-align:center;font-size:96px;line-height:.95}
+#box{position:absolute;left:40px;top:400px;width:1000px;height:1140px;border-radius:22px;overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.6);background:url(img/outlook-chamados-base.png) 0 0/2028px 1140px no-repeat}
+#acc{position:absolute;left:118px;top:336px;font-family:'Segoe UI',Inter,sans-serif;font-size:18px;color:#242424}
+#unr{position:absolute;left:330px;top:398px;font-family:'Segoe UI',Inter,sans-serif;font-size:21px;font-weight:700;color:#0F6CBD}
+#list{position:absolute;left:444px;top:259px;width:556px;height:880px;overflow:hidden;background:#fff}
+.row{position:absolute;left:0;right:0;height:120px;padding:16px 18px 0 26px;border-bottom:1px solid #EDEBE9;font-family:'Segoe UI',Inter,sans-serif;background:#fff}
+.row:before{content:'';position:absolute;left:0;top:0;bottom:0;width:6px;background:#0F6CBD}
+.row .n{font-size:22px;font-weight:700;color:#242424}
+.row .s{font-size:20px;color:#0F6CBD;font-weight:600;margin-top:2px}
+.row .p{font-size:19px;color:#616161;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .h{position:absolute;right:16px;top:18px;font-size:18px;color:#616161}
+.row .w{position:absolute;right:16px;top:50px;font-size:17px;font-weight:800;color:#C4314B;display:none}
+#off{position:absolute;left:0;right:0;top:0;height:64px;background:#C4314B;color:#fff;font-family:'Segoe UI',Inter,sans-serif;font-size:26px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:12px;opacity:0;z-index:3}
+#dim{position:absolute;inset:0;background:rgba(14,14,22,.45);opacity:0}
+/* lição */
+#s4 .l{position:absolute;left:60px;right:60px;text-align:center;font-size:150px;line-height:.92}
+/* whatsapp */
+#s5 .tit{position:absolute;left:60px;right:60px;top:150px;text-align:center;font-size:84px;line-height:.95}
+#tags{position:absolute;left:0;right:0;top:330px;display:flex;justify-content:center;gap:16px;z-index:5}
+.tag{font-size:24px;font-weight:800;letter-spacing:2px;padding:10px 20px;border-radius:999px;color:#0E0E16;background:linear-gradient(90deg,#00D4AA,#7B68EE);opacity:0}
+#ph{position:absolute;left:208px;top:340px;width:678px;height:1258px;transform-origin:0 0;background:url(img/wa-celular-base.png) 0 0/678px 1258px no-repeat}
+#ph .av{position:absolute;left:126px;top:97px;width:62px;height:62px;border-radius:50%;background:#0E0E16;display:flex;align-items:center;justify-content:center}
+#ph .av img{width:42px}
+#ph .nm{position:absolute;left:202px;top:100px;font-family:Roboto,Inter,sans-serif;font-size:27px;color:#111B21;font-weight:500}
+#ph .st{position:absolute;left:202px;top:134px;font-family:Roboto,Inter,sans-serif;font-size:18px;color:#667781}
+#ph .ms{position:absolute;left:114px;top:1069px;font-family:Roboto,Inter,sans-serif;font-size:27px;color:#8696A0}
+#chat{position:absolute;left:46px;right:78px;top:180px;height:860px;display:flex;flex-direction:column;justify-content:flex-end;gap:12px;padding-bottom:14px}
+.bb{max-width:470px;border-radius:14px;padding:10px 14px 8px;font-family:Roboto,Inter,sans-serif;font-size:30px;line-height:1.3;color:#111B21;box-shadow:0 1px 1px rgba(0,0,0,.12);position:relative}
+.bb .lb{display:block;font-size:17px;font-weight:700;color:#00A884;margin-bottom:2px}
+.bb .h{display:block;text-align:right;font-size:17px;color:#667781;margin-top:2px}
+.bb .tk{color:#53BDEB;margin-left:4px}
+.in{align-self:flex-start;background:#fff;border-top-left-radius:4px}
+.out{align-self:flex-end;background:#D9FDD3;border-top-right-radius:4px}
+.sys{align-self:center;font-family:Roboto,Inter,sans-serif;font-size:21px;color:#54656F;background:#FFF5C4;border-radius:10px;padding:6px 14px}
+/* cta */
+#s6 .c{position:absolute;left:60px;right:60px;top:560px;text-align:center;font-size:140px;line-height:.92}
+#s6 .s{position:absolute;left:60px;right:60px;top:1000px;text-align:center;font-size:44px;color:#E9EAEE;font-weight:700}
+#brand{position:absolute;left:0;right:0;top:1180px;display:flex;align-items:center;justify-content:center;gap:24px}
+#brand img{width:110px}
+#brand .nm{font-size:44px;font-weight:700;color:#E9EAEE}
+/* legenda */
+#cap{position:absolute;left:60px;right:60px;top:1580px;text-align:center;font-weight:800;font-size:52px;line-height:1.15;z-index:30;text-shadow:0 3px 12px rgba(0,0,0,.8)}
+#cap span{color:#F2F3F7}#cap span.on{color:#00D4AA}
+#flash{position:absolute;inset:0;background:#fff;z-index:50;opacity:0;pointer-events:none}
+</style></head><body>
+<div id="stage">
+ <div class="note" id="note">Ilustração</div>
+ <!-- gancho + fatos -->
+ <div class="sc" id="s1">
+  <div id="hk" class="bebas"><div class="a">O OUTLOOK CAIU.</div><div class="b grad">E O ATENDIMENTO DA<br>SUA EMPRESA?</div></div>
+  <div id="win"><div id="err"><div class="sp" id="spin"></div><div class="t">Não foi possível carregar<br>a sua caixa de entrada.</div><div class="s">Tente novamente mais tarde.</div></div></div>
+  <div id="chips"><div class="chip" id="c1">12/11/2026</div><div class="chip r" id="c2">FORA DO AR NO MUNDO TODO</div><div class="chip r" id="c3">TEAMS</div><div class="chip r" id="c4">COPILOT</div></div>
+  <div id="stamp" class="bebas"><span>NÃO FOI HACKER</span></div>
+  <div id="card"><div class="k">O QUE A MICROSOFT DISSE</div><div class="t">Uma falha na própria infraestrutura.<br>Sem sinal de ataque.</div><div class="f">Fontes: NPR e TechRadar, 12/11/2026</div></div>
+ </div>
+ <!-- chamados -->
+ <div class="sc" id="s3">
+  <div class="tit bebas">TUDO NUMA<br><span class="grad">CAIXA DE E-MAIL SÓ?</span></div>
+  <div id="box"><div id="acc">chamados@suaempresa.com.br</div><div id="unr">0</div><div id="list"></div><div id="dim"></div><div id="off">⚠ Sem conexão com o servidor</div></div>
+ </div>
+ <!-- lição -->
+ <div class="sc" id="s4"><div class="l bebas" id="l1" style="top:520px">O PROBLEMA<br>NÃO É O E-MAIL.</div><div class="l bebas" id="l2" style="top:900px;color:#E5484D">É DEPENDER DE<br>UM CANAL SÓ.</div></div>
+ <!-- whatsapp -->
+ <div class="sc" id="s5">
+  <div class="tit bebas" id="t5">UM 2º CANAL OFICIAL<br><span class="grad">DE ATENDIMENTO</span></div>
+  <div id="tags" style="display:none"><div class="tag" id="g1">IA RESPONDENDO</div><div class="tag" id="g2">CHAMANDO A EQUIPE</div></div>
+  <div id="ph"><div class="av"><img src="img/simbolo-principal.png"></div><div class="nm">Sua Empresa</div><div class="st" id="pst">online</div><div class="ms">Mensagem</div>
+   <div id="chat"></div></div>
+ </div>
+ <!-- cta -->
+ <div class="sc" id="s6"><div class="c bebas">TESTE GRÁTIS,<br><span class="grad">SEM CARTÃO.</span></div><div class="s">Link na bio</div>
+  <div id="brand"><img src="img/simbolo-principal.png"><div class="nm">@malvora_hub</div></div></div>
+ <div id="cap"></div><div id="flash"></div>
+</div>
+<script>
+const clamp=x=>Math.min(Math.max(x,0),1), ease=x=>1-Math.pow(1-clamp(x),3), back=x=>{x=clamp(x);const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const $=id=>document.getElementById(id);
+const V0=0.25,SP=1.12,f=v=>V0+v/SP;
+const WORDS=[[0.0, 0.2, "O"], [0.2, 0.68, "Outlook"], [0.68, 1.6, "caiu."], [1.64, 1.76, "E"], [1.76, 1.92, "o"], [1.92, 2.36, "atendimento"], [2.36, 2.52, "da"], [2.52, 2.72, "sua"], [2.72, 3.06, "empresa?"], [3.38, 3.48, "Como"], [3.48, 3.82, "ficou?"], [4.4, 4.56, "No"], [4.56, 4.84, "dia"], [4.84, 5.26, "12"], [5.26, 5.52, "de"], [5.52, 5.98, "novembro,"], [6.1, 6.26, "o"], [6.26, 6.52, "e-mail"], [6.52, 6.7, "da"], [6.7, 7.32, "Microsoft"], [7.32, 7.76, "parou"], [7.76, 8.02, "no"], [8.02, 8.34, "mundo"], [8.34, 8.88, "inteiro,"], [9.22, 9.34, "e"], [9.34, 9.6, "o"], [9.6, 9.78, "Teams"], [9.78, 9.9, "e"], [9.9, 10.06, "o"], [10.06, 10.54, "Copilot"], [10.54, 10.84, "foram"], [10.84, 11.34, "junto."], [11.62, 11.9, "E"], [11.9, 12.22, "não"], [12.22, 12.46, "foi"], [12.46, 12.78, "ataque"], [12.78, 13.24, "hacker."], [13.76, 13.9, "A"], [13.9, 14.2, "própria"], [14.2, 14.92, "Microsoft"], [14.92, 15.26, "disse"], [15.26, 15.44, "que"], [15.44, 15.62, "foi"], [15.62, 16.04, "uma"], [16.04, 16.3, "falha"], [16.3, 16.52, "na"], [16.52, 17.36, "infraestrutura"], [17.36, 17.64, "dela."], [18.0, 18.34, "Agora"], [18.34, 18.78, "pensa."], [19.16, 19.62, "Quantas"], [19.62, 20.08, "empresas"], [20.08, 20.64, "recebem"], [20.64, 21.22, "chamado,"], [21.64, 22.04, "pedido"], [22.04, 22.26, "e"], [22.26, 23.06, "orçamento"], [23.06, 23.42, "numa"], [23.42, 23.82, "caixa"], [23.82, 24.02, "de"], [24.02, 24.16, "e-mail"], [24.16, 24.46, "só?"], [24.84, 25.02, "No"], [25.02, 25.22, "dia"], [25.22, 25.34, "em"], [25.34, 25.36, "que"], [25.36, 25.66, "ela"], [25.66, 25.94, "para,"], [26.28, 26.32, "o"], [26.32, 26.78, "cliente"], [26.78, 27.76, "escreve"], [27.76, 28.0, "e"], [28.0, 28.5, "ninguém"], [28.5, 28.78, "vê."], [28.78, 29.3, "O"], [29.3, 29.68, "problema"], [29.68, 29.92, "não"], [29.92, 30.1, "é"], [30.1, 30.24, "o"], [30.24, 30.5, "e-mail."], [30.88, 31.04, "É"], [31.04, 31.58, "depender"], [31.58, 31.74, "de"], [31.74, 31.86, "um"], [31.86, 32.24, "canal"], [32.24, 32.62, "só."], [32.94, 33.14, "Por"], [33.14, 33.64, "isso,"], [34.02, 34.1, "vale"], [34.1, 34.34, "ter"], [34.34, 34.56, "um"], [34.56, 34.96, "segundo"], [34.96, 35.36, "canal"], [35.36, 35.82, "oficial"], [35.82, 36.02, "de"], [36.02, 36.62, "atendimento."], [36.98, 37.04, "O"], [37.04, 37.6, "WhatsApp"], [37.6, 37.84, "da"], [37.84, 38.0, "sua"], [38.0, 38.42, "empresa,"], [38.68, 38.86, "com"], [38.86, 39.04, "a"], [39.04, 39.19, "IA"], [39.19, 39.38, "da"], [39.38, 39.9, "Malvora"], [39.9, 40.58, "respondendo"], [40.58, 40.88, "na"], [40.88, 41.16, "hora"], [41.16, 41.5, "e"], [41.5, 41.88, "chamando"], [41.88, 41.98, "a"], [41.98, 42.14, "sua"], [42.14, 42.5, "equipe"], [42.5, 42.74, "quando"], [42.74, 42.94, "o"], [42.94, 43.14, "assunto"], [43.14, 43.4, "pede"], [43.4, 43.58, "uma"], [43.58, 44.02, "pessoa."], [44.4, 44.5, "Se"], [44.5, 44.58, "a"], [44.58, 44.74, "sua"], [44.74, 45.04, "empresa"], [45.04, 45.32, "ainda"], [45.32, 45.68, "não"], [45.68, 45.8, "tem"], [45.8, 46.0, "esse"], [46.0, 46.44, "canal,"], [46.7, 46.78, "dá"], [46.78, 46.94, "pra"], [46.94, 47.4, "começar"], [47.4, 48.06, "hoje."], [48.5, 48.78, "Teste"], [48.78, 49.52, "grátis,"], [49.6, 49.76, "sem"], [49.76, 50.32, "cartão,"], [50.48, 50.54, "no"], [50.54, 50.74, "link"], [50.74, 50.96, "da"], [50.96, 51.14, "bio."]];
+const T={hk:0,c1:f(4.84),c2:f(8.0),c3:f(9.6),c4:f(10.06),err:f(0.68),stamp:f(11.9),card:f(13.8),s3:f(17.85),s4:f(28.7),l2:f(30.85),s5:f(32.9),tag:f(34.4),ph:f(36.9),s6:f(48.4),end:f(51.3)+2.0};
+window.T=T;
+// chamados que chegam
+const R=[["Marina Souza","Chamado: sistema não emite nota","Bom dia, desde ontem não consigo...",f(20.64)],
+ ["Pedro Lima","Pedido 4821 · prazo de entrega","Vocês conseguem confirmar se...",f(21.64)],
+ ["Ana Ribeiro","Orçamento para 30 unidades","Olá! Gostaria de um orçamento...",f(22.26)],
+ ["Carlos Melo","Chamado urgente","Preciso de retorno hoje, por favor...",f(23.0)],
+ ["Juliana Rocha","Segunda via do boleto","Não recebi o boleto deste mês...",f(23.5)],
+ ["Marina Souza","RE: Chamado: sistema não emite nota","Alguém pode me responder? Estou...",f(26.4)],
+ ["Pedro Lima","RE: Pedido 4821","Sem resposta até agora...",f(27.0)],
+ ["Rafaela Dias","Cancelamento","Vou ter que procurar outra empresa...",f(27.6)]];
+const L=$('list'); R.forEach((r,i)=>{const d=document.createElement('div');d.className='row';d.id='r'+i;d.innerHTML=`<div class="n">${r[0]}</div><div class="s">${r[1]}</div><div class="p">${r[2]}</div><div class="h">${['08:12','08:31','08:47','09:05','09:20','11:02','11:15','11:40'][i]}</div><div class="w">SEM RESPOSTA</div>`;L.appendChild(d);});
+// conversa no whatsapp
+const C=[["in","Oi! Mandei e-mail pro suporte e ninguém respondeu 😕","11:42",f(37.3)],
+ ["out","Oi, Marina! Pode falar comigo por aqui. O que aconteceu?","11:42",f(39.9)],
+ ["in","O sistema não emite a nota fiscal.","11:43",f(40.9)],
+ ["out","Entendi! Já passei pro Rafael, do suporte, com tudo o que você me contou. Ele te responde por aqui. 👍","11:43",f(41.6)],
+ ["sys","Rafael (Suporte) entrou na conversa","",f(43.1)]];
+$('chat').innerHTML=C.map((m,i)=>m[0]==='sys'?`<div class="sys" id="m${i}">${m[1]}</div>`:`<div class="bb ${m[0]}" id="m${i}">${m[0]==='out'?'<span class="lb">IA da Malvora</span>':''}${m[1]}<span class="h">${m[2]}${m[0]==='out'?'<span class="tk">✓✓</span>':''}</span></div>`).join('');
+// legenda
+const G=[];let cur=[];WORDS.forEach(w=>{cur.push(w);if(cur.length>=3||/[.,?!]$/.test(w[2])){G.push(cur);cur=[]}});if(cur.length)G.push(cur);
+const show=(id,on)=>{$(id).style.display=on?'block':'none'};
+const pop=(id,t0,dy=40)=>{const p=back((window.__t-t0)/0.4);const e=$(id);e.style.opacity=clamp((window.__t-t0)/0.2);e.style.transform=`translateY(${(1-p)*dy}px) scale(${0.9+0.1*p})`;};
+
+window.render=function(t){window.__t=t;
+ show('s1',t<T.s3); show('s3',t>=T.s3&&t<T.s4); show('s4',t>=T.s4&&t<T.s5); show('s5',t>=T.s5&&t<T.s6); show('s6',t>=T.s6);
+ if(t<T.s3){ // gancho e fatos
+  $('hk').style.transform=`scale(${0.96+0.04*back(t/0.4)})`;
+  const e=ease((t-T.err)/0.35); $('err').style.opacity=e; $('spin').style.transform=`rotate(${t*360}deg)`;
+  $('win').style.transform=`translateY(${(1-ease(t/0.5))*80}px)`;
+  ['c1','c2','c3','c4'].forEach(k=>{if(t>=T[k]) pop(k,T[k]); else $(k).style.opacity=0;});
+  const out=ease((t-T.stamp+0.2)/0.3); $('chips').style.opacity=1-out;
+  if(t>=T.stamp){const p=back((t-T.stamp)/0.35);$('stamp').style.opacity=1;$('stamp').style.transform=`scale(${2.2-1.2*p})`;} else $('stamp').style.opacity=0;
+  if(t>=T.card) pop('card',T.card); else $('card').style.opacity=0;
+ }
+ if(t>=T.s3&&t<T.s4){ // chamados
+  const k=ease((t-T.s3)/0.5); $('box').style.transform=`translateY(${(1-k)*120}px)`; $('box').style.opacity=k;
+  let n=0; R.forEach((r,i)=>{const e=$('r'+i); if(t>=r[3]){n++;} });
+  // os mais novos em cima
+  let pos=0; for(let i=R.length-1;i>=0;i--){const e=$('r'+i); if(t>=R[i][3]){const p=ease((t-R[i][3])/0.3); e.style.display='block'; e.style.top=(pos*120)+'px'; e.style.opacity=p; e.style.transform=`translateX(${(1-p)*60}px)`; pos++;} else e.style.display='none';}
+  const down=t>=f(24.84); const unr=Math.min(37, n+(down?Math.floor((t-f(24.84))*7):0)); $('unr').textContent=unr;
+  $('off').style.opacity=down?ease((t-f(24.84))/0.3):0; $('dim').style.opacity=t>=f(27.9)?0.6*ease((t-f(27.9))/0.4):0;
+  R.forEach((r,i)=>{$('r'+i).querySelector('.w').style.display=(down&&t>=r[3]+0.3)?'block':'none';});
+ }
+ if(t>=T.s4&&t<T.s5){ pop('l1',T.s4,60); if(t>=T.l2) pop('l2',T.l2,60); else $('l2').style.opacity=0; }
+ if(t>=T.s5&&t<T.s6){
+  pop('t5',T.s5,40);
+  ['g1','g2'].forEach((g,i)=>{const t0=i?f(41.5):f(39.9); if(t>=t0) pop(g,t0,20); else $(g).style.opacity=0;});
+  const p=ease((t-T.ph)/0.6); $('ph').style.transform=`translateY(${(1-p)*900}px) scale(0.98)`; $('t5').style.opacity=1;
+  C.forEach((m,i)=>{const e=$('m'+i); if(t>=m[3]){e.style.display='';const q=back((t-m[3])/0.3);e.style.transform=`scale(${0.6+0.4*q})`;e.style.transformOrigin=m[0]==='in'?'left bottom':(m[0]==='out'?'right bottom':'center');} else e.style.display='none';});
+  $('pst').textContent=(t>=f(39.0)&&t<f(39.9))||(t>=f(41.0)&&t<f(41.6))?'digitando…':'online';
+ }
+ if(t>=T.s6){const p=ease((t-T.s6)/0.5); $('s6').style.opacity=p; $('s6').style.transform=`scale(${0.94+0.06*p})`;}
+ // flash nas viradas
+ const fl=[T.s3,T.s4,T.s5,T.s6].map(x=>Math.max(0,0.25-Math.abs(t-x)*3)); $('flash').style.opacity=Math.max(...fl);
+ // legenda
+ let cap=''; const hide=t<f(4.3)||(t>=T.s4&&t<T.s5)||t>=T.s6;
+ if(!hide){const v=(t-V0)*SP; const g=G.find(g=>v>=g[0][0]-0.05&&v<(g[g.length-1][1]+0.25)); if(g) cap=g.map(w=>`<span class="${v>=w[0]-0.02?'on':''}">${w[2]}</span>`).join(' ');}
+ $('cap').innerHTML=cap;
+ $('note').style.display=t<T.s6?'block':'none';
+};
+</script></body></html>

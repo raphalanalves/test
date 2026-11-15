@@ -13,6 +13,7 @@ Lista viva. Cada item aponta para o documento com os detalhes.
 
 ## Ideias para retomar (14/11)
 
+- [ ] **Estratégia "Story com adesivo de WhatsApp + mensagem pronta"** (estudo de 15/11, pausado a pedido): usar como argumento de venda para a Black Friday (27/11) com Reel e carrossel para salão e barbearia; guia para clientes; usar nos nossos Stories. Antes: confirmar com o Jão se o portal mostra a origem pela mensagem pronta; não prometer cupom pela Malu até corrigir o link (backlog do vault de 11/11). Estudo: `estudos/2026-11-15-ideia-para-donos-de-loja-palavra-chave.md`.
 - [ ] **Nichos advocacia, psicologia e coworking** (pausado a pedido): 6 carrosséis, 3 Reels com a Carla e Stories diários (enquete/quiz/caixinha pelo app; dica do dia e bastidores pela API). Antes: confirmar reserva de sala e Pix avulso (coworking), repasse para humano em mensagem de sofrimento (psicologia) e fontes atuais da OAB e do CFP sobre publicidade e IA. Começar pelo carrossel 1 (advocacia: o que a IA pode e não pode) e pelo 5 (coworking A/B).
 - [ ] **Lembrete da véspera v2** (dom 15/11, 19h): refazer no padrão do V5 (Carla, legenda, marca d'água, logo oficial, CTA de salvamento). Confirmar antes: a IA remarca sozinha pelo lembrete? isso vem no plano padrão?
 

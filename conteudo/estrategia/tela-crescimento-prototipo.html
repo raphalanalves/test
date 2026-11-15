@@ -1,0 +1,232 @@
+<title>Tela Crescimento</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: casca do portal (topo + menu lateral) com a tela "Crescimento": filtros → 4 números → mapa + criativos → funil + idade */
+:root{
+  --esmeralda:#00D4AA; --violeta:#7B68EE;
+  --fundo:#E8EAF0; --superficie:#F6F7F9; --superficie-2:#E1E4EA; --borda:#D5D8E0; --borda-campo:#7E8396;
+  --texto:#12121C; --texto-2:#3D3D52; --fraco:#55556A; --link:#00735F; --destaque-texto:#5B47D6;
+  --ok:#00735F; --ok-fundo:#E3F6F1; --info:#3B4FD8; --info-fundo:#ECEEFE; --alerta:#7A5000; --alerta-fundo:#FFF0D2;
+  --erro:#B42833; --erro-fundo:#FDECEE; --neutro-fundo:#E2E4EA; --botao-texto:#0A0A0F; --menu-ativo:#E3F6F1;
+  --mapa-0:#E1E4EA; --mapa-1:#BDEBDF; --mapa-2:#7FDCC6; --mapa-3:#2FC9A6; --mapa-4:#009C7E;
+  --sombra:0 1px 2px rgba(18,18,28,.06),0 4px 16px rgba(18,18,28,.04); --foco:0 0 0 3px rgba(0,212,170,.45);
+  --f-titulo:"Manrope","Inter",system-ui,sans-serif; --f-texto:"Inter",system-ui,sans-serif; --f-mono:"DM Mono",ui-monospace,monospace;
+  --r-md:12px; --r-lg:16px; --e-2:8px; --e-3:12px; --e-4:16px; --e-5:24px; --e-6:32px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --fundo:#16171F; --superficie:#1E1F2A; --superficie-2:#282937; --borda:#323344; --borda-campo:#7D80A0;
+  --texto:#F2F2F7; --texto-2:#C3C3D3; --fraco:#A3A3BA; --link:#2EE6C0; --destaque-texto:#A99CF5;
+  --ok:#2EE6C0; --ok-fundo:rgba(0,212,170,.12); --info:#A9B3FF; --info-fundo:rgba(123,104,238,.16);
+  --alerta:#F5B54A; --alerta-fundo:rgba(245,181,74,.12); --erro:#FF8A91; --erro-fundo:rgba(239,107,115,.13);
+  --neutro-fundo:rgba(255,255,255,.07); --menu-ativo:rgba(0,212,170,.10);
+  --mapa-0:#282937; --mapa-1:#1C4A42; --mapa-2:#1F7565; --mapa-3:#13A786; --mapa-4:#2EE6C0;
+  --sombra:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.25); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --fundo:#16171F; --superficie:#1E1F2A; --superficie-2:#282937; --borda:#323344; --borda-campo:#7D80A0;
+  --texto:#F2F2F7; --texto-2:#C3C3D3; --fraco:#A3A3BA; --link:#2EE6C0; --destaque-texto:#A99CF5;
+  --ok:#2EE6C0; --ok-fundo:rgba(0,212,170,.12); --info:#A9B3FF; --info-fundo:rgba(123,104,238,.16);
+  --alerta:#F5B54A; --alerta-fundo:rgba(245,181,74,.12); --erro:#FF8A91; --erro-fundo:rgba(239,107,115,.13);
+  --neutro-fundo:rgba(255,255,255,.07); --menu-ativo:rgba(0,212,170,.10);
+  --mapa-0:#282937; --mapa-1:#1C4A42; --mapa-2:#1F7565; --mapa-3:#13A786; --mapa-4:#2EE6C0;
+  --sombra:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.25); color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--fundo);color:var(--texto);font-family:var(--f-texto);font-size:15px;line-height:1.5}
+h1,h2,h3{font-family:var(--f-titulo);letter-spacing:-.015em;margin:0;color:var(--texto);text-wrap:balance}
+h1{font-size:clamp(24px,2.4vw,32px);font-weight:800;line-height:1.2}
+h2{font-size:16px;font-weight:700;color:var(--texto-2)}
+p{margin:0}
+.aviso-prototipo{background:var(--info-fundo);color:var(--info);font-size:13px;font-weight:600;text-align:center;padding:8px 16px}
+.app{display:grid;grid-template-columns:220px 1fr;min-height:100vh}
+.lateral{background:var(--superficie);border-right:1px solid var(--borda);padding:20px 14px;display:grid;align-content:start;gap:6px}
+.marca{font-family:"Manrope",sans-serif;font-weight:800;letter-spacing:.18em;font-size:15px;padding:4px 10px 18px}
+.marca small{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;color:var(--fraco);font-weight:400}
+.item{display:flex;align-items:center;min-height:44px;padding:0 12px;border-radius:10px;color:var(--texto-2);font-weight:500;text-decoration:none;font-size:14px}
+.item.ativo{background:var(--menu-ativo);color:var(--texto);font-weight:700}
+.rotulo{font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--fraco);padding:14px 12px 4px}
+main{padding-block:var(--e-6);padding-left:max(16px,env(safe-area-inset-left,0px),var(--e-6));padding-right:max(16px,env(safe-area-inset-right,0px),var(--e-6));display:grid;gap:var(--e-5);align-content:start;min-width:0}
+.cabecalho{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:var(--e-4)}
+.cabecalho p{color:var(--fraco);font-size:15px}
+.selo{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;line-height:1;padding:6px 10px;border-radius:999px;background:var(--neutro-fundo);color:var(--texto-2);white-space:nowrap}
+.selo::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.selo.ok{background:var(--ok-fundo);color:var(--ok)}.selo.alerta{background:var(--alerta-fundo);color:var(--alerta)}.selo.erro{background:var(--erro-fundo);color:var(--erro)}
+.filtros{display:flex;flex-wrap:wrap;gap:var(--e-2);align-items:center}
+.chip{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border:1px solid var(--borda-campo);border-radius:999px;background:var(--superficie);color:var(--texto);font:600 14px var(--f-texto);cursor:pointer}
+.chip[aria-pressed="true"]{border-color:var(--link);background:color-mix(in srgb,var(--esmeralda) 16%,var(--superficie))}
+.chip[aria-pressed="true"]::before{content:"✓";margin-right:6px;font-size:12px}
+.chip:focus-visible,.botao:focus-visible,.alternar button:focus-visible{outline:none;box-shadow:var(--foco)}
+.botao{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 20px;border-radius:12px;border:1px solid transparent;background:var(--esmeralda);color:var(--botao-texto);font:700 14px var(--f-texto);cursor:pointer;box-shadow:0 4px 16px rgba(0,212,170,.28);text-decoration:none}
+.botao.marca2{background:transparent;color:var(--link);border-color:color-mix(in srgb,var(--link) 45%,transparent);box-shadow:none}
+.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:var(--e-4)}
+.cartao{background:var(--superficie);border:1px solid var(--borda);border-radius:var(--r-lg);padding:var(--e-5);box-shadow:var(--sombra);display:grid;gap:var(--e-4);align-content:start;min-width:0}
+.kpi{padding:var(--e-4) var(--e-5);gap:6px}
+.kpi h2{font-size:14px}
+.kpi .numero{font-family:var(--f-titulo);font-size:30px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.1}
+.kpi .sub{font-size:13px;color:var(--fraco)}
+.duas{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:var(--e-4)}
+@media (max-width:1000px){.duas{grid-template-columns:1fr}}
+@media (max-width:760px){.app{grid-template-columns:1fr}.lateral{display:none}}
+.topo-cartao{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--e-3)}
+.alternar{display:inline-flex;border:1px solid var(--borda-campo);border-radius:999px;padding:3px;gap:2px;background:var(--superficie)}
+.alternar button{min-height:38px;padding:0 16px;border:0;border-radius:999px;background:transparent;color:var(--texto-2);font:600 14px var(--f-texto);cursor:pointer}
+.alternar button[aria-pressed="true"]{background:var(--menu-ativo);color:var(--texto)}
+.mapa-wrap{display:grid;grid-template-columns:minmax(0,1fr) 200px;gap:var(--e-4);align-items:center}
+@media (max-width:560px){.mapa-wrap{grid-template-columns:1fr}}
+svg.mapa{width:100%;height:auto;display:block}
+svg.mapa rect{stroke:var(--superficie);stroke-width:3;rx:7}
+svg.mapa text{font-family:var(--f-mono);font-size:13px;font-weight:500;text-anchor:middle;dominant-baseline:central;pointer-events:none}
+svg.mapa g{cursor:pointer}
+svg.mapa g:hover rect,svg.mapa g.sel rect{stroke:var(--violeta)}
+.legenda{display:grid;gap:10px}
+.destaque{display:grid;gap:2px}
+.destaque .grande{font-family:var(--f-titulo);font-size:26px;font-weight:800}
+.escala{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--fraco)}
+.escala span{width:22px;height:12px;border-radius:3px;display:inline-block}
+.ranking{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.ranking li{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:center}
+.capa{width:44px;height:56px;border-radius:8px;background:linear-gradient(160deg,var(--violeta),var(--esmeralda));display:grid;place-items:center;color:#fff;font:800 12px var(--f-titulo)}
+.ranking .nome{font-weight:600;font-size:14px;line-height:1.3}
+.ranking .det{font-size:13px;color:var(--fraco)}
+.ranking .res{text-align:right;font-family:var(--f-titulo);font-weight:800;font-size:18px;font-variant-numeric:tabular-nums}
+.ranking .res small{display:block;font:500 12px var(--f-texto);color:var(--fraco)}
+.passos{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--e-3)}
+@media (max-width:640px){.passos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.passos li{border-radius:var(--r-md);background:var(--superficie-2);padding:14px;display:grid;gap:4px;position:relative}
+.passos li.travou{background:var(--erro-fundo);color:var(--erro)}
+.passos .n{font-family:var(--f-titulo);font-weight:800;font-size:24px;font-variant-numeric:tabular-nums}
+.passos .l{font-size:13px}
+.alerta-funil{display:flex;flex-wrap:wrap;gap:var(--e-3);align-items:center;justify-content:space-between;background:var(--erro-fundo);color:var(--erro);border-radius:var(--r-md);padding:12px 16px;font-weight:600;font-size:14px}
+.barras{display:grid;gap:10px}
+.barra-l{display:grid;grid-template-columns:56px minmax(0,1fr) 72px;gap:10px;align-items:center;font-size:14px}
+.trilho{height:10px;border-radius:999px;background:var(--superficie-2);overflow:hidden}
+.trilho i{display:block;height:100%;border-radius:999px;background:var(--esmeralda)}
+.val{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+details.ajuda{background:var(--superficie);border:1px solid var(--borda);border-radius:var(--r-lg);padding:14px 20px}
+details.ajuda summary{cursor:pointer;font-weight:700;font-family:var(--f-titulo);min-height:28px}
+details.ajuda ol{margin:10px 0 0;padding-left:20px;display:grid;gap:6px;color:var(--texto-2)}
+.fonte{font-size:12px;color:var(--fraco)}
+</style>
+
+<div class="aviso-prototipo">Protótipo para o Jão · números da campanha de 12 a 15/11; o mapa usa valores de exemplo</div>
+<div class="app">
+  <nav class="lateral" aria-label="Menu">
+    <div class="marca">MALVORA<small>EQUIPE MALVORA</small></div>
+    <a class="item" href="#">Início</a>
+    <a class="item" href="#">Empresas</a>
+    <a class="item" href="#">Chamados</a>
+    <span class="rotulo">Marketing</span>
+    <a class="item ativo" href="#" aria-current="page">Crescimento</a>
+    <a class="item" href="#">Cupons</a>
+  </nav>
+
+  <main>
+    <div class="cabecalho">
+      <div>
+        <h1>Crescimento</h1>
+        <p>Quem chega, de onde vem e qual post traz cliente.</p>
+      </div>
+      <div class="filtros" role="group" aria-label="Período">
+        <button class="chip" type="button" aria-pressed="false">7 dias</button>
+        <button class="chip" type="button" aria-pressed="true">Campanha atual</button>
+        <button class="chip" type="button" aria-pressed="false">30 dias</button>
+        <button class="botao marca2" type="button">Atualizar</button>
+      </div>
+    </div>
+
+    <div class="grade">
+      <div class="cartao kpi"><h2>Pessoas alcançadas</h2><span class="numero">1.269</span><span class="sub">Instagram + anúncio</span></div>
+      <div class="cartao kpi"><h2>Conversas</h2><span class="numero">6</span><span class="sub">R$ 9,15 cada</span></div>
+      <div class="cartao kpi"><h2>Contas criadas</h2><span class="numero">0</span><span class="selo erro">Funil parado</span></div>
+      <div class="cartao kpi"><h2>Gasto em anúncio</h2><span class="numero">R$ 54,90</span><span class="selo alerta">Saldo acabando</span></div>
+    </div>
+
+    <div class="duas">
+      <section class="cartao" aria-labelledby="t-mapa">
+        <div class="topo-cartao">
+          <h2 id="t-mapa">De onde vêm</h2>
+          <div class="alternar" role="group" aria-label="Mostrar no mapa">
+            <button type="button" aria-pressed="true" data-m="visitas">Visitas</button>
+            <button type="button" aria-pressed="false" data-m="contas">Contas</button>
+          </div>
+        </div>
+        <div class="mapa-wrap">
+          <svg class="mapa" id="mapa" viewBox="0 0 420 470" role="img" aria-label="Mapa do Brasil por estado"></svg>
+          <div class="legenda">
+            <div class="destaque"><span class="fonte" id="sel-uf">Estado</span><span class="grande" id="sel-num">São Paulo</span><span class="fonte" id="sel-det">Toque num estado</span></div>
+            <div class="escala" aria-hidden="true">menos <span style="background:var(--mapa-1)"></span><span style="background:var(--mapa-2)"></span><span style="background:var(--mapa-3)"></span><span style="background:var(--mapa-4)"></span> mais</div>
+            <p class="fonte">Cidade aproximada pelo acesso, somada por estado. Ninguém é identificado.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cartao" aria-labelledby="t-cri">
+        <div class="topo-cartao"><h2 id="t-cri">Qual post traz cliente</h2><span class="selo ok">Melhor: Stories</span></div>
+        <ul class="ranking">
+          <li><span class="capa">STORY</span><div><div class="nome">O que a Malvora faz · Stories</div><div class="det">R$ 4,63 por conversa</div></div><span class="res">3<small>conversas</small></span></li>
+          <li><span class="capa">FEED</span><div><div class="nome">O que a Malvora faz · Feed</div><div class="det">R$ 16,02 por conversa</div></div><span class="res">2<small>conversas</small></span></li>
+          <li><span class="capa">REELS</span><div><div class="nome">O que a Malvora faz · Reels</div><div class="det">R$ 8,93 por conversa</div></div><span class="res">1<small>conversa</small></span></li>
+        </ul>
+        <a class="botao marca2" href="#">Ver todos os posts</a>
+      </section>
+    </div>
+
+    <section class="cartao" aria-labelledby="t-fun">
+      <h2 id="t-fun">Do anúncio à assinatura</h2>
+      <ol class="passos">
+        <li><span class="n">1.269</span><span class="l">viram</span></li>
+        <li><span class="n">36</span><span class="l">clicaram</span></li>
+        <li><span class="n">6</span><span class="l">conversaram</span></li>
+        <li class="travou"><span class="n">0</span><span class="l">criaram conta</span></li>
+      </ol>
+      <div class="alerta-funil"><span>Travou entre a conversa e a conta: o link do cupom abre sem desconto.</span><a class="botao" href="#">Ver o que fazer</a></div>
+    </section>
+
+    <div class="duas">
+      <section class="cartao" aria-labelledby="t-id">
+        <h2 id="t-id">Idade de quem conversou</h2>
+        <div class="barras">
+          <div class="barra-l"><span>25–34</span><span class="trilho"><i style="width:100%"></i></span><span class="val">3</span></div>
+          <div class="barra-l"><span>35–44</span><span class="trilho"><i style="width:33%"></i></span><span class="val">1</span></div>
+          <div class="barra-l"><span>45–54</span><span class="trilho"><i style="width:67%"></i></span><span class="val">2</span></div>
+          <div class="barra-l"><span>55+</span><span class="trilho"><i style="width:0%"></i></span><span class="val">0</span></div>
+        </div>
+        <p class="fonte">Faixas da Meta, somadas. 45–54 saiu mais barato: R$ 4,20 por conversa.</p>
+      </section>
+      <details class="ajuda">
+        <summary>Ajuda desta tela</summary>
+        <ol>
+          <li>Escolha o período no topo.</li>
+          <li>Os 4 números mostram se o funil está andando.</li>
+          <li>No mapa, toque num estado para ver quantos vieram de lá.</li>
+          <li>"Qual post traz cliente" ordena os posts e anúncios pelo resultado.</li>
+          <li>Quando uma etapa trava, aparece em vermelho com o que fazer.</li>
+        </ol>
+      </details>
+    </div>
+  </main>
+</div>
+
+<script>
+// Mapa em grade (um quadrado por estado, na posição aproximada). Valores de exemplo.
+const UF=[["RR",3,0],["AP",5,0],["AM",2,1],["PA",4,1],["MA",5,1],["CE",6,1],["RN",7,1],["AC",1,2],["RO",2,2],["TO",4,2],["PI",5,2],["PB",7,2],["PE",6,2],["MT",3,3],["BA",5,3],["AL",7,3],["SE",6,3],["GO",4,4],["DF",5,4],["MG",5,5],["ES",6,5],["MS",3,5],["SP",4,6],["RJ",5,6],["PR",3,7],["SC",3,8],["RS",2,9]];
+const NOME={SP:"São Paulo",RJ:"Rio de Janeiro",MG:"Minas Gerais",PR:"Paraná",BA:"Bahia",PE:"Pernambuco",GO:"Goiás",DF:"Distrito Federal",SC:"Santa Catarina",RS:"Rio Grande do Sul",CE:"Ceará",ES:"Espírito Santo"};
+const DADOS={visitas:{SP:212,RJ:18,MG:14,PR:9,SC:4,RS:5,BA:6,PE:7,CE:3,GO:4,DF:3,ES:2},contas:{SP:0}};
+const svg=document.getElementById('mapa'); const S=46,G=0,OX=12,OY=8; let modo='visitas', sel='SP';
+function nivel(v,max){if(!v)return 0;const r=v/max;return r>.6?4:r>.25?3:r>.08?2:1}
+function desenha(){
+  const d=DADOS[modo], max=Math.max(1,...Object.values(d));
+  svg.innerHTML=UF.map(([uf,c,l])=>{const v=d[uf]||0,n=nivel(v,max),x=OX+c*S,y=OY+l*S;
+    return `<g data-uf="${uf}" class="${uf===sel?'sel':''}" tabindex="0" role="button" aria-label="${NOME[uf]||uf}: ${v}"><rect x="${x}" y="${y}" width="${S-4}" height="${S-4}" rx="8" fill="var(--mapa-${n})"/><text x="${x+(S-4)/2}" y="${y+(S-4)/2}" fill="${n>=3?'#0A0A0F':'var(--texto-2)'}">${uf}</text></g>`}).join('');
+  mostra(sel);
+}
+function mostra(uf){sel=uf;const v=DADOS[modo][uf]||0;
+  document.getElementById('sel-uf').textContent=NOME[uf]||uf;
+  document.getElementById('sel-num').textContent=v.toLocaleString('pt-BR');
+  document.getElementById('sel-det').textContent=modo==='visitas'?'visitas ao portal':'contas criadas';
+  svg.querySelectorAll('g').forEach(g=>g.classList.toggle('sel',g.dataset.uf===uf));}
+svg.addEventListener('click',e=>{const g=e.target.closest('g');if(g)mostra(g.dataset.uf)});
+svg.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.dataset.uf){e.preventDefault();mostra(e.target.dataset.uf)}});
+document.querySelectorAll('.alternar button').forEach(b=>b.addEventListener('click',()=>{modo=b.dataset.m;document.querySelectorAll('.alternar button').forEach(x=>x.setAttribute('aria-pressed',x===b));desenha()}));
+document.querySelectorAll('.filtros .chip').forEach(b=>b.addEventListener('click',()=>document.querySelectorAll('.filtros .chip').forEach(x=>x.setAttribute('aria-pressed',x===b))));
+desenha();
+</script>

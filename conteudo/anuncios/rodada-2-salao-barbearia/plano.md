@@ -43,3 +43,44 @@ Gerenciador × `ig_interacoes` × contas e usos do cupom no portal.
 - Entrevista VIP ainda sem aprovação do cliente: não usar em anúncio antes.
 - Verba pequena: 5 dias dão uma leitura inicial, não definitiva.
 - Interesse "barbearia/salão" pega cliente final; o filtro é a mensagem pronta e a oferta para dono.
+
+---
+
+## Atualização 16/11 · oferta única LANCAMENTO50 e preços em ,90 (aprovada pelo Rapha)
+**Oferta:** cupom `LANCAMENTO50`: 50% nas 3 primeiras mensalidades, ao contratar até 10/12/2026, sem limite de usos.
+O QUEROCUPOM sai dos anúncios. Direct: a regra nova `cupom_lancamento50` (ordem 4) responde "quero cupom",
+"lancamento50" e "cupom de desconto" com o link `portal.malvora.com.br/assinar?cupom=LANCAMENTO50` (vale até 10/12; depois
+volta a valer a do QUEROCUPOM, até 31/12).
+
+**Antes de publicar (bloqueia):**
+1. Preços em ,90 e Contratos a R$ 49,00 trocados em Equipe › Preços (o cartão final diz "a partir de R$ 249,90/mês").
+2. Develop subida para a main (PR #421: cupom visível no /assinar e tela enxuta; PR #423: Desempenho por faixa).
+3. "Aprovado" do Rapha para publicar e recarga de R$ 100.
+
+### Criativos (novos)
+| Conjunto | Arquivo | Duração | O que mudou |
+|---|---|---|---|
+| Salão e estética | `anuncio-salao-lancamento50.mp4` | 22,6 s | Cartão final novo (oferta e "mande QUERO CUPOM no direct"), no lugar de "Fale com a Malu" |
+| Barbearia | `anuncio-barbearia-lancamento50.mp4` | 29,6 s | Corte até "Funciona junto com o AppBarber" + cartão final novo com a fala da Carla: "Cria sua conta grátis, sem cartão. E manda quero cupom no direct: cinquenta por cento de desconto nas três primeiras mensalidades." (sai o "comenta QUERO CUPOM… 50% no primeiro mês") |
+
+Loudness -14 LUFS; transcrição conferida. A barbearia passou de 20 s (a regra pede 15–20 s): o trecho do AppBarber é o
+argumento mais forte para esse público.
+
+### Textos do anúncio
+**Salão e estética**
+- Texto principal: Meia-noite e meia, a cliente pede horário. Quem responde? A Malvora coloca uma IA no WhatsApp do seu salão: responde na hora, com os seus preços, e marca no horário livre. Teste grátis, sem cartão. Mande "quero cupom" no direct e ganhe 50% nas 3 primeiras mensalidades quando contratar (cupom LANCAMENTO50, até 10/12).
+- Título: Teste grátis, sem cartão
+- Mensagem pronta do direct: `Quero cupom · tenho um salão`
+
+**Barbearia**
+- Texto principal: No meio do corte, o WhatsApp não para. A Malvora coloca uma IA no WhatsApp da sua barbearia: responde na hora, com os seus preços, marca na agenda e lembra o cliente na véspera. Funciona junto com o AppBarber. Teste grátis, sem cartão. Mande "quero cupom" no direct: 50% nas 3 primeiras mensalidades quando contratar (cupom LANCAMENTO50, até 10/12).
+- Título: Teste grátis, sem cartão
+- Mensagem pronta do direct: `Quero cupom · tenho uma barbearia`
+
+A mensagem pronta começa com "Quero cupom" de propósito: é o que a automação do direct reconhece, e o resto diz o ramo.
+
+### Prompt para o T1 (só rascunho; não publicar)
+> No Gerenciador de Anúncios da conta da Malvora (1079254947829364): duplique a campanha "Mensagens · Salão e barbearia · QUERO CUPOM" e renomeie para "Mensagens · Rodada 2 · LANCAMENTO50". Deixe a campanha **pausada**. Crie 2 conjuntos, cada um com R$ 10/dia, São Paulo + 50 km, 25 a 54 anos, posicionamentos só Instagram Stories e Reels, destino Direct do Instagram:
+> 1. "Salão e estética": interesses salão de beleza, estética, cabeleireiro + administradores de página comercial; vídeo `conteudo/anuncios/rodada-2-salao-barbearia/anuncio-salao-lancamento50.mp4` (repositório raphalanalves/test, faça git pull); textos e mensagem pronta da seção "Textos do anúncio" do `plano.md`.
+> 2. "Barbearia": interesses barbearia, barbeiro + administradores de página comercial; vídeo `anuncio-barbearia-lancamento50.mp4`; textos e mensagem pronta da barbearia.
+> Não publique, não ative e não mude orçamento de nada. Não use cartão nem senha. No fim, mande prints da campanha e dos 2 conjuntos em rascunho e me diga se a Meta apontou algum problema de política.

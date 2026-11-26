@@ -17,32 +17,43 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#0E0E16
 #dagua{position:absolute;top:84px;right:56px;width:84px;opacity:.45;z-index:9}
 .glow{position:absolute;width:1100px;height:1100px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,170,.15),transparent 65%);right:-450px;top:-400px}
 .lab{position:absolute;top:270px;left:140px;font:500 26px Inter;color:#7d8090}
+.chip{background:#fff;color:#111;border-radius:40px;padding:26px 38px;font:600 46px Inter;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.dmbox{width:800px;background:#fff;border-radius:40px;padding:30px;display:flex;flex-direction:column;gap:16px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.bi{align-self:flex-start;background:#efefef;color:#111;border-radius:30px;padding:20px 26px;font:500 34px/1.35 Inter;max-width:80%}
+.bo{align-self:flex-end;background:#3797F0;color:#fff;border-radius:30px;padding:20px 26px;font:500 34px/1.35 Inter;max-width:80%}
+.var{width:800px;display:grid;grid-template-columns:1fr 1fr;gap:20px}.var div{background:#1C1D29;border:2px solid #2C2D3B;border-radius:24px;padding:22px;font:500 30px/1.35 Inter;color:#E9EAEE}
+.timer{font-family:'Bebas Neue';font-size:200px;line-height:.9;color:#00D4AA}
+.ig{width:800px;background:#fff;color:#111;border-radius:36px;padding:30px;display:flex;flex-direction:column;gap:20px;font:400 34px/1.35 Inter}.ig b{font-weight:700}.ig .r{margin-left:60px}
+.wa{width:800px;background:#1F2C34;border-radius:30px;padding:28px 30px;display:flex;gap:24px;align-items:flex-start;color:#E9EDEF;font:400 34px/1.35 Inter;box-shadow:0 30px 80px rgba(0,0,0,.5)}.wa .i{flex:none;width:76px;height:76px;border-radius:18px;background:#25D366;display:grid;place-items:center;font-size:44px}.wa b{color:#fff}
+.rel{width:800px;background:#F6F7F9;color:#12121C;border-radius:36px;padding:34px 40px;display:grid;grid-template-columns:1fr 1fr;gap:26px;box-shadow:0 30px 80px rgba(0,0,0,.5)}.rel h3{grid-column:1/-1;margin:0;font:800 40px Manrope,Inter}.rel div{font:500 28px Inter;color:#55556A}.rel div b{display:block;font:800 64px Manrope,Inter;color:#00735F}
 </style></head><body><div class="glow"></div>
-<section class="cena" id="c0" style="background:#0E0E16"><div class="lab">Exemplo ilustrativo</div><div class="bb" style="font-size:170px">3 respostas<br><span class="g">que todo Instagram<br>precisa ter</span></div><div class="num" style="font-size:220px">1 · 2 · 3</div></section>
-<section class="cena" id="c1"><div class="bb" style="font-size:150px">3 respostas<br><span class="g">que todo Instagram de empresa precisa ter prontas</span></div></section>
-<section class="cena" id="c2"><div class="num" id="n1">1</div><div class="q" id="q1">“Quanto custa?”</div>
- <div class="lin"><div id="r1a"><div class="rot">NO COMENTÁRIO</div><div class="com">Oi! Te mandei os valores no direct 💚</div></div><div id="r1b" style="display:flex;flex-direction:column"><div class="rot" style="align-self:flex-end">NO DIRECT</div><div class="dm">Os valores estão aqui 👇 e dá pra marcar por esse link.</div></div></div></section>
-<section class="cena" id="c3"><div class="num" id="n2">2</div><div class="q" id="q2">“Tem horário?”</div>
- <div class="lin"><div class="dm" id="r2a">Tenho dois horários livres amanhã. Qual fica melhor?</div><div class="com" id="r2b" style="align-self:flex-start">Agendado ✅ Te mando um lembrete antes.</div></div></section>
-<section class="cena" id="c4"><div class="num" id="n3">3</div><div class="q" id="q3">“Quero falar com alguém”</div>
- <div class="lin"><div class="eq" id="r3a">🔔 Conversa enviada para a equipe, na hora.</div></div></section>
-<section class="cena" id="c5"><div class="bb" style="font-size:120px">A Malvora Social<br><span class="g">faz as três por você</span></div>
- <div class="lin" style="gap:34px"><div class="ok" id="k1"><b>✓</b>Quanto custa?</div><div class="ok" id="k2"><b>✓</b>Tem horário?</div><div class="ok" id="k3"><b>✓</b>Falar com alguém</div></div></section>
-<section class="cena" id="c6"><div class="bb" style="font-size:140px">Comenta<br><span class="g">SOCIAL</span></div><div style="font:600 46px/1.4 Inter;color:#E9EAEE;text-align:center">que a gente te mostra</div>
+<section class="cena" id="c0" style="background:#0E0E16"><div class="lab">Exemplo ilustrativo</div><div class="bb" style="font-size:150px">Seu Instagram<br><span class="g">responde, conversa<br>e avisa você</span></div><div class="chip">“Quanto custa?” ✓</div></section>
+<section class="cena" id="c1"><div class="bb" style="font-size:120px">3 perguntas<br><span class="g">chegam todo dia</span></div><div class="chip" id="q1">“Quanto custa?”</div><div class="chip" id="q2">“Tem horário?”</div><div class="chip" id="q3">“Quero falar com alguém”</div></section>
+<section class="cena" id="c2"><div class="bb" style="font-size:110px">A Malvora Social<br><span class="g">responde as três</span></div><div class="lin" style="gap:28px"><div class="ok"><b>✓</b>Quanto custa?</div><div class="ok"><b>✓</b>Tem horário?</div><div class="ok"><b>✓</b>Falar com alguém</div></div><div class="bb" id="alem" style="font-size:130px"><span class="g">e vai muito além</span></div></section>
+<section class="cena" id="c3"><div class="bb" style="font-size:100px">Conversa no direct<br><span class="g">como gente</span></div>
+ <div class="dmbox"><div class="bi" id="m1">Oi! Vocês atendem no sábado?</div><div class="bo" id="m2">Atendemos sim! Quer que eu veja um horário pra você?</div><div class="bi" id="m3">Quero, de manhã</div><div class="bo" id="m4">Tenho 9h ou 10h30. Qual prefere?</div></div>
+ <div class="var" id="vv"><div>“Oi! Te mandei tudo no direct 💚”</div><div>“Opa! Chamei você no direct 😉”</div></div></section>
+<section class="cena" id="c4"><div class="bb" style="font-size:100px">Responde o comentário<br><span class="g">em menos de 1 minuto</span></div><div class="timer" id="tm">00:00</div>
+ <div class="ig"><div id="i1"><b>cliente.exemplo</b> Como funciona? 👀</div><div class="r" id="i2"><b>sua.empresa</b> Te expliquei no direct! 💚</div></div></section>
+<section class="cena" id="c5"><div class="bb" style="font-size:100px">Avisa o responsável<br><span class="g">na hora</span></div>
+ <div class="wa" id="w1"><div class="i">🔔</div><div><b>Malvora · aviso</b><br>Um cliente pediu para falar com uma pessoa no direct do Instagram. A IA pausou a conversa.</div></div></section>
+<section class="cena" id="c6"><div class="lab">Exemplo ilustrativo</div><div class="bb" style="font-size:100px">E manda o relatório<br><span class="g">de tudo</span></div>
+ <div class="rel" id="rl"><h3>Instagram · esta semana</h3><div><b>48</b>comentários respondidos</div><div><b>31</b>conversas no direct</div><div><b>6</b>avisos para a equipe</div><div><b>&lt;1 min</b>tempo de resposta</div></div></section>
+<section class="cena" id="c7"><div class="bb" style="font-size:140px">Comenta<br><span class="g">SOCIAL</span></div><div style="font:600 46px/1.4 Inter;color:#E9EAEE;text-align:center">que a gente te mostra</div>
  <div class="campo"><span id="tx"></span><span class="cur" id="cur"></span></div><div class="ass">@MALVORA_HUB</div></section>
 <img id="dagua" src="file:///home/user/test/conteudo/marca/marca-dagua-video.png">
 <script>
-const S=[[0.6,4.8],[4.8,10.0],[10.0,14.4],[14.4,19.6],[19.6,22.3],[22.3,25.2]];
+const S=[[0.6,8.6],[8.6,12.6],[12.6,17.7],[17.7,21.3],[21.3,25.3],[25.3,27.7],[27.7,30.3]];
 const ease=x=>1-Math.pow(1-Math.max(0,Math.min(1,x)),3);
 function ap(id,t0,t){const e=document.getElementById(id);const k=ease((t-t0)/0.35);e.style.opacity=k;e.style.transform=`translateY(${(1-k)*30}px)`}
 window.render=function(t){
  const c0=document.getElementById('c0');c0.style.opacity=t<0.5?1:Math.max(0,1-(t-0.5)/0.25);
- S.forEach(([a,b],i)=>{const c=document.getElementById('c'+(i+1));let o=ease((t-a)/0.25);if(i<5)o=Math.min(o,1-ease((t-(b-0.25))/0.25));c.style.opacity=o});
- ap('n1',4.9,t);ap('q1',5.6,t);ap('r1a',6.8,t);ap('r1b',8.0,t);
- ap('n2',10.1,t);ap('q2',10.9,t);ap('r2a',11.9,t);ap('r2b',13.0,t);
- ap('n3',14.5,t);ap('q3',15.3,t);ap('r3a',16.7,t);
- ap('k1',20.0,t);ap('k2',20.5,t);ap('k3',21.0,t);
- const w='SOCIAL';const n=Math.max(0,Math.min(6,Math.floor((t-22.9)/0.15)));document.getElementById('tx').textContent=w.slice(0,n);document.getElementById('cur').style.opacity=(Math.floor(t*2)%2)?1:0.2;
- const f6=document.getElementById('c6').style.opacity*1;document.getElementById('dagua').style.opacity=t<0.8?0:0.45*(1-f6);
+ S.forEach(([a,b],i)=>{const c=document.getElementById('c'+(i+1));let o=ease((t-a)/0.25);if(i<S.length-1)o=Math.min(o,1-ease((t-(b-0.25))/0.25));c.style.opacity=o});
+ ap('q1',4.4,t);ap('q2',5.7,t);ap('q3',7.2,t);ap('alem',11.0,t);
+ ap('m1',12.8,t);ap('m2',13.4,t);ap('m3',14.0,t);ap('m4',14.6,t);ap('vv',15.3,t);
+ ap('i1',17.9,t);ap('i2',19.8,t);const sec=Math.max(0,Math.min(42,Math.floor((t-17.9)*21)));document.getElementById('tm').textContent='00:'+String(t<19.8?sec:42).padStart(2,'0');
+ ap('w1',21.7,t);ap('rl',25.5,t);
+ const n=Math.max(0,Math.min(6,Math.floor((t-28.3)/0.15)));document.getElementById('tx').textContent='SOCIAL'.slice(0,n);document.getElementById('cur').style.opacity=(Math.floor(t*2)%2)?1:0.2;
+ const f=document.getElementById('c7').style.opacity*1;document.getElementById('dagua').style.opacity=t<0.8?0:0.45*(1-f);
 };render(0);
 </script></body></html>

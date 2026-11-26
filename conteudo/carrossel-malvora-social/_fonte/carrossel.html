@@ -16,6 +16,16 @@ body{width:1080px}
 .alerta{background:#2A1416;border:2px solid #E5484D;border-radius:28px;padding:30px 34px;font:600 34px/1.4 Inter;color:#FFD7D9}
 .ok{background:#0B3A33;border:2px solid #00D4AA;border-radius:28px;padding:30px 34px;font:600 34px/1.4 Inter;color:#E8FFF8}
 .seta{position:absolute;right:90px;bottom:62px;font:700 30px Inter;color:#00D4AA}
+.tela{position:relative;z-index:1;background:#fff;color:#000;border-radius:40px 40px 28px 28px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5);font-family:-apple-system,"Helvetica Neue",Inter,sans-serif}
+.tela-topo{display:flex;flex-direction:column;align-items:center;gap:14px;padding:18px 0 22px;border-bottom:1px solid #dbdbdb;font-size:30px}
+.pega{width:72px;height:8px;border-radius:8px;background:#c7c7c7}
+.cm{display:flex;gap:20px;padding:20px 32px 6px;align-items:flex-start}.cm.resp{padding-left:116px}
+.cm .av{flex:none;width:62px;height:62px;border-radius:50%;background:linear-gradient(135deg,#F39C5A,#C2417E)}.cm.resp .av{width:50px;height:50px}
+.cm .av.a2{background:linear-gradient(135deg,#7B68EE,#00D4AA)}.av.m{background:#0E0E16 url(file:///home/user/test/conteudo/marca/simbolo-principal.png) center/70% no-repeat!important}
+.tx{flex:1;font-size:28px;line-height:1.35}.tx p{margin:0}.tx b{font-weight:600}.tx i{font-style:normal;color:#737373;font-size:24px}
+.aut{font-size:22px;color:#737373;background:#efefef;border-radius:6px;padding:1px 8px}
+.acoes{color:#737373;font-size:24px;font-weight:600;margin-top:6px!important}.cor{font-size:30px;color:#737373}.cor.v{color:#ff3040}
+.campo-c{display:flex;gap:18px;align-items:center;border-top:1px solid #dbdbdb;margin-top:16px;padding:22px 32px;color:#737373;font-size:28px}.campo-c .av{width:54px;height:54px;border-radius:50%}
 </style></head><body>
 <section class="s" id="c1" style="justify-content:center"><div class="tex"></div><div class="glow" style="right:-300px;top:-300px"></div>
  <div class="n">MALVORA SOCIAL</div>
@@ -24,11 +34,16 @@ body{width:1080px}
  <div class="seta">arraste →</div></section>
 <section class="s" id="c2"><div class="glow" style="left:-400px;bottom:-300px"></div>
  <div class="n">1 · COMENTOU, FOI RESPONDIDO</div>
- <div class="h" style="font-size:100px">Na hora, até às 23h</div>
- <div class="ig"><div class="c"><div class="av"></div><div><b>cliente.exemplo</b> Quanto custa o corte? 😍<small>23:12</small></div></div>
- <div class="c r"><div class="av m"></div><div><b>sua.empresa</b> Oi! Te mandei os valores no direct 💚<small>23:12 · resposta automática</small></div></div></div>
- <div class="t">Pública no post e completa no direct.</div>
- <div class="rod"><span>@malvora_hub</span><img src="file:///home/user/test/conteudo/marca/simbolo-principal.png"></div></section>
+ <div class="h" style="font-size:96px">Na hora, até às 23h</div>
+ <div class="tela">
+  <div class="tela-topo"><span class="pega"></span><b>Comentários</b></div>
+  <div class="cm"><div class="av"></div><div class="tx"><p><b>cliente.exemplo</b> <i>2 min</i></p><p>Quanto custa o corte? 😍</p><p class="acoes">Responder</p></div><div class="cor">♡</div></div>
+  <div class="cm resp"><div class="av m"></div><div class="tx"><p><b>sua.empresa</b> <span class="aut">Autor</span> <i>agora</i></p><p>Oi! Te mandei os valores e os horários no direct 💚</p><p class="acoes">Responder</p></div><div class="cor v">♥</div></div>
+  <div class="cm"><div class="av a2"></div><div class="tx"><p><b>outro.cliente</b> <i>1 min</i></p><p>Atende sábado?</p><p class="acoes">Responder</p></div><div class="cor">♡</div></div>
+  <div class="cm resp"><div class="av m"></div><div class="tx"><p><b>sua.empresa</b> <span class="aut">Autor</span> <i>agora</i></p><p>Atende sim, das 9h às 18h! Quer que eu veja um horário? 😉</p><p class="acoes">Responder</p></div><div class="cor">♡</div></div>
+  <div class="campo-c"><div class="av m"></div><span>Adicione um comentário…</span></div>
+ </div>
+ <div class="rod"><span>Pública no post e completa no direct.</span><img src="file:///home/user/test/conteudo/marca/simbolo-principal.png"></div></section>
 <section class="s" id="c3"><div class="glow" style="right:-350px;top:-250px"></div>
  <div class="n">2 · DO SEU JEITO</div>
  <div class="h" style="font-size:100px">Você define as regras</div>

@@ -59,16 +59,16 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#0E0E16
  <div class="fr">Seu Instagram atende enquanto você trabalha.</div><div class="cta" id="cta">LINK NA BIO</div></section>
 <div class="marca">@MALVORA_HUB</div>
 <script>
-const C=[[0,4.2],[4.2,10.5],[10.5,15.5],[15.5,20.5],[20.5,25]];
+const C=[[0,4.9],[4.9,8.8],[8.8,12.7],[12.7,15.4],[15.4,23]];
 const ease=x=>1-Math.pow(1-Math.max(0,Math.min(1,x)),3);
 function ap(el,t0,t){const k=ease((t-t0)/0.35);el.style.opacity=k;el.style.transform=`translateY(${(1-k)*30}px)`}
 window.render=function(t){
  C.forEach(([a,b],i)=>{const c=document.getElementById('c'+(i+1));let o=ease((t-a)/0.3);if(i<4)o=Math.min(o,1-ease((t-(b-0.3))/0.3));c.style.opacity=o;c.style.transform=`scale(${0.98+0.02*o})`});
- ap(c1a,0.6,t);ap(c1b,2.2,t);
- ap(d1,4.7,t);const dg=document.getElementById('d2');dg.style.display=(t>5.4&&t<6.4)?'block':'none';dg.style.opacity=1;ap(d3,6.4,t);ap(d4,7.8,t);ap(d5,8.9,t);
- ap(e1,11.0,t);ap(e2,12.6,t);
- ap(p1,16.0,t);ap(p2,16.5,t);ap(p3,17.0,t);ap(p4,17.5,t);
- const s=1+0.04*Math.sin(Math.max(0,t-22.5)*4);document.getElementById('cta').style.transform=`scale(${t>22.5?s:1})`;
+ ap(c1a,0.4,t);ap(c1b,3.1,t);
+ ap(d1,5.2,t);const dg=document.getElementById('d2');dg.style.display=(t>5.7&&t<6.4)?'block':'none';dg.style.opacity=1;ap(d3,6.4,t);ap(d4,7.3,t);ap(d5,7.9,t);
+ ap(e1,9.1,t);ap(e2,10.6,t);
+ ap(p1,13.0,t);ap(p2,13.3,t);ap(p3,13.6,t);ap(p4,13.9,t);
+ const s=1+0.04*Math.sin(Math.max(0,t-20)*4);document.getElementById('cta').style.transform=`scale(${t>20?s:1})`;
 };
 render(0);
 </script></body></html>

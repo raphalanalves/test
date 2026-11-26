@@ -1,0 +1,48 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="file:///home/user/test/conteudo/2026-10-semana-12-18/_fonte/base.css"><style>
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#0E0E16;font-family:Inter}
+.cena{position:absolute;inset:0;opacity:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:240px 140px 400px;gap:50px}
+.bb{font-family:'Bebas Neue';text-transform:uppercase;line-height:.95;text-align:center;color:#fff}
+.g{background:linear-gradient(90deg,#00D4AA,#7B68EE);-webkit-background-clip:text;background-clip:text;color:transparent}
+.num{font-family:'Bebas Neue';font-size:300px;line-height:.8;color:transparent;-webkit-text-stroke:4px #00D4AA}
+.q{background:#fff;color:#111;border-radius:40px;padding:30px 40px;font:600 50px/1.3 Inter;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.lin{width:800px;display:flex;flex-direction:column;gap:22px}
+.rot{font-family:'Bebas Neue';font-size:38px;letter-spacing:4px;color:#A9ADB3}
+.com{background:#1C1D29;border:2px solid #2C2D3B;border-radius:28px;padding:24px 30px;font:500 36px/1.35 Inter;color:#E9EAEE}
+.dm{background:#3797F0;color:#fff;border-radius:34px 34px 8px 34px;padding:24px 30px;font:500 36px/1.35 Inter;align-self:flex-end;max-width:85%}
+.eq{background:#2A1416;border:3px solid #E5484D;border-radius:28px;padding:26px 32px;font:600 38px/1.35 Inter;color:#FFD7D9}
+.ok{display:flex;gap:22px;align-items:center;font:700 46px Inter;color:#fff}.ok b{width:70px;height:70px;border-radius:50%;background:#00D4AA;color:#0E0E16;display:grid;place-items:center;font-size:40px}
+.campo{width:800px;background:#fff;border-radius:60px;padding:28px 40px;font:600 50px Inter;color:#111;display:flex;gap:6px;align-items:center}
+.cur{width:4px;height:56px;background:#3797F0}
+.ass{position:absolute;left:0;right:0;bottom:300px;text-align:center;font:600 30px Inter;color:#A9ADB3;letter-spacing:4px}
+#dagua{position:absolute;top:84px;right:56px;width:84px;opacity:.45;z-index:9}
+.glow{position:absolute;width:1100px;height:1100px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,170,.15),transparent 65%);right:-450px;top:-400px}
+.lab{position:absolute;top:270px;left:140px;font:500 26px Inter;color:#7d8090}
+</style></head><body><div class="glow"></div>
+<section class="cena" id="c0" style="background:#0E0E16"><div class="lab">Exemplo ilustrativo</div><div class="bb" style="font-size:170px">3 respostas<br><span class="g">que todo Instagram<br>precisa ter</span></div><div class="num" style="font-size:220px">1 · 2 · 3</div></section>
+<section class="cena" id="c1"><div class="bb" style="font-size:150px">3 respostas<br><span class="g">que todo Instagram de empresa precisa ter prontas</span></div></section>
+<section class="cena" id="c2"><div class="num" id="n1">1</div><div class="q" id="q1">“Quanto custa?”</div>
+ <div class="lin"><div id="r1a"><div class="rot">NO COMENTÁRIO</div><div class="com">Oi! Te mandei os valores no direct 💚</div></div><div id="r1b" style="display:flex;flex-direction:column"><div class="rot" style="align-self:flex-end">NO DIRECT</div><div class="dm">Os valores estão aqui 👇 e dá pra marcar por esse link.</div></div></div></section>
+<section class="cena" id="c3"><div class="num" id="n2">2</div><div class="q" id="q2">“Tem horário?”</div>
+ <div class="lin"><div class="dm" id="r2a">Tenho dois horários livres amanhã. Qual fica melhor?</div><div class="com" id="r2b" style="align-self:flex-start">Agendado ✅ Te mando um lembrete antes.</div></div></section>
+<section class="cena" id="c4"><div class="num" id="n3">3</div><div class="q" id="q3">“Quero falar com alguém”</div>
+ <div class="lin"><div class="eq" id="r3a">🔔 Conversa enviada para a equipe, na hora.</div></div></section>
+<section class="cena" id="c5"><div class="bb" style="font-size:120px">A Malvora Social<br><span class="g">faz as três por você</span></div>
+ <div class="lin" style="gap:34px"><div class="ok" id="k1"><b>✓</b>Quanto custa?</div><div class="ok" id="k2"><b>✓</b>Tem horário?</div><div class="ok" id="k3"><b>✓</b>Falar com alguém</div></div></section>
+<section class="cena" id="c6"><div class="bb" style="font-size:140px">Comenta<br><span class="g">SOCIAL</span></div><div style="font:600 46px/1.4 Inter;color:#E9EAEE;text-align:center">que a gente te mostra</div>
+ <div class="campo"><span id="tx"></span><span class="cur" id="cur"></span></div><div class="ass">@MALVORA_HUB</div></section>
+<img id="dagua" src="file:///home/user/test/conteudo/marca/marca-dagua-video.png">
+<script>
+const S=[[0.6,4.8],[4.8,10.0],[10.0,14.4],[14.4,19.6],[19.6,22.3],[22.3,25.2]];
+const ease=x=>1-Math.pow(1-Math.max(0,Math.min(1,x)),3);
+function ap(id,t0,t){const e=document.getElementById(id);const k=ease((t-t0)/0.35);e.style.opacity=k;e.style.transform=`translateY(${(1-k)*30}px)`}
+window.render=function(t){
+ const c0=document.getElementById('c0');c0.style.opacity=t<0.5?1:Math.max(0,1-(t-0.5)/0.25);
+ S.forEach(([a,b],i)=>{const c=document.getElementById('c'+(i+1));let o=ease((t-a)/0.25);if(i<5)o=Math.min(o,1-ease((t-(b-0.25))/0.25));c.style.opacity=o});
+ ap('n1',4.9,t);ap('q1',5.6,t);ap('r1a',6.8,t);ap('r1b',8.0,t);
+ ap('n2',10.1,t);ap('q2',10.9,t);ap('r2a',11.9,t);ap('r2b',13.0,t);
+ ap('n3',14.5,t);ap('q3',15.3,t);ap('r3a',16.7,t);
+ ap('k1',20.0,t);ap('k2',20.5,t);ap('k3',21.0,t);
+ const w='SOCIAL';const n=Math.max(0,Math.min(6,Math.floor((t-22.9)/0.15)));document.getElementById('tx').textContent=w.slice(0,n);document.getElementById('cur').style.opacity=(Math.floor(t*2)%2)?1:0.2;
+ const f6=document.getElementById('c6').style.opacity*1;document.getElementById('dagua').style.opacity=t<0.8?0:0.45*(1-f6);
+};render(0);
+</script></body></html>

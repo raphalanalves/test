@@ -57,18 +57,24 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#0E0E16
 <!-- 5: fim -->
 <section class="cena fim" id="c5"><img src="file:///home/user/test/conteudo/marca/simbolo-principal.png"><div class="nome">Malvora <span class="grad">Social</span></div>
  <div class="fr">Seu Instagram atende enquanto você trabalha.</div><div class="cta" id="cta">LINK NA BIO</div></section>
+<section class="cena fim" id="c6" style="background:#05050A;z-index:5"><img id="vs" src="file:///home/user/test/conteudo/marca/simbolo-principal.png" style="width:380px;margin:0"><div id="vn" style="font-family:'Bebas Neue';font-size:96px;color:#fff;margin-top:50px">MALVORA</div></section>
 <div class="marca">@MALVORA_HUB</div>
 <script>
-const C=[[0,4.9],[4.9,8.8],[8.8,12.7],[12.7,15.4],[15.4,23]];
+const C=[[0,4.7],[4.7,8.3],[8.3,12.3],[12.3,14.6],[14.6,20.5]];
 const ease=x=>1-Math.pow(1-Math.max(0,Math.min(1,x)),3);
 function ap(el,t0,t){const k=ease((t-t0)/0.35);el.style.opacity=k;el.style.transform=`translateY(${(1-k)*30}px)`}
 window.render=function(t){
  C.forEach(([a,b],i)=>{const c=document.getElementById('c'+(i+1));let o=ease((t-a)/0.3);if(i<4)o=Math.min(o,1-ease((t-(b-0.3))/0.3));c.style.opacity=o;c.style.transform=`scale(${0.98+0.02*o})`});
- ap(c1a,0.4,t);ap(c1b,3.1,t);
- ap(d1,5.2,t);const dg=document.getElementById('d2');dg.style.display=(t>5.7&&t<6.4)?'block':'none';dg.style.opacity=1;ap(d3,6.4,t);ap(d4,7.3,t);ap(d5,7.9,t);
- ap(e1,9.1,t);ap(e2,10.6,t);
- ap(p1,13.0,t);ap(p2,13.3,t);ap(p3,13.6,t);ap(p4,13.9,t);
- const s=1+0.04*Math.sin(Math.max(0,t-20)*4);document.getElementById('cta').style.transform=`scale(${t>20?s:1})`;
+ ap(c1a,0.4,t);ap(c1b,2.6,t);
+ ap(d1,5.0,t);const dg=document.getElementById('d2');dg.style.display=(t>5.4&&t<5.9)?'block':'none';dg.style.opacity=1;ap(d3,5.9,t);ap(d4,6.8,t);ap(d5,7.4,t);
+ ap(e1,8.6,t);ap(e2,10.2,t);
+ ap(p1,12.6,t);ap(p2,12.85,t);ap(p3,13.1,t);ap(p4,13.35,t);
+ // vinheta final
+ const v=document.getElementById('c6');const k=t-20.5;v.style.opacity=k<0?0:Math.min(1,k/0.25);
+ const sc=k<0?0.6:0.6+0.4*ease(k/0.6);vs.style.transform=`scale(${sc})`;vs.style.filter=`drop-shadow(0 0 ${k<0?0:40+30*Math.sin(Math.min(k,1.2)*Math.PI/1.2)}px rgba(0,212,170,.8))`;
+ vn.style.opacity=ease((k-0.5)/0.4);vn.style.letterSpacing=(28-14*ease((k-0.5)/0.8))+'px';
+ document.getElementById('c5').style.opacity=k>0?Math.max(0,1-k/0.25):document.getElementById('c5').style.opacity;
+ const s=1+0.04*Math.sin(Math.max(0,t-18.9)*4);document.getElementById('cta').style.transform=`scale(${t>18.9?s:1})`;
 };
 render(0);
 </script></body></html>

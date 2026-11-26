@@ -6,3 +6,5 @@ grade (y 240 a 1680 num quadro 1080x1920).
 
 Arquivos: `capa-<data>-<código do post>.jpg`. O código é o do link do post (instagram.com/reel/<código>).
 Troca pelo app: abrir o Reel › ⋯ › Editar › Editar capa › Adicionar da galeria.
+
+Ficam com a capa original (decisão do Rapha, 26/11): Bastidores com cliente VIP (DfnIbZJFGaT) e O 40º "quanto custa?" (DfcWP48HKeU).

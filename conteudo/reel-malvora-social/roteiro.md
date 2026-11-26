@@ -1,6 +1,6 @@
 # Reel "Malvora Social": Comentou, a IA respondeu (25 s)
 
-Status: vídeo de 22,5 s com a narração da Carla (versão animada, ElevenLabs eleven_v4) e vinheta da logo no fim. CTA "Link na bio" até a palavra SOCIAL ser cadastrada.
+Status: v3 (26/11): 22,3 s, narração da Carla no mesmo tom do começo ao fim (sem marcações), trilha própria baixa (musica-lembrete, abaixa sob a voz), marca d'água no canto, @malvora_hub só no fim, área segura respeitada. CTA "Link na bio" até a palavra SOCIAL ser cadastrada.
 Gravação: @malvora_hub com conta de teste (sem dados de cliente). CTA: "Comente SOCIAL" (cadastrar resposta automática no portal com ok do Rapha).
 
 | Tempo | Cena | Texto na tela |

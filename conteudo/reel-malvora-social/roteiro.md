@@ -1,11 +1,11 @@
 # Reel "Malvora Social": Comentou, a IA respondeu (25 s)
 
-Status: texto aprovado pelo Rapha (23/11). Falta: gravar telas e montar. Publicação só com "aprovado" do vídeo final e data.
+Status: vídeo montado em 26/11 como animação das telas ilustradas (sem gravação, sem dados reais; sem citar segmento nem horário). CTA "Link na bio" até a palavra SOCIAL ser cadastrada. Publicação só com "aprovado" do vídeo final e data.
 Gravação: @malvora_hub com conta de teste (sem dados de cliente). CTA: "Comente SOCIAL" (cadastrar resposta automática no portal com ok do Rapha).
 
 | Tempo | Cena | Texto na tela |
 |---|---|---|
-| 0–2s | Notificação de comentário: "Quanto custa o corte?" | Seu cliente comentou às 23h. |
+| 0–2s | Notificação de comentário: "Quanto custa?" | Seu cliente comentou fora do horário. |
 | 2–6s | Resposta da IA aparece em segundos | E foi respondido na hora. |
 | 6–11s | Direct "Tem horário amanhã?" → IA responde com horários | Comentário e direct, com as regras da sua empresa. |
 | 11–16s | Reclamação → aviso para a equipe | Assunto delicado? Vai para a sua equipe. |
